@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({13:[function(require,module,exports) {
+})({14:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -161,7 +161,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],23:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -179,7 +179,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],24:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -216,7 +216,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],7:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -239,7 +239,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":13,"fbjs/lib/emptyObject":23,"fbjs/lib/emptyFunction":24}],27:[function(require,module,exports) {
+},{"object-assign":14,"fbjs/lib/emptyObject":18,"fbjs/lib/emptyFunction":17}],26:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -293,7 +293,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],26:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -356,7 +356,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":24}],17:[function(require,module,exports) {
+},{"./emptyFunction":17}],16:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -370,7 +370,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],16:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -430,7 +430,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"./lib/ReactPropTypesSecret":17}],8:[function(require,module,exports) {
+},{"fbjs/lib/invariant":26,"fbjs/lib/warning":25,"./lib/ReactPropTypesSecret":16}],9:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1782,7 +1782,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":13,"fbjs/lib/emptyObject":23,"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"fbjs/lib/emptyFunction":24,"prop-types/checkPropTypes":16}],5:[function(require,module,exports) {
+},{"object-assign":14,"fbjs/lib/emptyObject":18,"fbjs/lib/invariant":26,"fbjs/lib/warning":25,"fbjs/lib/emptyFunction":17,"prop-types/checkPropTypes":15}],6:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1790,7 +1790,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":7,"./cjs/react.development.js":8}],18:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":8,"./cjs/react.development.js":9}],19:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1824,7 +1824,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],21:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1899,7 +1899,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":24}],19:[function(require,module,exports) {
+},{"./emptyFunction":17}],21:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1936,7 +1936,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],22:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2002,7 +2002,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],33:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2025,7 +2025,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],30:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2048,7 +2048,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":33}],25:[function(require,module,exports) {
+},{"./isNode":32}],24:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2086,7 +2086,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":30}],20:[function(require,module,exports) {
+},{"./isTextNode":29}],22:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2111,7 +2111,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],9:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2342,7 +2342,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":5,"fbjs/lib/ExecutionEnvironment":18,"object-assign":13,"fbjs/lib/emptyFunction":24,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":19,"fbjs/lib/shallowEqual":22,"fbjs/lib/containsNode":25,"fbjs/lib/focusNode":20,"fbjs/lib/emptyObject":23}],32:[function(require,module,exports) {
+},{"react":6,"fbjs/lib/ExecutionEnvironment":19,"object-assign":14,"fbjs/lib/emptyFunction":17,"fbjs/lib/EventListener":20,"fbjs/lib/getActiveElement":21,"fbjs/lib/shallowEqual":23,"fbjs/lib/containsNode":24,"fbjs/lib/focusNode":22,"fbjs/lib/emptyObject":18}],31:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2373,7 +2373,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],29:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2410,7 +2410,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":32}],31:[function(require,module,exports) {
+},{"./hyphenate":31}],30:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2478,7 +2478,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":31}],10:[function(require,module,exports) {
+},{"./camelize":30}],11:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17836,7 +17836,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":5,"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"fbjs/lib/ExecutionEnvironment":18,"object-assign":13,"fbjs/lib/emptyFunction":24,"fbjs/lib/EventListener":21,"fbjs/lib/getActiveElement":19,"fbjs/lib/shallowEqual":22,"fbjs/lib/containsNode":25,"fbjs/lib/focusNode":20,"fbjs/lib/emptyObject":23,"prop-types/checkPropTypes":16,"fbjs/lib/hyphenateStyleName":29,"fbjs/lib/camelizeStyleName":28}],6:[function(require,module,exports) {
+},{"react":6,"fbjs/lib/invariant":26,"fbjs/lib/warning":25,"fbjs/lib/ExecutionEnvironment":19,"object-assign":14,"fbjs/lib/emptyFunction":17,"fbjs/lib/EventListener":20,"fbjs/lib/getActiveElement":21,"fbjs/lib/shallowEqual":23,"fbjs/lib/containsNode":24,"fbjs/lib/focusNode":22,"fbjs/lib/emptyObject":18,"prop-types/checkPropTypes":15,"fbjs/lib/hyphenateStyleName":27,"fbjs/lib/camelizeStyleName":28}],7:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17872,7 +17872,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":9,"./cjs/react-dom.development.js":10}],37:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":10,"./cjs/react-dom.development.js":11}],36:[function(require,module,exports) {
 'use strict';
 
 
@@ -18090,7 +18090,7 @@ exports.caml_array_get    = caml_array_get;
 exports.caml_array_set    = caml_array_set;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":37}],34:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":36}],34:[function(require,module,exports) {
 'use strict';
 
 var Caml_array = require("./caml_array.js");
@@ -18727,7 +18727,7 @@ exports._8      = _8;
 exports.__8     = __8;
 /* No side effect */
 
-},{"./caml_array.js":38}],43:[function(require,module,exports) {
+},{"./caml_array.js":38}],42:[function(require,module,exports) {
 'use strict';
 
 
@@ -18739,7 +18739,7 @@ function __(tag, block) {
 exports.__ = __;
 /* No side effect */
 
-},{}],41:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 'use strict';
 
 var Block                   = require("./block.js");
@@ -19050,7 +19050,7 @@ exports.caml_lessthan          = caml_lessthan;
 exports.caml_lessequal         = caml_lessequal;
 /* No side effect */
 
-},{"./block.js":43,"./caml_builtin_exceptions.js":37}],50:[function(require,module,exports) {
+},{"./block.js":42,"./caml_builtin_exceptions.js":36}],49:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -19237,7 +19237,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],44:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 var process = require("process");
 'use strict';
 
@@ -19370,7 +19370,7 @@ exports.caml_ml_input_char          = caml_ml_input_char;
 exports.caml_ml_out_channels_list   = caml_ml_out_channels_list;
 /* stdin Not a pure module */
 
-},{"./curry.js":34,"./caml_builtin_exceptions.js":37,"process":50}],45:[function(require,module,exports) {
+},{"./curry.js":34,"./caml_builtin_exceptions.js":36,"process":49}],44:[function(require,module,exports) {
 var process = require("process");
 'use strict';
 
@@ -19472,7 +19472,7 @@ exports.caml_sys_is_directory   = caml_sys_is_directory;
 exports.caml_sys_file_exists    = caml_sys_file_exists;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":37,"process":50}],51:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":36,"process":49}],51:[function(require,module,exports) {
 'use strict';
 
 var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
@@ -19516,7 +19516,7 @@ exports.caml_nativeint_bswap = caml_nativeint_bswap;
 exports.imul                 = imul;
 /* imul Not a pure module */
 
-},{"./caml_builtin_exceptions.js":37}],53:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":36}],52:[function(require,module,exports) {
 'use strict';
 
 
@@ -19549,7 +19549,7 @@ var repeat = ( (String.prototype.repeat && function (count,self){return self.rep
 exports.repeat = repeat;
 /* repeat Not a pure module */
 
-},{}],52:[function(require,module,exports) {
+},{}],50:[function(require,module,exports) {
 'use strict';
 
 var Caml_obj                = require("./caml_obj.js");
@@ -20151,7 +20151,7 @@ exports.bits_of_float = bits_of_float;
 exports.get64         = get64;
 /* two_ptr_32_dbl Not a pure module */
 
-},{"./caml_obj.js":41,"./caml_int32.js":51,"./caml_utils.js":53,"./caml_builtin_exceptions.js":37}],47:[function(require,module,exports) {
+},{"./caml_obj.js":40,"./caml_int32.js":51,"./caml_utils.js":52,"./caml_builtin_exceptions.js":36}],45:[function(require,module,exports) {
 'use strict';
 
 var Curry                   = require("./curry.js");
@@ -20954,7 +20954,7 @@ exports.caml_int64_of_string     = caml_int64_of_string;
 exports.caml_nativeint_of_string = caml_nativeint_of_string;
 /* float_of_string Not a pure module */
 
-},{"./curry.js":34,"./caml_int32.js":51,"./caml_int64.js":52,"./caml_utils.js":53,"./caml_builtin_exceptions.js":37}],46:[function(require,module,exports) {
+},{"./curry.js":34,"./caml_int32.js":51,"./caml_int64.js":50,"./caml_utils.js":52,"./caml_builtin_exceptions.js":36}],47:[function(require,module,exports) {
 'use strict';
 
 var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
@@ -21159,7 +21159,7 @@ exports.string_of_char            = string_of_char;
 exports.get                       = get;
 /* No side effect */
 
-},{"./caml_builtin_exceptions.js":37}],40:[function(require,module,exports) {
+},{"./caml_builtin_exceptions.js":36}],39:[function(require,module,exports) {
 'use strict';
 
 
@@ -21207,7 +21207,7 @@ exports.create                       = create;
 exports.isCamlExceptionOrOpenVariant = isCamlExceptionOrOpenVariant;
 /* No side effect */
 
-},{}],48:[function(require,module,exports) {
+},{}],46:[function(require,module,exports) {
 'use strict';
 
 
@@ -21216,7 +21216,7 @@ var not_implemented = (function (s){ throw new Error(s)});
 exports.not_implemented = not_implemented;
 /* not_implemented Not a pure module */
 
-},{}],49:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 'use strict';
 
 var Block = require("./block.js");
@@ -21446,7 +21446,7 @@ exports.erase_rel    = erase_rel;
 exports.concat_fmt   = concat_fmt;
 /* No side effect */
 
-},{"./block.js":43}],42:[function(require,module,exports) {
+},{"./block.js":42}],41:[function(require,module,exports) {
 'use strict';
 
 var Curry                    = require("./curry.js");
@@ -22142,7 +22142,7 @@ exports.unsafe_really_input = unsafe_really_input;
 exports.do_at_exit          = do_at_exit;
 /* No side effect */
 
-},{"./curry.js":34,"./caml_io.js":44,"./caml_obj.js":41,"./caml_sys.js":45,"./caml_format.js":47,"./caml_string.js":46,"./caml_exceptions.js":40,"./caml_missing_polyfill.js":48,"./caml_builtin_exceptions.js":37,"./camlinternalFormatBasics.js":49}],36:[function(require,module,exports) {
+},{"./curry.js":34,"./caml_io.js":43,"./caml_obj.js":40,"./caml_sys.js":44,"./caml_format.js":45,"./caml_string.js":47,"./caml_exceptions.js":39,"./caml_missing_polyfill.js":46,"./caml_builtin_exceptions.js":36,"./camlinternalFormatBasics.js":48}],35:[function(require,module,exports) {
 'use strict';
 
 var Curry                   = require("./curry.js");
@@ -23835,7 +23835,7 @@ exports.sort_uniq    = sort_uniq;
 exports.merge        = merge;
 /* No side effect */
 
-},{"./curry.js":34,"./caml_obj.js":41,"./pervasives.js":42,"./caml_builtin_exceptions.js":37}],39:[function(require,module,exports) {
+},{"./curry.js":34,"./caml_obj.js":40,"./pervasives.js":41,"./caml_builtin_exceptions.js":36}],37:[function(require,module,exports) {
 'use strict';
 
 var Caml_exceptions = require("./caml_exceptions.js");
@@ -23892,7 +23892,7 @@ exports.raiseTypeError           = raiseTypeError;
 exports.raiseUriError            = raiseUriError;
 /* No side effect */
 
-},{"./caml_exceptions.js":40}],35:[function(require,module,exports) {
+},{"./caml_exceptions.js":39}],33:[function(require,module,exports) {
 'use strict';
 
 var Curry                   = require("./curry.js");
@@ -24326,7 +24326,7 @@ exports.stable_sort   = stable_sort;
 exports.fast_sort     = fast_sort;
 /* No side effect */
 
-},{"./curry.js":34,"./js_exn.js":39,"./caml_array.js":38,"./caml_exceptions.js":40,"./caml_builtin_exceptions.js":37}],15:[function(require,module,exports) {
+},{"./curry.js":34,"./js_exn.js":37,"./caml_array.js":38,"./caml_exceptions.js":39,"./caml_builtin_exceptions.js":36}],13:[function(require,module,exports) {
 'use strict';
 
 var React = require("react");
@@ -25224,7 +25224,7 @@ exports.reactNoopUpdateQueue = reactNoopUpdateQueue;
 exports.createClass          = createClass;
 /*  Not a pure module */
 
-},{"react":5}],14:[function(require,module,exports) {
+},{"react":6}],12:[function(require,module,exports) {
 'use strict';
 
 var List                            = require("bs-platform/lib/js/list.js");
@@ -25871,7 +25871,37 @@ exports.wrapJsForReason                     = wrapJsForReason;
 exports.Router                              = Router;
 /* magicNull Not a pure module */
 
-},{"bs-platform/lib/js/list.js":36,"bs-platform/lib/js/array.js":35,"bs-platform/lib/js/curry.js":34,"react":5,"bs-platform/lib/js/caml_builtin_exceptions.js":37,"./ReasonReactOptimizedCreateClass.js":15}],11:[function(require,module,exports) {
+},{"bs-platform/lib/js/list.js":35,"bs-platform/lib/js/array.js":33,"bs-platform/lib/js/curry.js":34,"react":6,"bs-platform/lib/js/caml_builtin_exceptions.js":36,"./ReasonReactOptimizedCreateClass.js":13}],4:[function(require,module,exports) {
+// Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
+'use strict';
+
+var React = require("react");
+var ReasonReact = require("reason-react/src/ReasonReact.js");
+
+function echo(input) {
+  return "Hello " + input;
+}
+
+var component = ReasonReact.statelessComponent("Greeting");
+
+function make(name, _) {
+  var newrecord = component.slice();
+  newrecord[/* render */9] = function () {
+    return React.createElement("div", undefined, "Hello " + name);
+  };
+  return newrecord;
+}
+
+var greeting = ReasonReact.wrapReasonForJs(component, function (jsProps) {
+  return make(jsProps.name, /* array */[]);
+});
+
+exports.echo = echo;
+exports.component = component;
+exports.make = make;
+exports.greeting = greeting;
+/* component Not a pure module */
+},{"react":6,"reason-react/src/ReasonReact.js":12}],5:[function(require,module,exports) {
 // Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
 'use strict';
 
@@ -25896,38 +25926,7 @@ exports.component = component;
 exports.make = make;
 exports.example = example;
 /* component Not a pure module */
-},{"react":5,"reason-react/src/ReasonReact.js":14}],3:[function(require,module,exports) {
-// Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
-'use strict';
-
-var React = require("react");
-var ReasonReact = require("reason-react/src/ReasonReact.js");
-var Example$ParcelReasonReactApp = require("./example.bs.js");
-
-function echo(input) {
-  return "Hello " + input;
-}
-
-var component = ReasonReact.statelessComponent("Greeting");
-
-function make(name, _) {
-  var newrecord = component.slice();
-  newrecord[/* render */9] = function () {
-    return React.createElement("div", undefined, "Hello " + name, ReasonReact.element( /* None */0, /* None */0, Example$ParcelReasonReactApp.make( /* array */[])));
-  };
-  return newrecord;
-}
-
-var greeting = ReasonReact.wrapReasonForJs(component, function (jsProps) {
-  return make(jsProps.name, /* array */[]);
-});
-
-exports.echo = echo;
-exports.component = component;
-exports.make = make;
-exports.greeting = greeting;
-/* component Not a pure module */
-},{"react":5,"reason-react/src/ReasonReact.js":14,"./example.bs.js":11}],2:[function(require,module,exports) {
+},{"react":6,"reason-react/src/ReasonReact.js":12}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -25938,26 +25937,27 @@ var _reactDom = require('react-dom');
 
 var _test = require('./src/test.re');
 
-var _test2 = _interopRequireDefault(_test);
+var _example = require('./src/example.bs');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_test2.default);
-
-var Greeting = _test2.default.greeting;
-
 var App = function App() {
   return _react2.default.createElement(
-    'h1',
+    _react.Fragment,
     null,
-    _react2.default.createElement(Greeting, { name: 'world' })
+    _react2.default.createElement(
+      'h1',
+      null,
+      _react2.default.createElement(_test.greeting, { name: 'world' })
+    ),
+    _react2.default.createElement(_example.example, null)
   );
 };
 
 var elem = document.querySelector('#root');
 
 (0, _reactDom.render)(_react2.default.createElement(App, null), elem);
-},{"react":5,"react-dom":6,"./src/test.re":3}],54:[function(require,module,exports) {
+},{"react":6,"react-dom":7,"./src/test.re":4,"./src/example.bs":5}],53:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -25977,7 +25977,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '56208' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '58844' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -26078,5 +26078,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[54,2])
+},{}]},{},[53,2])
 //# sourceMappingURL=/dist/b2688e9ba6aa6f7cf23ac34e04ca0ccb.map

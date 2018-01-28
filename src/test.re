@@ -7,7 +7,6 @@ let make = (~name, _children) => {
   render: (_self) => (
     <div>
       {ReasonReact.stringToElement("Hello " ++ name)}
-      <Example />
     </div>
   )
 };
