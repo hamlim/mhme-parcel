@@ -1,1 +1,1 @@
-src/test-ParcelReasonReactApp.cmj :
+src/test-ParcelReasonReactApp.cmj : src/example-ParcelReasonReactApp.cmj
