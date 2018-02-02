@@ -1,7 +1,7 @@
 {
   "name": "parcel-reason-react-app",
   "reason": { "react-jsx": 2 },
-  "sources": ["src"],
+  "sources": ["src/reason"],
   "package-specs": [
     {
       "module": "commonjs",

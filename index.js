@@ -1,20 +1,22 @@
 import React, { Fragment } from 'react'
 import { render } from 'react-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import setup from './setup'
 
-import { greeting as Greeting } from './src/test.re'
-import { example as Example } from './src/example.bs'
-import { todo as Todo } from './src/todo.bs'
+import Navigation from './src/components/navigation.js'
+import Landing from './src/pages/landing.js'
 
 const App = () => (
-  <Fragment>
-    <h1>
-      <Greeting name="world" />
-    </h1>
-    <Example />
-    <Todo />
-  </Fragment>
+  <Router>
+    <Fragment>
+      <Navigation />
+      <Route path="/" exact component={Landing} />
+    </Fragment>
+  </Router>
 )
 
 const elem = document.querySelector('#root')
+
+setup()
 
 render(<App />, elem)

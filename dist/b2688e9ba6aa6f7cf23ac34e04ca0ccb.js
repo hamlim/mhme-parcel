@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({15:[function(require,module,exports) {
+})({38:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -161,7 +161,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],19:[function(require,module,exports) {
+},{}],55:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -179,7 +179,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],18:[function(require,module,exports) {
+},{}],56:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -216,7 +216,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],7:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -239,7 +239,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":15,"fbjs/lib/emptyObject":19,"fbjs/lib/emptyFunction":18}],27:[function(require,module,exports) {
+},{"object-assign":38,"fbjs/lib/emptyObject":55,"fbjs/lib/emptyFunction":56}],63:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -293,7 +293,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],26:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -356,7 +356,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":18}],17:[function(require,module,exports) {
+},{"./emptyFunction":56}],47:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -370,7 +370,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],16:[function(require,module,exports) {
+},{}],46:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -430,7 +430,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"./lib/ReactPropTypesSecret":17}],8:[function(require,module,exports) {
+},{"fbjs/lib/invariant":63,"fbjs/lib/warning":64,"./lib/ReactPropTypesSecret":47}],15:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1782,7 +1782,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":15,"fbjs/lib/emptyObject":19,"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"fbjs/lib/emptyFunction":18,"prop-types/checkPropTypes":16}],6:[function(require,module,exports) {
+},{"object-assign":38,"fbjs/lib/emptyObject":55,"fbjs/lib/invariant":63,"fbjs/lib/warning":64,"fbjs/lib/emptyFunction":56,"prop-types/checkPropTypes":46}],11:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1790,7 +1790,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":7,"./cjs/react.development.js":8}],20:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":14,"./cjs/react.development.js":15}],57:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1824,7 +1824,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],22:[function(require,module,exports) {
+},{}],59:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1899,7 +1899,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":18}],24:[function(require,module,exports) {
+},{"./emptyFunction":56}],60:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1936,7 +1936,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],21:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2002,7 +2002,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],33:[function(require,module,exports) {
+},{}],82:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2025,7 +2025,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],30:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2048,7 +2048,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":33}],25:[function(require,module,exports) {
+},{"./isNode":82}],61:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2086,7 +2086,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":30}],23:[function(require,module,exports) {
+},{"./isTextNode":76}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2111,7 +2111,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],9:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2342,7 +2342,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":6,"fbjs/lib/ExecutionEnvironment":20,"object-assign":15,"fbjs/lib/emptyFunction":18,"fbjs/lib/EventListener":22,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":21,"fbjs/lib/containsNode":25,"fbjs/lib/focusNode":23,"fbjs/lib/emptyObject":19}],32:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/ExecutionEnvironment":57,"object-assign":38,"fbjs/lib/emptyFunction":56,"fbjs/lib/EventListener":59,"fbjs/lib/getActiveElement":60,"fbjs/lib/shallowEqual":58,"fbjs/lib/containsNode":61,"fbjs/lib/focusNode":62,"fbjs/lib/emptyObject":55}],77:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2373,7 +2373,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],28:[function(require,module,exports) {
+},{}],65:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2410,7 +2410,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":32}],31:[function(require,module,exports) {
+},{"./hyphenate":77}],78:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2440,7 +2440,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],29:[function(require,module,exports) {
+},{}],66:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2478,7 +2478,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":31}],10:[function(require,module,exports) {
+},{"./camelize":78}],17:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17836,7 +17836,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":6,"fbjs/lib/invariant":27,"fbjs/lib/warning":26,"fbjs/lib/ExecutionEnvironment":20,"object-assign":15,"fbjs/lib/emptyFunction":18,"fbjs/lib/EventListener":22,"fbjs/lib/getActiveElement":24,"fbjs/lib/shallowEqual":21,"fbjs/lib/containsNode":25,"fbjs/lib/focusNode":23,"fbjs/lib/emptyObject":19,"prop-types/checkPropTypes":16,"fbjs/lib/hyphenateStyleName":28,"fbjs/lib/camelizeStyleName":29}],5:[function(require,module,exports) {
+},{"react":11,"fbjs/lib/invariant":63,"fbjs/lib/warning":64,"fbjs/lib/ExecutionEnvironment":57,"object-assign":38,"fbjs/lib/emptyFunction":56,"fbjs/lib/EventListener":59,"fbjs/lib/getActiveElement":60,"fbjs/lib/shallowEqual":58,"fbjs/lib/containsNode":61,"fbjs/lib/focusNode":62,"fbjs/lib/emptyObject":55,"prop-types/checkPropTypes":46,"fbjs/lib/hyphenateStyleName":65,"fbjs/lib/camelizeStyleName":66}],12:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17872,8155 +17872,7456 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":9,"./cjs/react-dom.development.js":10}],34:[function(require,module,exports) {
-'use strict';
-
-
-var out_of_memory = /* tuple */[
-  "Out_of_memory",
-  0
-];
-
-var sys_error = /* tuple */[
-  "Sys_error",
-  -1
-];
-
-var failure = /* tuple */[
-  "Failure",
-  -2
-];
-
-var invalid_argument = /* tuple */[
-  "Invalid_argument",
-  -3
-];
-
-var end_of_file = /* tuple */[
-  "End_of_file",
-  -4
-];
-
-var division_by_zero = /* tuple */[
-  "Division_by_zero",
-  -5
-];
-
-var not_found = /* tuple */[
-  "Not_found",
-  -6
-];
-
-var match_failure = /* tuple */[
-  "Match_failure",
-  -7
-];
-
-var stack_overflow = /* tuple */[
-  "Stack_overflow",
-  -8
-];
-
-var sys_blocked_io = /* tuple */[
-  "Sys_blocked_io",
-  -9
-];
-
-var assert_failure = /* tuple */[
-  "Assert_failure",
-  -10
-];
-
-var undefined_recursive_module = /* tuple */[
-  "Undefined_recursive_module",
-  -11
-];
-
-out_of_memory.tag = 248;
-
-sys_error.tag = 248;
-
-failure.tag = 248;
-
-invalid_argument.tag = 248;
-
-end_of_file.tag = 248;
-
-division_by_zero.tag = 248;
-
-not_found.tag = 248;
-
-match_failure.tag = 248;
-
-stack_overflow.tag = 248;
-
-sys_blocked_io.tag = 248;
-
-assert_failure.tag = 248;
-
-undefined_recursive_module.tag = 248;
-
-exports.out_of_memory              = out_of_memory;
-exports.sys_error                  = sys_error;
-exports.failure                    = failure;
-exports.invalid_argument           = invalid_argument;
-exports.end_of_file                = end_of_file;
-exports.division_by_zero           = division_by_zero;
-exports.not_found                  = not_found;
-exports.match_failure              = match_failure;
-exports.stack_overflow             = stack_overflow;
-exports.sys_blocked_io             = sys_blocked_io;
-exports.assert_failure             = assert_failure;
-exports.undefined_recursive_module = undefined_recursive_module;
-/*  Not a pure module */
-
-},{}],44:[function(require,module,exports) {
-'use strict';
-
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function caml_array_sub(x, offset, len) {
-  var result = new Array(len);
-  var j = 0;
-  var i = offset;
-  while(j < len) {
-    result[j] = x[i];
-    j = j + 1 | 0;
-    i = i + 1 | 0;
-  };
-  return result;
-}
-
-function len(_acc, _l) {
-  while(true) {
-    var l = _l;
-    var acc = _acc;
-    if (l) {
-      _l = l[1];
-      _acc = l[0].length + acc | 0;
-      continue ;
-      
-    } else {
-      return acc;
-    }
-  };
-}
-
-function fill(arr, _i, _l) {
-  while(true) {
-    var l = _l;
-    var i = _i;
-    if (l) {
-      var x = l[0];
-      var l$1 = x.length;
-      var k = i;
-      var j = 0;
-      while(j < l$1) {
-        arr[k] = x[j];
-        k = k + 1 | 0;
-        j = j + 1 | 0;
-      };
-      _l = l[1];
-      _i = k;
-      continue ;
-      
-    } else {
-      return /* () */0;
-    }
-  };
-}
-
-function caml_array_concat(l) {
-  var v = len(0, l);
-  var result = new Array(v);
-  fill(result, 0, l);
-  return result;
-}
-
-function caml_array_set(xs, index, newval) {
-  if (index < 0 || index >= xs.length) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "index out of bounds"
-        ];
-  } else {
-    xs[index] = newval;
-    return /* () */0;
-  }
-}
-
-function caml_array_get(xs, index) {
-  if (index < 0 || index >= xs.length) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "index out of bounds"
-        ];
-  } else {
-    return xs[index];
-  }
-}
-
-function caml_make_vect(len, init) {
-  var b = new Array(len);
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    b[i] = init;
-  }
-  return b;
-}
-
-function caml_array_blit(a1, i1, a2, i2, len) {
-  if (i2 <= i1) {
-    for(var j = 0 ,j_finish = len - 1 | 0; j <= j_finish; ++j){
-      a2[j + i2 | 0] = a1[j + i1 | 0];
-    }
-    return /* () */0;
-  } else {
-    for(var j$1 = len - 1 | 0; j$1 >= 0; --j$1){
-      a2[j$1 + i2 | 0] = a1[j$1 + i1 | 0];
-    }
-    return /* () */0;
-  }
-}
-
-exports.caml_array_sub    = caml_array_sub;
-exports.caml_array_concat = caml_array_concat;
-exports.caml_make_vect    = caml_make_vect;
-exports.caml_array_blit   = caml_array_blit;
-exports.caml_array_get    = caml_array_get;
-exports.caml_array_set    = caml_array_set;
-/* No side effect */
-
-},{"./caml_builtin_exceptions.js":34}],36:[function(require,module,exports) {
-'use strict';
-
-var Caml_array = require("./caml_array.js");
-
-function app(_f, _args) {
-  while(true) {
-    var args = _args;
-    var f = _f;
-    var arity = f.length;
-    var arity$1 = arity ? arity : 1;
-    var len = args.length;
-    var d = arity$1 - len | 0;
-    if (d) {
-      if (d < 0) {
-        _args = Caml_array.caml_array_sub(args, arity$1, -d | 0);
-        _f = f.apply(null, Caml_array.caml_array_sub(args, 0, arity$1));
-        continue ;
-        
-      } else {
-        return (function(f,args){
-        return function (x) {
-          return app(f, args.concat(/* array */[x]));
-        }
-        }(f,args));
-      }
-    } else {
-      return f.apply(null, args);
-    }
-  };
-}
-
-function curry_1(o, a0, arity) {
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[a0]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          return o(a0);
-      case 2 : 
-          return (function (param) {
-              return o(a0, param);
-            });
-      case 3 : 
-          return (function (param, param$1) {
-              return o(a0, param, param$1);
-            });
-      case 4 : 
-          return (function (param, param$1, param$2) {
-              return o(a0, param, param$1, param$2);
-            });
-      case 5 : 
-          return (function (param, param$1, param$2, param$3) {
-              return o(a0, param, param$1, param$2, param$3);
-            });
-      case 6 : 
-          return (function (param, param$1, param$2, param$3, param$4) {
-              return o(a0, param, param$1, param$2, param$3, param$4);
-            });
-      case 7 : 
-          return (function (param, param$1, param$2, param$3, param$4, param$5) {
-              return o(a0, param, param$1, param$2, param$3, param$4, param$5);
-            });
-      
-    }
-  }
-}
-
-function _1(o, a0) {
-  var arity = o.length;
-  if (arity === 1) {
-    return o(a0);
-  } else {
-    return curry_1(o, a0, arity);
-  }
-}
-
-function __1(o) {
-  var arity = o.length;
-  if (arity === 1) {
-    return o;
-  } else {
-    return (function (a0) {
-        return _1(o, a0);
-      });
-  }
-}
-
-function curry_2(o, a0, a1, arity) {
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          return app(o(a0), /* array */[a1]);
-      case 2 : 
-          return o(a0, a1);
-      case 3 : 
-          return (function (param) {
-              return o(a0, a1, param);
-            });
-      case 4 : 
-          return (function (param, param$1) {
-              return o(a0, a1, param, param$1);
-            });
-      case 5 : 
-          return (function (param, param$1, param$2) {
-              return o(a0, a1, param, param$1, param$2);
-            });
-      case 6 : 
-          return (function (param, param$1, param$2, param$3) {
-              return o(a0, a1, param, param$1, param$2, param$3);
-            });
-      case 7 : 
-          return (function (param, param$1, param$2, param$3, param$4) {
-              return o(a0, a1, param, param$1, param$2, param$3, param$4);
-            });
-      
-    }
-  }
-}
-
-function _2(o, a0, a1) {
-  var arity = o.length;
-  if (arity === 2) {
-    return o(a0, a1);
-  } else {
-    return curry_2(o, a0, a1, arity);
-  }
-}
-
-function __2(o) {
-  var arity = o.length;
-  if (arity === 2) {
-    return o;
-  } else {
-    return (function (a0, a1) {
-        return _2(o, a0, a1);
-      });
-  }
-}
-
-function curry_3(o, a0, a1, a2, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[a2]);
-      case 3 : 
-          return o(a0, a1, a2);
-      case 4 : 
-          return (function (param) {
-              return o(a0, a1, a2, param);
-            });
-      case 5 : 
-          return (function (param, param$1) {
-              return o(a0, a1, a2, param, param$1);
-            });
-      case 6 : 
-          return (function (param, param$1, param$2) {
-              return o(a0, a1, a2, param, param$1, param$2);
-            });
-      case 7 : 
-          return (function (param, param$1, param$2, param$3) {
-              return o(a0, a1, a2, param, param$1, param$2, param$3);
-            });
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2
-              ]);
-  }
-  
-}
-
-function _3(o, a0, a1, a2) {
-  var arity = o.length;
-  if (arity === 3) {
-    return o(a0, a1, a2);
-  } else {
-    return curry_3(o, a0, a1, a2, arity);
-  }
-}
-
-function __3(o) {
-  var arity = o.length;
-  if (arity === 3) {
-    return o;
-  } else {
-    return (function (a0, a1, a2) {
-        return _3(o, a0, a1, a2);
-      });
-  }
-}
-
-function curry_4(o, a0, a1, a2, a3, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2,
-                a3
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[
-                      a2,
-                      a3
-                    ]);
-      case 3 : 
-          return app(o(a0, a1, a2), /* array */[a3]);
-      case 4 : 
-          return o(a0, a1, a2, a3);
-      case 5 : 
-          return (function (param) {
-              return o(a0, a1, a2, a3, param);
-            });
-      case 6 : 
-          return (function (param, param$1) {
-              return o(a0, a1, a2, a3, param, param$1);
-            });
-      case 7 : 
-          return (function (param, param$1, param$2) {
-              return o(a0, a1, a2, a3, param, param$1, param$2);
-            });
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2,
-                a3
-              ]);
-  }
-  
-}
-
-function _4(o, a0, a1, a2, a3) {
-  var arity = o.length;
-  if (arity === 4) {
-    return o(a0, a1, a2, a3);
-  } else {
-    return curry_4(o, a0, a1, a2, a3, arity);
-  }
-}
-
-function __4(o) {
-  var arity = o.length;
-  if (arity === 4) {
-    return o;
-  } else {
-    return (function (a0, a1, a2, a3) {
-        return _4(o, a0, a1, a2, a3);
-      });
-  }
-}
-
-function curry_5(o, a0, a1, a2, a3, a4, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2,
-                a3,
-                a4
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[
-                      a2,
-                      a3,
-                      a4
-                    ]);
-      case 3 : 
-          return app(o(a0, a1, a2), /* array */[
-                      a3,
-                      a4
-                    ]);
-      case 4 : 
-          return app(o(a0, a1, a2, a3), /* array */[a4]);
-      case 5 : 
-          return o(a0, a1, a2, a3, a4);
-      case 6 : 
-          return (function (param) {
-              return o(a0, a1, a2, a3, a4, param);
-            });
-      case 7 : 
-          return (function (param, param$1) {
-              return o(a0, a1, a2, a3, a4, param, param$1);
-            });
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2,
-                a3,
-                a4
-              ]);
-  }
-  
-}
-
-function _5(o, a0, a1, a2, a3, a4) {
-  var arity = o.length;
-  if (arity === 5) {
-    return o(a0, a1, a2, a3, a4);
-  } else {
-    return curry_5(o, a0, a1, a2, a3, a4, arity);
-  }
-}
-
-function __5(o) {
-  var arity = o.length;
-  if (arity === 5) {
-    return o;
-  } else {
-    return (function (a0, a1, a2, a3, a4) {
-        return _5(o, a0, a1, a2, a3, a4);
-      });
-  }
-}
-
-function curry_6(o, a0, a1, a2, a3, a4, a5, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2,
-                a3,
-                a4,
-                a5
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[
-                      a2,
-                      a3,
-                      a4,
-                      a5
-                    ]);
-      case 3 : 
-          return app(o(a0, a1, a2), /* array */[
-                      a3,
-                      a4,
-                      a5
-                    ]);
-      case 4 : 
-          return app(o(a0, a1, a2, a3), /* array */[
-                      a4,
-                      a5
-                    ]);
-      case 5 : 
-          return app(o(a0, a1, a2, a3, a4), /* array */[a5]);
-      case 6 : 
-          return o(a0, a1, a2, a3, a4, a5);
-      case 7 : 
-          return (function (param) {
-              return o(a0, a1, a2, a3, a4, a5, param);
-            });
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2,
-                a3,
-                a4,
-                a5
-              ]);
-  }
-  
-}
-
-function _6(o, a0, a1, a2, a3, a4, a5) {
-  var arity = o.length;
-  if (arity === 6) {
-    return o(a0, a1, a2, a3, a4, a5);
-  } else {
-    return curry_6(o, a0, a1, a2, a3, a4, a5, arity);
-  }
-}
-
-function __6(o) {
-  var arity = o.length;
-  if (arity === 6) {
-    return o;
-  } else {
-    return (function (a0, a1, a2, a3, a4, a5) {
-        return _6(o, a0, a1, a2, a3, a4, a5);
-      });
-  }
-}
-
-function curry_7(o, a0, a1, a2, a3, a4, a5, a6, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2,
-                a3,
-                a4,
-                a5,
-                a6
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[
-                      a2,
-                      a3,
-                      a4,
-                      a5,
-                      a6
-                    ]);
-      case 3 : 
-          return app(o(a0, a1, a2), /* array */[
-                      a3,
-                      a4,
-                      a5,
-                      a6
-                    ]);
-      case 4 : 
-          return app(o(a0, a1, a2, a3), /* array */[
-                      a4,
-                      a5,
-                      a6
-                    ]);
-      case 5 : 
-          return app(o(a0, a1, a2, a3, a4), /* array */[
-                      a5,
-                      a6
-                    ]);
-      case 6 : 
-          return app(o(a0, a1, a2, a3, a4, a5), /* array */[a6]);
-      case 7 : 
-          return o(a0, a1, a2, a3, a4, a5, a6);
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2,
-                a3,
-                a4,
-                a5,
-                a6
-              ]);
-  }
-  
-}
-
-function _7(o, a0, a1, a2, a3, a4, a5, a6) {
-  var arity = o.length;
-  if (arity === 7) {
-    return o(a0, a1, a2, a3, a4, a5, a6);
-  } else {
-    return curry_7(o, a0, a1, a2, a3, a4, a5, a6, arity);
-  }
-}
-
-function __7(o) {
-  var arity = o.length;
-  if (arity === 7) {
-    return o;
-  } else {
-    return (function (a0, a1, a2, a3, a4, a5, a6) {
-        return _7(o, a0, a1, a2, a3, a4, a5, a6);
-      });
-  }
-}
-
-function curry_8(o, a0, a1, a2, a3, a4, a5, a6, a7, arity) {
-  var exit = 0;
-  if (arity > 7 || arity < 0) {
-    return app(o, /* array */[
-                a0,
-                a1,
-                a2,
-                a3,
-                a4,
-                a5,
-                a6,
-                a7
-              ]);
-  } else {
-    switch (arity) {
-      case 0 : 
-      case 1 : 
-          exit = 1;
-          break;
-      case 2 : 
-          return app(o(a0, a1), /* array */[
-                      a2,
-                      a3,
-                      a4,
-                      a5,
-                      a6,
-                      a7
-                    ]);
-      case 3 : 
-          return app(o(a0, a1, a2), /* array */[
-                      a3,
-                      a4,
-                      a5,
-                      a6,
-                      a7
-                    ]);
-      case 4 : 
-          return app(o(a0, a1, a2, a3), /* array */[
-                      a4,
-                      a5,
-                      a6,
-                      a7
-                    ]);
-      case 5 : 
-          return app(o(a0, a1, a2, a3, a4), /* array */[
-                      a5,
-                      a6,
-                      a7
-                    ]);
-      case 6 : 
-          return app(o(a0, a1, a2, a3, a4, a5), /* array */[
-                      a6,
-                      a7
-                    ]);
-      case 7 : 
-          return app(o(a0, a1, a2, a3, a4, a5, a6), /* array */[a7]);
-      
-    }
-  }
-  if (exit === 1) {
-    return app(o(a0), /* array */[
-                a1,
-                a2,
-                a3,
-                a4,
-                a5,
-                a6,
-                a7
-              ]);
-  }
-  
-}
-
-function _8(o, a0, a1, a2, a3, a4, a5, a6, a7) {
-  var arity = o.length;
-  if (arity === 8) {
-    return o(a0, a1, a2, a3, a4, a5, a6, a7);
-  } else {
-    return curry_8(o, a0, a1, a2, a3, a4, a5, a6, a7, arity);
-  }
-}
-
-function __8(o) {
-  var arity = o.length;
-  if (arity === 8) {
-    return o;
-  } else {
-    return (function (a0, a1, a2, a3, a4, a5, a6, a7) {
-        return _8(o, a0, a1, a2, a3, a4, a5, a6, a7);
-      });
-  }
-}
-
-exports.app     = app;
-exports.curry_1 = curry_1;
-exports._1      = _1;
-exports.__1     = __1;
-exports.curry_2 = curry_2;
-exports._2      = _2;
-exports.__2     = __2;
-exports.curry_3 = curry_3;
-exports._3      = _3;
-exports.__3     = __3;
-exports.curry_4 = curry_4;
-exports._4      = _4;
-exports.__4     = __4;
-exports.curry_5 = curry_5;
-exports._5      = _5;
-exports.__5     = __5;
-exports.curry_6 = curry_6;
-exports._6      = _6;
-exports.__6     = __6;
-exports.curry_7 = curry_7;
-exports._7      = _7;
-exports.__7     = __7;
-exports.curry_8 = curry_8;
-exports._8      = _8;
-exports.__8     = __8;
-/* No side effect */
-
-},{"./caml_array.js":44}],52:[function(require,module,exports) {
-'use strict';
-
-
-function __(tag, block) {
-  block.tag = tag;
-  return block;
-}
-
-exports.__ = __;
-/* No side effect */
-
-},{}],42:[function(require,module,exports) {
-'use strict';
-
-var Block                   = require("./block.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function caml_obj_dup(x) {
-  var len = x.length | 0;
-  var v = new Array(len);
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    v[i] = x[i];
-  }
-  v.tag = x.tag | 0;
-  return v;
-}
-
-function caml_obj_truncate(x, new_size) {
-  var len = x.length | 0;
-  if (new_size <= 0 || new_size > len) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "Obj.truncate"
-        ];
-  } else if (len !== new_size) {
-    for(var i = new_size ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-      x[i] = 0;
-    }
-    x.length = new_size;
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-function caml_lazy_make_forward(x) {
-  return Block.__(250, [x]);
-}
-
-function caml_update_dummy(x, y) {
-  var len = y.length | 0;
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    x[i] = y[i];
-  }
-  var y_tag = y.tag | 0;
-  if (y_tag !== 0) {
-    x.tag = y_tag;
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-function caml_int_compare(x, y) {
-  if (x < y) {
-    return -1;
-  } else if (x === y) {
-    return 0;
-  } else {
-    return 1;
-  }
-}
-
-function caml_compare(_a, _b) {
-  while(true) {
-    var b = _b;
-    var a = _a;
-    if (a === b) {
-      return 0;
-    } else {
-      var a_type = typeof a;
-      var b_type = typeof b;
-      if (a_type === "string") {
-        var x = a;
-        var y = b;
-        if (x < y) {
-          return -1;
-        } else if (x === y) {
-          return 0;
-        } else {
-          return 1;
-        }
-      } else {
-        var is_a_number = +(a_type === "number");
-        var is_b_number = +(b_type === "number");
-        if (is_a_number !== 0) {
-          if (is_b_number !== 0) {
-            return caml_int_compare(a, b);
-          } else {
-            return -1;
-          }
-        } else if (is_b_number !== 0) {
-          return 1;
-        } else if (a_type === "boolean" || a_type === "undefined" || a === null) {
-          var x$1 = a;
-          var y$1 = b;
-          if (x$1 === y$1) {
-            return 0;
-          } else if (x$1 < y$1) {
-            return -1;
-          } else {
-            return 1;
-          }
-        } else if (a_type === "function" || b_type === "function") {
-          throw [
-                Caml_builtin_exceptions.invalid_argument,
-                "compare: functional value"
-              ];
-        } else {
-          var tag_a = a.tag | 0;
-          var tag_b = b.tag | 0;
-          if (tag_a === 250) {
-            _a = a[0];
-            continue ;
-            
-          } else if (tag_b === 250) {
-            _b = b[0];
-            continue ;
-            
-          } else if (tag_a === 248) {
-            return caml_int_compare(a[1], b[1]);
-          } else if (tag_a === 251) {
-            throw [
-                  Caml_builtin_exceptions.invalid_argument,
-                  "equal: abstract value"
-                ];
-          } else if (tag_a !== tag_b) {
-            if (tag_a < tag_b) {
-              return -1;
-            } else {
-              return 1;
-            }
-          } else {
-            var len_a = a.length | 0;
-            var len_b = b.length | 0;
-            if (len_a === len_b) {
-              var a$1 = a;
-              var b$1 = b;
-              var _i = 0;
-              var same_length = len_a;
-              while(true) {
-                var i = _i;
-                if (i === same_length) {
-                  return 0;
-                } else {
-                  var res = caml_compare(a$1[i], b$1[i]);
-                  if (res !== 0) {
-                    return res;
-                  } else {
-                    _i = i + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            } else if (len_a < len_b) {
-              var a$2 = a;
-              var b$2 = b;
-              var _i$1 = 0;
-              var short_length = len_a;
-              while(true) {
-                var i$1 = _i$1;
-                if (i$1 === short_length) {
-                  return -1;
-                } else {
-                  var res$1 = caml_compare(a$2[i$1], b$2[i$1]);
-                  if (res$1 !== 0) {
-                    return res$1;
-                  } else {
-                    _i$1 = i$1 + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            } else {
-              var a$3 = a;
-              var b$3 = b;
-              var _i$2 = 0;
-              var short_length$1 = len_b;
-              while(true) {
-                var i$2 = _i$2;
-                if (i$2 === short_length$1) {
-                  return 1;
-                } else {
-                  var res$2 = caml_compare(a$3[i$2], b$3[i$2]);
-                  if (res$2 !== 0) {
-                    return res$2;
-                  } else {
-                    _i$2 = i$2 + 1 | 0;
-                    continue ;
-                    
-                  }
-                }
-              };
-            }
-          }
-        }
-      }
-    }
-  };
-}
-
-function caml_equal(_a, _b) {
-  while(true) {
-    var b = _b;
-    var a = _a;
-    if (a === b) {
-      return /* true */1;
-    } else {
-      var a_type = typeof a;
-      if (a_type === "string" || a_type === "number" || a_type === "boolean" || a_type === "undefined" || a === null) {
-        return /* false */0;
-      } else {
-        var b_type = typeof b;
-        if (a_type === "function" || b_type === "function") {
-          throw [
-                Caml_builtin_exceptions.invalid_argument,
-                "equal: functional value"
-              ];
-        } else if (b_type === "number" || b_type === "undefined" || b === null) {
-          return /* false */0;
-        } else {
-          var tag_a = a.tag | 0;
-          var tag_b = b.tag | 0;
-          if (tag_a === 250) {
-            _a = a[0];
-            continue ;
-            
-          } else if (tag_b === 250) {
-            _b = b[0];
-            continue ;
-            
-          } else if (tag_a === 248) {
-            return +(a[1] === b[1]);
-          } else if (tag_a === 251) {
-            throw [
-                  Caml_builtin_exceptions.invalid_argument,
-                  "equal: abstract value"
-                ];
-          } else if (tag_a !== tag_b) {
-            return /* false */0;
-          } else {
-            var len_a = a.length | 0;
-            var len_b = b.length | 0;
-            if (len_a === len_b) {
-              var a$1 = a;
-              var b$1 = b;
-              var _i = 0;
-              var same_length = len_a;
-              while(true) {
-                var i = _i;
-                if (i === same_length) {
-                  return /* true */1;
-                } else if (caml_equal(a$1[i], b$1[i])) {
-                  _i = i + 1 | 0;
-                  continue ;
-                  
-                } else {
-                  return /* false */0;
-                }
-              };
-            } else {
-              return /* false */0;
-            }
-          }
-        }
-      }
-    }
-  };
-}
-
-function caml_notequal(a, b) {
-  return 1 - caml_equal(a, b);
-}
-
-function caml_greaterequal(a, b) {
-  return +(caml_compare(a, b) >= 0);
-}
-
-function caml_greaterthan(a, b) {
-  return +(caml_compare(a, b) > 0);
-}
-
-function caml_lessequal(a, b) {
-  return +(caml_compare(a, b) <= 0);
-}
-
-function caml_lessthan(a, b) {
-  return +(caml_compare(a, b) < 0);
-}
-
-var caml_int32_compare = caml_int_compare;
-
-var caml_nativeint_compare = caml_int_compare;
-
-exports.caml_obj_dup           = caml_obj_dup;
-exports.caml_obj_truncate      = caml_obj_truncate;
-exports.caml_lazy_make_forward = caml_lazy_make_forward;
-exports.caml_update_dummy      = caml_update_dummy;
-exports.caml_int_compare       = caml_int_compare;
-exports.caml_int32_compare     = caml_int32_compare;
-exports.caml_nativeint_compare = caml_nativeint_compare;
-exports.caml_compare           = caml_compare;
-exports.caml_equal             = caml_equal;
-exports.caml_notequal          = caml_notequal;
-exports.caml_greaterequal      = caml_greaterequal;
-exports.caml_greaterthan       = caml_greaterthan;
-exports.caml_lessthan          = caml_lessthan;
-exports.caml_lessequal         = caml_lessequal;
-/* No side effect */
-
-},{"./block.js":52,"./caml_builtin_exceptions.js":34}],66:[function(require,module,exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-},{}],53:[function(require,module,exports) {
-var process = require("process");
-'use strict';
-
-var Curry                   = require("./curry.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function $caret(prim, prim$1) {
-  return prim + prim$1;
-}
-
-var stdin = undefined;
-
-var stdout = /* record */[
-  /* buffer */"",
-  /* output */(function (_, s) {
-      var v = s.length - 1 | 0;
-      if (( (typeof process !== "undefined") && process.stdout && process.stdout.write)) {
-        return ( process.stdout.write )(s);
-      } else if (s[v] === "\n") {
-        console.log(s.slice(0, v));
-        return /* () */0;
-      } else {
-        console.log(s);
-        return /* () */0;
-      }
-    })
-];
-
-var stderr = /* record */[
-  /* buffer */"",
-  /* output */(function (_, s) {
-      var v = s.length - 1 | 0;
-      if (s[v] === "\n") {
-        console.log(s.slice(0, v));
-        return /* () */0;
-      } else {
-        console.log(s);
-        return /* () */0;
-      }
-    })
-];
-
-function caml_ml_open_descriptor_in() {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_ml_open_descriptor_in not implemented"
-      ];
-}
-
-function caml_ml_open_descriptor_out() {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_ml_open_descriptor_out not implemented"
-      ];
-}
-
-function caml_ml_flush(oc) {
-  if (oc[/* buffer */0] !== "") {
-    Curry._2(oc[/* output */1], oc, oc[/* buffer */0]);
-    oc[/* buffer */0] = "";
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-var node_std_output = (function (s){
-   return (typeof process !== "undefined") && process.stdout && (process.stdout.write(s), true);
-   }
-);
-
-function caml_ml_output(oc, str, offset, len) {
-  var str$1 = offset === 0 && len === str.length ? str : str.slice(offset, len);
-  if (( (typeof process !== "undefined") && process.stdout && process.stdout.write ) && oc === stdout) {
-    return ( process.stdout.write )(str$1);
-  } else {
-    var id = str$1.lastIndexOf("\n");
-    if (id < 0) {
-      oc[/* buffer */0] = oc[/* buffer */0] + str$1;
-      return /* () */0;
-    } else {
-      oc[/* buffer */0] = oc[/* buffer */0] + str$1.slice(0, id + 1 | 0);
-      caml_ml_flush(oc);
-      oc[/* buffer */0] = oc[/* buffer */0] + str$1.slice(id + 1 | 0);
-      return /* () */0;
-    }
-  }
-}
-
-function caml_ml_output_char(oc, $$char) {
-  return caml_ml_output(oc, String.fromCharCode($$char), 0, 1);
-}
-
-function caml_ml_input(_, _$1, _$2, _$3) {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_ml_input ic not implemented"
-      ];
-}
-
-function caml_ml_input_char() {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_ml_input_char not implemnted"
-      ];
-}
-
-function caml_ml_out_channels_list() {
-  return /* :: */[
-          stdout,
-          /* :: */[
-            stderr,
-            /* [] */0
-          ]
-        ];
-}
-
-exports.$caret                      = $caret;
-exports.stdin                       = stdin;
-exports.stdout                      = stdout;
-exports.stderr                      = stderr;
-exports.caml_ml_open_descriptor_in  = caml_ml_open_descriptor_in;
-exports.caml_ml_open_descriptor_out = caml_ml_open_descriptor_out;
-exports.caml_ml_flush               = caml_ml_flush;
-exports.node_std_output             = node_std_output;
-exports.caml_ml_output              = caml_ml_output;
-exports.caml_ml_output_char         = caml_ml_output_char;
-exports.caml_ml_input               = caml_ml_input;
-exports.caml_ml_input_char          = caml_ml_input_char;
-exports.caml_ml_out_channels_list   = caml_ml_out_channels_list;
-/* stdin Not a pure module */
-
-},{"./curry.js":36,"./caml_builtin_exceptions.js":34,"process":66}],54:[function(require,module,exports) {
-var process = require("process");
-'use strict';
-
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function caml_sys_getenv(s) {
-  var match = typeof (process) === "undefined" ? undefined : (process);
-  if (match !== undefined) {
-    var match$1 = match.env[s];
-    if (match$1 !== undefined) {
-      return match$1;
-    } else {
-      throw Caml_builtin_exceptions.not_found;
-    }
-  } else {
-    throw Caml_builtin_exceptions.not_found;
-  }
-}
-
-function caml_sys_time() {
-  var match = typeof (process) === "undefined" ? undefined : (process);
-  if (match !== undefined) {
-    return match.uptime();
-  } else {
-    return -1;
-  }
-}
-
-function caml_sys_random_seed() {
-  return /* array */[((Date.now() | 0) ^ 4294967295) * Math.random() | 0];
-}
-
-function caml_sys_system_command() {
-  return 127;
-}
-
-function caml_sys_getcwd() {
-  var match = typeof (process) === "undefined" ? undefined : (process);
-  if (match !== undefined) {
-    return match.cwd();
-  } else {
-    return "/";
-  }
-}
-
-function caml_sys_get_argv() {
-  var match = typeof (process) === "undefined" ? undefined : (process);
-  if (match !== undefined) {
-    if (match.argv == null) {
-      return /* tuple */[
-              "",
-              /* array */[""]
-            ];
-    } else {
-      return /* tuple */[
-              match.argv[0],
-              match.argv
-            ];
-    }
-  } else {
-    return /* tuple */[
-            "",
-            /* array */[""]
-          ];
-  }
-}
-
-function caml_sys_exit(exit_code) {
-  var match = typeof (process) === "undefined" ? undefined : (process);
-  if (match !== undefined) {
-    return match.exit(exit_code);
-  } else {
-    return /* () */0;
-  }
-}
-
-function caml_sys_is_directory() {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_sys_is_directory not implemented"
-      ];
-}
-
-function caml_sys_file_exists() {
-  throw [
-        Caml_builtin_exceptions.failure,
-        "caml_sys_file_exists not implemented"
-      ];
-}
-
-exports.caml_sys_getenv         = caml_sys_getenv;
-exports.caml_sys_time           = caml_sys_time;
-exports.caml_sys_random_seed    = caml_sys_random_seed;
-exports.caml_sys_system_command = caml_sys_system_command;
-exports.caml_sys_getcwd         = caml_sys_getcwd;
-exports.caml_sys_get_argv       = caml_sys_get_argv;
-exports.caml_sys_exit           = caml_sys_exit;
-exports.caml_sys_is_directory   = caml_sys_is_directory;
-exports.caml_sys_file_exists    = caml_sys_file_exists;
-/* No side effect */
-
-},{"./caml_builtin_exceptions.js":34,"process":66}],67:[function(require,module,exports) {
-'use strict';
-
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function div(x, y) {
-  if (y === 0) {
-    throw Caml_builtin_exceptions.division_by_zero;
-  } else {
-    return x / y | 0;
-  }
-}
-
-function mod_(x, y) {
-  if (y === 0) {
-    throw Caml_builtin_exceptions.division_by_zero;
-  } else {
-    return x % y;
-  }
-}
-
-function caml_bswap16(x) {
-  return ((x & 255) << 8) | ((x & 65280) >>> 8);
-}
-
-function caml_int32_bswap(x) {
-  return ((x & 255) << 24) | ((x & 65280) << 8) | ((x & 16711680) >>> 8) | ((x & 4278190080) >>> 24);
-}
-
-var imul = ( Math.imul || function (x,y) {
-  y |= 0; return ((((x >> 16) * y) << 16) + (x & 0xffff) * y)|0; 
-}
-);
-
-var caml_nativeint_bswap = caml_int32_bswap;
-
-exports.div                  = div;
-exports.mod_                 = mod_;
-exports.caml_bswap16         = caml_bswap16;
-exports.caml_int32_bswap     = caml_int32_bswap;
-exports.caml_nativeint_bswap = caml_nativeint_bswap;
-exports.imul                 = imul;
-/* imul Not a pure module */
-
-},{"./caml_builtin_exceptions.js":34}],69:[function(require,module,exports) {
-'use strict';
-
-
-var repeat = ( (String.prototype.repeat && function (count,self){return self.repeat(count)}) ||
-                                                  function(count , self) {
-        if (self.length == 0 || count == 0) {
-            return '';
-        }
-        // Ensuring count is a 31-bit integer allows us to heavily optimize the
-        // main part. But anyway, most current (August 2014) browsers can't handle
-        // strings 1 << 28 chars or longer, so:
-        if (self.length * count >= 1 << 28) {
-            throw new RangeError('repeat count must not overflow maximum string size');
-        }
-        var rpt = '';
-        for (;;) {
-            if ((count & 1) == 1) {
-                rpt += self;
-            }
-            count >>>= 1;
-            if (count == 0) {
-                break;
-            }
-            self += self;
-        }
-        return rpt;
-    }
-);
-
-exports.repeat = repeat;
-/* repeat Not a pure module */
-
-},{}],68:[function(require,module,exports) {
-'use strict';
-
-var Caml_obj                = require("./caml_obj.js");
-var Caml_int32              = require("./caml_int32.js");
-var Caml_utils              = require("./caml_utils.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-var min_int = /* record */[
-  /* hi */-2147483648,
-  /* lo */0
-];
-
-var max_int = /* record */[
-  /* hi */134217727,
-  /* lo */1
-];
-
-var one = /* record */[
-  /* hi */0,
-  /* lo */1
-];
-
-var zero = /* record */[
-  /* hi */0,
-  /* lo */0
-];
-
-var neg_one = /* record */[
-  /* hi */-1,
-  /* lo */4294967295
-];
-
-function neg_signed(x) {
-  return +((x & 2147483648) !== 0);
-}
-
-function add(param, param$1) {
-  var other_low_ = param$1[/* lo */1];
-  var this_low_ = param[/* lo */1];
-  var lo = this_low_ + other_low_ & 4294967295;
-  var overflow = neg_signed(this_low_) && (neg_signed(other_low_) || !neg_signed(lo)) || neg_signed(other_low_) && !neg_signed(lo) ? 1 : 0;
-  var hi = param[/* hi */0] + param$1[/* hi */0] + overflow & 4294967295;
-  return /* record */[
-          /* hi */hi,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-function not(param) {
-  var hi = param[/* hi */0] ^ -1;
-  var lo = param[/* lo */1] ^ -1;
-  return /* record */[
-          /* hi */hi,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-function eq(x, y) {
-  if (x[/* hi */0] === y[/* hi */0]) {
-    return +(x[/* lo */1] === y[/* lo */1]);
-  } else {
-    return /* false */0;
-  }
-}
-
-function neg(x) {
-  if (eq(x, min_int)) {
-    return min_int;
-  } else {
-    return add(not(x), one);
-  }
-}
-
-function sub(x, y) {
-  return add(x, neg(y));
-}
-
-function lsl_(x, numBits) {
-  if (numBits) {
-    var lo = x[/* lo */1];
-    if (numBits >= 32) {
-      return /* record */[
-              /* hi */(lo << (numBits - 32 | 0)),
-              /* lo */0
-            ];
-    } else {
-      var hi = (lo >>> (32 - numBits | 0)) | (x[/* hi */0] << numBits);
-      return /* record */[
-              /* hi */hi,
-              /* lo */((lo << numBits) >>> 0)
-            ];
-    }
-  } else {
-    return x;
-  }
-}
-
-function lsr_(x, numBits) {
-  if (numBits) {
-    var hi = x[/* hi */0];
-    var offset = numBits - 32 | 0;
-    if (offset) {
-      if (offset > 0) {
-        var lo = (hi >>> offset);
-        return /* record */[
-                /* hi */0,
-                /* lo */(lo >>> 0)
-              ];
-      } else {
-        var hi$1 = (hi >>> numBits);
-        var lo$1 = (hi << (-offset | 0)) | (x[/* lo */1] >>> numBits);
-        return /* record */[
-                /* hi */hi$1,
-                /* lo */(lo$1 >>> 0)
-              ];
-      }
-    } else {
-      return /* record */[
-              /* hi */0,
-              /* lo */(hi >>> 0)
-            ];
-    }
-  } else {
-    return x;
-  }
-}
-
-function asr_(x, numBits) {
-  if (numBits) {
-    var hi = x[/* hi */0];
-    if (numBits < 32) {
-      var hi$1 = (hi >> numBits);
-      var lo = (hi << (32 - numBits | 0)) | (x[/* lo */1] >>> numBits);
-      return /* record */[
-              /* hi */hi$1,
-              /* lo */(lo >>> 0)
-            ];
-    } else {
-      var lo$1 = (hi >> (numBits - 32 | 0));
-      return /* record */[
-              /* hi */hi >= 0 ? 0 : -1,
-              /* lo */(lo$1 >>> 0)
-            ];
-    }
-  } else {
-    return x;
-  }
-}
-
-function is_zero(param) {
-  if (param[/* hi */0] !== 0 || param[/* lo */1] !== 0) {
-    return /* false */0;
-  } else {
-    return /* true */1;
-  }
-}
-
-function mul(_this, _other) {
-  while(true) {
-    var other = _other;
-    var $$this = _this;
-    var exit = 0;
-    var lo;
-    var this_hi = $$this[/* hi */0];
-    var exit$1 = 0;
-    var exit$2 = 0;
-    var exit$3 = 0;
-    if (this_hi !== 0) {
-      exit$3 = 4;
-    } else if ($$this[/* lo */1] !== 0) {
-      exit$3 = 4;
-    } else {
-      return zero;
-    }
-    if (exit$3 === 4) {
-      if (other[/* hi */0] !== 0) {
-        exit$2 = 3;
-      } else if (other[/* lo */1] !== 0) {
-        exit$2 = 3;
-      } else {
-        return zero;
-      }
-    }
-    if (exit$2 === 3) {
-      if (this_hi !== -2147483648) {
-        exit$1 = 2;
-      } else if ($$this[/* lo */1] !== 0) {
-        exit$1 = 2;
-      } else {
-        lo = other[/* lo */1];
-        exit = 1;
-      }
-    }
-    if (exit$1 === 2) {
-      var other_hi = other[/* hi */0];
-      var lo$1 = $$this[/* lo */1];
-      var exit$4 = 0;
-      if (other_hi !== -2147483648) {
-        exit$4 = 3;
-      } else if (other[/* lo */1] !== 0) {
-        exit$4 = 3;
-      } else {
-        lo = lo$1;
-        exit = 1;
-      }
-      if (exit$4 === 3) {
-        var other_lo = other[/* lo */1];
-        if (this_hi < 0) {
-          if (other_hi < 0) {
-            _other = neg(other);
-            _this = neg($$this);
-            continue ;
-            
-          } else {
-            return neg(mul(neg($$this), other));
-          }
-        } else if (other_hi < 0) {
-          return neg(mul($$this, neg(other)));
-        } else {
-          var a48 = (this_hi >>> 16);
-          var a32 = this_hi & 65535;
-          var a16 = (lo$1 >>> 16);
-          var a00 = lo$1 & 65535;
-          var b48 = (other_hi >>> 16);
-          var b32 = other_hi & 65535;
-          var b16 = (other_lo >>> 16);
-          var b00 = other_lo & 65535;
-          var c48 = 0;
-          var c32 = 0;
-          var c16 = 0;
-          var c00 = a00 * b00;
-          c16 = (c00 >>> 16) + a16 * b00;
-          c32 = (c16 >>> 16);
-          c16 = (c16 & 65535) + a00 * b16;
-          c32 = c32 + (c16 >>> 16) + a32 * b00;
-          c48 = (c32 >>> 16);
-          c32 = (c32 & 65535) + a16 * b16;
-          c48 += (c32 >>> 16);
-          c32 = (c32 & 65535) + a00 * b32;
-          c48 += (c32 >>> 16);
-          c32 = c32 & 65535;
-          c48 = c48 + (a48 * b00 + a32 * b16 + a16 * b32 + a00 * b48) & 65535;
-          var hi = c32 | (c48 << 16);
-          var lo$2 = c00 & 65535 | ((c16 & 65535) << 16);
-          return /* record */[
-                  /* hi */hi,
-                  /* lo */(lo$2 >>> 0)
-                ];
-        }
-      }
-      
-    }
-    if (exit === 1) {
-      if ((lo & 1) === 0) {
-        return zero;
-      } else {
-        return min_int;
-      }
-    }
-    
-  };
-}
-
-function swap(param) {
-  var hi = Caml_int32.caml_int32_bswap(param[/* lo */1]);
-  var lo = Caml_int32.caml_int32_bswap(param[/* hi */0]);
-  return /* record */[
-          /* hi */hi,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-function xor(param, param$1) {
-  return /* record */[
-          /* hi */param[/* hi */0] ^ param$1[/* hi */0],
-          /* lo */((param[/* lo */1] ^ param$1[/* lo */1]) >>> 0)
-        ];
-}
-
-function or_(param, param$1) {
-  return /* record */[
-          /* hi */param[/* hi */0] | param$1[/* hi */0],
-          /* lo */((param[/* lo */1] | param$1[/* lo */1]) >>> 0)
-        ];
-}
-
-function and_(param, param$1) {
-  return /* record */[
-          /* hi */param[/* hi */0] & param$1[/* hi */0],
-          /* lo */((param[/* lo */1] & param$1[/* lo */1]) >>> 0)
-        ];
-}
-
-function ge(param, param$1) {
-  var other_hi = param$1[/* hi */0];
-  var hi = param[/* hi */0];
-  if (hi > other_hi) {
-    return /* true */1;
-  } else if (hi < other_hi) {
-    return /* false */0;
-  } else {
-    return +(param[/* lo */1] >= param$1[/* lo */1]);
-  }
-}
-
-function neq(x, y) {
-  return 1 - eq(x, y);
-}
-
-function lt(x, y) {
-  return 1 - ge(x, y);
-}
-
-function gt(x, y) {
-  if (x[/* hi */0] > y[/* hi */0]) {
-    return /* true */1;
-  } else if (x[/* hi */0] < y[/* hi */0]) {
-    return /* false */0;
-  } else {
-    return +(x[/* lo */1] > y[/* lo */1]);
-  }
-}
-
-function le(x, y) {
-  return 1 - gt(x, y);
-}
-
-function to_float(param) {
-  return param[/* hi */0] * (0x100000000) + param[/* lo */1];
-}
-
-var two_ptr_32_dbl = Math.pow(2, 32);
-
-var two_ptr_63_dbl = Math.pow(2, 63);
-
-var neg_two_ptr_63 = -Math.pow(2, 63);
-
-function of_float(x) {
-  if (isNaN(x) || !isFinite(x)) {
-    return zero;
-  } else if (x <= neg_two_ptr_63) {
-    return min_int;
-  } else if (x + 1 >= two_ptr_63_dbl) {
-    return max_int;
-  } else if (x < 0) {
-    return neg(of_float(-x));
-  } else {
-    var hi = x / two_ptr_32_dbl | 0;
-    var lo = x % two_ptr_32_dbl | 0;
-    return /* record */[
-            /* hi */hi,
-            /* lo */(lo >>> 0)
-          ];
-  }
-}
-
-function div(_self, _other) {
-  while(true) {
-    var other = _other;
-    var self = _self;
-    var self_hi = self[/* hi */0];
-    var exit = 0;
-    var exit$1 = 0;
-    if (other[/* hi */0] !== 0) {
-      exit$1 = 2;
-    } else if (other[/* lo */1] !== 0) {
-      exit$1 = 2;
-    } else {
-      throw Caml_builtin_exceptions.division_by_zero;
-    }
-    if (exit$1 === 2) {
-      if (self_hi !== -2147483648) {
-        if (self_hi !== 0) {
-          exit = 1;
-        } else if (self[/* lo */1] !== 0) {
-          exit = 1;
-        } else {
-          return zero;
-        }
-      } else if (self[/* lo */1] !== 0) {
-        exit = 1;
-      } else if (eq(other, one) || eq(other, neg_one)) {
-        return self;
-      } else if (eq(other, min_int)) {
-        return one;
-      } else {
-        var other_hi = other[/* hi */0];
-        var half_this = asr_(self, 1);
-        var approx = lsl_(div(half_this, other), 1);
-        var exit$2 = 0;
-        if (approx[/* hi */0] !== 0) {
-          exit$2 = 3;
-        } else if (approx[/* lo */1] !== 0) {
-          exit$2 = 3;
-        } else if (other_hi < 0) {
-          return one;
-        } else {
-          return neg(one);
-        }
-        if (exit$2 === 3) {
-          var y = mul(other, approx);
-          var rem = add(self, neg(y));
-          return add(approx, div(rem, other));
-        }
-        
-      }
-    }
-    if (exit === 1) {
-      var other_hi$1 = other[/* hi */0];
-      var exit$3 = 0;
-      if (other_hi$1 !== -2147483648) {
-        exit$3 = 2;
-      } else if (other[/* lo */1] !== 0) {
-        exit$3 = 2;
-      } else {
-        return zero;
-      }
-      if (exit$3 === 2) {
-        if (self_hi < 0) {
-          if (other_hi$1 < 0) {
-            _other = neg(other);
-            _self = neg(self);
-            continue ;
-            
-          } else {
-            return neg(div(neg(self), other));
-          }
-        } else if (other_hi$1 < 0) {
-          return neg(div(self, neg(other)));
-        } else {
-          var res = zero;
-          var rem$1 = self;
-          while(ge(rem$1, other)) {
-            var approx$1 = Math.max(1, Math.floor(to_float(rem$1) / to_float(other)));
-            var log2 = Math.ceil(Math.log(approx$1) / Math.LN2);
-            var delta = log2 <= 48 ? 1 : Math.pow(2, log2 - 48);
-            var approxRes = of_float(approx$1);
-            var approxRem = mul(approxRes, other);
-            while(approxRem[/* hi */0] < 0 || gt(approxRem, rem$1)) {
-              approx$1 -= delta;
-              approxRes = of_float(approx$1);
-              approxRem = mul(approxRes, other);
-            };
-            if (is_zero(approxRes)) {
-              approxRes = one;
-            }
-            res = add(res, approxRes);
-            rem$1 = add(rem$1, neg(approxRem));
-          };
-          return res;
-        }
-      }
-      
-    }
-    
-  };
-}
-
-function mod_(self, other) {
-  var y = mul(div(self, other), other);
-  return add(self, neg(y));
-}
-
-function div_mod(self, other) {
-  var quotient = div(self, other);
-  var y = mul(quotient, other);
-  return /* tuple */[
-          quotient,
-          add(self, neg(y))
-        ];
-}
-
-function compare(self, other) {
-  var v = Caml_obj.caml_nativeint_compare(self[/* hi */0], other[/* hi */0]);
-  if (v) {
-    return v;
-  } else {
-    return Caml_obj.caml_nativeint_compare(self[/* lo */1], other[/* lo */1]);
-  }
-}
-
-function of_int32(lo) {
-  return /* record */[
-          /* hi */lo < 0 ? -1 : 0,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-function to_int32(x) {
-  return x[/* lo */1] | 0;
-}
-
-function to_hex(x) {
-  var aux = function (v) {
-    return (v >>> 0).toString(16);
-  };
-  var match = x[/* hi */0];
-  var match$1 = x[/* lo */1];
-  var exit = 0;
-  if (match !== 0) {
-    exit = 1;
-  } else if (match$1 !== 0) {
-    exit = 1;
-  } else {
-    return "0";
-  }
-  if (exit === 1) {
-    if (match$1 !== 0) {
-      if (match !== 0) {
-        var lo = aux(x[/* lo */1]);
-        var pad = 8 - lo.length | 0;
-        if (pad <= 0) {
-          return aux(x[/* hi */0]) + lo;
-        } else {
-          return aux(x[/* hi */0]) + (Caml_utils.repeat(pad, "0") + lo);
-        }
-      } else {
-        return aux(x[/* lo */1]);
-      }
-    } else {
-      return aux(x[/* hi */0]) + "00000000";
-    }
-  }
-  
-}
-
-function discard_sign(x) {
-  return /* record */[
-          /* hi */2147483647 & x[/* hi */0],
-          /* lo */x[/* lo */1]
-        ];
-}
-
-function float_of_bits(x) {
-  var int32 = new Int32Array(/* array */[
-        x[/* lo */1],
-        x[/* hi */0]
-      ]);
-  return new Float64Array(int32.buffer)[0];
-}
-
-function bits_of_float(x) {
-  var u = new Float64Array(/* float array */[x]);
-  var int32 = new Int32Array(u.buffer);
-  var x$1 = int32[1];
-  var hi = x$1;
-  var x$2 = int32[0];
-  var lo = x$2;
-  return /* record */[
-          /* hi */hi,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-function get64(s, i) {
-  var hi = (s.charCodeAt(i + 4 | 0) << 32) | (s.charCodeAt(i + 5 | 0) << 40) | (s.charCodeAt(i + 6 | 0) << 48) | (s.charCodeAt(i + 7 | 0) << 56);
-  var lo = s.charCodeAt(i) | (s.charCodeAt(i + 1 | 0) << 8) | (s.charCodeAt(i + 2 | 0) << 16) | (s.charCodeAt(i + 3 | 0) << 24);
-  return /* record */[
-          /* hi */hi,
-          /* lo */(lo >>> 0)
-        ];
-}
-
-exports.min_int       = min_int;
-exports.max_int       = max_int;
-exports.one           = one;
-exports.zero          = zero;
-exports.not           = not;
-exports.of_int32      = of_int32;
-exports.to_int32      = to_int32;
-exports.add           = add;
-exports.neg           = neg;
-exports.sub           = sub;
-exports.lsl_          = lsl_;
-exports.lsr_          = lsr_;
-exports.asr_          = asr_;
-exports.is_zero       = is_zero;
-exports.mul           = mul;
-exports.xor           = xor;
-exports.or_           = or_;
-exports.and_          = and_;
-exports.swap          = swap;
-exports.ge            = ge;
-exports.eq            = eq;
-exports.neq           = neq;
-exports.lt            = lt;
-exports.gt            = gt;
-exports.le            = le;
-exports.to_float      = to_float;
-exports.of_float      = of_float;
-exports.div           = div;
-exports.mod_          = mod_;
-exports.div_mod       = div_mod;
-exports.compare       = compare;
-exports.to_hex        = to_hex;
-exports.discard_sign  = discard_sign;
-exports.float_of_bits = float_of_bits;
-exports.bits_of_float = bits_of_float;
-exports.get64         = get64;
-/* two_ptr_32_dbl Not a pure module */
-
-},{"./caml_obj.js":42,"./caml_int32.js":67,"./caml_utils.js":69,"./caml_builtin_exceptions.js":34}],55:[function(require,module,exports) {
-'use strict';
-
-var Curry                   = require("./curry.js");
-var Caml_int32              = require("./caml_int32.js");
-var Caml_int64              = require("./caml_int64.js");
-var Caml_utils              = require("./caml_utils.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function caml_failwith(s) {
-  throw [
-        Caml_builtin_exceptions.failure,
-        s
-      ];
-}
-
-function parse_digit(c) {
-  if (c >= 65) {
-    if (c >= 97) {
-      if (c >= 123) {
-        return -1;
-      } else {
-        return c - 87 | 0;
-      }
-    } else if (c >= 91) {
-      return -1;
-    } else {
-      return c - 55 | 0;
-    }
-  } else if (c > 57 || c < 48) {
-    return -1;
-  } else {
-    return c - /* "0" */48 | 0;
-  }
-}
-
-function int_of_string_base(param) {
-  switch (param) {
-    case 0 : 
-        return 8;
-    case 1 : 
-        return 16;
-    case 2 : 
-        return 10;
-    case 3 : 
-        return 2;
-    
-  }
-}
-
-function parse_sign_and_base(s) {
-  var sign = 1;
-  var base = /* Dec */2;
-  var i = 0;
-  if (s[i] === "-") {
-    sign = -1;
-    i = i + 1 | 0;
-  }
-  var match = s.charCodeAt(i);
-  var match$1 = s.charCodeAt(i + 1 | 0);
-  if (match === 48) {
-    if (match$1 >= 89) {
-      if (match$1 !== 98) {
-        if (match$1 !== 111) {
-          if (match$1 === 120) {
-            base = /* Hex */1;
-            i = i + 2 | 0;
-          }
-          
-        } else {
-          base = /* Oct */0;
-          i = i + 2 | 0;
-        }
-      } else {
-        base = /* Bin */3;
-        i = i + 2 | 0;
-      }
-    } else if (match$1 !== 66) {
-      if (match$1 !== 79) {
-        if (match$1 >= 88) {
-          base = /* Hex */1;
-          i = i + 2 | 0;
-        }
-        
-      } else {
-        base = /* Oct */0;
-        i = i + 2 | 0;
-      }
-    } else {
-      base = /* Bin */3;
-      i = i + 2 | 0;
-    }
-  }
-  return /* tuple */[
-          i,
-          sign,
-          base
-        ];
-}
-
-function caml_int_of_string(s) {
-  var match = parse_sign_and_base(s);
-  var i = match[0];
-  var base = int_of_string_base(match[2]);
-  var threshold = 4294967295;
-  var len = s.length;
-  var c = i < len ? s.charCodeAt(i) : /* "\000" */0;
-  var d = parse_digit(c);
-  if (d < 0 || d >= base) {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "int_of_string"
-        ];
-  }
-  var aux = function (_acc, _k) {
-    while(true) {
-      var k = _k;
-      var acc = _acc;
-      if (k === len) {
-        return acc;
-      } else {
-        var a = s.charCodeAt(k);
-        if (a === /* "_" */95) {
-          _k = k + 1 | 0;
-          continue ;
-          
-        } else {
-          var v = parse_digit(a);
-          if (v < 0 || v >= base) {
-            throw [
-                  Caml_builtin_exceptions.failure,
-                  "int_of_string"
-                ];
-          } else {
-            var acc$1 = base * acc + v;
-            if (acc$1 > threshold) {
-              throw [
-                    Caml_builtin_exceptions.failure,
-                    "int_of_string"
-                  ];
-            } else {
-              _k = k + 1 | 0;
-              _acc = acc$1;
-              continue ;
-              
-            }
-          }
-        }
-      }
-    };
-  };
-  var res = match[1] * aux(d, i + 1 | 0);
-  var or_res = res | 0;
-  if (base === 10 && res !== or_res) {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "int_of_string"
-        ];
-  }
-  return or_res;
-}
-
-function caml_int64_of_string(s) {
-  var match = parse_sign_and_base(s);
-  var hbase = match[2];
-  var i = match[0];
-  var base = Caml_int64.of_int32(int_of_string_base(hbase));
-  var sign = Caml_int64.of_int32(match[1]);
-  var threshold;
-  switch (hbase) {
-    case 0 : 
-        threshold = /* int64 */[
-          /* hi */536870911,
-          /* lo */4294967295
-        ];
-        break;
-    case 1 : 
-        threshold = /* int64 */[
-          /* hi */268435455,
-          /* lo */4294967295
-        ];
-        break;
-    case 2 : 
-        threshold = /* int64 */[
-          /* hi */429496729,
-          /* lo */2576980377
-        ];
-        break;
-    case 3 : 
-        threshold = /* int64 */[
-          /* hi */2147483647,
-          /* lo */4294967295
-        ];
-        break;
-    
-  }
-  var len = s.length;
-  var c = i < len ? s.charCodeAt(i) : /* "\000" */0;
-  var d = Caml_int64.of_int32(parse_digit(c));
-  if (Caml_int64.lt(d, /* int64 */[
-          /* hi */0,
-          /* lo */0
-        ]) || Caml_int64.ge(d, base)) {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "int64_of_string"
-        ];
-  }
-  var aux = function (_acc, _k) {
-    while(true) {
-      var k = _k;
-      var acc = _acc;
-      if (k === len) {
-        return acc;
-      } else {
-        var a = s.charCodeAt(k);
-        if (a === /* "_" */95) {
-          _k = k + 1 | 0;
-          continue ;
-          
-        } else {
-          var v = Caml_int64.of_int32(parse_digit(a));
-          if (Caml_int64.lt(v, /* int64 */[
-                  /* hi */0,
-                  /* lo */0
-                ]) || Caml_int64.ge(v, base) || Caml_int64.gt(acc, threshold)) {
-            throw [
-                  Caml_builtin_exceptions.failure,
-                  "int64_of_string"
-                ];
-          } else {
-            var acc$1 = Caml_int64.add(Caml_int64.mul(base, acc), v);
-            _k = k + 1 | 0;
-            _acc = acc$1;
-            continue ;
-            
-          }
-        }
-      }
-    };
-  };
-  var res = Caml_int64.mul(sign, aux(d, i + 1 | 0));
-  var or_res = Caml_int64.or_(res, /* int64 */[
-        /* hi */0,
-        /* lo */0
-      ]);
-  if (Caml_int64.eq(base, /* int64 */[
-          /* hi */0,
-          /* lo */10
-        ]) && Caml_int64.neq(res, or_res)) {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "int64_of_string"
-        ];
-  }
-  return or_res;
-}
-
-function int_of_base(param) {
-  switch (param) {
-    case 0 : 
-        return 8;
-    case 1 : 
-        return 16;
-    case 2 : 
-        return 10;
-    
-  }
-}
-
-function lowercase(c) {
-  if (c >= /* "A" */65 && c <= /* "Z" */90 || c >= /* "\192" */192 && c <= /* "\214" */214 || c >= /* "\216" */216 && c <= /* "\222" */222) {
-    return c + 32 | 0;
-  } else {
-    return c;
-  }
-}
-
-function parse_format(fmt) {
-  var len = fmt.length;
-  if (len > 31) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "format_int: format too long"
-        ];
-  }
-  var f = /* record */[
-    /* justify */"+",
-    /* signstyle */"-",
-    /* filter */" ",
-    /* alternate : false */0,
-    /* base : Dec */2,
-    /* signedconv : false */0,
-    /* width */0,
-    /* uppercase : false */0,
-    /* sign */1,
-    /* prec */-1,
-    /* conv */"f"
-  ];
-  var _i = 0;
-  while(true) {
-    var i = _i;
-    if (i >= len) {
-      return f;
-    } else {
-      var c = fmt.charCodeAt(i);
-      var exit = 0;
-      if (c >= 69) {
-        if (c >= 88) {
-          if (c >= 121) {
-            exit = 1;
-          } else {
-            switch (c - 88 | 0) {
-              case 0 : 
-                  f[/* base */4] = /* Hex */1;
-                  f[/* uppercase */7] = /* true */1;
-                  _i = i + 1 | 0;
-                  continue ;
-                  case 13 : 
-              case 14 : 
-              case 15 : 
-                  exit = 5;
-                  break;
-              case 12 : 
-              case 17 : 
-                  exit = 4;
-                  break;
-              case 23 : 
-                  f[/* base */4] = /* Oct */0;
-                  _i = i + 1 | 0;
-                  continue ;
-                  case 29 : 
-                  f[/* base */4] = /* Dec */2;
-                  _i = i + 1 | 0;
-                  continue ;
-                  case 1 : 
-              case 2 : 
-              case 3 : 
-              case 4 : 
-              case 5 : 
-              case 6 : 
-              case 7 : 
-              case 8 : 
-              case 9 : 
-              case 10 : 
-              case 11 : 
-              case 16 : 
-              case 18 : 
-              case 19 : 
-              case 20 : 
-              case 21 : 
-              case 22 : 
-              case 24 : 
-              case 25 : 
-              case 26 : 
-              case 27 : 
-              case 28 : 
-              case 30 : 
-              case 31 : 
-                  exit = 1;
-                  break;
-              case 32 : 
-                  f[/* base */4] = /* Hex */1;
-                  _i = i + 1 | 0;
-                  continue ;
-                  
-            }
-          }
-        } else if (c >= 72) {
-          exit = 1;
-        } else {
-          f[/* signedconv */5] = /* true */1;
-          f[/* uppercase */7] = /* true */1;
-          f[/* conv */10] = String.fromCharCode(lowercase(c));
-          _i = i + 1 | 0;
-          continue ;
-          
-        }
-      } else {
-        var switcher = c - 32 | 0;
-        if (switcher > 25 || switcher < 0) {
-          exit = 1;
-        } else {
-          switch (switcher) {
-            case 3 : 
-                f[/* alternate */3] = /* true */1;
-                _i = i + 1 | 0;
-                continue ;
-                case 0 : 
-            case 11 : 
-                exit = 2;
-                break;
-            case 13 : 
-                f[/* justify */0] = "-";
-                _i = i + 1 | 0;
-                continue ;
-                case 14 : 
-                f[/* prec */9] = 0;
-                var j = i + 1 | 0;
-                while((function(j){
-                    return function () {
-                      var w = fmt.charCodeAt(j) - /* "0" */48 | 0;
-                      return +(w >= 0 && w <= 9);
-                    }
-                    }(j))()) {
-                  f[/* prec */9] = (Caml_int32.imul(f[/* prec */9], 10) + fmt.charCodeAt(j) | 0) - /* "0" */48 | 0;
-                  j = j + 1 | 0;
-                };
-                _i = j;
-                continue ;
-                case 1 : 
-            case 2 : 
-            case 4 : 
-            case 5 : 
-            case 6 : 
-            case 7 : 
-            case 8 : 
-            case 9 : 
-            case 10 : 
-            case 12 : 
-            case 15 : 
-                exit = 1;
-                break;
-            case 16 : 
-                f[/* filter */2] = "0";
-                _i = i + 1 | 0;
-                continue ;
-                case 17 : 
-            case 18 : 
-            case 19 : 
-            case 20 : 
-            case 21 : 
-            case 22 : 
-            case 23 : 
-            case 24 : 
-            case 25 : 
-                exit = 3;
-                break;
-            
-          }
-        }
-      }
-      switch (exit) {
-        case 1 : 
-            _i = i + 1 | 0;
-            continue ;
-            case 2 : 
-            f[/* signstyle */1] = String.fromCharCode(c);
-            _i = i + 1 | 0;
-            continue ;
-            case 3 : 
-            f[/* width */6] = 0;
-            var j$1 = i;
-            while((function(j$1){
-                return function () {
-                  var w = fmt.charCodeAt(j$1) - /* "0" */48 | 0;
-                  return +(w >= 0 && w <= 9);
-                }
-                }(j$1))()) {
-              f[/* width */6] = (Caml_int32.imul(f[/* width */6], 10) + fmt.charCodeAt(j$1) | 0) - /* "0" */48 | 0;
-              j$1 = j$1 + 1 | 0;
-            };
-            _i = j$1;
-            continue ;
-            case 4 : 
-            f[/* signedconv */5] = /* true */1;
-            f[/* base */4] = /* Dec */2;
-            _i = i + 1 | 0;
-            continue ;
-            case 5 : 
-            f[/* signedconv */5] = /* true */1;
-            f[/* conv */10] = String.fromCharCode(c);
-            _i = i + 1 | 0;
-            continue ;
-            
-      }
-    }
-  };
-}
-
-function finish_formatting(param, rawbuffer) {
-  var justify = param[/* justify */0];
-  var signstyle = param[/* signstyle */1];
-  var filter = param[/* filter */2];
-  var alternate = param[/* alternate */3];
-  var base = param[/* base */4];
-  var signedconv = param[/* signedconv */5];
-  var width = param[/* width */6];
-  var uppercase = param[/* uppercase */7];
-  var sign = param[/* sign */8];
-  var len = rawbuffer.length;
-  if (signedconv && (sign < 0 || signstyle !== "-")) {
-    len = len + 1 | 0;
-  }
-  if (alternate) {
-    if (base) {
-      if (base === /* Hex */1) {
-        len = len + 2 | 0;
-      }
-      
-    } else {
-      len = len + 1 | 0;
-    }
-  }
-  var buffer = "";
-  if (justify === "+" && filter === " ") {
-    for(var i = len ,i_finish = width - 1 | 0; i <= i_finish; ++i){
-      buffer = buffer + filter;
-    }
-  }
-  if (signedconv) {
-    if (sign < 0) {
-      buffer = buffer + "-";
-    } else if (signstyle !== "-") {
-      buffer = buffer + signstyle;
-    }
-    
-  }
-  if (alternate && base === /* Oct */0) {
-    buffer = buffer + "0";
-  }
-  if (alternate && base === /* Hex */1) {
-    buffer = buffer + "0x";
-  }
-  if (justify === "+" && filter === "0") {
-    for(var i$1 = len ,i_finish$1 = width - 1 | 0; i$1 <= i_finish$1; ++i$1){
-      buffer = buffer + filter;
-    }
-  }
-  buffer = uppercase ? buffer + rawbuffer.toUpperCase() : buffer + rawbuffer;
-  if (justify === "-") {
-    for(var i$2 = len ,i_finish$2 = width - 1 | 0; i$2 <= i_finish$2; ++i$2){
-      buffer = buffer + " ";
-    }
-  }
-  return buffer;
-}
-
-function caml_format_int(fmt, i) {
-  if (fmt === "%d") {
-    return String(i);
-  } else {
-    var f = parse_format(fmt);
-    var f$1 = f;
-    var i$1 = i;
-    var i$2 = i$1 < 0 ? (
-        f$1[/* signedconv */5] ? (f$1[/* sign */8] = -1, -i$1) : (i$1 >>> 0)
-      ) : i$1;
-    var s = i$2.toString(int_of_base(f$1[/* base */4]));
-    if (f$1[/* prec */9] >= 0) {
-      f$1[/* filter */2] = " ";
-      var n = f$1[/* prec */9] - s.length | 0;
-      if (n > 0) {
-        s = Caml_utils.repeat(n, "0") + s;
-      }
-      
-    }
-    return finish_formatting(f$1, s);
-  }
-}
-
-function caml_int64_format(fmt, x) {
-  var f = parse_format(fmt);
-  var x$1 = f[/* signedconv */5] && Caml_int64.lt(x, /* int64 */[
-        /* hi */0,
-        /* lo */0
-      ]) ? (f[/* sign */8] = -1, Caml_int64.neg(x)) : x;
-  var s = "";
-  var match = f[/* base */4];
-  switch (match) {
-    case 0 : 
-        var wbase = /* int64 */[
-          /* hi */0,
-          /* lo */8
-        ];
-        var cvtbl = "01234567";
-        if (Caml_int64.lt(x$1, /* int64 */[
-                /* hi */0,
-                /* lo */0
-              ])) {
-          var y = Caml_int64.discard_sign(x$1);
-          var match$1 = Caml_int64.div_mod(y, wbase);
-          var quotient = Caml_int64.add(/* int64 */[
-                /* hi */268435456,
-                /* lo */0
-              ], match$1[0]);
-          var modulus = match$1[1];
-          s = String.fromCharCode(cvtbl.charCodeAt(modulus[1] | 0)) + s;
-          while(Caml_int64.neq(quotient, /* int64 */[
-                  /* hi */0,
-                  /* lo */0
-                ])) {
-            var match$2 = Caml_int64.div_mod(quotient, wbase);
-            quotient = match$2[0];
-            modulus = match$2[1];
-            s = String.fromCharCode(cvtbl.charCodeAt(modulus[1] | 0)) + s;
-          };
-        } else {
-          var match$3 = Caml_int64.div_mod(x$1, wbase);
-          var quotient$1 = match$3[0];
-          var modulus$1 = match$3[1];
-          s = String.fromCharCode(cvtbl.charCodeAt(modulus$1[1] | 0)) + s;
-          while(Caml_int64.neq(quotient$1, /* int64 */[
-                  /* hi */0,
-                  /* lo */0
-                ])) {
-            var match$4 = Caml_int64.div_mod(quotient$1, wbase);
-            quotient$1 = match$4[0];
-            modulus$1 = match$4[1];
-            s = String.fromCharCode(cvtbl.charCodeAt(modulus$1[1] | 0)) + s;
-          };
-        }
-        break;
-    case 1 : 
-        s = Caml_int64.to_hex(x$1) + s;
-        break;
-    case 2 : 
-        var wbase$1 = /* int64 */[
-          /* hi */0,
-          /* lo */10
-        ];
-        var cvtbl$1 = "0123456789";
-        if (Caml_int64.lt(x$1, /* int64 */[
-                /* hi */0,
-                /* lo */0
-              ])) {
-          var y$1 = Caml_int64.discard_sign(x$1);
-          var match$5 = Caml_int64.div_mod(y$1, wbase$1);
-          var match$6 = Caml_int64.div_mod(Caml_int64.add(/* int64 */[
-                    /* hi */0,
-                    /* lo */8
-                  ], match$5[1]), wbase$1);
-          var quotient$2 = Caml_int64.add(Caml_int64.add(/* int64 */[
-                    /* hi */214748364,
-                    /* lo */3435973836
-                  ], match$5[0]), match$6[0]);
-          var modulus$2 = match$6[1];
-          s = String.fromCharCode(cvtbl$1.charCodeAt(modulus$2[1] | 0)) + s;
-          while(Caml_int64.neq(quotient$2, /* int64 */[
-                  /* hi */0,
-                  /* lo */0
-                ])) {
-            var match$7 = Caml_int64.div_mod(quotient$2, wbase$1);
-            quotient$2 = match$7[0];
-            modulus$2 = match$7[1];
-            s = String.fromCharCode(cvtbl$1.charCodeAt(modulus$2[1] | 0)) + s;
-          };
-        } else {
-          var match$8 = Caml_int64.div_mod(x$1, wbase$1);
-          var quotient$3 = match$8[0];
-          var modulus$3 = match$8[1];
-          s = String.fromCharCode(cvtbl$1.charCodeAt(modulus$3[1] | 0)) + s;
-          while(Caml_int64.neq(quotient$3, /* int64 */[
-                  /* hi */0,
-                  /* lo */0
-                ])) {
-            var match$9 = Caml_int64.div_mod(quotient$3, wbase$1);
-            quotient$3 = match$9[0];
-            modulus$3 = match$9[1];
-            s = String.fromCharCode(cvtbl$1.charCodeAt(modulus$3[1] | 0)) + s;
-          };
-        }
-        break;
-    
-  }
-  if (f[/* prec */9] >= 0) {
-    f[/* filter */2] = " ";
-    var n = f[/* prec */9] - s.length | 0;
-    if (n > 0) {
-      s = Caml_utils.repeat(n, "0") + s;
-    }
-    
-  }
-  return finish_formatting(f, s);
-}
-
-function caml_format_float(fmt, x) {
-  var f = parse_format(fmt);
-  var prec = f[/* prec */9] < 0 ? 6 : f[/* prec */9];
-  var x$1 = x < 0 ? (f[/* sign */8] = -1, -x) : x;
-  var s = "";
-  if (isNaN(x$1)) {
-    s = "nan";
-    f[/* filter */2] = " ";
-  } else if (isFinite(x$1)) {
-    var match = f[/* conv */10];
-    switch (match) {
-      case "e" : 
-          s = x$1.toExponential(prec);
-          var i = s.length;
-          if (s[i - 3 | 0] === "e") {
-            s = s.slice(0, i - 1 | 0) + ("0" + s.slice(i - 1 | 0));
-          }
-          break;
-      case "f" : 
-          s = x$1.toFixed(prec);
-          break;
-      case "g" : 
-          var prec$1 = prec !== 0 ? prec : 1;
-          s = x$1.toExponential(prec$1 - 1 | 0);
-          var j = s.indexOf("e");
-          var exp = Number(s.slice(j + 1 | 0)) | 0;
-          if (exp < -4 || x$1 >= 1e21 || x$1.toFixed().length > prec$1) {
-            var i$1 = j - 1 | 0;
-            while(s[i$1] === "0") {
-              i$1 = i$1 - 1 | 0;
-            };
-            if (s[i$1] === ".") {
-              i$1 = i$1 - 1 | 0;
-            }
-            s = s.slice(0, i$1 + 1 | 0) + s.slice(j);
-            var i$2 = s.length;
-            if (s[i$2 - 3 | 0] === "e") {
-              s = s.slice(0, i$2 - 1 | 0) + ("0" + s.slice(i$2 - 1 | 0));
-            }
-            
-          } else {
-            var p = prec$1;
-            if (exp < 0) {
-              p = p - (exp + 1 | 0) | 0;
-              s = x$1.toFixed(p);
-            } else {
-              while((function () {
-                      s = x$1.toFixed(p);
-                      return +(s.length > (prec$1 + 1 | 0));
-                    })()) {
-                p = p - 1 | 0;
-              };
-            }
-            if (p !== 0) {
-              var k = s.length - 1 | 0;
-              while(s[k] === "0") {
-                k = k - 1 | 0;
-              };
-              if (s[k] === ".") {
-                k = k - 1 | 0;
-              }
-              s = s.slice(0, k + 1 | 0);
-            }
-            
-          }
-          break;
-      default:
-        
-    }
-  } else {
-    s = "inf";
-    f[/* filter */2] = " ";
-  }
-  return finish_formatting(f, s);
-}
-
-var float_of_string = (
-  function (s, caml_failwith) {
-    var res = +s;
-    if ((s.length > 0) && (res === res))
-        return res;
-    s = s.replace(/_/g, "");
-    res = +s;
-    if (((s.length > 0) && (res === res)) || /^[+-]?nan$/i.test(s)) {
-        return res;
-    }
-    ;
-    if (/^ *0x[0-9a-f_]+p[+-]?[0-9_]+/i.test(s)) {
-        var pidx = s.indexOf('p');
-        pidx = (pidx == -1) ? s.indexOf('P') : pidx;
-        var exp = +s.substring(pidx + 1);
-        res = +s.substring(0, pidx);
-        return res * Math.pow(2, exp);
-    }
-    if (/^\+?inf(inity)?$/i.test(s))
-        return Infinity;
-    if (/^-inf(inity)?$/i.test(s))
-        return -Infinity;
-    caml_failwith("float_of_string");
-}
-
-);
-
-function caml_float_of_string(s) {
-  return Curry._2(float_of_string, s, caml_failwith);
-}
-
-var caml_nativeint_format = caml_format_int;
-
-var caml_int32_format = caml_format_int;
-
-var caml_int32_of_string = caml_int_of_string;
-
-var caml_nativeint_of_string = caml_int_of_string;
-
-exports.caml_format_float        = caml_format_float;
-exports.caml_format_int          = caml_format_int;
-exports.caml_nativeint_format    = caml_nativeint_format;
-exports.caml_int32_format        = caml_int32_format;
-exports.caml_float_of_string     = caml_float_of_string;
-exports.caml_int64_format        = caml_int64_format;
-exports.caml_int_of_string       = caml_int_of_string;
-exports.caml_int32_of_string     = caml_int32_of_string;
-exports.caml_int64_of_string     = caml_int64_of_string;
-exports.caml_nativeint_of_string = caml_nativeint_of_string;
-/* float_of_string Not a pure module */
-
-},{"./curry.js":36,"./caml_int32.js":67,"./caml_int64.js":68,"./caml_utils.js":69,"./caml_builtin_exceptions.js":34}],56:[function(require,module,exports) {
-'use strict';
-
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function string_of_char(prim) {
-  return String.fromCharCode(prim);
-}
-
-function caml_string_get(s, i) {
-  if (i >= s.length || i < 0) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "index out of bounds"
-        ];
-  } else {
-    return s.charCodeAt(i);
-  }
-}
-
-function caml_create_string(len) {
-  if (len < 0) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "String.create"
-        ];
-  } else {
-    return new Array(len);
-  }
-}
-
-function caml_string_compare(s1, s2) {
-  if (s1 === s2) {
-    return 0;
-  } else if (s1 < s2) {
-    return -1;
-  } else {
-    return 1;
-  }
-}
-
-function caml_fill_string(s, i, l, c) {
-  if (l > 0) {
-    for(var k = i ,k_finish = (l + i | 0) - 1 | 0; k <= k_finish; ++k){
-      s[k] = c;
-    }
-    return /* () */0;
-  } else {
-    return 0;
-  }
-}
-
-function caml_blit_string(s1, i1, s2, i2, len) {
-  if (len > 0) {
-    var off1 = s1.length - i1 | 0;
-    if (len <= off1) {
-      for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-        s2[i2 + i | 0] = s1.charCodeAt(i1 + i | 0);
-      }
-      return /* () */0;
-    } else {
-      for(var i$1 = 0 ,i_finish$1 = off1 - 1 | 0; i$1 <= i_finish$1; ++i$1){
-        s2[i2 + i$1 | 0] = s1.charCodeAt(i1 + i$1 | 0);
-      }
-      for(var i$2 = off1 ,i_finish$2 = len - 1 | 0; i$2 <= i_finish$2; ++i$2){
-        s2[i2 + i$2 | 0] = /* "\000" */0;
-      }
-      return /* () */0;
-    }
-  } else {
-    return 0;
-  }
-}
-
-function caml_blit_bytes(s1, i1, s2, i2, len) {
-  if (len > 0) {
-    if (s1 === s2) {
-      var s1$1 = s1;
-      var i1$1 = i1;
-      var i2$1 = i2;
-      var len$1 = len;
-      if (i1$1 < i2$1) {
-        var range_a = (s1$1.length - i2$1 | 0) - 1 | 0;
-        var range_b = len$1 - 1 | 0;
-        var range = range_a > range_b ? range_b : range_a;
-        for(var j = range; j >= 0; --j){
-          s1$1[i2$1 + j | 0] = s1$1[i1$1 + j | 0];
-        }
-        return /* () */0;
-      } else if (i1$1 > i2$1) {
-        var range_a$1 = (s1$1.length - i1$1 | 0) - 1 | 0;
-        var range_b$1 = len$1 - 1 | 0;
-        var range$1 = range_a$1 > range_b$1 ? range_b$1 : range_a$1;
-        for(var k = 0; k <= range$1; ++k){
-          s1$1[i2$1 + k | 0] = s1$1[i1$1 + k | 0];
-        }
-        return /* () */0;
-      } else {
-        return 0;
-      }
-    } else {
-      var off1 = s1.length - i1 | 0;
-      if (len <= off1) {
-        for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-          s2[i2 + i | 0] = s1[i1 + i | 0];
-        }
-        return /* () */0;
-      } else {
-        for(var i$1 = 0 ,i_finish$1 = off1 - 1 | 0; i$1 <= i_finish$1; ++i$1){
-          s2[i2 + i$1 | 0] = s1[i1 + i$1 | 0];
-        }
-        for(var i$2 = off1 ,i_finish$2 = len - 1 | 0; i$2 <= i_finish$2; ++i$2){
-          s2[i2 + i$2 | 0] = /* "\000" */0;
-        }
-        return /* () */0;
-      }
-    }
-  } else {
-    return 0;
-  }
-}
-
-function bytes_of_string(s) {
-  var len = s.length;
-  var res = new Array(len);
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    res[i] = s.charCodeAt(i);
-  }
-  return res;
-}
-
-function bytes_to_string(a) {
-  var bytes = a;
-  var i = 0;
-  var len = a.length;
-  var s = "";
-  var s_len = len;
-  if (i === 0 && len <= 4096 && len === bytes.length) {
-    return String.fromCharCode.apply(null,bytes);
-  } else {
-    var offset = 0;
-    while(s_len > 0) {
-      var next = s_len < 1024 ? s_len : 1024;
-      var tmp_bytes = new Array(next);
-      caml_blit_bytes(bytes, offset, tmp_bytes, 0, next);
-      s = s + String.fromCharCode.apply(null,tmp_bytes);
-      s_len = s_len - next | 0;
-      offset = offset + next | 0;
-    };
-    return s;
-  }
-}
-
-function caml_string_of_char_array(chars) {
-  var len = chars.length;
-  var bytes = new Array(len);
-  for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-    bytes[i] = chars[i];
-  }
-  return bytes_to_string(bytes);
-}
-
-function caml_is_printable(c) {
-  if (c > 31) {
-    return +(c < 127);
-  } else {
-    return /* false */0;
-  }
-}
-
-function caml_string_get16(s, i) {
-  return s.charCodeAt(i) + (s.charCodeAt(i + 1 | 0) << 8) | 0;
-}
-
-function caml_string_get32(s, i) {
-  return ((s.charCodeAt(i) + (s.charCodeAt(i + 1 | 0) << 8) | 0) + (s.charCodeAt(i + 2 | 0) << 16) | 0) + (s.charCodeAt(i + 3 | 0) << 24) | 0;
-}
-
-function get(s, i) {
-  if (i < 0 || i >= s.length) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "index out of bounds"
-        ];
-  } else {
-    return s.charCodeAt(i);
-  }
-}
-
-exports.bytes_of_string           = bytes_of_string;
-exports.bytes_to_string           = bytes_to_string;
-exports.caml_is_printable         = caml_is_printable;
-exports.caml_string_of_char_array = caml_string_of_char_array;
-exports.caml_string_get           = caml_string_get;
-exports.caml_string_compare       = caml_string_compare;
-exports.caml_create_string        = caml_create_string;
-exports.caml_fill_string          = caml_fill_string;
-exports.caml_blit_string          = caml_blit_string;
-exports.caml_blit_bytes           = caml_blit_bytes;
-exports.caml_string_get16         = caml_string_get16;
-exports.caml_string_get32         = caml_string_get32;
-exports.string_of_char            = string_of_char;
-exports.get                       = get;
-/* No side effect */
-
-},{"./caml_builtin_exceptions.js":34}],46:[function(require,module,exports) {
-'use strict';
-
-
-var id = [0];
-
-function caml_set_oo_id(b) {
-  b[1] = id[0];
-  id[0] += 1;
-  return b;
-}
-
-function get_id() {
-  id[0] += 1;
-  return id[0];
-}
-
-function create(str) {
-  var v_001 = get_id(/* () */0);
-  var v = /* tuple */[
-    str,
-    v_001
-  ];
-  v.tag = 248;
-  return v;
-}
-
-function isCamlExceptionOrOpenVariant(e) {
-  if (e === undefined) {
-    return /* false */0;
-  } else if (e.tag === 248) {
-    return /* true */1;
-  } else {
-    var slot = e[0];
-    if (slot !== undefined) {
-      return +(slot.tag === 248);
-    } else {
-      return /* false */0;
-    }
-  }
-}
-
-exports.caml_set_oo_id               = caml_set_oo_id;
-exports.get_id                       = get_id;
-exports.create                       = create;
-exports.isCamlExceptionOrOpenVariant = isCamlExceptionOrOpenVariant;
-/* No side effect */
-
-},{}],57:[function(require,module,exports) {
-'use strict';
-
-
-var not_implemented = (function (s){ throw new Error(s)});
-
-exports.not_implemented = not_implemented;
-/* not_implemented Not a pure module */
-
-},{}],58:[function(require,module,exports) {
-'use strict';
-
-var Block = require("./block.js");
-
-function erase_rel(param) {
-  if (typeof param === "number") {
-    return /* End_of_fmtty */0;
-  } else {
-    switch (param.tag | 0) {
-      case 0 : 
-          return /* Char_ty */Block.__(0, [erase_rel(param[0])]);
-      case 1 : 
-          return /* String_ty */Block.__(1, [erase_rel(param[0])]);
-      case 2 : 
-          return /* Int_ty */Block.__(2, [erase_rel(param[0])]);
-      case 3 : 
-          return /* Int32_ty */Block.__(3, [erase_rel(param[0])]);
-      case 4 : 
-          return /* Nativeint_ty */Block.__(4, [erase_rel(param[0])]);
-      case 5 : 
-          return /* Int64_ty */Block.__(5, [erase_rel(param[0])]);
-      case 6 : 
-          return /* Float_ty */Block.__(6, [erase_rel(param[0])]);
-      case 7 : 
-          return /* Bool_ty */Block.__(7, [erase_rel(param[0])]);
-      case 8 : 
-          return /* Format_arg_ty */Block.__(8, [
-                    param[0],
-                    erase_rel(param[1])
-                  ]);
-      case 9 : 
-          var ty1 = param[0];
-          return /* Format_subst_ty */Block.__(9, [
-                    ty1,
-                    ty1,
-                    erase_rel(param[2])
-                  ]);
-      case 10 : 
-          return /* Alpha_ty */Block.__(10, [erase_rel(param[0])]);
-      case 11 : 
-          return /* Theta_ty */Block.__(11, [erase_rel(param[0])]);
-      case 12 : 
-          return /* Any_ty */Block.__(12, [erase_rel(param[0])]);
-      case 13 : 
-          return /* Reader_ty */Block.__(13, [erase_rel(param[0])]);
-      case 14 : 
-          return /* Ignored_reader_ty */Block.__(14, [erase_rel(param[0])]);
-      
-    }
-  }
-}
-
-function concat_fmtty(fmtty1, fmtty2) {
-  if (typeof fmtty1 === "number") {
-    return fmtty2;
-  } else {
-    switch (fmtty1.tag | 0) {
-      case 0 : 
-          return /* Char_ty */Block.__(0, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 1 : 
-          return /* String_ty */Block.__(1, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 2 : 
-          return /* Int_ty */Block.__(2, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 3 : 
-          return /* Int32_ty */Block.__(3, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 4 : 
-          return /* Nativeint_ty */Block.__(4, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 5 : 
-          return /* Int64_ty */Block.__(5, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 6 : 
-          return /* Float_ty */Block.__(6, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 7 : 
-          return /* Bool_ty */Block.__(7, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 8 : 
-          return /* Format_arg_ty */Block.__(8, [
-                    fmtty1[0],
-                    concat_fmtty(fmtty1[1], fmtty2)
-                  ]);
-      case 9 : 
-          return /* Format_subst_ty */Block.__(9, [
-                    fmtty1[0],
-                    fmtty1[1],
-                    concat_fmtty(fmtty1[2], fmtty2)
-                  ]);
-      case 10 : 
-          return /* Alpha_ty */Block.__(10, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 11 : 
-          return /* Theta_ty */Block.__(11, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 12 : 
-          return /* Any_ty */Block.__(12, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 13 : 
-          return /* Reader_ty */Block.__(13, [concat_fmtty(fmtty1[0], fmtty2)]);
-      case 14 : 
-          return /* Ignored_reader_ty */Block.__(14, [concat_fmtty(fmtty1[0], fmtty2)]);
-      
-    }
-  }
-}
-
-function concat_fmt(fmt1, fmt2) {
-  if (typeof fmt1 === "number") {
-    return fmt2;
-  } else {
-    switch (fmt1.tag | 0) {
-      case 0 : 
-          return /* Char */Block.__(0, [concat_fmt(fmt1[0], fmt2)]);
-      case 1 : 
-          return /* Caml_char */Block.__(1, [concat_fmt(fmt1[0], fmt2)]);
-      case 2 : 
-          return /* String */Block.__(2, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 3 : 
-          return /* Caml_string */Block.__(3, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 4 : 
-          return /* Int */Block.__(4, [
-                    fmt1[0],
-                    fmt1[1],
-                    fmt1[2],
-                    concat_fmt(fmt1[3], fmt2)
-                  ]);
-      case 5 : 
-          return /* Int32 */Block.__(5, [
-                    fmt1[0],
-                    fmt1[1],
-                    fmt1[2],
-                    concat_fmt(fmt1[3], fmt2)
-                  ]);
-      case 6 : 
-          return /* Nativeint */Block.__(6, [
-                    fmt1[0],
-                    fmt1[1],
-                    fmt1[2],
-                    concat_fmt(fmt1[3], fmt2)
-                  ]);
-      case 7 : 
-          return /* Int64 */Block.__(7, [
-                    fmt1[0],
-                    fmt1[1],
-                    fmt1[2],
-                    concat_fmt(fmt1[3], fmt2)
-                  ]);
-      case 8 : 
-          return /* Float */Block.__(8, [
-                    fmt1[0],
-                    fmt1[1],
-                    fmt1[2],
-                    concat_fmt(fmt1[3], fmt2)
-                  ]);
-      case 9 : 
-          return /* Bool */Block.__(9, [concat_fmt(fmt1[0], fmt2)]);
-      case 10 : 
-          return /* Flush */Block.__(10, [concat_fmt(fmt1[0], fmt2)]);
-      case 11 : 
-          return /* String_literal */Block.__(11, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 12 : 
-          return /* Char_literal */Block.__(12, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 13 : 
-          return /* Format_arg */Block.__(13, [
-                    fmt1[0],
-                    fmt1[1],
-                    concat_fmt(fmt1[2], fmt2)
-                  ]);
-      case 14 : 
-          return /* Format_subst */Block.__(14, [
-                    fmt1[0],
-                    fmt1[1],
-                    concat_fmt(fmt1[2], fmt2)
-                  ]);
-      case 15 : 
-          return /* Alpha */Block.__(15, [concat_fmt(fmt1[0], fmt2)]);
-      case 16 : 
-          return /* Theta */Block.__(16, [concat_fmt(fmt1[0], fmt2)]);
-      case 17 : 
-          return /* Formatting_lit */Block.__(17, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 18 : 
-          return /* Formatting_gen */Block.__(18, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 19 : 
-          return /* Reader */Block.__(19, [concat_fmt(fmt1[0], fmt2)]);
-      case 20 : 
-          return /* Scan_char_set */Block.__(20, [
-                    fmt1[0],
-                    fmt1[1],
-                    concat_fmt(fmt1[2], fmt2)
-                  ]);
-      case 21 : 
-          return /* Scan_get_counter */Block.__(21, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 22 : 
-          return /* Scan_next_char */Block.__(22, [concat_fmt(fmt1[0], fmt2)]);
-      case 23 : 
-          return /* Ignored_param */Block.__(23, [
-                    fmt1[0],
-                    concat_fmt(fmt1[1], fmt2)
-                  ]);
-      case 24 : 
-          return /* Custom */Block.__(24, [
-                    fmt1[0],
-                    fmt1[1],
-                    concat_fmt(fmt1[2], fmt2)
-                  ]);
-      
-    }
-  }
-}
-
-exports.concat_fmtty = concat_fmtty;
-exports.erase_rel    = erase_rel;
-exports.concat_fmt   = concat_fmt;
-/* No side effect */
-
-},{"./block.js":52}],43:[function(require,module,exports) {
-'use strict';
-
-var Curry                    = require("./curry.js");
-var Caml_io                  = require("./caml_io.js");
-var Caml_obj                 = require("./caml_obj.js");
-var Caml_sys                 = require("./caml_sys.js");
-var Caml_format              = require("./caml_format.js");
-var Caml_string              = require("./caml_string.js");
-var Caml_exceptions          = require("./caml_exceptions.js");
-var Caml_missing_polyfill    = require("./caml_missing_polyfill.js");
-var Caml_builtin_exceptions  = require("./caml_builtin_exceptions.js");
-var CamlinternalFormatBasics = require("./camlinternalFormatBasics.js");
-
-function failwith(s) {
-  throw [
-        Caml_builtin_exceptions.failure,
-        s
-      ];
-}
-
-function invalid_arg(s) {
-  throw [
-        Caml_builtin_exceptions.invalid_argument,
-        s
-      ];
-}
-
-var Exit = Caml_exceptions.create("Pervasives.Exit");
-
-function min(x, y) {
-  if (Caml_obj.caml_lessequal(x, y)) {
-    return x;
-  } else {
-    return y;
-  }
-}
-
-function max(x, y) {
-  if (Caml_obj.caml_greaterequal(x, y)) {
-    return x;
-  } else {
-    return y;
-  }
-}
-
-function abs(x) {
-  if (x >= 0) {
-    return x;
-  } else {
-    return -x | 0;
-  }
-}
-
-function lnot(x) {
-  return x ^ -1;
-}
-
-var min_int = -2147483648;
-
-function $caret(a, b) {
-  return a + b;
-}
-
-function char_of_int(n) {
-  if (n < 0 || n > 255) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "char_of_int"
-        ];
-  } else {
-    return n;
-  }
-}
-
-function string_of_bool(b) {
-  if (b) {
-    return "true";
-  } else {
-    return "false";
-  }
-}
-
-function bool_of_string(param) {
-  switch (param) {
-    case "false" : 
-        return /* false */0;
-    case "true" : 
-        return /* true */1;
-    default:
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "bool_of_string"
-          ];
-  }
-}
-
-function string_of_int(param) {
-  return "" + param;
-}
-
-function valid_float_lexem(s) {
-  var l = s.length;
-  var _i = 0;
-  while(true) {
-    var i = _i;
-    if (i >= l) {
-      return $caret(s, ".");
-    } else {
-      var match = Caml_string.get(s, i);
-      if (match >= 48) {
-        if (match >= 58) {
-          return s;
-        } else {
-          _i = i + 1 | 0;
-          continue ;
-          
-        }
-      } else if (match !== 45) {
-        return s;
-      } else {
-        _i = i + 1 | 0;
-        continue ;
-        
-      }
-    }
-  };
-}
-
-function string_of_float(f) {
-  return valid_float_lexem(Caml_format.caml_format_float("%.12g", f));
-}
-
-function $at(l1, l2) {
-  if (l1) {
-    return /* :: */[
-            l1[0],
-            $at(l1[1], l2)
-          ];
-  } else {
-    return l2;
-  }
-}
-
-var stdin = Caml_io.stdin;
-
-var stdout = Caml_io.stdout;
-
-var stderr = Caml_io.stderr;
-
-function open_out_gen(_, _$1, _$2) {
-  return Caml_io.caml_ml_open_descriptor_out(Caml_missing_polyfill.not_implemented("caml_sys_open not implemented by bucklescript yet\n"));
-}
-
-function open_out(name) {
-  return open_out_gen(/* :: */[
-              /* Open_wronly */1,
-              /* :: */[
-                /* Open_creat */3,
-                /* :: */[
-                  /* Open_trunc */4,
-                  /* :: */[
-                    /* Open_text */7,
-                    /* [] */0
-                  ]
-                ]
-              ]
-            ], 438, name);
-}
-
-function open_out_bin(name) {
-  return open_out_gen(/* :: */[
-              /* Open_wronly */1,
-              /* :: */[
-                /* Open_creat */3,
-                /* :: */[
-                  /* Open_trunc */4,
-                  /* :: */[
-                    /* Open_binary */6,
-                    /* [] */0
-                  ]
-                ]
-              ]
-            ], 438, name);
-}
-
-function flush_all() {
-  var _param = Caml_io.caml_ml_out_channels_list(/* () */0);
-  while(true) {
-    var param = _param;
-    if (param) {
-      try {
-        Caml_io.caml_ml_flush(param[0]);
-      }
-      catch (exn){
-        
-      }
-      _param = param[1];
-      continue ;
-      
-    } else {
-      return /* () */0;
-    }
-  };
-}
-
-function output_bytes(oc, s) {
-  return Caml_io.caml_ml_output(oc, s, 0, s.length);
-}
-
-function output_string(oc, s) {
-  return Caml_io.caml_ml_output(oc, s, 0, s.length);
-}
-
-function output(oc, s, ofs, len) {
-  if (ofs < 0 || len < 0 || ofs > (s.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "output"
-        ];
-  } else {
-    return Caml_io.caml_ml_output(oc, s, ofs, len);
-  }
-}
-
-function output_substring(oc, s, ofs, len) {
-  if (ofs < 0 || len < 0 || ofs > (s.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "output_substring"
-        ];
-  } else {
-    return Caml_io.caml_ml_output(oc, s, ofs, len);
-  }
-}
-
-function output_value(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_output_value not implemented by bucklescript yet\n");
-}
-
-function close_out(oc) {
-  Caml_io.caml_ml_flush(oc);
-  return Caml_missing_polyfill.not_implemented("caml_ml_close_channel not implemented by bucklescript yet\n");
-}
-
-function close_out_noerr(oc) {
-  try {
-    Caml_io.caml_ml_flush(oc);
-  }
-  catch (exn){
-    
-  }
-  try {
-    return Caml_missing_polyfill.not_implemented("caml_ml_close_channel not implemented by bucklescript yet\n");
-  }
-  catch (exn$1){
-    return /* () */0;
-  }
-}
-
-function open_in_gen(_, _$1, _$2) {
-  return Caml_io.caml_ml_open_descriptor_in(Caml_missing_polyfill.not_implemented("caml_sys_open not implemented by bucklescript yet\n"));
-}
-
-function open_in(name) {
-  return open_in_gen(/* :: */[
-              /* Open_rdonly */0,
-              /* :: */[
-                /* Open_text */7,
-                /* [] */0
-              ]
-            ], 0, name);
-}
-
-function open_in_bin(name) {
-  return open_in_gen(/* :: */[
-              /* Open_rdonly */0,
-              /* :: */[
-                /* Open_binary */6,
-                /* [] */0
-              ]
-            ], 0, name);
-}
-
-function input(_, s, ofs, len) {
-  if (ofs < 0 || len < 0 || ofs > (s.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "input"
-        ];
-  } else {
-    return Caml_missing_polyfill.not_implemented("caml_ml_input not implemented by bucklescript yet\n");
-  }
-}
-
-function unsafe_really_input(_, _$1, _ofs, _len) {
-  while(true) {
-    var len = _len;
-    var ofs = _ofs;
-    if (len <= 0) {
-      return /* () */0;
-    } else {
-      var r = Caml_missing_polyfill.not_implemented("caml_ml_input not implemented by bucklescript yet\n");
-      if (r) {
-        _len = len - r | 0;
-        _ofs = ofs + r | 0;
-        continue ;
-        
-      } else {
-        throw Caml_builtin_exceptions.end_of_file;
-      }
-    }
-  };
-}
-
-function really_input(ic, s, ofs, len) {
-  if (ofs < 0 || len < 0 || ofs > (s.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "really_input"
-        ];
-  } else {
-    return unsafe_really_input(ic, s, ofs, len);
-  }
-}
-
-function really_input_string(ic, len) {
-  var s = Caml_string.caml_create_string(len);
-  really_input(ic, s, 0, len);
-  return Caml_string.bytes_to_string(s);
-}
-
-function input_line(chan) {
-  var build_result = function (buf, _pos, _param) {
-    while(true) {
-      var param = _param;
-      var pos = _pos;
-      if (param) {
-        var hd = param[0];
-        var len = hd.length;
-        Caml_string.caml_blit_bytes(hd, 0, buf, pos - len | 0, len);
-        _param = param[1];
-        _pos = pos - len | 0;
-        continue ;
-        
-      } else {
-        return buf;
-      }
-    };
-  };
-  var scan = function (_accu, _len) {
-    while(true) {
-      var len = _len;
-      var accu = _accu;
-      var n = Caml_missing_polyfill.not_implemented("caml_ml_input_scan_line not implemented by bucklescript yet\n");
-      if (n) {
-        if (n > 0) {
-          var res = Caml_string.caml_create_string(n - 1 | 0);
-          Caml_missing_polyfill.not_implemented("caml_ml_input not implemented by bucklescript yet\n");
-          Caml_io.caml_ml_input_char(chan);
-          if (accu) {
-            var len$1 = (len + n | 0) - 1 | 0;
-            return build_result(Caml_string.caml_create_string(len$1), len$1, /* :: */[
-                        res,
-                        accu
-                      ]);
-          } else {
-            return res;
-          }
-        } else {
-          var beg = Caml_string.caml_create_string(-n | 0);
-          Caml_missing_polyfill.not_implemented("caml_ml_input not implemented by bucklescript yet\n");
-          _len = len - n | 0;
-          _accu = /* :: */[
-            beg,
-            accu
-          ];
-          continue ;
-          
-        }
-      } else if (accu) {
-        return build_result(Caml_string.caml_create_string(len), len, accu);
-      } else {
-        throw Caml_builtin_exceptions.end_of_file;
-      }
-    };
-  };
-  return Caml_string.bytes_to_string(scan(/* [] */0, 0));
-}
-
-function close_in_noerr() {
-  try {
-    return Caml_missing_polyfill.not_implemented("caml_ml_close_channel not implemented by bucklescript yet\n");
-  }
-  catch (exn){
-    return /* () */0;
-  }
-}
-
-function print_char(c) {
-  return Caml_io.caml_ml_output_char(stdout, c);
-}
-
-function print_string(s) {
-  return output_string(stdout, s);
-}
-
-function print_bytes(s) {
-  return output_bytes(stdout, s);
-}
-
-function print_int(i) {
-  return output_string(stdout, "" + i);
-}
-
-function print_float(f) {
-  return output_string(stdout, valid_float_lexem(Caml_format.caml_format_float("%.12g", f)));
-}
-
-function print_endline(param) {
-  console.log(param);
-  return 0;
-}
-
-function print_newline() {
-  Caml_io.caml_ml_output_char(stdout, /* "\n" */10);
-  return Caml_io.caml_ml_flush(stdout);
-}
-
-function prerr_char(c) {
-  return Caml_io.caml_ml_output_char(stderr, c);
-}
-
-function prerr_string(s) {
-  return output_string(stderr, s);
-}
-
-function prerr_bytes(s) {
-  return output_bytes(stderr, s);
-}
-
-function prerr_int(i) {
-  return output_string(stderr, "" + i);
-}
-
-function prerr_float(f) {
-  return output_string(stderr, valid_float_lexem(Caml_format.caml_format_float("%.12g", f)));
-}
-
-function prerr_endline(param) {
-  console.error(param);
-  return 0;
-}
-
-function prerr_newline() {
-  Caml_io.caml_ml_output_char(stderr, /* "\n" */10);
-  return Caml_io.caml_ml_flush(stderr);
-}
-
-function read_line() {
-  Caml_io.caml_ml_flush(stdout);
-  return input_line(stdin);
-}
-
-function read_int() {
-  return Caml_format.caml_int_of_string((Caml_io.caml_ml_flush(stdout), input_line(stdin)));
-}
-
-function read_float() {
-  return Caml_format.caml_float_of_string((Caml_io.caml_ml_flush(stdout), input_line(stdin)));
-}
-
-function string_of_format(param) {
-  return param[1];
-}
-
-function $caret$caret(param, param$1) {
-  return /* Format */[
-          CamlinternalFormatBasics.concat_fmt(param[0], param$1[0]),
-          $caret(param[1], $caret("%,", param$1[1]))
-        ];
-}
-
-var exit_function = [flush_all];
-
-function at_exit(f) {
-  var g = exit_function[0];
-  exit_function[0] = (function () {
-      Curry._1(f, /* () */0);
-      return Curry._1(g, /* () */0);
-    });
-  return /* () */0;
-}
-
-function do_at_exit() {
-  return Curry._1(exit_function[0], /* () */0);
-}
-
-function exit(retcode) {
-  do_at_exit(/* () */0);
-  return Caml_sys.caml_sys_exit(retcode);
-}
-
-var max_int = 2147483647;
-
-var infinity = Infinity;
-
-var neg_infinity = -Infinity;
-
-var nan = NaN;
-
-var max_float = Number.MAX_VALUE;
-
-var min_float = Number.MIN_VALUE;
-
-var epsilon_float = 2.220446049250313e-16;
-
-var flush = Caml_io.caml_ml_flush;
-
-var output_char = Caml_io.caml_ml_output_char;
-
-var output_byte = Caml_io.caml_ml_output_char;
-
-function output_binary_int(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_output_int not implemented by bucklescript yet\n");
-}
-
-function seek_out(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_seek_out not implemented by bucklescript yet\n");
-}
-
-function pos_out() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_pos_out not implemented by bucklescript yet\n");
-}
-
-function out_channel_length() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_channel_size not implemented by bucklescript yet\n");
-}
-
-function set_binary_mode_out(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_set_binary_mode not implemented by bucklescript yet\n");
-}
-
-var input_char = Caml_io.caml_ml_input_char;
-
-var input_byte = Caml_io.caml_ml_input_char;
-
-function input_binary_int() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_input_int not implemented by bucklescript yet\n");
-}
-
-function input_value() {
-  return Caml_missing_polyfill.not_implemented("caml_input_value not implemented by bucklescript yet\n");
-}
-
-function seek_in(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_seek_in not implemented by bucklescript yet\n");
-}
-
-function pos_in() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_pos_in not implemented by bucklescript yet\n");
-}
-
-function in_channel_length() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_channel_size not implemented by bucklescript yet\n");
-}
-
-function close_in() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_close_channel not implemented by bucklescript yet\n");
-}
-
-function set_binary_mode_in(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_set_binary_mode not implemented by bucklescript yet\n");
-}
-
-function LargeFile_000(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_seek_out_64 not implemented by bucklescript yet\n");
-}
-
-function LargeFile_001() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_pos_out_64 not implemented by bucklescript yet\n");
-}
-
-function LargeFile_002() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_channel_size_64 not implemented by bucklescript yet\n");
-}
-
-function LargeFile_003(_, _$1) {
-  return Caml_missing_polyfill.not_implemented("caml_ml_seek_in_64 not implemented by bucklescript yet\n");
-}
-
-function LargeFile_004() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_pos_in_64 not implemented by bucklescript yet\n");
-}
-
-function LargeFile_005() {
-  return Caml_missing_polyfill.not_implemented("caml_ml_channel_size_64 not implemented by bucklescript yet\n");
-}
-
-var LargeFile = [
-  LargeFile_000,
-  LargeFile_001,
-  LargeFile_002,
-  LargeFile_003,
-  LargeFile_004,
-  LargeFile_005
-];
-
-exports.invalid_arg         = invalid_arg;
-exports.failwith            = failwith;
-exports.Exit                = Exit;
-exports.min                 = min;
-exports.max                 = max;
-exports.abs                 = abs;
-exports.max_int             = max_int;
-exports.min_int             = min_int;
-exports.lnot                = lnot;
-exports.infinity            = infinity;
-exports.neg_infinity        = neg_infinity;
-exports.nan                 = nan;
-exports.max_float           = max_float;
-exports.min_float           = min_float;
-exports.epsilon_float       = epsilon_float;
-exports.$caret              = $caret;
-exports.char_of_int         = char_of_int;
-exports.string_of_bool      = string_of_bool;
-exports.bool_of_string      = bool_of_string;
-exports.string_of_int       = string_of_int;
-exports.string_of_float     = string_of_float;
-exports.$at                 = $at;
-exports.stdin               = stdin;
-exports.stdout              = stdout;
-exports.stderr              = stderr;
-exports.print_char          = print_char;
-exports.print_string        = print_string;
-exports.print_bytes         = print_bytes;
-exports.print_int           = print_int;
-exports.print_float         = print_float;
-exports.print_endline       = print_endline;
-exports.print_newline       = print_newline;
-exports.prerr_char          = prerr_char;
-exports.prerr_string        = prerr_string;
-exports.prerr_bytes         = prerr_bytes;
-exports.prerr_int           = prerr_int;
-exports.prerr_float         = prerr_float;
-exports.prerr_endline       = prerr_endline;
-exports.prerr_newline       = prerr_newline;
-exports.read_line           = read_line;
-exports.read_int            = read_int;
-exports.read_float          = read_float;
-exports.open_out            = open_out;
-exports.open_out_bin        = open_out_bin;
-exports.open_out_gen        = open_out_gen;
-exports.flush               = flush;
-exports.flush_all           = flush_all;
-exports.output_char         = output_char;
-exports.output_string       = output_string;
-exports.output_bytes        = output_bytes;
-exports.output              = output;
-exports.output_substring    = output_substring;
-exports.output_byte         = output_byte;
-exports.output_binary_int   = output_binary_int;
-exports.output_value        = output_value;
-exports.seek_out            = seek_out;
-exports.pos_out             = pos_out;
-exports.out_channel_length  = out_channel_length;
-exports.close_out           = close_out;
-exports.close_out_noerr     = close_out_noerr;
-exports.set_binary_mode_out = set_binary_mode_out;
-exports.open_in             = open_in;
-exports.open_in_bin         = open_in_bin;
-exports.open_in_gen         = open_in_gen;
-exports.input_char          = input_char;
-exports.input_line          = input_line;
-exports.input               = input;
-exports.really_input        = really_input;
-exports.really_input_string = really_input_string;
-exports.input_byte          = input_byte;
-exports.input_binary_int    = input_binary_int;
-exports.input_value         = input_value;
-exports.seek_in             = seek_in;
-exports.pos_in              = pos_in;
-exports.in_channel_length   = in_channel_length;
-exports.close_in            = close_in;
-exports.close_in_noerr      = close_in_noerr;
-exports.set_binary_mode_in  = set_binary_mode_in;
-exports.LargeFile           = LargeFile;
-exports.string_of_format    = string_of_format;
-exports.$caret$caret        = $caret$caret;
-exports.exit                = exit;
-exports.at_exit             = at_exit;
-exports.valid_float_lexem   = valid_float_lexem;
-exports.unsafe_really_input = unsafe_really_input;
-exports.do_at_exit          = do_at_exit;
-/* No side effect */
-
-},{"./curry.js":36,"./caml_io.js":53,"./caml_obj.js":42,"./caml_sys.js":54,"./caml_format.js":55,"./caml_string.js":56,"./caml_exceptions.js":46,"./caml_missing_polyfill.js":57,"./caml_builtin_exceptions.js":34,"./camlinternalFormatBasics.js":58}],35:[function(require,module,exports) {
-'use strict';
-
-var Curry                   = require("./curry.js");
-var Caml_obj                = require("./caml_obj.js");
-var Pervasives              = require("./pervasives.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function length(l) {
-  var _len = 0;
-  var _param = l;
-  while(true) {
-    var param = _param;
-    var len = _len;
-    if (param) {
-      _param = param[1];
-      _len = len + 1 | 0;
-      continue ;
-      
-    } else {
-      return len;
-    }
-  };
-}
-
-function hd(param) {
-  if (param) {
-    return param[0];
-  } else {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "hd"
-        ];
-  }
-}
-
-function tl(param) {
-  if (param) {
-    return param[1];
-  } else {
-    throw [
-          Caml_builtin_exceptions.failure,
-          "tl"
-        ];
-  }
-}
-
-function nth(l, n) {
-  if (n < 0) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "List.nth"
-        ];
-  } else {
-    var _l = l;
-    var _n = n;
-    while(true) {
-      var n$1 = _n;
-      var l$1 = _l;
-      if (l$1) {
-        if (n$1) {
-          _n = n$1 - 1 | 0;
-          _l = l$1[1];
-          continue ;
-          
-        } else {
-          return l$1[0];
-        }
-      } else {
-        throw [
-              Caml_builtin_exceptions.failure,
-              "nth"
-            ];
-      }
-    };
-  }
-}
-
-function rev_append(_l1, _l2) {
-  while(true) {
-    var l2 = _l2;
-    var l1 = _l1;
-    if (l1) {
-      _l2 = /* :: */[
-        l1[0],
-        l2
-      ];
-      _l1 = l1[1];
-      continue ;
-      
-    } else {
-      return l2;
-    }
-  };
-}
-
-function rev(l) {
-  return rev_append(l, /* [] */0);
-}
-
-function flatten(param) {
-  if (param) {
-    return Pervasives.$at(param[0], flatten(param[1]));
-  } else {
-    return /* [] */0;
-  }
-}
-
-function map(f, param) {
-  if (param) {
-    var r = Curry._1(f, param[0]);
-    return /* :: */[
-            r,
-            map(f, param[1])
-          ];
-  } else {
-    return /* [] */0;
-  }
-}
-
-function mapi(i, f, param) {
-  if (param) {
-    var r = Curry._2(f, i, param[0]);
-    return /* :: */[
-            r,
-            mapi(i + 1 | 0, f, param[1])
-          ];
-  } else {
-    return /* [] */0;
-  }
-}
-
-function mapi$1(f, l) {
-  return mapi(0, f, l);
-}
-
-function rev_map(f, l) {
-  var _accu = /* [] */0;
-  var _param = l;
-  while(true) {
-    var param = _param;
-    var accu = _accu;
-    if (param) {
-      _param = param[1];
-      _accu = /* :: */[
-        Curry._1(f, param[0]),
-        accu
-      ];
-      continue ;
-      
-    } else {
-      return accu;
-    }
-  };
-}
-
-function iter(f, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      Curry._1(f, param[0]);
-      _param = param[1];
-      continue ;
-      
-    } else {
-      return /* () */0;
-    }
-  };
-}
-
-function iteri(f, l) {
-  var _i = 0;
-  var f$1 = f;
-  var _param = l;
-  while(true) {
-    var param = _param;
-    var i = _i;
-    if (param) {
-      Curry._2(f$1, i, param[0]);
-      _param = param[1];
-      _i = i + 1 | 0;
-      continue ;
-      
-    } else {
-      return /* () */0;
-    }
-  };
-}
-
-function fold_left(f, _accu, _l) {
-  while(true) {
-    var l = _l;
-    var accu = _accu;
-    if (l) {
-      _l = l[1];
-      _accu = Curry._2(f, accu, l[0]);
-      continue ;
-      
-    } else {
-      return accu;
-    }
-  };
-}
-
-function fold_right(f, l, accu) {
-  if (l) {
-    return Curry._2(f, l[0], fold_right(f, l[1], accu));
-  } else {
-    return accu;
-  }
-}
-
-function map2(f, l1, l2) {
-  if (l1) {
-    if (l2) {
-      var r = Curry._2(f, l1[0], l2[0]);
-      return /* :: */[
-              r,
-              map2(f, l1[1], l2[1])
-            ];
-    } else {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.map2"
-          ];
-    }
-  } else if (l2) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "List.map2"
-        ];
-  } else {
-    return /* [] */0;
-  }
-}
-
-function rev_map2(f, l1, l2) {
-  var _accu = /* [] */0;
-  var _l1 = l1;
-  var _l2 = l2;
-  while(true) {
-    var l2$1 = _l2;
-    var l1$1 = _l1;
-    var accu = _accu;
-    if (l1$1) {
-      if (l2$1) {
-        _l2 = l2$1[1];
-        _l1 = l1$1[1];
-        _accu = /* :: */[
-          Curry._2(f, l1$1[0], l2$1[0]),
-          accu
-        ];
-        continue ;
-        
-      } else {
-        throw [
-              Caml_builtin_exceptions.invalid_argument,
-              "List.rev_map2"
-            ];
-      }
-    } else if (l2$1) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.rev_map2"
-          ];
-    } else {
-      return accu;
-    }
-  };
-}
-
-function iter2(f, _l1, _l2) {
-  while(true) {
-    var l2 = _l2;
-    var l1 = _l1;
-    if (l1) {
-      if (l2) {
-        Curry._2(f, l1[0], l2[0]);
-        _l2 = l2[1];
-        _l1 = l1[1];
-        continue ;
-        
-      } else {
-        throw [
-              Caml_builtin_exceptions.invalid_argument,
-              "List.iter2"
-            ];
-      }
-    } else if (l2) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.iter2"
-          ];
-    } else {
-      return /* () */0;
-    }
-  };
-}
-
-function fold_left2(f, _accu, _l1, _l2) {
-  while(true) {
-    var l2 = _l2;
-    var l1 = _l1;
-    var accu = _accu;
-    if (l1) {
-      if (l2) {
-        _l2 = l2[1];
-        _l1 = l1[1];
-        _accu = Curry._3(f, accu, l1[0], l2[0]);
-        continue ;
-        
-      } else {
-        throw [
-              Caml_builtin_exceptions.invalid_argument,
-              "List.fold_left2"
-            ];
-      }
-    } else if (l2) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.fold_left2"
-          ];
-    } else {
-      return accu;
-    }
-  };
-}
-
-function fold_right2(f, l1, l2, accu) {
-  if (l1) {
-    if (l2) {
-      return Curry._3(f, l1[0], l2[0], fold_right2(f, l1[1], l2[1], accu));
-    } else {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.fold_right2"
-          ];
-    }
-  } else if (l2) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "List.fold_right2"
-        ];
-  } else {
-    return accu;
-  }
-}
-
-function for_all(p, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (Curry._1(p, param[0])) {
-        _param = param[1];
-        continue ;
-        
-      } else {
-        return /* false */0;
-      }
-    } else {
-      return /* true */1;
-    }
-  };
-}
-
-function exists(p, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (Curry._1(p, param[0])) {
-        return /* true */1;
-      } else {
-        _param = param[1];
-        continue ;
-        
-      }
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function for_all2(p, _l1, _l2) {
-  while(true) {
-    var l2 = _l2;
-    var l1 = _l1;
-    if (l1) {
-      if (l2) {
-        if (Curry._2(p, l1[0], l2[0])) {
-          _l2 = l2[1];
-          _l1 = l1[1];
-          continue ;
-          
-        } else {
-          return /* false */0;
-        }
-      } else {
-        throw [
-              Caml_builtin_exceptions.invalid_argument,
-              "List.for_all2"
-            ];
-      }
-    } else if (l2) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.for_all2"
-          ];
-    } else {
-      return /* true */1;
-    }
-  };
-}
-
-function exists2(p, _l1, _l2) {
-  while(true) {
-    var l2 = _l2;
-    var l1 = _l1;
-    if (l1) {
-      if (l2) {
-        if (Curry._2(p, l1[0], l2[0])) {
-          return /* true */1;
-        } else {
-          _l2 = l2[1];
-          _l1 = l1[1];
-          continue ;
-          
-        }
-      } else {
-        throw [
-              Caml_builtin_exceptions.invalid_argument,
-              "List.exists2"
-            ];
-      }
-    } else if (l2) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.exists2"
-          ];
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function mem(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (Caml_obj.caml_compare(param[0], x)) {
-        _param = param[1];
-        continue ;
-        
-      } else {
-        return /* true */1;
-      }
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function memq(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (param[0] === x) {
-        return /* true */1;
-      } else {
-        _param = param[1];
-        continue ;
-        
-      }
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function assoc(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      var match = param[0];
-      if (Caml_obj.caml_compare(match[0], x)) {
-        _param = param[1];
-        continue ;
-        
-      } else {
-        return match[1];
-      }
-    } else {
-      throw Caml_builtin_exceptions.not_found;
-    }
-  };
-}
-
-function assq(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      var match = param[0];
-      if (match[0] === x) {
-        return match[1];
-      } else {
-        _param = param[1];
-        continue ;
-        
-      }
-    } else {
-      throw Caml_builtin_exceptions.not_found;
-    }
-  };
-}
-
-function mem_assoc(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (Caml_obj.caml_compare(param[0][0], x)) {
-        _param = param[1];
-        continue ;
-        
-      } else {
-        return /* true */1;
-      }
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function mem_assq(x, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      if (param[0][0] === x) {
-        return /* true */1;
-      } else {
-        _param = param[1];
-        continue ;
-        
-      }
-    } else {
-      return /* false */0;
-    }
-  };
-}
-
-function remove_assoc(x, param) {
-  if (param) {
-    var l = param[1];
-    var pair = param[0];
-    if (Caml_obj.caml_compare(pair[0], x)) {
-      return /* :: */[
-              pair,
-              remove_assoc(x, l)
-            ];
-    } else {
-      return l;
-    }
-  } else {
-    return /* [] */0;
-  }
-}
-
-function remove_assq(x, param) {
-  if (param) {
-    var l = param[1];
-    var pair = param[0];
-    if (pair[0] === x) {
-      return l;
-    } else {
-      return /* :: */[
-              pair,
-              remove_assq(x, l)
-            ];
-    }
-  } else {
-    return /* [] */0;
-  }
-}
-
-function find(p, _param) {
-  while(true) {
-    var param = _param;
-    if (param) {
-      var x = param[0];
-      if (Curry._1(p, x)) {
-        return x;
-      } else {
-        _param = param[1];
-        continue ;
-        
-      }
-    } else {
-      throw Caml_builtin_exceptions.not_found;
-    }
-  };
-}
-
-function find_all(p) {
-  return (function (param) {
-      var _accu = /* [] */0;
-      var _param = param;
-      while(true) {
-        var param$1 = _param;
-        var accu = _accu;
-        if (param$1) {
-          var l = param$1[1];
-          var x = param$1[0];
-          if (Curry._1(p, x)) {
-            _param = l;
-            _accu = /* :: */[
-              x,
-              accu
-            ];
-            continue ;
-            
-          } else {
-            _param = l;
-            continue ;
-            
-          }
-        } else {
-          return rev_append(accu, /* [] */0);
-        }
-      };
-    });
-}
-
-function partition(p, l) {
-  var _yes = /* [] */0;
-  var _no = /* [] */0;
-  var _param = l;
-  while(true) {
-    var param = _param;
-    var no = _no;
-    var yes = _yes;
-    if (param) {
-      var l$1 = param[1];
-      var x = param[0];
-      if (Curry._1(p, x)) {
-        _param = l$1;
-        _yes = /* :: */[
-          x,
-          yes
-        ];
-        continue ;
-        
-      } else {
-        _param = l$1;
-        _no = /* :: */[
-          x,
-          no
-        ];
-        continue ;
-        
-      }
-    } else {
-      return /* tuple */[
-              rev_append(yes, /* [] */0),
-              rev_append(no, /* [] */0)
-            ];
-    }
-  };
-}
-
-function split(param) {
-  if (param) {
-    var match = param[0];
-    var match$1 = split(param[1]);
-    return /* tuple */[
-            /* :: */[
-              match[0],
-              match$1[0]
-            ],
-            /* :: */[
-              match[1],
-              match$1[1]
-            ]
-          ];
-  } else {
-    return /* tuple */[
-            /* [] */0,
-            /* [] */0
-          ];
-  }
-}
-
-function combine(l1, l2) {
-  if (l1) {
-    if (l2) {
-      return /* :: */[
-              /* tuple */[
-                l1[0],
-                l2[0]
-              ],
-              combine(l1[1], l2[1])
-            ];
-    } else {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "List.combine"
-          ];
-    }
-  } else if (l2) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "List.combine"
-        ];
-  } else {
-    return /* [] */0;
-  }
-}
-
-function merge(cmp, l1, l2) {
-  if (l1) {
-    if (l2) {
-      var h2 = l2[0];
-      var h1 = l1[0];
-      if (Curry._2(cmp, h1, h2) <= 0) {
-        return /* :: */[
-                h1,
-                merge(cmp, l1[1], l2)
-              ];
-      } else {
-        return /* :: */[
-                h2,
-                merge(cmp, l1, l2[1])
-              ];
-      }
-    } else {
-      return l1;
-    }
-  } else {
-    return l2;
-  }
-}
-
-function chop(_k, _l) {
-  while(true) {
-    var l = _l;
-    var k = _k;
-    if (k) {
-      if (l) {
-        _l = l[1];
-        _k = k - 1 | 0;
-        continue ;
-        
-      } else {
-        throw [
-              Caml_builtin_exceptions.assert_failure,
-              [
-                "list.ml",
-                223,
-                11
-              ]
-            ];
-      }
-    } else {
-      return l;
-    }
-  };
-}
-
-function stable_sort(cmp, l) {
-  var sort = function (n, l) {
-    var exit = 0;
-    if (n !== 2) {
-      if (n !== 3) {
-        exit = 1;
-      } else if (l) {
-        var match = l[1];
-        if (match) {
-          var match$1 = match[1];
-          if (match$1) {
-            var x3 = match$1[0];
-            var x2 = match[0];
-            var x1 = l[0];
-            if (Curry._2(cmp, x1, x2) <= 0) {
-              if (Curry._2(cmp, x2, x3) <= 0) {
-                return /* :: */[
-                        x1,
-                        /* :: */[
-                          x2,
-                          /* :: */[
-                            x3,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              } else if (Curry._2(cmp, x1, x3) <= 0) {
-                return /* :: */[
-                        x1,
-                        /* :: */[
-                          x3,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              } else {
-                return /* :: */[
-                        x3,
-                        /* :: */[
-                          x1,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              }
-            } else if (Curry._2(cmp, x1, x3) <= 0) {
-              return /* :: */[
-                      x2,
-                      /* :: */[
-                        x1,
-                        /* :: */[
-                          x3,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            } else if (Curry._2(cmp, x2, x3) <= 0) {
-              return /* :: */[
-                      x2,
-                      /* :: */[
-                        x3,
-                        /* :: */[
-                          x1,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            } else {
-              return /* :: */[
-                      x3,
-                      /* :: */[
-                        x2,
-                        /* :: */[
-                          x1,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            }
-          } else {
-            exit = 1;
-          }
-        } else {
-          exit = 1;
-        }
-      } else {
-        exit = 1;
-      }
-    } else if (l) {
-      var match$2 = l[1];
-      if (match$2) {
-        var x2$1 = match$2[0];
-        var x1$1 = l[0];
-        if (Curry._2(cmp, x1$1, x2$1) <= 0) {
-          return /* :: */[
-                  x1$1,
-                  /* :: */[
-                    x2$1,
-                    /* [] */0
-                  ]
-                ];
-        } else {
-          return /* :: */[
-                  x2$1,
-                  /* :: */[
-                    x1$1,
-                    /* [] */0
-                  ]
-                ];
-        }
-      } else {
-        exit = 1;
-      }
-    } else {
-      exit = 1;
-    }
-    if (exit === 1) {
-      var n1 = (n >> 1);
-      var n2 = n - n1 | 0;
-      var l2 = chop(n1, l);
-      var s1 = rev_sort(n1, l);
-      var s2 = rev_sort(n2, l2);
-      var _l1 = s1;
-      var _l2 = s2;
-      var _accu = /* [] */0;
-      while(true) {
-        var accu = _accu;
-        var l2$1 = _l2;
-        var l1 = _l1;
-        if (l1) {
-          if (l2$1) {
-            var h2 = l2$1[0];
-            var h1 = l1[0];
-            if (Curry._2(cmp, h1, h2) > 0) {
-              _accu = /* :: */[
-                h1,
-                accu
-              ];
-              _l1 = l1[1];
-              continue ;
-              
-            } else {
-              _accu = /* :: */[
-                h2,
-                accu
-              ];
-              _l2 = l2$1[1];
-              continue ;
-              
-            }
-          } else {
-            return rev_append(l1, accu);
-          }
-        } else {
-          return rev_append(l2$1, accu);
-        }
-      };
-    }
-    
-  };
-  var rev_sort = function (n, l) {
-    var exit = 0;
-    if (n !== 2) {
-      if (n !== 3) {
-        exit = 1;
-      } else if (l) {
-        var match = l[1];
-        if (match) {
-          var match$1 = match[1];
-          if (match$1) {
-            var x3 = match$1[0];
-            var x2 = match[0];
-            var x1 = l[0];
-            if (Curry._2(cmp, x1, x2) > 0) {
-              if (Curry._2(cmp, x2, x3) > 0) {
-                return /* :: */[
-                        x1,
-                        /* :: */[
-                          x2,
-                          /* :: */[
-                            x3,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              } else if (Curry._2(cmp, x1, x3) > 0) {
-                return /* :: */[
-                        x1,
-                        /* :: */[
-                          x3,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              } else {
-                return /* :: */[
-                        x3,
-                        /* :: */[
-                          x1,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ]
-                      ];
-              }
-            } else if (Curry._2(cmp, x1, x3) > 0) {
-              return /* :: */[
-                      x2,
-                      /* :: */[
-                        x1,
-                        /* :: */[
-                          x3,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            } else if (Curry._2(cmp, x2, x3) > 0) {
-              return /* :: */[
-                      x2,
-                      /* :: */[
-                        x3,
-                        /* :: */[
-                          x1,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            } else {
-              return /* :: */[
-                      x3,
-                      /* :: */[
-                        x2,
-                        /* :: */[
-                          x1,
-                          /* [] */0
-                        ]
-                      ]
-                    ];
-            }
-          } else {
-            exit = 1;
-          }
-        } else {
-          exit = 1;
-        }
-      } else {
-        exit = 1;
-      }
-    } else if (l) {
-      var match$2 = l[1];
-      if (match$2) {
-        var x2$1 = match$2[0];
-        var x1$1 = l[0];
-        if (Curry._2(cmp, x1$1, x2$1) > 0) {
-          return /* :: */[
-                  x1$1,
-                  /* :: */[
-                    x2$1,
-                    /* [] */0
-                  ]
-                ];
-        } else {
-          return /* :: */[
-                  x2$1,
-                  /* :: */[
-                    x1$1,
-                    /* [] */0
-                  ]
-                ];
-        }
-      } else {
-        exit = 1;
-      }
-    } else {
-      exit = 1;
-    }
-    if (exit === 1) {
-      var n1 = (n >> 1);
-      var n2 = n - n1 | 0;
-      var l2 = chop(n1, l);
-      var s1 = sort(n1, l);
-      var s2 = sort(n2, l2);
-      var _l1 = s1;
-      var _l2 = s2;
-      var _accu = /* [] */0;
-      while(true) {
-        var accu = _accu;
-        var l2$1 = _l2;
-        var l1 = _l1;
-        if (l1) {
-          if (l2$1) {
-            var h2 = l2$1[0];
-            var h1 = l1[0];
-            if (Curry._2(cmp, h1, h2) <= 0) {
-              _accu = /* :: */[
-                h1,
-                accu
-              ];
-              _l1 = l1[1];
-              continue ;
-              
-            } else {
-              _accu = /* :: */[
-                h2,
-                accu
-              ];
-              _l2 = l2$1[1];
-              continue ;
-              
-            }
-          } else {
-            return rev_append(l1, accu);
-          }
-        } else {
-          return rev_append(l2$1, accu);
-        }
-      };
-    }
-    
-  };
-  var len = length(l);
-  if (len < 2) {
-    return l;
-  } else {
-    return sort(len, l);
-  }
-}
-
-function sort_uniq(cmp, l) {
-  var sort = function (n, l) {
-    var exit = 0;
-    if (n !== 2) {
-      if (n !== 3) {
-        exit = 1;
-      } else if (l) {
-        var match = l[1];
-        if (match) {
-          var match$1 = match[1];
-          if (match$1) {
-            var x3 = match$1[0];
-            var x2 = match[0];
-            var x1 = l[0];
-            var c = Curry._2(cmp, x1, x2);
-            if (c) {
-              if (c < 0) {
-                var c$1 = Curry._2(cmp, x2, x3);
-                if (c$1) {
-                  if (c$1 < 0) {
-                    return /* :: */[
-                            x1,
-                            /* :: */[
-                              x2,
-                              /* :: */[
-                                x3,
-                                /* [] */0
-                              ]
-                            ]
-                          ];
-                  } else {
-                    var c$2 = Curry._2(cmp, x1, x3);
-                    if (c$2) {
-                      if (c$2 < 0) {
-                        return /* :: */[
-                                x1,
-                                /* :: */[
-                                  x3,
-                                  /* :: */[
-                                    x2,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      } else {
-                        return /* :: */[
-                                x3,
-                                /* :: */[
-                                  x1,
-                                  /* :: */[
-                                    x2,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      }
-                    } else {
-                      return /* :: */[
-                              x1,
-                              /* :: */[
-                                x2,
-                                /* [] */0
-                              ]
-                            ];
-                    }
-                  }
-                } else {
-                  return /* :: */[
-                          x1,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              } else {
-                var c$3 = Curry._2(cmp, x1, x3);
-                if (c$3) {
-                  if (c$3 < 0) {
-                    return /* :: */[
-                            x2,
-                            /* :: */[
-                              x1,
-                              /* :: */[
-                                x3,
-                                /* [] */0
-                              ]
-                            ]
-                          ];
-                  } else {
-                    var c$4 = Curry._2(cmp, x2, x3);
-                    if (c$4) {
-                      if (c$4 < 0) {
-                        return /* :: */[
-                                x2,
-                                /* :: */[
-                                  x3,
-                                  /* :: */[
-                                    x1,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      } else {
-                        return /* :: */[
-                                x3,
-                                /* :: */[
-                                  x2,
-                                  /* :: */[
-                                    x1,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      }
-                    } else {
-                      return /* :: */[
-                              x2,
-                              /* :: */[
-                                x1,
-                                /* [] */0
-                              ]
-                            ];
-                    }
-                  }
-                } else {
-                  return /* :: */[
-                          x2,
-                          /* :: */[
-                            x1,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              }
-            } else {
-              var c$5 = Curry._2(cmp, x2, x3);
-              if (c$5) {
-                if (c$5 < 0) {
-                  return /* :: */[
-                          x2,
-                          /* :: */[
-                            x3,
-                            /* [] */0
-                          ]
-                        ];
-                } else {
-                  return /* :: */[
-                          x3,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              } else {
-                return /* :: */[
-                        x2,
-                        /* [] */0
-                      ];
-              }
-            }
-          } else {
-            exit = 1;
-          }
-        } else {
-          exit = 1;
-        }
-      } else {
-        exit = 1;
-      }
-    } else if (l) {
-      var match$2 = l[1];
-      if (match$2) {
-        var x2$1 = match$2[0];
-        var x1$1 = l[0];
-        var c$6 = Curry._2(cmp, x1$1, x2$1);
-        if (c$6) {
-          if (c$6 < 0) {
-            return /* :: */[
-                    x1$1,
-                    /* :: */[
-                      x2$1,
-                      /* [] */0
-                    ]
-                  ];
-          } else {
-            return /* :: */[
-                    x2$1,
-                    /* :: */[
-                      x1$1,
-                      /* [] */0
-                    ]
-                  ];
-          }
-        } else {
-          return /* :: */[
-                  x1$1,
-                  /* [] */0
-                ];
-        }
-      } else {
-        exit = 1;
-      }
-    } else {
-      exit = 1;
-    }
-    if (exit === 1) {
-      var n1 = (n >> 1);
-      var n2 = n - n1 | 0;
-      var l2 = chop(n1, l);
-      var s1 = rev_sort(n1, l);
-      var s2 = rev_sort(n2, l2);
-      var _l1 = s1;
-      var _l2 = s2;
-      var _accu = /* [] */0;
-      while(true) {
-        var accu = _accu;
-        var l2$1 = _l2;
-        var l1 = _l1;
-        if (l1) {
-          if (l2$1) {
-            var t2 = l2$1[1];
-            var h2 = l2$1[0];
-            var t1 = l1[1];
-            var h1 = l1[0];
-            var c$7 = Curry._2(cmp, h1, h2);
-            if (c$7) {
-              if (c$7 > 0) {
-                _accu = /* :: */[
-                  h1,
-                  accu
-                ];
-                _l1 = t1;
-                continue ;
-                
-              } else {
-                _accu = /* :: */[
-                  h2,
-                  accu
-                ];
-                _l2 = t2;
-                continue ;
-                
-              }
-            } else {
-              _accu = /* :: */[
-                h1,
-                accu
-              ];
-              _l2 = t2;
-              _l1 = t1;
-              continue ;
-              
-            }
-          } else {
-            return rev_append(l1, accu);
-          }
-        } else {
-          return rev_append(l2$1, accu);
-        }
-      };
-    }
-    
-  };
-  var rev_sort = function (n, l) {
-    var exit = 0;
-    if (n !== 2) {
-      if (n !== 3) {
-        exit = 1;
-      } else if (l) {
-        var match = l[1];
-        if (match) {
-          var match$1 = match[1];
-          if (match$1) {
-            var x3 = match$1[0];
-            var x2 = match[0];
-            var x1 = l[0];
-            var c = Curry._2(cmp, x1, x2);
-            if (c) {
-              if (c > 0) {
-                var c$1 = Curry._2(cmp, x2, x3);
-                if (c$1) {
-                  if (c$1 > 0) {
-                    return /* :: */[
-                            x1,
-                            /* :: */[
-                              x2,
-                              /* :: */[
-                                x3,
-                                /* [] */0
-                              ]
-                            ]
-                          ];
-                  } else {
-                    var c$2 = Curry._2(cmp, x1, x3);
-                    if (c$2) {
-                      if (c$2 > 0) {
-                        return /* :: */[
-                                x1,
-                                /* :: */[
-                                  x3,
-                                  /* :: */[
-                                    x2,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      } else {
-                        return /* :: */[
-                                x3,
-                                /* :: */[
-                                  x1,
-                                  /* :: */[
-                                    x2,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      }
-                    } else {
-                      return /* :: */[
-                              x1,
-                              /* :: */[
-                                x2,
-                                /* [] */0
-                              ]
-                            ];
-                    }
-                  }
-                } else {
-                  return /* :: */[
-                          x1,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              } else {
-                var c$3 = Curry._2(cmp, x1, x3);
-                if (c$3) {
-                  if (c$3 > 0) {
-                    return /* :: */[
-                            x2,
-                            /* :: */[
-                              x1,
-                              /* :: */[
-                                x3,
-                                /* [] */0
-                              ]
-                            ]
-                          ];
-                  } else {
-                    var c$4 = Curry._2(cmp, x2, x3);
-                    if (c$4) {
-                      if (c$4 > 0) {
-                        return /* :: */[
-                                x2,
-                                /* :: */[
-                                  x3,
-                                  /* :: */[
-                                    x1,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      } else {
-                        return /* :: */[
-                                x3,
-                                /* :: */[
-                                  x2,
-                                  /* :: */[
-                                    x1,
-                                    /* [] */0
-                                  ]
-                                ]
-                              ];
-                      }
-                    } else {
-                      return /* :: */[
-                              x2,
-                              /* :: */[
-                                x1,
-                                /* [] */0
-                              ]
-                            ];
-                    }
-                  }
-                } else {
-                  return /* :: */[
-                          x2,
-                          /* :: */[
-                            x1,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              }
-            } else {
-              var c$5 = Curry._2(cmp, x2, x3);
-              if (c$5) {
-                if (c$5 > 0) {
-                  return /* :: */[
-                          x2,
-                          /* :: */[
-                            x3,
-                            /* [] */0
-                          ]
-                        ];
-                } else {
-                  return /* :: */[
-                          x3,
-                          /* :: */[
-                            x2,
-                            /* [] */0
-                          ]
-                        ];
-                }
-              } else {
-                return /* :: */[
-                        x2,
-                        /* [] */0
-                      ];
-              }
-            }
-          } else {
-            exit = 1;
-          }
-        } else {
-          exit = 1;
-        }
-      } else {
-        exit = 1;
-      }
-    } else if (l) {
-      var match$2 = l[1];
-      if (match$2) {
-        var x2$1 = match$2[0];
-        var x1$1 = l[0];
-        var c$6 = Curry._2(cmp, x1$1, x2$1);
-        if (c$6) {
-          if (c$6 > 0) {
-            return /* :: */[
-                    x1$1,
-                    /* :: */[
-                      x2$1,
-                      /* [] */0
-                    ]
-                  ];
-          } else {
-            return /* :: */[
-                    x2$1,
-                    /* :: */[
-                      x1$1,
-                      /* [] */0
-                    ]
-                  ];
-          }
-        } else {
-          return /* :: */[
-                  x1$1,
-                  /* [] */0
-                ];
-        }
-      } else {
-        exit = 1;
-      }
-    } else {
-      exit = 1;
-    }
-    if (exit === 1) {
-      var n1 = (n >> 1);
-      var n2 = n - n1 | 0;
-      var l2 = chop(n1, l);
-      var s1 = sort(n1, l);
-      var s2 = sort(n2, l2);
-      var _l1 = s1;
-      var _l2 = s2;
-      var _accu = /* [] */0;
-      while(true) {
-        var accu = _accu;
-        var l2$1 = _l2;
-        var l1 = _l1;
-        if (l1) {
-          if (l2$1) {
-            var t2 = l2$1[1];
-            var h2 = l2$1[0];
-            var t1 = l1[1];
-            var h1 = l1[0];
-            var c$7 = Curry._2(cmp, h1, h2);
-            if (c$7) {
-              if (c$7 < 0) {
-                _accu = /* :: */[
-                  h1,
-                  accu
-                ];
-                _l1 = t1;
-                continue ;
-                
-              } else {
-                _accu = /* :: */[
-                  h2,
-                  accu
-                ];
-                _l2 = t2;
-                continue ;
-                
-              }
-            } else {
-              _accu = /* :: */[
-                h1,
-                accu
-              ];
-              _l2 = t2;
-              _l1 = t1;
-              continue ;
-              
-            }
-          } else {
-            return rev_append(l1, accu);
-          }
-        } else {
-          return rev_append(l2$1, accu);
-        }
-      };
-    }
-    
-  };
-  var len = length(l);
-  if (len < 2) {
-    return l;
-  } else {
-    return sort(len, l);
-  }
-}
-
-var append = Pervasives.$at;
-
-var concat = flatten;
-
-var filter = find_all;
-
-var sort = stable_sort;
-
-var fast_sort = stable_sort;
-
-exports.length       = length;
-exports.hd           = hd;
-exports.tl           = tl;
-exports.nth          = nth;
-exports.rev          = rev;
-exports.append       = append;
-exports.rev_append   = rev_append;
-exports.concat       = concat;
-exports.flatten      = flatten;
-exports.iter         = iter;
-exports.iteri        = iteri;
-exports.map          = map;
-exports.mapi         = mapi$1;
-exports.rev_map      = rev_map;
-exports.fold_left    = fold_left;
-exports.fold_right   = fold_right;
-exports.iter2        = iter2;
-exports.map2         = map2;
-exports.rev_map2     = rev_map2;
-exports.fold_left2   = fold_left2;
-exports.fold_right2  = fold_right2;
-exports.for_all      = for_all;
-exports.exists       = exists;
-exports.for_all2     = for_all2;
-exports.exists2      = exists2;
-exports.mem          = mem;
-exports.memq         = memq;
-exports.find         = find;
-exports.filter       = filter;
-exports.find_all     = find_all;
-exports.partition    = partition;
-exports.assoc        = assoc;
-exports.assq         = assq;
-exports.mem_assoc    = mem_assoc;
-exports.mem_assq     = mem_assq;
-exports.remove_assoc = remove_assoc;
-exports.remove_assq  = remove_assq;
-exports.split        = split;
-exports.combine      = combine;
-exports.sort         = sort;
-exports.stable_sort  = stable_sort;
-exports.fast_sort    = fast_sort;
-exports.sort_uniq    = sort_uniq;
-exports.merge        = merge;
-/* No side effect */
-
-},{"./curry.js":36,"./caml_obj.js":42,"./pervasives.js":43,"./caml_builtin_exceptions.js":34}],45:[function(require,module,exports) {
-'use strict';
-
-var Caml_exceptions = require("./caml_exceptions.js");
-
-var $$Error = Caml_exceptions.create("Js_exn.Error");
-
-function internalToOCamlException(e) {
-  if (Caml_exceptions.isCamlExceptionOrOpenVariant(e)) {
-    return e;
-  } else {
-    return [
-            $$Error,
-            e
-          ];
-  }
-}
-
-function raiseError(str) {
-  throw new Error(str);
-}
-
-function raiseEvalError(str) {
-  throw new EvalError(str);
-}
-
-function raiseRangeError(str) {
-  throw new RangeError(str);
-}
-
-function raiseReferenceError(str) {
-  throw new ReferenceError(str);
-}
-
-function raiseSyntaxError(str) {
-  throw new SyntaxError(str);
-}
-
-function raiseTypeError(str) {
-  throw new TypeError(str);
-}
-
-function raiseUriError(str) {
-  throw new URIError(str);
-}
-
-exports.$$Error                  = $$Error;
-exports.internalToOCamlException = internalToOCamlException;
-exports.raiseError               = raiseError;
-exports.raiseEvalError           = raiseEvalError;
-exports.raiseRangeError          = raiseRangeError;
-exports.raiseReferenceError      = raiseReferenceError;
-exports.raiseSyntaxError         = raiseSyntaxError;
-exports.raiseTypeError           = raiseTypeError;
-exports.raiseUriError            = raiseUriError;
-/* No side effect */
-
-},{"./caml_exceptions.js":46}],37:[function(require,module,exports) {
-'use strict';
-
-var Curry                   = require("./curry.js");
-var Js_exn                  = require("./js_exn.js");
-var Caml_array              = require("./caml_array.js");
-var Caml_exceptions         = require("./caml_exceptions.js");
-var Caml_builtin_exceptions = require("./caml_builtin_exceptions.js");
-
-function init(l, f) {
-  if (l) {
-    if (l < 0) {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "Array.init"
-          ];
-    } else {
-      var res = Caml_array.caml_make_vect(l, Curry._1(f, 0));
-      for(var i = 1 ,i_finish = l - 1 | 0; i <= i_finish; ++i){
-        res[i] = Curry._1(f, i);
-      }
-      return res;
-    }
-  } else {
-    return /* array */[];
-  }
-}
-
-function make_matrix(sx, sy, init) {
-  var res = Caml_array.caml_make_vect(sx, /* array */[]);
-  for(var x = 0 ,x_finish = sx - 1 | 0; x <= x_finish; ++x){
-    res[x] = Caml_array.caml_make_vect(sy, init);
-  }
-  return res;
-}
-
-function copy(a) {
-  var l = a.length;
-  if (l) {
-    return Caml_array.caml_array_sub(a, 0, l);
-  } else {
-    return /* array */[];
-  }
-}
-
-function append(a1, a2) {
-  var l1 = a1.length;
-  if (l1) {
-    if (a2.length) {
-      return a1.concat(a2);
-    } else {
-      return Caml_array.caml_array_sub(a1, 0, l1);
-    }
-  } else {
-    return copy(a2);
-  }
-}
-
-function sub(a, ofs, len) {
-  if (len < 0 || ofs > (a.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "Array.sub"
-        ];
-  } else {
-    return Caml_array.caml_array_sub(a, ofs, len);
-  }
-}
-
-function fill(a, ofs, len, v) {
-  if (ofs < 0 || len < 0 || ofs > (a.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "Array.fill"
-        ];
-  } else {
-    for(var i = ofs ,i_finish = (ofs + len | 0) - 1 | 0; i <= i_finish; ++i){
-      a[i] = v;
-    }
-    return /* () */0;
-  }
-}
-
-function blit(a1, ofs1, a2, ofs2, len) {
-  if (len < 0 || ofs1 < 0 || ofs1 > (a1.length - len | 0) || ofs2 < 0 || ofs2 > (a2.length - len | 0)) {
-    throw [
-          Caml_builtin_exceptions.invalid_argument,
-          "Array.blit"
-        ];
-  } else {
-    return Caml_array.caml_array_blit(a1, ofs1, a2, ofs2, len);
-  }
-}
-
-function iter(f, a) {
-  for(var i = 0 ,i_finish = a.length - 1 | 0; i <= i_finish; ++i){
-    Curry._1(f, a[i]);
-  }
-  return /* () */0;
-}
-
-function map(f, a) {
-  var l = a.length;
-  if (l) {
-    var r = Caml_array.caml_make_vect(l, Curry._1(f, a[0]));
-    for(var i = 1 ,i_finish = l - 1 | 0; i <= i_finish; ++i){
-      r[i] = Curry._1(f, a[i]);
-    }
-    return r;
-  } else {
-    return /* array */[];
-  }
-}
-
-function iteri(f, a) {
-  for(var i = 0 ,i_finish = a.length - 1 | 0; i <= i_finish; ++i){
-    Curry._2(f, i, a[i]);
-  }
-  return /* () */0;
-}
-
-function mapi(f, a) {
-  var l = a.length;
-  if (l) {
-    var r = Caml_array.caml_make_vect(l, Curry._2(f, 0, a[0]));
-    for(var i = 1 ,i_finish = l - 1 | 0; i <= i_finish; ++i){
-      r[i] = Curry._2(f, i, a[i]);
-    }
-    return r;
-  } else {
-    return /* array */[];
-  }
-}
-
-function to_list(a) {
-  var _i = a.length - 1 | 0;
-  var _res = /* [] */0;
-  while(true) {
-    var res = _res;
-    var i = _i;
-    if (i < 0) {
-      return res;
-    } else {
-      _res = /* :: */[
-        a[i],
-        res
-      ];
-      _i = i - 1 | 0;
-      continue ;
-      
-    }
-  };
-}
-
-function list_length(_accu, _param) {
-  while(true) {
-    var param = _param;
-    var accu = _accu;
-    if (param) {
-      _param = param[1];
-      _accu = accu + 1 | 0;
-      continue ;
-      
-    } else {
-      return accu;
-    }
-  };
-}
-
-function of_list(l) {
-  if (l) {
-    var a = Caml_array.caml_make_vect(list_length(0, l), l[0]);
-    var _i = 1;
-    var _param = l[1];
-    while(true) {
-      var param = _param;
-      var i = _i;
-      if (param) {
-        a[i] = param[0];
-        _param = param[1];
-        _i = i + 1 | 0;
-        continue ;
-        
-      } else {
-        return a;
-      }
-    };
-  } else {
-    return /* array */[];
-  }
-}
-
-function fold_left(f, x, a) {
-  var r = x;
-  for(var i = 0 ,i_finish = a.length - 1 | 0; i <= i_finish; ++i){
-    r = Curry._2(f, r, a[i]);
-  }
-  return r;
-}
-
-function fold_right(f, a, x) {
-  var r = x;
-  for(var i = a.length - 1 | 0; i >= 0; --i){
-    r = Curry._2(f, a[i], r);
-  }
-  return r;
-}
-
-var Bottom = Caml_exceptions.create("Array.Bottom");
-
-function sort(cmp, a) {
-  var maxson = function (l, i) {
-    var i31 = ((i + i | 0) + i | 0) + 1 | 0;
-    var x = i31;
-    if ((i31 + 2 | 0) < l) {
-      if (Curry._2(cmp, Caml_array.caml_array_get(a, i31), Caml_array.caml_array_get(a, i31 + 1 | 0)) < 0) {
-        x = i31 + 1 | 0;
-      }
-      if (Curry._2(cmp, Caml_array.caml_array_get(a, x), Caml_array.caml_array_get(a, i31 + 2 | 0)) < 0) {
-        x = i31 + 2 | 0;
-      }
-      return x;
-    } else if ((i31 + 1 | 0) < l && Curry._2(cmp, Caml_array.caml_array_get(a, i31), Caml_array.caml_array_get(a, i31 + 1 | 0)) < 0) {
-      return i31 + 1 | 0;
-    } else if (i31 < l) {
-      return i31;
-    } else {
-      throw [
-            Bottom,
-            i
-          ];
-    }
-  };
-  var trickle = function (l, i, e) {
-    try {
-      var l$1 = l;
-      var _i = i;
-      var e$1 = e;
-      while(true) {
-        var i$1 = _i;
-        var j = maxson(l$1, i$1);
-        if (Curry._2(cmp, Caml_array.caml_array_get(a, j), e$1) > 0) {
-          Caml_array.caml_array_set(a, i$1, Caml_array.caml_array_get(a, j));
-          _i = j;
-          continue ;
-          
-        } else {
-          return Caml_array.caml_array_set(a, i$1, e$1);
-        }
-      };
-    }
-    catch (raw_exn){
-      var exn = Js_exn.internalToOCamlException(raw_exn);
-      if (exn[0] === Bottom) {
-        return Caml_array.caml_array_set(a, exn[1], e);
-      } else {
-        throw exn;
-      }
-    }
-  };
-  var bubble = function (l, i) {
-    try {
-      var l$1 = l;
-      var _i = i;
-      while(true) {
-        var i$1 = _i;
-        var j = maxson(l$1, i$1);
-        Caml_array.caml_array_set(a, i$1, Caml_array.caml_array_get(a, j));
-        _i = j;
-        continue ;
-        
-      };
-    }
-    catch (raw_exn){
-      var exn = Js_exn.internalToOCamlException(raw_exn);
-      if (exn[0] === Bottom) {
-        return exn[1];
-      } else {
-        throw exn;
-      }
-    }
-  };
-  var trickleup = function (_i, e) {
-    while(true) {
-      var i = _i;
-      var father = (i - 1 | 0) / 3 | 0;
-      if (i === father) {
-        throw [
-              Caml_builtin_exceptions.assert_failure,
-              [
-                "array.ml",
-                168,
-                4
-              ]
-            ];
-      }
-      if (Curry._2(cmp, Caml_array.caml_array_get(a, father), e) < 0) {
-        Caml_array.caml_array_set(a, i, Caml_array.caml_array_get(a, father));
-        if (father > 0) {
-          _i = father;
-          continue ;
-          
-        } else {
-          return Caml_array.caml_array_set(a, 0, e);
-        }
-      } else {
-        return Caml_array.caml_array_set(a, i, e);
-      }
-    };
-  };
-  var l = a.length;
-  for(var i = ((l + 1 | 0) / 3 | 0) - 1 | 0; i >= 0; --i){
-    trickle(l, i, Caml_array.caml_array_get(a, i));
-  }
-  for(var i$1 = l - 1 | 0; i$1 >= 2; --i$1){
-    var e = Caml_array.caml_array_get(a, i$1);
-    Caml_array.caml_array_set(a, i$1, Caml_array.caml_array_get(a, 0));
-    trickleup(bubble(i$1, 0), e);
-  }
-  if (l > 1) {
-    var e$1 = Caml_array.caml_array_get(a, 1);
-    Caml_array.caml_array_set(a, 1, Caml_array.caml_array_get(a, 0));
-    return Caml_array.caml_array_set(a, 0, e$1);
-  } else {
-    return 0;
-  }
-}
-
-function stable_sort(cmp, a) {
-  var merge = function (src1ofs, src1len, src2, src2ofs, src2len, dst, dstofs) {
-    var src1r = src1ofs + src1len | 0;
-    var src2r = src2ofs + src2len | 0;
-    var _i1 = src1ofs;
-    var _s1 = Caml_array.caml_array_get(a, src1ofs);
-    var _i2 = src2ofs;
-    var _s2 = Caml_array.caml_array_get(src2, src2ofs);
-    var _d = dstofs;
-    while(true) {
-      var d = _d;
-      var s2 = _s2;
-      var i2 = _i2;
-      var s1 = _s1;
-      var i1 = _i1;
-      if (Curry._2(cmp, s1, s2) <= 0) {
-        Caml_array.caml_array_set(dst, d, s1);
-        var i1$1 = i1 + 1 | 0;
-        if (i1$1 < src1r) {
-          _d = d + 1 | 0;
-          _s1 = Caml_array.caml_array_get(a, i1$1);
-          _i1 = i1$1;
-          continue ;
-          
-        } else {
-          return blit(src2, i2, dst, d + 1 | 0, src2r - i2 | 0);
-        }
-      } else {
-        Caml_array.caml_array_set(dst, d, s2);
-        var i2$1 = i2 + 1 | 0;
-        if (i2$1 < src2r) {
-          _d = d + 1 | 0;
-          _s2 = Caml_array.caml_array_get(src2, i2$1);
-          _i2 = i2$1;
-          continue ;
-          
-        } else {
-          return blit(a, i1, dst, d + 1 | 0, src1r - i1 | 0);
-        }
-      }
-    };
-  };
-  var isortto = function (srcofs, dst, dstofs, len) {
-    for(var i = 0 ,i_finish = len - 1 | 0; i <= i_finish; ++i){
-      var e = Caml_array.caml_array_get(a, srcofs + i | 0);
-      var j = (dstofs + i | 0) - 1 | 0;
-      while(j >= dstofs && Curry._2(cmp, Caml_array.caml_array_get(dst, j), e) > 0) {
-        Caml_array.caml_array_set(dst, j + 1 | 0, Caml_array.caml_array_get(dst, j));
-        j = j - 1 | 0;
-      };
-      Caml_array.caml_array_set(dst, j + 1 | 0, e);
-    }
-    return /* () */0;
-  };
-  var sortto = function (srcofs, dst, dstofs, len) {
-    if (len <= 5) {
-      return isortto(srcofs, dst, dstofs, len);
-    } else {
-      var l1 = len / 2 | 0;
-      var l2 = len - l1 | 0;
-      sortto(srcofs + l1 | 0, dst, dstofs + l1 | 0, l2);
-      sortto(srcofs, a, srcofs + l2 | 0, l1);
-      return merge(srcofs + l2 | 0, l1, dst, dstofs + l1 | 0, l2, dst, dstofs);
-    }
-  };
-  var l = a.length;
-  if (l <= 5) {
-    return isortto(0, a, 0, l);
-  } else {
-    var l1 = l / 2 | 0;
-    var l2 = l - l1 | 0;
-    var t = Caml_array.caml_make_vect(l2, Caml_array.caml_array_get(a, 0));
-    sortto(l1, t, 0, l2);
-    sortto(0, a, l2, l1);
-    return merge(l2, l1, t, 0, l2, a, 0);
-  }
-}
-
-var create_matrix = make_matrix;
-
-var concat = Caml_array.caml_array_concat;
-
-var fast_sort = stable_sort;
-
-exports.init          = init;
-exports.make_matrix   = make_matrix;
-exports.create_matrix = create_matrix;
-exports.append        = append;
-exports.concat        = concat;
-exports.sub           = sub;
-exports.copy          = copy;
-exports.fill          = fill;
-exports.blit          = blit;
-exports.to_list       = to_list;
-exports.of_list       = of_list;
-exports.iter          = iter;
-exports.map           = map;
-exports.iteri         = iteri;
-exports.mapi          = mapi;
-exports.fold_left     = fold_left;
-exports.fold_right    = fold_right;
-exports.sort          = sort;
-exports.stable_sort   = stable_sort;
-exports.fast_sort     = fast_sort;
-/* No side effect */
-
-},{"./curry.js":36,"./js_exn.js":45,"./caml_array.js":44,"./caml_exceptions.js":46,"./caml_builtin_exceptions.js":34}],13:[function(require,module,exports) {
-'use strict';
-
-var React = require("react");
-
-function _assign(prim, prim$1) {
-  return Object.assign(prim, prim$1);
-}
-
-var emptyObject = { };
-
-
+},{"./cjs/react-dom.production.min.js":16,"./cjs/react-dom.development.js":17}],39:[function(require,module,exports) {
 /**
- * Copyright 2013-present, Facebook, Inc.
+ * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
- *
  */
 
-// 'use strict';
+'use strict';
 
-// var _assign = require('object-assign');
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
 
-// var emptyObject = require('emptyObject');
-// var _invariant = require('invariant');
+var warning = function () {};
 
-// if (process.env.NODE_ENV !== 'production') {
-//   var warning = require('fbjs/lib/warning');
-// }
+if ('development' !== 'production') {
+  warning = function (condition, format, args) {
+    var len = arguments.length;
+    args = new Array(len > 2 ? len - 2 : 0);
+    for (var key = 2; key < len; key++) {
+      args[key - 2] = arguments[key];
+    }
+    if (format === undefined) {
+      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
 
-var MIXINS_KEY = 'mixins';
+    if (format.length < 10 || /^[s\W]*$/.test(format)) {
+      throw new Error('The warning format should be able to uniquely identify this ' + 'warning. Please, use a more descriptive format than: ' + format);
+    }
 
-// Helper function to allow the creation of anonymous functions which do not
-// have .name set to the name of the variable being assigned to.
-function identity(fn) {
-  return fn;
+    if (!condition) {
+      var argIndex = 0;
+      var message = 'Warning: ' + format.replace(/%s/g, function () {
+        return args[argIndex++];
+      });
+      if (typeof console !== 'undefined') {
+        console.error(message);
+      }
+      try {
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+      } catch (x) {}
+    }
+  };
 }
 
-var ReactPropTypeLocationNames;
-// if (process.env.NODE_ENV !== 'production') {
-//   ReactPropTypeLocationNames = {
-//     prop: 'prop',
-//     context: 'context',
-//     childContext: 'child context'
-//   };
-// } else {
-  ReactPropTypeLocationNames = {};
-// }
+module.exports = warning;
+},{}],44:[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-;
+'use strict';
 
-var factory = (
-function factory(ReactComponent, isValidElement, ReactNoopUpdateQueue) {
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var invariant = require('fbjs/lib/invariant');
+var warning = require('fbjs/lib/warning');
+var assign = require('object-assign');
+
+var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+var checkPropTypes = require('./checkPropTypes');
+
+module.exports = function (isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
   /**
-   * Policies that describe methods in `ReactClassInterface`.
-   */
-
-  var injectedMixins = [];
-
-  /**
-   * Composite components are higher-level components that compose other composite
-   * or host components.
+   * Returns the iterator method function contained on the iterable object.
    *
-   * To create a new type of `ReactClass`, pass a specification of
-   * your new class to `React.createClass`. The only requirement of your class
-   * specification is that you implement a `render` method.
+   * Be sure to invoke the function with the iterable as context:
    *
-   *   var MyComponent = React.createClass({
-   *     render: function() {
-   *       return <div>Hello World</div>;
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
    *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
    *   });
    *
-   * The class specification supports a specific protocol of methods that have
-   * special meaning (e.g. `render`). See `ReactClassInterface` for
-   * more the comprehensive protocol. Any other properties and methods in the
-   * class specification will be available on the prototype.
+   * A more formal specification of how these methods are used:
    *
-   * @interface ReactClassInterface
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
    * @internal
    */
-  var ReactClassInterface = {
-    /**
-     * An array of Mixin objects to include when defining your component.
-     *
-     * @type {array}
-     * @optional
-     */
-    mixins: 'DEFINE_MANY',
 
-    /**
-     * An object containing properties and methods that should be defined on
-     * the component's constructor instead of its prototype (static methods).
-     *
-     * @type {object}
-     * @optional
-     */
-    statics: 'DEFINE_MANY',
+  var ANONYMOUS = '<<anonymous>>';
 
-    /**
-     * Definition of prop types for this component.
-     *
-     * @type {object}
-     * @optional
-     */
-    propTypes: 'DEFINE_MANY',
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
 
-    /**
-     * Definition of context types for this component.
-     *
-     * @type {object}
-     * @optional
-     */
-    contextTypes: 'DEFINE_MANY',
-
-    /**
-     * Definition of context types this component sets for its children.
-     *
-     * @type {object}
-     * @optional
-     */
-    childContextTypes: 'DEFINE_MANY',
-
-    // ==== Definition methods ====
-
-    /**
-     * Invoked when the component is mounted. Values in the mapping will be set on
-     * `this.props` if that prop is not specified (i.e. using an `in` check).
-     *
-     * This method is invoked before `getInitialState` and therefore cannot rely
-     * on `this.state` or use `this.setState`.
-     *
-     * @return {object}
-     * @optional
-     */
-    getDefaultProps: 'DEFINE_MANY_MERGED',
-
-    /**
-     * Invoked once before the component is mounted. The return value will be used
-     * as the initial value of `this.state`.
-     *
-     *   getInitialState: function() {
-     *     return {
-     *       isOn: false,
-     *       fooBaz: new BazFoo()
-     *     }
-     *   }
-     *
-     * @return {object}
-     * @optional
-     */
-    getInitialState: 'DEFINE_MANY_MERGED',
-
-    /**
-     * @return {object}
-     * @optional
-     */
-    getChildContext: 'DEFINE_MANY_MERGED',
-
-    /**
-     * Uses props from `this.props` and state from `this.state` to render the
-     * structure of the component.
-     *
-     * No guarantees are made about when or how often this method is invoked, so
-     * it must not have side effects.
-     *
-     *   render: function() {
-     *     var name = this.props.name;
-     *     return <div>Hello, {name}!</div>;
-     *   }
-     *
-     * @return {ReactComponent}
-     * @required
-     */
-    render: 'DEFINE_ONCE',
-
-    // ==== Delegate methods ====
-
-    /**
-     * Invoked when the component is initially created and about to be mounted.
-     * This may have side effects, but any external subscriptions or data created
-     * by this method must be cleaned up in `componentWillUnmount`.
-     *
-     * @optional
-     */
-    componentWillMount: 'DEFINE_MANY',
-
-    /**
-     * Invoked when the component has been mounted and has a DOM representation.
-     * However, there is no guarantee that the DOM node is in the document.
-     *
-     * Use this as an opportunity to operate on the DOM when the component has
-     * been mounted (initialized and rendered) for the first time.
-     *
-     * @param {DOMElement} rootNode DOM element representing the component.
-     * @optional
-     */
-    componentDidMount: 'DEFINE_MANY',
-
-    /**
-     * Invoked before the component receives new props.
-     *
-     * Use this as an opportunity to react to a prop transition by updating the
-     * state using `this.setState`. Current props are accessed via `this.props`.
-     *
-     *   componentWillReceiveProps: function(nextProps, nextContext) {
-     *     this.setState({
-     *       likesIncreasing: nextProps.likeCount > this.props.likeCount
-     *     });
-     *   }
-     *
-     * NOTE: There is no equivalent `componentWillReceiveState`. An incoming prop
-     * transition may cause a state change, but the opposite is not true. If you
-     * need it, you are probably looking for `componentWillUpdate`.
-     *
-     * @param {object} nextProps
-     * @optional
-     */
-    componentWillReceiveProps: 'DEFINE_MANY',
-
-    /**
-     * Invoked while deciding if the component should be updated as a result of
-     * receiving new props, state and/or context.
-     *
-     * Use this as an opportunity to `return false` when you're certain that the
-     * transition to the new props/state/context will not require a component
-     * update.
-     *
-     *   shouldComponentUpdate: function(nextProps, nextState, nextContext) {
-     *     return !equal(nextProps, this.props) ||
-     *       !equal(nextState, this.state) ||
-     *       !equal(nextContext, this.context);
-     *   }
-     *
-     * @param {object} nextProps
-     * @param {?object} nextState
-     * @param {?object} nextContext
-     * @return {boolean} True if the component should update.
-     * @optional
-     */
-    shouldComponentUpdate: 'DEFINE_ONCE',
-
-    /**
-     * Invoked when the component is about to update due to a transition from
-     * `this.props`, `this.state` and `this.context` to `nextProps`, `nextState`
-     * and `nextContext`.
-     *
-     * Use this as an opportunity to perform preparation before an update occurs.
-     *
-     * NOTE: You **cannot** use `this.setState()` in this method.
-     *
-     * @param {object} nextProps
-     * @param {?object} nextState
-     * @param {?object} nextContext
-     * @param {ReactReconcileTransaction} transaction
-     * @optional
-     */
-    componentWillUpdate: 'DEFINE_MANY',
-
-    /**
-     * Invoked when the component's DOM representation has been updated.
-     *
-     * Use this as an opportunity to operate on the DOM when the component has
-     * been updated.
-     *
-     * @param {object} prevProps
-     * @param {?object} prevState
-     * @param {?object} prevContext
-     * @param {DOMElement} rootNode DOM element representing the component.
-     * @optional
-     */
-    componentDidUpdate: 'DEFINE_MANY',
-
-    /**
-     * Invoked when the component is about to be removed from its parent and have
-     * its DOM representation destroyed.
-     *
-     * Use this as an opportunity to deallocate any external resources.
-     *
-     * NOTE: There is no `componentDidUnmount` since your component will have been
-     * destroyed by that point.
-     *
-     * @optional
-     */
-    componentWillUnmount: 'DEFINE_MANY',
-
-    // ==== Advanced methods ====
-
-    /**
-     * Updates the component's currently mounted DOM representation.
-     *
-     * By default, this implements React's rendering and reconciliation algorithm.
-     * Sophisticated clients may wish to override this.
-     *
-     * @param {ReactReconcileTransaction} transaction
-     * @internal
-     * @overridable
-     */
-    updateComponent: 'OVERRIDE_BASE'
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker
   };
 
   /**
-   * Mapping from class specification keys to special processing functions.
-   *
-   * Although these are declared like instance properties in the specification
-   * when defining classes using `React.createClass`, they are actually static
-   * and are accessible on the constructor instead of the prototype. Despite
-   * being static, they must be defined outside of the "statics" key under
-   * which all other static methods are defined.
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
    */
-  var RESERVED_SPEC_KEYS = {
-    displayName: function(Constructor, displayName) {
-      Constructor.displayName = displayName;
-    },
-    mixins: function(Constructor, mixins) {
-      if (mixins) {
-        for (var i = 0; i < mixins.length; i++) {
-          mixSpecIntoComponent(Constructor, mixins[i]);
-        }
-      }
-    },
-    childContextTypes: function(Constructor, childContextTypes) {
-      // if (process.env.NODE_ENV !== 'production') {
-      //   validateTypeDef(Constructor, childContextTypes, 'childContext');
-      // }
-      Constructor.childContextTypes = _assign(
-        {},
-        Constructor.childContextTypes,
-        childContextTypes
-      );
-    },
-    contextTypes: function(Constructor, contextTypes) {
-      // if (process.env.NODE_ENV !== 'production') {
-      //   validateTypeDef(Constructor, contextTypes, 'context');
-      // }
-      Constructor.contextTypes = _assign(
-        {},
-        Constructor.contextTypes,
-        contextTypes
-      );
-    },
-    /**
-     * Special case getDefaultProps which should move into statics but requires
-     * automatic merging.
-     */
-    getDefaultProps: function(Constructor, getDefaultProps) {
-      if (Constructor.getDefaultProps) {
-        Constructor.getDefaultProps = createMergedResultFunction(
-          Constructor.getDefaultProps,
-          getDefaultProps
-        );
-      } else {
-        Constructor.getDefaultProps = getDefaultProps;
-      }
-    },
-    propTypes: function(Constructor, propTypes) {
-      // if (process.env.NODE_ENV !== 'production') {
-      //   validateTypeDef(Constructor, propTypes, 'prop');
-      // }
-      Constructor.propTypes = _assign({}, Constructor.propTypes, propTypes);
-    },
-    statics: function(Constructor, statics) {
-      mixStaticSpecIntoComponent(Constructor, statics);
-    },
-    autobind: function() {}
-  };
-
-  function validateTypeDef(Constructor, typeDef, location) {
-    for (var propName in typeDef) {
-      // if (typeDef.hasOwnProperty(propName)) {
-      //   // use a warning instead of an _invariant so components
-      //   // don't show up in prod but only in __DEV__
-      //   // if (process.env.NODE_ENV !== 'production') {
-      //   //   warning(
-      //   //     typeof typeDef[propName] === 'function',
-      //   //     '%s: %s type `%s` is invalid; it must be a function, usually from ' +
-      //   //       'React.PropTypes.',
-      //   //     Constructor.displayName || 'ReactClass',
-      //   //     ReactPropTypeLocationNames[location],
-      //   //     propName
-      //   //   );
-      //   // }
-      // }
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
     }
   }
-
-  function validateMethodOverride(isAlreadyDefined, name) {
-    var specPolicy = ReactClassInterface.hasOwnProperty(name)
-      ? ReactClassInterface[name]
-      : null;
-
-    // Disallow overriding of base class methods unless explicitly allowed.
-    if (ReactClassMixin.hasOwnProperty(name)) {
-      // _invariant(
-      //   specPolicy === 'OVERRIDE_BASE',
-      //   'ReactClassInterface: You are attempting to override ' +
-      //     '`%s` from your class specification. Ensure that your method names ' +
-      //     'do not overlap with React methods.',
-      //   name
-      // );
-    }
-
-    // Disallow defining methods more than once unless explicitly allowed.
-    if (isAlreadyDefined) {
-      // _invariant(
-      //   specPolicy === 'DEFINE_MANY' || specPolicy === 'DEFINE_MANY_MERGED',
-      //   'ReactClassInterface: You are attempting to define ' +
-      //     '`%s` on your component more than once. This conflict may be due ' +
-      //     'to a mixin.',
-      //   name
-      // );
-    }
-  }
+  /*eslint-enable no-self-compare*/
 
   /**
-   * Mixin helper which handles policy validation and reserved
-   * specification keys when building React classes.
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
    */
-  function mixSpecIntoComponent(Constructor, spec) {
-    if (!spec) {
-      // if (process.env.NODE_ENV !== 'production') {
-      //   var typeofSpec = typeof spec;
-      //   var isMixinValid = typeofSpec === 'object' && spec !== null;
-      //
-      //   if (process.env.NODE_ENV !== 'production') {
-      //     warning(
-      //       isMixinValid,
-      //       "%s: You're attempting to include a mixin that is either null " +
-      //         'or not an object. Check the mixins included by the component, ' +
-      //         'as well as any mixins they include themselves. ' +
-      //         'Expected object but got %s.',
-      //       Constructor.displayName || 'ReactClass',
-      //       spec === null ? null : typeofSpec
-      //     );
-      //   }
-      // }
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
 
-      return;
+  function createChainableTypeChecker(validate) {
+    if ('development' !== 'production') {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
     }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
 
-    // _invariant(
-    //   typeof spec !== 'function',
-    //   "ReactClass: You're attempting to " +
-    //     'use a component class or function as a mixin. Instead, just use a ' +
-    //     'regular object.'
-    // );
-    // _invariant(
-    //   !isValidElement(spec),
-    //   "ReactClass: You're attempting to " +
-    //     'use a component as a mixin. Instead, just use a regular object.'
-    // );
-
-    var proto = Constructor.prototype;
-    var autoBindPairs = proto.__reactAutoBindPairs;
-
-    // By handling mixins before any other properties, we ensure the same
-    // chaining order is applied to methods with DEFINE_MANY policy, whether
-    // mixins are listed before or after these methods in the spec.
-    if (spec.hasOwnProperty(MIXINS_KEY)) {
-      RESERVED_SPEC_KEYS.mixins(Constructor, spec.mixins);
-    }
-
-    for (var name in spec) {
-      if (!spec.hasOwnProperty(name)) {
-        continue;
-      }
-
-      if (name === MIXINS_KEY) {
-        // We have already handled mixins in a special case above.
-        continue;
-      }
-
-      var property = spec[name];
-      var isAlreadyDefined = proto.hasOwnProperty(name);
-      validateMethodOverride(isAlreadyDefined, name);
-
-      if (RESERVED_SPEC_KEYS.hasOwnProperty(name)) {
-        RESERVED_SPEC_KEYS[name](Constructor, property);
-      } else {
-        // Setup methods on prototype:
-        // The following member methods should not be automatically bound:
-        // 1. Expected ReactClass methods (in the "interface").
-        // 2. Overridden methods (that were mixed in).
-        var isReactClassMethod = ReactClassInterface.hasOwnProperty(name);
-        var isFunction = typeof property === 'function';
-        var shouldAutoBind =
-          isFunction &&
-          !isReactClassMethod &&
-          !isAlreadyDefined &&
-          spec.autobind !== false;
-
-        if (shouldAutoBind) {
-          autoBindPairs.push(name, property);
-          proto[name] = property;
-        } else {
-          if (isAlreadyDefined) {
-            var specPolicy = ReactClassInterface[name];
-
-            // These cases should already be caught by validateMethodOverride.
-            // _invariant(
-            //   isReactClassMethod &&
-            //     (specPolicy === 'DEFINE_MANY_MERGED' ||
-            //       specPolicy === 'DEFINE_MANY'),
-            //   'ReactClass: Unexpected spec policy %s for key %s ' +
-            //     'when mixing in component specs.',
-            //   specPolicy,
-            //   name
-            // );
-
-            // For methods which are defined more than once, call the existing
-            // methods before calling the new property, merging if appropriate.
-            if (specPolicy === 'DEFINE_MANY_MERGED') {
-              proto[name] = createMergedResultFunction(proto[name], property);
-            } else if (specPolicy === 'DEFINE_MANY') {
-              proto[name] = createChainedFunction(proto[name], property);
-            }
-          } else {
-            proto[name] = property;
-            // if (process.env.NODE_ENV !== 'production') {
-            //   // Add verbose displayName to the function, which helps when looking
-            //   // at profiling tools.
-            //   if (typeof property === 'function' && spec.displayName) {
-            //     proto[name].displayName = spec.displayName + '_' + name;
-            //   }
-            // }
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          invariant(false, 'Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+        } else if ('development' !== 'production' && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (!manualPropTypeCallCache[cacheKey] &&
+          // Avoid spamming the console because they are often not actionable except for lib authors
+          manualPropTypeWarningCount < 3) {
+            warning(false, 'You are manually calling a React.PropTypes validation ' + 'function for the `%s` prop on `%s`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.', propFullName, componentName);
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
           }
         }
       }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      'development' !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
+      return emptyFunction.thatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues);
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (propValue.hasOwnProperty(key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+      'development' !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+      return emptyFunction.thatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        warning(false, 'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received %s at index %s.', getPostfixForTypeWarning(checker), i);
+        return emptyFunction.thatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
     }
   }
 
-  function mixStaticSpecIntoComponent(Constructor, statics) {
-    if (!statics) {
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+},{"fbjs/lib/emptyFunction":56,"fbjs/lib/invariant":63,"fbjs/lib/warning":64,"object-assign":38,"./lib/ReactPropTypesSecret":47,"./checkPropTypes":46}],45:[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var invariant = require('fbjs/lib/invariant');
+var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+
+module.exports = function() {
+  function shim(props, propName, componentName, location, propFullName, secret) {
+    if (secret === ReactPropTypesSecret) {
+      // It is still safe when called from React.
       return;
     }
-    for (var name in statics) {
-      var property = statics[name];
-      if (!statics.hasOwnProperty(name)) {
-        continue;
-      }
-
-      var isReserved = name in RESERVED_SPEC_KEYS;
-      // _invariant(
-      //   !isReserved,
-      //   'ReactClass: You are attempting to define a reserved ' +
-      //     'property, `%s`, that shouldn\'t be on the "statics" key. Define it ' +
-      //     'as an instance property instead; it will still be accessible on the ' +
-      //     'constructor.',
-      //   name
-      // );
-
-      var isInherited = name in Constructor;
-      // _invariant(
-      //   !isInherited,
-      //   'ReactClass: You are attempting to define ' +
-      //     '`%s` on your component more than once. This conflict may be ' +
-      //     'due to a mixin.',
-      //   name
-      // );
-      Constructor[name] = property;
-    }
-  }
-
-  /**
-   * Merge two objects, but throw if both contain the same key.
-   *
-   * @param {object} one The first object, which is mutated.
-   * @param {object} two The second object
-   * @return {object} one after it has been mutated to contain everything in two.
-   */
-  function mergeIntoWithNoDuplicateKeys(one, two) {
-    // _invariant(
-    //   one && two && typeof one === 'object' && typeof two === 'object',
-    //   'mergeIntoWithNoDuplicateKeys(): Cannot merge non-objects.'
-    // );
-
-    for (var key in two) {
-      if (two.hasOwnProperty(key)) {
-        // _invariant(
-        //   one[key] === undefined,
-        //   'mergeIntoWithNoDuplicateKeys(): ' +
-        //     'Tried to merge two objects with the same key: `%s`. This conflict ' +
-        //     'may be due to a mixin; in particular, this may be caused by two ' +
-        //     'getInitialState() or getDefaultProps() methods returning objects ' +
-        //     'with clashing keys.',
-        //   key
-        // );
-        one[key] = two[key];
-      }
-    }
-    return one;
-  }
-
-  /**
-   * Creates a function that invokes two functions and merges their return values.
-   *
-   * @param {function} one Function to invoke first.
-   * @param {function} two Function to invoke second.
-   * @return {function} Function that invokes the two argument functions.
-   * @private
-   */
-  function createMergedResultFunction(one, two) {
-    return function mergedResult() {
-      var a = one.apply(this, arguments);
-      var b = two.apply(this, arguments);
-      if (a == null) {
-        return b;
-      } else if (b == null) {
-        return a;
-      }
-      var c = {};
-      mergeIntoWithNoDuplicateKeys(c, a);
-      mergeIntoWithNoDuplicateKeys(c, b);
-      return c;
-    };
-  }
-
-  /**
-   * Creates a function that invokes two functions and ignores their return vales.
-   *
-   * @param {function} one Function to invoke first.
-   * @param {function} two Function to invoke second.
-   * @return {function} Function that invokes the two argument functions.
-   * @private
-   */
-  function createChainedFunction(one, two) {
-    return function chainedFunction() {
-      one.apply(this, arguments);
-      two.apply(this, arguments);
-    };
-  }
-
-  /**
-   * Binds a method to the component.
-   *
-   * @param {object} component Component whose method is going to be bound.
-   * @param {function} method Method to be bound.
-   * @return {function} The bound method.
-   */
-  function bindAutoBindMethod(component, method) {
-    var boundMethod = method.bind(component);
-    // if (process.env.NODE_ENV !== 'production') {
-    //   boundMethod.__reactBoundContext = component;
-    //   boundMethod.__reactBoundMethod = method;
-    //   boundMethod.__reactBoundArguments = null;
-    //   var componentName = component.constructor.displayName;
-    //   var _bind = boundMethod.bind;
-    //   boundMethod.bind = function(newThis) {
-    //     for (
-    //       var _len = arguments.length,
-    //         args = Array(_len > 1 ? _len - 1 : 0),
-    //         _key = 1;
-    //       _key < _len;
-    //       _key++
-    //     ) {
-    //       args[_key - 1] = arguments[_key];
-    //     }
-    //
-    //     // User is trying to bind() an autobound method; we effectively will
-    //     // ignore the value of "this" that the user is trying to use, so
-    //     // let's warn.
-    //     if (newThis !== component && newThis !== null) {
-    //       if (process.env.NODE_ENV !== 'production') {
-    //         warning(
-    //           false,
-    //           'bind(): React component methods may only be bound to the ' +
-    //             'component instance. See %s',
-    //           componentName
-    //         );
-    //       }
-    //     } else if (!args.length) {
-    //       if (process.env.NODE_ENV !== 'production') {
-    //         warning(
-    //           false,
-    //           'bind(): You are binding a component method to the component. ' +
-    //             'React does this for you automatically in a high-performance ' +
-    //             'way, so you can safely remove this call. See %s',
-    //           componentName
-    //         );
-    //       }
-    //       return boundMethod;
-    //     }
-    //     var reboundMethod = _bind.apply(boundMethod, arguments);
-    //     reboundMethod.__reactBoundContext = component;
-    //     reboundMethod.__reactBoundMethod = method;
-    //     reboundMethod.__reactBoundArguments = args;
-    //     return reboundMethod;
-    //   };
-    // }
-    return boundMethod;
-  }
-
-  /**
-   * Binds all auto-bound methods in a component.
-   *
-   * @param {object} component Component whose method is going to be bound.
-   */
-  function bindAutoBindMethods(component) {
-    var pairs = component.__reactAutoBindPairs;
-    for (var i = 0; i < pairs.length; i += 2) {
-      var autoBindKey = pairs[i];
-      var method = pairs[i + 1];
-      component[autoBindKey] = bindAutoBindMethod(component, method);
-    }
-  }
-
-  var IsMountedPreMixin = {
-    componentDidMount: function() {
-      this.__isMounted = true;
-    }
-  };
-
-  var IsMountedPostMixin = {
-    componentWillUnmount: function() {
-      this.__isMounted = false;
-    }
-  };
-
-  /**
-   * Add more to the ReactClass base class. These are all legacy features and
-   * therefore not already part of the modern ReactComponent.
-   */
-  var ReactClassMixin = {
-    /**
-     * TODO: This will be deprecated because state should always keep a consistent
-     * type signature and the only use case for this, is to avoid that.
-     */
-    replaceState: function(newState, callback) {
-      this.updater.enqueueReplaceState(this, newState, callback);
-    },
-
-    /**
-     * Checks whether or not this composite component is mounted.
-     * @return {boolean} True if mounted, false otherwise.
-     * @protected
-     * @final
-     */
-    isMounted: function() {
-      // if (process.env.NODE_ENV !== 'production') {
-      //   warning(
-      //     this.__didWarnIsMounted,
-      //     '%s: isMounted is deprecated. Instead, make sure to clean up ' +
-      //       'subscriptions and pending requests in componentWillUnmount to ' +
-      //       'prevent memory leaks.',
-      //     (this.constructor && this.constructor.displayName) ||
-      //       this.name ||
-      //       'Component'
-      //   );
-      //   this.__didWarnIsMounted = true;
-      // }
-      return !!this.__isMounted;
-    }
-  };
-
-  var ReactClassComponent = function() {};
-  _assign(
-    ReactClassComponent.prototype,
-    ReactComponent.prototype,
-    ReactClassMixin
-  );
-
-  /**
-   * Creates a composite component class given a class specification.
-   * See https://facebook.github.io/react/docs/top-level-api.html#react.createclass
-   *
-   * @param {object} spec Class specification (which must define `render`).
-   * @return {function} Component constructor function.
-   * @public
-   */
-  function createClass(spec) {
-    // To keep our warnings more understandable, we'll use a little hack here to
-    // ensure that Constructor.name !== 'Constructor'. This makes sure we don't
-    // unnecessarily identify a class without displayName as 'Constructor'.
-    var Constructor = identity(function(props, context, updater) {
-      // This constructor gets overridden by mocks. The argument is used
-      // by mocks to assert on what gets mounted.
-
-      // if (process.env.NODE_ENV !== 'production') {
-      //   warning(
-      //     this instanceof Constructor,
-      //     'Something is calling a React component directly. Use a factory or ' +
-      //       'JSX instead. See: https://fb.me/react-legacyfactory'
-      //   );
-      // }
-
-      // Wire up auto-binding
-      if (this.__reactAutoBindPairs.length) {
-        bindAutoBindMethods(this);
-      }
-
-      this.props = props;
-      this.context = context;
-      this.refs = emptyObject;
-      this.updater = updater || ReactNoopUpdateQueue;
-
-      this.state = null;
-
-      // ReactClasses doesn't have constructors. Instead, they use the
-      // getInitialState and componentWillMount methods for initialization.
-
-      var initialState = this.getInitialState ? this.getInitialState() : null;
-      // if (process.env.NODE_ENV !== 'production') {
-      //   // We allow auto-mocks to proceed as if they're returning null.
-      //   if (
-      //     initialState === undefined &&
-      //     this.getInitialState._isMockFunction
-      //   ) {
-      //     // This is probably bad practice. Consider warning here and
-      //     // deprecating this convenience.
-      //     initialState = null;
-      //   }
-      // }
-      // _invariant(
-      //   typeof initialState === 'object' && !Array.isArray(initialState),
-      //   '%s.getInitialState(): must return an object or null',
-      //   Constructor.displayName || 'ReactCompositeComponent'
-      // );
-
-      this.state = initialState;
-    });
-    Constructor.prototype = new ReactClassComponent();
-    Constructor.prototype.constructor = Constructor;
-    Constructor.prototype.__reactAutoBindPairs = [];
-
-    injectedMixins.forEach(mixSpecIntoComponent.bind(null, Constructor));
-
-    mixSpecIntoComponent(Constructor, IsMountedPreMixin);
-    mixSpecIntoComponent(Constructor, spec);
-    mixSpecIntoComponent(Constructor, IsMountedPostMixin);
-
-    // Initialize the defaultProps property after all mixins have been merged.
-    if (Constructor.getDefaultProps) {
-      Constructor.defaultProps = Constructor.getDefaultProps();
-    }
-
-    // if (process.env.NODE_ENV !== 'production') {
-    //   // This is a tag to indicate that the use of these method names is ok,
-    //   // since it's used with createClass. If it's not, then it's likely a
-    //   // mistake so we'll warn you to use the static property, property
-    //   // initializer or constructor respectively.
-    //   if (Constructor.getDefaultProps) {
-    //     Constructor.getDefaultProps.isReactClassApproved = {};
-    //   }
-    //   if (Constructor.prototype.getInitialState) {
-    //     Constructor.prototype.getInitialState.isReactClassApproved = {};
-    //   }
-    // }
-
-    // _invariant(
-    //   Constructor.prototype.render,
-    //   'createClass(...): Class specification must implement a `render` method.'
-    // );
-
-    // if (process.env.NODE_ENV !== 'production') {
-    //   warning(
-    //     !Constructor.prototype.componentShouldUpdate,
-    //     '%s has a method called ' +
-    //       'componentShouldUpdate(). Did you mean shouldComponentUpdate()? ' +
-    //       'The name is phrased as a question because the function is ' +
-    //       'expected to return a value.',
-    //     spec.displayName || 'A component'
-    //   );
-    //   warning(
-    //     !Constructor.prototype.componentWillRecieveProps,
-    //     '%s has a method called ' +
-    //       'componentWillRecieveProps(). Did you mean componentWillReceiveProps()?',
-    //     spec.displayName || 'A component'
-    //   );
-    // }
-
-    // Reduce time spent doing lookups by setting these on the prototype.
-    for (var methodName in ReactClassInterface) {
-      if (!Constructor.prototype[methodName]) {
-        Constructor.prototype[methodName] = null;
-      }
-    }
-
-    return Constructor;
-  }
-
-  return createClass;
-}
-);
-
-var reactNoopUpdateQueue = new React.Component().updater;
-
-var createClass = factory(React.Component, React.isValidElement, reactNoopUpdateQueue);
-
-exports._assign              = _assign;
-exports.emptyObject          = emptyObject;
-exports.factory              = factory;
-exports.reactNoopUpdateQueue = reactNoopUpdateQueue;
-exports.createClass          = createClass;
-/*  Not a pure module */
-
-},{"react":6}],11:[function(require,module,exports) {
-'use strict';
-
-var List                            = require("bs-platform/lib/js/list.js");
-var $$Array                         = require("bs-platform/lib/js/array.js");
-var Curry                           = require("bs-platform/lib/js/curry.js");
-var React                           = require("react");
-var Caml_builtin_exceptions         = require("bs-platform/lib/js/caml_builtin_exceptions.js");
-var ReasonReactOptimizedCreateClass = require("./ReasonReactOptimizedCreateClass.js");
-
-function createDomElement(s, props, children) {
-  var vararg = /* array */[
-      s,
-      props
-    ].concat(children);
-  return React.createElement.apply(null, vararg);
-}
-
-var magicNull = null;
-
-function $$default() {
-  return /* () */0;
-}
-
-function chain(handlerOne, handlerTwo, payload) {
-  Curry._1(handlerOne, payload);
-  return Curry._1(handlerTwo, payload);
-}
-
-var Callback = /* module */[
-  /* default */$$default,
-  /* chain */chain
-];
-
-function lifecycleNoUpdate() {
-  return /* NoUpdate */0;
-}
-
-function lifecyclePreviousNextUnit() {
-  return /* () */0;
-}
-
-function lifecyclePreviousCurrentReturnUnit() {
-  return /* () */0;
-}
-
-function lifecycleReturnUnit() {
-  return /* () */0;
-}
-
-function lifecycleReturnTrue() {
-  return /* true */1;
-}
-
-function willReceivePropsDefault(param) {
-  return param[/* state */2];
-}
-
-function renderDefault() {
-  return "RenderNotImplemented";
-}
-
-function initialStateDefault() {
-  return /* () */0;
-}
-
-function reducerDefault(_, _$1) {
-  return /* NoUpdate */0;
-}
-
-function subscriptionsDefault() {
-  return /* [] */0;
-}
-
-function convertPropsIfTheyreFromJs(props, jsPropsToReason, debugName) {
-  var match = props.reasonProps;
-  if (match == null) {
-    if (jsPropsToReason) {
-      return /* Element */[Curry._1(jsPropsToReason[0], props)];
-    } else {
-      throw [
-            Caml_builtin_exceptions.invalid_argument,
-            "A JS component called the Reason component " + (debugName + " which didn't implement the JS->Reason React props conversion.")
-          ];
-    }
-  } else {
-    return match;
-  }
-}
-
-function createClass(debugName) {
-  return ReasonReactOptimizedCreateClass.createClass({
-              displayName: debugName,
-              subscriptions: null,
-              self: (function (state, retainedProps) {
-                  var $$this = this ;
-                  return /* record */[
-                          /* handle */$$this.handleMethod,
-                          /* reduce */$$this.reduceMethod,
-                          /* state */state,
-                          /* retainedProps */retainedProps,
-                          /* send */$$this.sendMethod
-                        ];
-                }),
-              transitionNextTotalState: (function (curTotalState, reasonStateUpdate) {
-                  if (typeof reasonStateUpdate === "number") {
-                    return curTotalState;
-                  } else {
-                    switch (reasonStateUpdate.tag | 0) {
-                      case 0 : 
-                          return {
-                                  reasonState: reasonStateUpdate[0],
-                                  reasonStateVersion: curTotalState.reasonStateVersion + 1 | 0,
-                                  reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements,
-                                  sideEffects: curTotalState.sideEffects
-                                };
-                      case 1 : 
-                          return {
-                                  reasonState: reasonStateUpdate[0],
-                                  reasonStateVersion: curTotalState.reasonStateVersion + 1 | 0,
-                                  reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements + 1 | 0,
-                                  sideEffects: curTotalState.sideEffects
-                                };
-                      case 2 : 
-                          return {
-                                  reasonState: curTotalState.reasonState,
-                                  reasonStateVersion: curTotalState.reasonStateVersion + 1 | 0,
-                                  reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements + 1 | 0,
-                                  sideEffects: /* :: */[
-                                    reasonStateUpdate[0],
-                                    curTotalState.sideEffects
-                                  ]
-                                };
-                      case 3 : 
-                          return {
-                                  reasonState: reasonStateUpdate[0],
-                                  reasonStateVersion: curTotalState.reasonStateVersion + 1 | 0,
-                                  reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements,
-                                  sideEffects: /* :: */[
-                                    reasonStateUpdate[1],
-                                    curTotalState.sideEffects
-                                  ]
-                                };
-                      case 4 : 
-                          return {
-                                  reasonState: reasonStateUpdate[0],
-                                  reasonStateVersion: curTotalState.reasonStateVersion + 1 | 0,
-                                  reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements + 1 | 0,
-                                  sideEffects: /* :: */[
-                                    reasonStateUpdate[1],
-                                    curTotalState.sideEffects
-                                  ]
-                                };
-                      
-                    }
-                  }
-                }),
-              getInitialState: (function () {
-                  var thisJs = (this);
-                  var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var initialReasonState = Curry._1(convertedReasonProps[0][/* initialState */10], /* () */0);
-                  return {
-                          reasonState: initialReasonState,
-                          reasonStateVersion: 1,
-                          reasonStateVersionUsedToComputeSubelements: 1,
-                          sideEffects: /* [] */0
-                        };
-                }),
-              componentDidMount: (function () {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var component = convertedReasonProps[0];
-                  var curTotalState = thisJs.state;
-                  var curReasonState = curTotalState.reasonState;
-                  var self = $$this.self(curReasonState, component[/* retainedProps */11]);
-                  if (component[/* subscriptions */13] !== subscriptionsDefault) {
-                    var subscriptions = List.map((function (param) {
-                            var unsubscribe = param[1];
-                            var token = Curry._1(param[0], /* () */0);
-                            return (function () {
-                                return Curry._1(unsubscribe, token);
-                              });
-                          }), Curry._1(component[/* subscriptions */13], self));
-                    $$this.subscriptions = subscriptions;
-                  }
-                  if (component[/* didMount */4] !== lifecycleNoUpdate) {
-                    var reasonStateUpdate = Curry._1(component[/* didMount */4], self);
-                    var nextTotalState = $$this.transitionNextTotalState(curTotalState, reasonStateUpdate);
-                    if (nextTotalState.reasonStateVersion !== curTotalState.reasonStateVersion) {
-                      return thisJs.setState(nextTotalState);
-                    } else {
-                      return 0;
-                    }
-                  } else {
-                    return 0;
-                  }
-                }),
-              componentDidUpdate: (function (prevProps, prevState) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var curState = thisJs.state;
-                  var curReasonState = curState.reasonState;
-                  var newJsProps = thisJs.props;
-                  var newConvertedReasonProps = convertPropsIfTheyreFromJs(newJsProps, thisJs.jsPropsToReason, debugName);
-                  var newComponent = newConvertedReasonProps[0];
-                  if (newComponent[/* didUpdate */5] !== lifecyclePreviousCurrentReturnUnit) {
-                    var match = +(prevProps === newJsProps);
-                    var oldConvertedReasonProps = match !== 0 ? newConvertedReasonProps : convertPropsIfTheyreFromJs(prevProps, thisJs.jsPropsToReason, debugName);
-                    var prevReasonState = prevState.reasonState;
-                    var newSelf = $$this.self(curReasonState, newComponent[/* retainedProps */11]);
-                    var oldSelf_000 = /* handle */newSelf[/* handle */0];
-                    var oldSelf_001 = /* reduce */newSelf[/* reduce */1];
-                    var oldSelf_003 = /* retainedProps */oldConvertedReasonProps[0][/* retainedProps */11];
-                    var oldSelf_004 = /* send */newSelf[/* send */4];
-                    var oldSelf = /* record */[
-                      oldSelf_000,
-                      oldSelf_001,
-                      /* state */prevReasonState,
-                      oldSelf_003,
-                      oldSelf_004
-                    ];
-                    return Curry._1(newComponent[/* didUpdate */5], /* record */[
-                                /* oldSelf */oldSelf,
-                                /* newSelf */newSelf
-                              ]);
-                  } else {
-                    return 0;
-                  }
-                }),
-              componentWillUnmount: (function () {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var component = convertedReasonProps[0];
-                  var curState = thisJs.state;
-                  var curReasonState = curState.reasonState;
-                  if (component[/* willUnmount */6] !== lifecycleReturnUnit) {
-                    Curry._1(component[/* willUnmount */6], $$this.self(curReasonState, component[/* retainedProps */11]));
-                  }
-                  var match = $$this.subscriptions;
-                  if (match == null) {
-                    return /* () */0;
-                  } else {
-                    return List.iter((function (unsubscribe) {
-                                  return Curry._1(unsubscribe, /* () */0);
-                                }), List.rev(match));
-                  }
-                }),
-              componentWillUpdate: (function (nextProps, nextState) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var newConvertedReasonProps = convertPropsIfTheyreFromJs(nextProps, thisJs.jsPropsToReason, debugName);
-                  var newComponent = newConvertedReasonProps[0];
-                  if (newComponent[/* willUpdate */7] !== lifecyclePreviousNextUnit) {
-                    var oldJsProps = thisJs.props;
-                    var match = +(nextProps === oldJsProps);
-                    var oldConvertedReasonProps = match !== 0 ? newConvertedReasonProps : convertPropsIfTheyreFromJs(oldJsProps, thisJs.jsPropsToReason, debugName);
-                    var curState = thisJs.state;
-                    var curReasonState = curState.reasonState;
-                    var nextReasonState = nextState.reasonState;
-                    var newSelf = $$this.self(nextReasonState, newComponent[/* retainedProps */11]);
-                    var oldSelf_000 = /* handle */newSelf[/* handle */0];
-                    var oldSelf_001 = /* reduce */newSelf[/* reduce */1];
-                    var oldSelf_003 = /* retainedProps */oldConvertedReasonProps[0][/* retainedProps */11];
-                    var oldSelf_004 = /* send */newSelf[/* send */4];
-                    var oldSelf = /* record */[
-                      oldSelf_000,
-                      oldSelf_001,
-                      /* state */curReasonState,
-                      oldSelf_003,
-                      oldSelf_004
-                    ];
-                    return Curry._1(newComponent[/* willUpdate */7], /* record */[
-                                /* oldSelf */oldSelf,
-                                /* newSelf */newSelf
-                              ]);
-                  } else {
-                    return 0;
-                  }
-                }),
-              componentWillReceiveProps: (function (nextProps) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var newConvertedReasonProps = convertPropsIfTheyreFromJs(nextProps, thisJs.jsPropsToReason, debugName);
-                  var newComponent = newConvertedReasonProps[0];
-                  if (newComponent[/* willReceiveProps */3] !== willReceivePropsDefault) {
-                    var oldJsProps = thisJs.props;
-                    var match = +(nextProps === oldJsProps);
-                    var oldConvertedReasonProps = match !== 0 ? newConvertedReasonProps : convertPropsIfTheyreFromJs(oldJsProps, thisJs.jsPropsToReason, debugName);
-                    var oldComponent = oldConvertedReasonProps[0];
-                    return thisJs.setState((function (curTotalState, _) {
-                                  var curReasonState = curTotalState.reasonState;
-                                  var curReasonStateVersion = curTotalState.reasonStateVersion;
-                                  var oldSelf = $$this.self(curReasonState, oldComponent[/* retainedProps */11]);
-                                  var nextReasonState = Curry._1(newComponent[/* willReceiveProps */3], oldSelf);
-                                  var match = +(nextReasonState !== curReasonState);
-                                  var nextReasonStateVersion = match !== 0 ? curReasonStateVersion + 1 | 0 : curReasonStateVersion;
-                                  if (nextReasonStateVersion !== curReasonStateVersion) {
-                                    return {
-                                            reasonState: nextReasonState,
-                                            reasonStateVersion: nextReasonStateVersion,
-                                            reasonStateVersionUsedToComputeSubelements: curTotalState.reasonStateVersionUsedToComputeSubelements,
-                                            sideEffects: nextReasonState.sideEffects
-                                          };
-                                  } else {
-                                    return curTotalState;
-                                  }
-                                }));
-                  } else {
-                    return 0;
-                  }
-                }),
-              shouldComponentUpdate: (function (nextJsProps, nextState, _) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var curJsProps = thisJs.props;
-                  var propsWarrantRerender = +(nextJsProps !== curJsProps);
-                  var oldConvertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var match = +(nextJsProps === curJsProps);
-                  var newConvertedReasonProps = match !== 0 ? oldConvertedReasonProps : convertPropsIfTheyreFromJs(nextJsProps, thisJs.jsPropsToReason, debugName);
-                  var newComponent = newConvertedReasonProps[0];
-                  var nextReasonStateVersion = nextState.reasonStateVersion;
-                  var nextReasonStateVersionUsedToComputeSubelements = nextState.reasonStateVersionUsedToComputeSubelements;
-                  var stateChangeWarrantsComputingSubelements = +(nextReasonStateVersionUsedToComputeSubelements !== nextReasonStateVersion);
-                  var warrantsUpdate = propsWarrantRerender || stateChangeWarrantsComputingSubelements;
-                  var nextReasonState = nextState.reasonState;
-                  var newSelf = $$this.self(nextReasonState, newComponent[/* retainedProps */11]);
-                  var ret;
-                  if (warrantsUpdate && newComponent[/* shouldUpdate */8] !== lifecycleReturnTrue) {
-                    var curState = thisJs.state;
-                    var curReasonState = curState.reasonState;
-                    var oldSelf_000 = /* handle */newSelf[/* handle */0];
-                    var oldSelf_001 = /* reduce */newSelf[/* reduce */1];
-                    var oldSelf_003 = /* retainedProps */oldConvertedReasonProps[0][/* retainedProps */11];
-                    var oldSelf_004 = /* send */newSelf[/* send */4];
-                    var oldSelf = /* record */[
-                      oldSelf_000,
-                      oldSelf_001,
-                      /* state */curReasonState,
-                      oldSelf_003,
-                      oldSelf_004
-                    ];
-                    ret = Curry._1(newComponent[/* shouldUpdate */8], /* record */[
-                          /* oldSelf */oldSelf,
-                          /* newSelf */newSelf
-                        ]);
-                  } else {
-                    ret = warrantsUpdate;
-                  }
-                  nextState.reasonStateVersionUsedToComputeSubelements = nextReasonStateVersion;
-                  var nextSideEffects = List.rev(nextState.sideEffects);
-                  if (nextSideEffects !== /* [] */0) {
-                    List.iter((function (performSideEffects) {
-                            return Curry._1(performSideEffects, newSelf);
-                          }), nextSideEffects);
-                    thisJs.setState((function (futureTotalState, _) {
-                            var initialSegment = function (_acc, _n, _l) {
-                              while(true) {
-                                var l = _l;
-                                var n = _n;
-                                var acc = _acc;
-                                if (l) {
-                                  if (n > 0) {
-                                    _l = l[1];
-                                    _n = n - 1 | 0;
-                                    _acc = /* :: */[
-                                      l[0],
-                                      acc
-                                    ];
-                                    continue ;
-                                    
-                                  } else {
-                                    return List.rev(acc);
-                                  }
-                                } else {
-                                  return List.rev(acc);
-                                }
-                              };
-                            };
-                            var n = List.length(futureTotalState.sideEffects) - List.length(nextState.sideEffects) | 0;
-                            var newSideEffects = initialSegment(/* [] */0, n, futureTotalState.sideEffects);
-                            return {
-                                    reasonState: futureTotalState.reasonState,
-                                    reasonStateVersion: futureTotalState.reasonStateVersion,
-                                    reasonStateVersionUsedToComputeSubelements: futureTotalState.reasonStateVersionUsedToComputeSubelements,
-                                    sideEffects: newSideEffects
-                                  };
-                          }));
-                  }
-                  return ret;
-                }),
-              handleMethod: (function (callback) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  return (function (callbackPayload) {
-                      var curState = thisJs.state;
-                      var curReasonState = curState.reasonState;
-                      var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                      return Curry._2(callback, callbackPayload, $$this.self(curReasonState, convertedReasonProps[0][/* retainedProps */11]));
-                    });
-                }),
-              updateMethod: (function (callback) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  return (function ($$event) {
-                      var curTotalState = thisJs.state;
-                      var curReasonState = curTotalState.reasonState;
-                      var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                      var reasonStateUpdate = Curry._2(callback, $$event, $$this.self(curReasonState, convertedReasonProps[0][/* retainedProps */11]));
-                      if (reasonStateUpdate) {
-                        var nextTotalState = $$this.transitionNextTotalState(curTotalState, reasonStateUpdate);
-                        if (nextTotalState.reasonStateVersion !== curTotalState.reasonStateVersion) {
-                          return thisJs.setState(nextTotalState);
-                        } else {
-                          return 0;
-                        }
-                      } else {
-                        return magicNull;
-                      }
-                    });
-                }),
-              sendMethod: (function (action) {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var component = convertedReasonProps[0];
-                  if (component[/* reducer */12] !== reducerDefault) {
-                    var partialStateApplication = Curry._1(component[/* reducer */12], action);
-                    return thisJs.setState((function (curTotalState, _) {
-                                  var curReasonState = curTotalState.reasonState;
-                                  var reasonStateUpdate = Curry._1(partialStateApplication, curReasonState);
-                                  if (reasonStateUpdate) {
-                                    var nextTotalState = $$this.transitionNextTotalState(curTotalState, reasonStateUpdate);
-                                    if (nextTotalState.reasonStateVersion !== curTotalState.reasonStateVersion) {
-                                      return nextTotalState;
-                                    } else {
-                                      return magicNull;
-                                    }
-                                  } else {
-                                    return magicNull;
-                                  }
-                                }));
-                  } else {
-                    return 0;
-                  }
-                }),
-              reduceMethod: (function (callback, payload) {
-                  var $$this = this ;
-                  return $$this.sendMethod(Curry._1(callback, payload));
-                }),
-              render: (function () {
-                  var $$this = this ;
-                  var thisJs = (this);
-                  var convertedReasonProps = convertPropsIfTheyreFromJs(thisJs.props, thisJs.jsPropsToReason, debugName);
-                  var created = convertedReasonProps[0];
-                  var curState = thisJs.state;
-                  var curReasonState = curState.reasonState;
-                  return Curry._1(created[/* render */9], $$this.self(curReasonState, created[/* retainedProps */11]));
-                })
-            });
-}
-
-function basicComponent(debugName) {
-  return /* record */[
-          /* debugName */debugName,
-          /* reactClassInternal */createClass(debugName),
-          /* handedOffState : record */[/* contents : None */0],
-          /* willReceiveProps */willReceivePropsDefault,
-          /* didMount */lifecycleNoUpdate,
-          /* didUpdate */lifecyclePreviousCurrentReturnUnit,
-          /* willUnmount */lifecycleReturnUnit,
-          /* willUpdate */lifecyclePreviousNextUnit,
-          /* shouldUpdate */lifecycleReturnTrue,
-          /* render */renderDefault,
-          /* initialState */initialStateDefault,
-          /* retainedProps : () */0,
-          /* reducer */reducerDefault,
-          /* subscriptions */subscriptionsDefault,
-          /* jsElementWrapped : None */0
-        ];
-}
-
-var statelessComponent = basicComponent;
-
-var statelessComponentWithRetainedProps = basicComponent;
-
-var reducerComponent = basicComponent;
-
-var reducerComponentWithRetainedProps = basicComponent;
-
-function element($staropt$star, $staropt$star$1, component) {
-  var key = $staropt$star ? $staropt$star[0] : undefined;
-  var ref = $staropt$star$1 ? $staropt$star$1[0] : undefined;
-  var element$1 = /* Element */[component];
-  var match = component[/* jsElementWrapped */14];
-  if (match) {
-    return Curry._2(match[0], key, ref);
-  } else {
-    return React.createElement(component[/* reactClassInternal */1], {
-                key: key,
-                ref: ref,
-                reasonProps: element$1
-              });
-  }
-}
-
-function wrapReasonForJs(component, jsPropsToReason) {
-  var tmp = component[/* reactClassInternal */1].prototype;
-  tmp.jsPropsToReason = /* Some */[jsPropsToReason];
-  return component[/* reactClassInternal */1];
-}
-
-var dummyInteropComponent = basicComponent("interop");
-
-function wrapJsForReason(reactClass, props, children) {
-  var jsElementWrapped = /* Some */[(function (param, param$1) {
-        var reactClass$1 = reactClass;
-        var props$1 = props;
-        var children$1 = children;
-        var key = param;
-        var ref = param$1;
-        var props$2 = Object.assign(Object.assign({ }, props$1), {
-              ref: ref,
-              key: key
-            });
-        var varargs = /* array */[
-            reactClass$1,
-            props$2
-          ].concat(children$1);
-        return React.createElement.apply(null, varargs);
-      })];
-  var newrecord = dummyInteropComponent.slice();
-  newrecord[/* jsElementWrapped */14] = jsElementWrapped;
-  return newrecord;
-}
-
-function path() {
-  var match = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined) {
-    var raw = match.location.pathname;
-    switch (raw) {
-      case "" : 
-      case "/" : 
-          return /* [] */0;
-      default:
-        var raw$1 = raw.slice(1);
-        var match$1 = raw$1[raw$1.length - 1 | 0];
-        var raw$2 = match$1 === "/" ? raw$1.slice(0, -1) : raw$1;
-        return $$Array.to_list(raw$2.split("/"));
-    }
-  } else {
-    return /* [] */0;
-  }
-}
-
-function hash() {
-  var match = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined) {
-    var raw = match.location.hash;
-    switch (raw) {
-      case "" : 
-      case "#" : 
-          return "";
-      default:
-        return raw.slice(1);
-    }
-  } else {
-    return "";
-  }
-}
-
-function search() {
-  var match = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined) {
-    var raw = match.location.search;
-    switch (raw) {
-      case "" : 
-      case "?" : 
-          return "";
-      default:
-        return raw.slice(1);
-    }
-  } else {
-    return "";
-  }
-}
-
-function push(path) {
-  var match = typeof (history) === "undefined" ? undefined : (history);
-  var match$1 = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined && match$1 !== undefined) {
-    match.pushState((null), "", path);
-    match$1.dispatchEvent(new Event("popstate"));
-    return /* () */0;
-  } else {
-    return /* () */0;
-  }
-}
-
-function watchUrl(callback) {
-  var match = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined) {
-    var watcherID = function () {
-      return Curry._1(callback, /* record */[
-                  /* path */path(/* () */0),
-                  /* hash */hash(/* () */0),
-                  /* search */search(/* () */0)
-                ]);
-    };
-    match.addEventListener("popstate", watcherID);
-    return watcherID;
-  } else {
-    return (function () {
-        return /* () */0;
-      });
-  }
-}
-
-function unwatchUrl(watcherID) {
-  var match = typeof (window) === "undefined" ? undefined : (window);
-  if (match !== undefined) {
-    match.removeEventListener("popstate", watcherID);
-    return /* () */0;
-  } else {
-    return /* () */0;
-  }
-}
-
-var Router = [
-  push,
-  watchUrl,
-  unwatchUrl
-];
-
-exports.Callback                            = Callback;
-exports.statelessComponent                  = statelessComponent;
-exports.statelessComponentWithRetainedProps = statelessComponentWithRetainedProps;
-exports.reducerComponent                    = reducerComponent;
-exports.reducerComponentWithRetainedProps   = reducerComponentWithRetainedProps;
-exports.element                             = element;
-exports.wrapReasonForJs                     = wrapReasonForJs;
-exports.createDomElement                    = createDomElement;
-exports.wrapJsForReason                     = wrapJsForReason;
-exports.Router                              = Router;
-/* magicNull Not a pure module */
-
-},{"bs-platform/lib/js/list.js":35,"bs-platform/lib/js/array.js":37,"bs-platform/lib/js/curry.js":36,"react":6,"bs-platform/lib/js/caml_builtin_exceptions.js":34,"./ReasonReactOptimizedCreateClass.js":13}],3:[function(require,module,exports) {
-// Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
-'use strict';
-
-var React = require("react");
-var ReasonReact = require("reason-react/src/ReasonReact.js");
-
-function echo(input) {
-  return "Hello " + input;
-}
-
-var component = ReasonReact.statelessComponent("Greeting");
-
-function make(name, _) {
-  var newrecord = component.slice();
-  newrecord[/* render */9] = function () {
-    return React.createElement("div", undefined, "Hello " + name);
-  };
-  return newrecord;
-}
-
-var greeting = ReasonReact.wrapReasonForJs(component, function (jsProps) {
-  return make(jsProps.name, /* array */[]);
-});
-
-exports.echo = echo;
-exports.component = component;
-exports.make = make;
-exports.greeting = greeting;
-/* component Not a pure module */
-},{"react":6,"reason-react/src/ReasonReact.js":11}],4:[function(require,module,exports) {
-// Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
-'use strict';
-
-var React = require("react");
-var ReasonReact = require("reason-react/src/ReasonReact.js");
-
-var component = ReasonReact.statelessComponent("Example");
-
-function make() {
-  var newrecord = component.slice();
-  newrecord[/* render */9] = function () {
-    return React.createElement("div", undefined, "Testing Composition");
-  };
-  return newrecord;
-}
-
-var example = ReasonReact.wrapReasonForJs(component, function () {
-  return make( /* array */[]);
-});
-
-exports.component = component;
-exports.make = make;
-exports.example = example;
-/* component Not a pure module */
-},{"react":6,"reason-react/src/ReasonReact.js":11}],74:[function(require,module,exports) {
-// Generated by BUCKLESCRIPT VERSION 2.1.0, PLEASE EDIT WITH CARE
-'use strict';
-
-var List = require("bs-platform/lib/js/list.js");
-var $$Array = require("bs-platform/lib/js/array.js");
-var Block = require("bs-platform/lib/js/block.js");
-var Curry = require("bs-platform/lib/js/curry.js");
-var React = require("react");
-var ReasonReact = require("reason-react/src/ReasonReact.js");
-
-function valueFromEvent(evt) {
-  return evt.target.value;
-}
-
-function str(prim) {
-  return prim;
-}
-
-var component = ReasonReact.statelessComponent("TodoItem");
-
-function make(todo, _) {
-  var newrecord = component.slice();
-  newrecord[/* render */9] = function () {
-    return React.createElement("li", {
-      className: "item"
-    }, todo[/* title */0]);
-  };
-  return newrecord;
-}
-
-var TodoItem = /* module */[
-/* component */component,
-/* make */make];
-
-var component$1 = ReasonReact.reducerComponent("Todo");
-
-function make$1() {
-  var newrecord = component$1.slice();
-  newrecord[/* render */9] = function (self) {
-    var value = self[/* state */2][/* value */0];
-    return React.createElement("div", undefined, React.createElement("input", {
-      value: value,
-      onChange: function onChange($$event) {
-        return Curry._1(self[/* send */4], /* Update */[$$event.target.value]);
-      }
-    }), React.createElement("button", {
-      onClick: function onClick() {
-        return Curry._1(self[/* send */4], /* Add */0);
-      }
-    }, "Add Todo"), React.createElement("ul", undefined, $$Array.of_list(List.map(function (todo) {
-      return ReasonReact.element( /* None */0, /* None */0, make(todo, /* array */[]));
-    }, self[/* state */2][/* todos */1]))));
-  };
-  newrecord[/* initialState */10] = function () {
-    return (/* record */[
-      /* value */"",
-      /* todos : :: */[
-      /* record */[
-      /* title */"Finish this component",
-      /* completed : false */0],
-      /* [] */0]]
+    invariant(
+      false,
+      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+      'Use PropTypes.checkPropTypes() to call them. ' +
+      'Read more at http://fb.me/use-check-prop-types'
     );
   };
-  newrecord[/* reducer */12] = function (action, state) {
-    if (action) {
-      return (/* Update */Block.__(0, [/* record */[
-        /* value */action[0],
-        /* todos */state[/* todos */1]]])
-      );
-    } else {
-      return (/* Update */Block.__(0, [/* record */[
-        /* value */"",
-        /* todos : :: */[
-        /* record */[
-        /* title */state[/* value */0],
-        /* completed : false */0], state[/* todos */1]]]])
-      );
-    }
+  shim.isRequired = shim;
+  function getShim() {
+    return shim;
   };
-  return newrecord;
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+  var ReactPropTypes = {
+    array: shim,
+    bool: shim,
+    func: shim,
+    number: shim,
+    object: shim,
+    string: shim,
+    symbol: shim,
+
+    any: shim,
+    arrayOf: getShim,
+    element: shim,
+    instanceOf: getShim,
+    node: shim,
+    objectOf: getShim,
+    oneOf: getShim,
+    oneOfType: getShim,
+    shape: getShim,
+    exact: getShim
+  };
+
+  ReactPropTypes.checkPropTypes = emptyFunction;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+},{"fbjs/lib/emptyFunction":56,"fbjs/lib/invariant":63,"./lib/ReactPropTypesSecret":47}],40:[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if ('development' !== 'production') {
+  var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol.for && Symbol.for('react.element') || 0xeac7;
+
+  var isValidElement = function (object) {
+    return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
+}
+},{"./factoryWithTypeCheckers":44,"./factoryWithThrowingShims":45}],41:[function(require,module,exports) {
+/**
+ * Copyright 2013-2015, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+'use strict';
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var invariant = function (condition, format, a, b, c, d, e, f) {
+  if ('development' !== 'production') {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  }
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
+};
+
+module.exports = invariant;
+},{}],81:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function isAbsolute(pathname) {
+  return pathname.charAt(0) === '/';
 }
 
-var todo = ReasonReact.wrapReasonForJs(component$1, function () {
-  return make$1( /* array */[]);
+// About 1.5x faster than the two-arg version of Array#splice()
+function spliceOne(list, index) {
+  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1) {
+    list[i] = list[k];
+  }
+
+  list.pop();
+}
+
+// This implementation is based heavily on node's url.parse
+function resolvePathname(to) {
+  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+
+  var toParts = to && to.split('/') || [];
+  var fromParts = from && from.split('/') || [];
+
+  var isToAbs = to && isAbsolute(to);
+  var isFromAbs = from && isAbsolute(from);
+  var mustEndAbs = isToAbs || isFromAbs;
+
+  if (to && isAbsolute(to)) {
+    // to is absolute
+    fromParts = toParts;
+  } else if (toParts.length) {
+    // to is relative, drop the filename
+    fromParts.pop();
+    fromParts = fromParts.concat(toParts);
+  }
+
+  if (!fromParts.length) return '/';
+
+  var hasTrailingSlash = void 0;
+  if (fromParts.length) {
+    var last = fromParts[fromParts.length - 1];
+    hasTrailingSlash = last === '.' || last === '..' || last === '';
+  } else {
+    hasTrailingSlash = false;
+  }
+
+  var up = 0;
+  for (var i = fromParts.length; i >= 0; i--) {
+    var part = fromParts[i];
+
+    if (part === '.') {
+      spliceOne(fromParts, i);
+    } else if (part === '..') {
+      spliceOne(fromParts, i);
+      up++;
+    } else if (up) {
+      spliceOne(fromParts, i);
+      up--;
+    }
+  }
+
+  if (!mustEndAbs) for (; up--; up) {
+    fromParts.unshift('..');
+  }if (mustEndAbs && fromParts[0] !== '' && (!fromParts[0] || !isAbsolute(fromParts[0]))) fromParts.unshift('');
+
+  var result = fromParts.join('/');
+
+  if (hasTrailingSlash && result.substr(-1) !== '/') result += '/';
+
+  return result;
+}
+
+exports.default = resolvePathname;
+},{}],80:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+function valueEqual(a, b) {
+  if (a === b) return true;
+
+  if (a == null || b == null) return false;
+
+  if (Array.isArray(a)) {
+    return Array.isArray(b) && a.length === b.length && a.every(function (item, index) {
+      return valueEqual(item, b[index]);
+    });
+  }
+
+  var aType = typeof a === 'undefined' ? 'undefined' : _typeof(a);
+  var bType = typeof b === 'undefined' ? 'undefined' : _typeof(b);
+
+  if (aType !== bType) return false;
+
+  if (aType === 'object') {
+    var aValue = a.valueOf();
+    var bValue = b.valueOf();
+
+    if (aValue !== a || bValue !== b) return valueEqual(aValue, bValue);
+
+    var aKeys = Object.keys(a);
+    var bKeys = Object.keys(b);
+
+    if (aKeys.length !== bKeys.length) return false;
+
+    return aKeys.every(function (key) {
+      return valueEqual(a[key], b[key]);
+    });
+  }
+
+  return false;
+}
+
+exports.default = valueEqual;
+},{}],51:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+var addLeadingSlash = exports.addLeadingSlash = function addLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path : '/' + path;
+};
+
+var stripLeadingSlash = exports.stripLeadingSlash = function stripLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path.substr(1) : path;
+};
+
+var hasBasename = exports.hasBasename = function hasBasename(path, prefix) {
+  return new RegExp('^' + prefix + '(\\/|\\?|#|$)', 'i').test(path);
+};
+
+var stripBasename = exports.stripBasename = function stripBasename(path, prefix) {
+  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
+};
+
+var stripTrailingSlash = exports.stripTrailingSlash = function stripTrailingSlash(path) {
+  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
+};
+
+var parsePath = exports.parsePath = function parsePath(path) {
+  var pathname = path || '/';
+  var search = '';
+  var hash = '';
+
+  var hashIndex = pathname.indexOf('#');
+  if (hashIndex !== -1) {
+    hash = pathname.substr(hashIndex);
+    pathname = pathname.substr(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+  if (searchIndex !== -1) {
+    search = pathname.substr(searchIndex);
+    pathname = pathname.substr(0, searchIndex);
+  }
+
+  return {
+    pathname: pathname,
+    search: search === '?' ? '' : search,
+    hash: hash === '#' ? '' : hash
+  };
+};
+
+var createPath = exports.createPath = function createPath(location) {
+  var pathname = location.pathname,
+      search = location.search,
+      hash = location.hash;
+
+
+  var path = pathname || '/';
+
+  if (search && search !== '?') path += search.charAt(0) === '?' ? search : '?' + search;
+
+  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : '#' + hash;
+
+  return path;
+};
+},{}],50:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+exports.locationsAreEqual = exports.createLocation = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _resolvePathname = require('resolve-pathname');
+
+var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
+
+var _valueEqual = require('value-equal');
+
+var _valueEqual2 = _interopRequireDefault(_valueEqual);
+
+var _PathUtils = require('./PathUtils');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createLocation = exports.createLocation = function createLocation(path, state, key, currentLocation) {
+  var location = void 0;
+  if (typeof path === 'string') {
+    // Two-arg form: push(path, state)
+    location = (0, _PathUtils.parsePath)(path);
+    location.state = state;
+  } else {
+    // One-arg form: push(location)
+    location = _extends({}, path);
+
+    if (location.pathname === undefined) location.pathname = '';
+
+    if (location.search) {
+      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
+    } else {
+      location.search = '';
+    }
+
+    if (location.hash) {
+      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
+    } else {
+      location.hash = '';
+    }
+
+    if (state !== undefined && location.state === undefined) location.state = state;
+  }
+
+  try {
+    location.pathname = decodeURI(location.pathname);
+  } catch (e) {
+    if (e instanceof URIError) {
+      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
+    } else {
+      throw e;
+    }
+  }
+
+  if (key) location.key = key;
+
+  if (currentLocation) {
+    // Resolve incomplete/relative pathname relative to current location.
+    if (!location.pathname) {
+      location.pathname = currentLocation.pathname;
+    } else if (location.pathname.charAt(0) !== '/') {
+      location.pathname = (0, _resolvePathname2.default)(location.pathname, currentLocation.pathname);
+    }
+  } else {
+    // When there is no prior location and pathname is empty, set it to /
+    if (!location.pathname) {
+      location.pathname = '/';
+    }
+  }
+
+  return location;
+};
+
+var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
+  return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
+};
+},{"resolve-pathname":81,"value-equal":80,"./PathUtils":51}],52:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createTransitionManager = function createTransitionManager() {
+  var prompt = null;
+
+  var setPrompt = function setPrompt(nextPrompt) {
+    (0, _warning2.default)(prompt == null, 'A history supports only one prompt at a time');
+
+    prompt = nextPrompt;
+
+    return function () {
+      if (prompt === nextPrompt) prompt = null;
+    };
+  };
+
+  var confirmTransitionTo = function confirmTransitionTo(location, action, getUserConfirmation, callback) {
+    // TODO: If another transition starts while we're still confirming
+    // the previous one, we may end up in a weird state. Figure out the
+    // best way to handle this.
+    if (prompt != null) {
+      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
+
+      if (typeof result === 'string') {
+        if (typeof getUserConfirmation === 'function') {
+          getUserConfirmation(result, callback);
+        } else {
+          (0, _warning2.default)(false, 'A history needs a getUserConfirmation function in order to use a prompt message');
+
+          callback(true);
+        }
+      } else {
+        // Return false from a transition hook to cancel the transition.
+        callback(result !== false);
+      }
+    } else {
+      callback(true);
+    }
+  };
+
+  var listeners = [];
+
+  var appendListener = function appendListener(fn) {
+    var isActive = true;
+
+    var listener = function listener() {
+      if (isActive) fn.apply(undefined, arguments);
+    };
+
+    listeners.push(listener);
+
+    return function () {
+      isActive = false;
+      listeners = listeners.filter(function (item) {
+        return item !== listener;
+      });
+    };
+  };
+
+  var notifyListeners = function notifyListeners() {
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    listeners.forEach(function (listener) {
+      return listener.apply(undefined, args);
+    });
+  };
+
+  return {
+    setPrompt: setPrompt,
+    confirmTransitionTo: confirmTransitionTo,
+    appendListener: appendListener,
+    notifyListeners: notifyListeners
+  };
+};
+
+exports.default = createTransitionManager;
+},{"warning":39}],53:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+var addEventListener = exports.addEventListener = function addEventListener(node, event, listener) {
+  return node.addEventListener ? node.addEventListener(event, listener, false) : node.attachEvent('on' + event, listener);
+};
+
+var removeEventListener = exports.removeEventListener = function removeEventListener(node, event, listener) {
+  return node.removeEventListener ? node.removeEventListener(event, listener, false) : node.detachEvent('on' + event, listener);
+};
+
+var getConfirmation = exports.getConfirmation = function getConfirmation(message, callback) {
+  return callback(window.confirm(message));
+}; // eslint-disable-line no-alert
+
+/**
+ * Returns true if the HTML5 history API is supported. Taken from Modernizr.
+ *
+ * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
+ * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+ * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
+ */
+var supportsHistory = exports.supportsHistory = function supportsHistory() {
+  var ua = window.navigator.userAgent;
+
+  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
+
+  return window.history && 'pushState' in window.history;
+};
+
+/**
+ * Returns true if browser fires popstate on hash change.
+ * IE10 and IE11 do not.
+ */
+var supportsPopStateOnHashChange = exports.supportsPopStateOnHashChange = function supportsPopStateOnHashChange() {
+  return window.navigator.userAgent.indexOf('Trident') === -1;
+};
+
+/**
+ * Returns false if using go(n) with hash history causes a full page reload.
+ */
+var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash = function supportsGoWithoutReloadUsingHash() {
+  return window.navigator.userAgent.indexOf('Firefox') === -1;
+};
+
+/**
+ * Returns true if a given popstate event is an extraneous WebKit event.
+ * Accounts for the fact that Chrome on iOS fires real popstate events
+ * containing undefined state when pressing the back button.
+ */
+var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
+  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
+};
+},{}],48:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _LocationUtils = require('./LocationUtils');
+
+var _PathUtils = require('./PathUtils');
+
+var _createTransitionManager = require('./createTransitionManager');
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+var _DOMUtils = require('./DOMUtils');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PopStateEvent = 'popstate';
+var HashChangeEvent = 'hashchange';
+
+var getHistoryState = function getHistoryState() {
+  try {
+    return window.history.state || {};
+  } catch (e) {
+    // IE 11 sometimes throws when accessing window.history.state
+    // See https://github.com/ReactTraining/history/pull/289
+    return {};
+  }
+};
+
+/**
+ * Creates a history object that uses the HTML5 history API including
+ * pushState, replaceState, and the popstate event.
+ */
+var createBrowserHistory = function createBrowserHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  (0, _invariant2.default)(_DOMUtils.canUseDOM, 'Browser history needs a DOM');
+
+  var globalHistory = window.history;
+  var canUseHistory = (0, _DOMUtils.supportsHistory)();
+  var needsHashChangeListener = !(0, _DOMUtils.supportsPopStateOnHashChange)();
+
+  var _props$forceRefresh = props.forceRefresh,
+      forceRefresh = _props$forceRefresh === undefined ? false : _props$forceRefresh,
+      _props$getUserConfirm = props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === undefined ? _DOMUtils.getConfirmation : _props$getUserConfirm,
+      _props$keyLength = props.keyLength,
+      keyLength = _props$keyLength === undefined ? 6 : _props$keyLength;
+
+  var basename = props.basename ? (0, _PathUtils.stripTrailingSlash)((0, _PathUtils.addLeadingSlash)(props.basename)) : '';
+
+  var getDOMLocation = function getDOMLocation(historyState) {
+    var _ref = historyState || {},
+        key = _ref.key,
+        state = _ref.state;
+
+    var _window$location = window.location,
+        pathname = _window$location.pathname,
+        search = _window$location.search,
+        hash = _window$location.hash;
+
+
+    var path = pathname + search + hash;
+
+    (0, _warning2.default)(!basename || (0, _PathUtils.hasBasename)(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".');
+
+    if (basename) path = (0, _PathUtils.stripBasename)(path, basename);
+
+    return (0, _LocationUtils.createLocation)(path, state, key);
+  };
+
+  var createKey = function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  };
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = globalHistory.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var handlePopState = function handlePopState(event) {
+    // Ignore extraneous popstate events in WebKit.
+    if ((0, _DOMUtils.isExtraneousPopstateEvent)(event)) return;
+
+    handlePop(getDOMLocation(event.state));
+  };
+
+  var handleHashChange = function handleHashChange() {
+    handlePop(getDOMLocation(getHistoryState()));
+  };
+
+  var forceNextPop = false;
+
+  var handlePop = function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({ action: action, location: location });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  };
+
+  var revertPop = function revertPop(fromLocation) {
+    var toLocation = history.location;
+
+    // TODO: We could probably make this more reliable by
+    // keeping a list of keys we've seen in sessionStorage.
+    // Instead, we just default to 0 for keys we don't know.
+
+    var toIndex = allKeys.indexOf(toLocation.key);
+
+    if (toIndex === -1) toIndex = 0;
+
+    var fromIndex = allKeys.indexOf(fromLocation.key);
+
+    if (fromIndex === -1) fromIndex = 0;
+
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  };
+
+  var initialLocation = getDOMLocation(getHistoryState());
+  var allKeys = [initialLocation.key];
+
+  // Public interface
+
+  var createHref = function createHref(location) {
+    return basename + (0, _PathUtils.createPath)(location);
+  };
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+
+      if (canUseHistory) {
+        globalHistory.pushState({ key: key, state: state }, null, href);
+
+        if (forceRefresh) {
+          window.location.href = href;
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          var nextKeys = allKeys.slice(0, prevIndex === -1 ? 0 : prevIndex + 1);
+
+          nextKeys.push(location.key);
+          allKeys = nextKeys;
+
+          setState({ action: action, location: location });
+        }
+      } else {
+        (0, _warning2.default)(state === undefined, 'Browser history cannot push state in browsers that do not support HTML5 history');
+
+        window.location.href = href;
+      }
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+
+      if (canUseHistory) {
+        globalHistory.replaceState({ key: key, state: state }, null, href);
+
+        if (forceRefresh) {
+          window.location.replace(href);
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+
+          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
+
+          setState({ action: action, location: location });
+        }
+      } else {
+        (0, _warning2.default)(state === undefined, 'Browser history cannot replace state in browsers that do not support HTML5 history');
+
+        window.location.replace(href);
+      }
+    });
+  };
+
+  var go = function go(n) {
+    globalHistory.go(n);
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var listenerCount = 0;
+
+  var checkDOMListeners = function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1) {
+      (0, _DOMUtils.addEventListener)(window, PopStateEvent, handlePopState);
+
+      if (needsHashChangeListener) (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      (0, _DOMUtils.removeEventListener)(window, PopStateEvent, handlePopState);
+
+      if (needsHashChangeListener) (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleHashChange);
+    }
+  };
+
+  var isBlocked = false;
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  };
+
+  var listen = function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  };
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createBrowserHistory;
+},{"warning":39,"invariant":41,"./LocationUtils":50,"./PathUtils":51,"./createTransitionManager":52,"./DOMUtils":53}],73:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 
-exports.valueFromEvent = valueFromEvent;
-exports.str = str;
-exports.TodoItem = TodoItem;
-exports.component = component$1;
-exports.make = make$1;
-exports.todo = todo;
-/* component Not a pure module */
-},{"bs-platform/lib/js/list.js":35,"bs-platform/lib/js/array.js":37,"bs-platform/lib/js/block.js":52,"bs-platform/lib/js/curry.js":36,"react":6,"reason-react/src/ReasonReact.js":11}],2:[function(require,module,exports) {
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for putting history on context.
+ */
+
+var Router = function (_React$Component) {
+  _inherits(Router, _React$Component);
+
+  function Router() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Router);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+      match: _this.computeMatch(_this.props.history.location.pathname)
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  Router.prototype.getChildContext = function getChildContext() {
+    return {
+      router: _extends({}, this.context.router, {
+        history: this.props.history,
+        route: {
+          location: this.props.history.location,
+          match: this.state.match
+        }
+      })
+    };
+  };
+
+  Router.prototype.computeMatch = function computeMatch(pathname) {
+    return {
+      path: '/',
+      url: '/',
+      params: {},
+      isExact: pathname === '/'
+    };
+  };
+
+  Router.prototype.componentWillMount = function componentWillMount() {
+    var _this2 = this;
+
+    var _props = this.props,
+        children = _props.children,
+        history = _props.history;
+
+    (0, _invariant2.default)(children == null || _react2.default.Children.count(children) === 1, 'A <Router> may have only one child element');
+
+    // Do this here so we can setState when a <Redirect> changes the
+    // location in componentWillMount. This happens e.g. when doing
+    // server rendering using a <StaticRouter>.
+    this.unlisten = history.listen(function () {
+      _this2.setState({
+        match: _this2.computeMatch(history.location.pathname)
+      });
+    });
+  };
+
+  Router.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+    (0, _warning2.default)(this.props.history === nextProps.history, 'You cannot change <Router history>');
+  };
+
+  Router.prototype.componentWillUnmount = function componentWillUnmount() {
+    this.unlisten();
+  };
+
+  Router.prototype.render = function render() {
+    var children = this.props.children;
+
+    return children ? _react2.default.Children.only(children) : null;
+  };
+
+  return Router;
+}(_react2.default.Component);
+
+Router.propTypes = {
+  history: _propTypes2.default.object.isRequired,
+  children: _propTypes2.default.node
+};
+Router.contextTypes = {
+  router: _propTypes2.default.object
+};
+Router.childContextTypes = {
+  router: _propTypes2.default.object.isRequired
+};
+
+exports.default = Router;
+},{"warning":39,"invariant":41,"react":11,"prop-types":40}],26:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Router = require('react-router/es/Router');
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/Router":73}],19:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _createBrowserHistory = require("history/createBrowserHistory");
+
+var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
+
+var _Router = require("./Router");
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for a <Router> that uses HTML5 history.
+ */
+
+var BrowserRouter = function (_React$Component) {
+  _inherits(BrowserRouter, _React$Component);
+
+  function BrowserRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, BrowserRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createBrowserHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  BrowserRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<BrowserRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { BrowserRouter as Router }`.');
+  };
+
+  BrowserRouter.prototype.render = function render() {
+    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+  };
+
+  return BrowserRouter;
+}(_react2.default.Component);
+
+BrowserRouter.propTypes = {
+  basename: _propTypes2.default.string,
+  forceRefresh: _propTypes2.default.bool,
+  getUserConfirmation: _propTypes2.default.func,
+  keyLength: _propTypes2.default.number,
+  children: _propTypes2.default.node
+};
+
+exports.default = BrowserRouter;
+},{"warning":39,"react":11,"prop-types":40,"history/createBrowserHistory":48,"./Router":26}],49:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _LocationUtils = require('./LocationUtils');
+
+var _PathUtils = require('./PathUtils');
+
+var _createTransitionManager = require('./createTransitionManager');
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+var _DOMUtils = require('./DOMUtils');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HashChangeEvent = 'hashchange';
+
+var HashPathCoders = {
+  hashbang: {
+    encodePath: function encodePath(path) {
+      return path.charAt(0) === '!' ? path : '!/' + (0, _PathUtils.stripLeadingSlash)(path);
+    },
+    decodePath: function decodePath(path) {
+      return path.charAt(0) === '!' ? path.substr(1) : path;
+    }
+  },
+  noslash: {
+    encodePath: _PathUtils.stripLeadingSlash,
+    decodePath: _PathUtils.addLeadingSlash
+  },
+  slash: {
+    encodePath: _PathUtils.addLeadingSlash,
+    decodePath: _PathUtils.addLeadingSlash
+  }
+};
+
+var getHashPath = function getHashPath() {
+  // We can't use window.location.hash here because it's not
+  // consistent across browsers - Firefox will pre-decode it!
+  var href = window.location.href;
+  var hashIndex = href.indexOf('#');
+  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
+};
+
+var pushHashPath = function pushHashPath(path) {
+  return window.location.hash = path;
+};
+
+var replaceHashPath = function replaceHashPath(path) {
+  var hashIndex = window.location.href.indexOf('#');
+
+  window.location.replace(window.location.href.slice(0, hashIndex >= 0 ? hashIndex : 0) + '#' + path);
+};
+
+var createHashHistory = function createHashHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  (0, _invariant2.default)(_DOMUtils.canUseDOM, 'Hash history needs a DOM');
+
+  var globalHistory = window.history;
+  var canGoWithoutReload = (0, _DOMUtils.supportsGoWithoutReloadUsingHash)();
+
+  var _props$getUserConfirm = props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === undefined ? _DOMUtils.getConfirmation : _props$getUserConfirm,
+      _props$hashType = props.hashType,
+      hashType = _props$hashType === undefined ? 'slash' : _props$hashType;
+
+  var basename = props.basename ? (0, _PathUtils.stripTrailingSlash)((0, _PathUtils.addLeadingSlash)(props.basename)) : '';
+
+  var _HashPathCoders$hashT = HashPathCoders[hashType],
+      encodePath = _HashPathCoders$hashT.encodePath,
+      decodePath = _HashPathCoders$hashT.decodePath;
+
+
+  var getDOMLocation = function getDOMLocation() {
+    var path = decodePath(getHashPath());
+
+    (0, _warning2.default)(!basename || (0, _PathUtils.hasBasename)(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".');
+
+    if (basename) path = (0, _PathUtils.stripBasename)(path, basename);
+
+    return (0, _LocationUtils.createLocation)(path);
+  };
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = globalHistory.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var forceNextPop = false;
+  var ignorePath = null;
+
+  var handleHashChange = function handleHashChange() {
+    var path = getHashPath();
+    var encodedPath = encodePath(path);
+
+    if (path !== encodedPath) {
+      // Ensure we always have a properly-encoded hash.
+      replaceHashPath(encodedPath);
+    } else {
+      var location = getDOMLocation();
+      var prevLocation = history.location;
+
+      if (!forceNextPop && (0, _LocationUtils.locationsAreEqual)(prevLocation, location)) return; // A hashchange doesn't always == location change.
+
+      if (ignorePath === (0, _PathUtils.createPath)(location)) return; // Ignore this change; we already setState in push/replace.
+
+      ignorePath = null;
+
+      handlePop(location);
+    }
+  };
+
+  var handlePop = function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({ action: action, location: location });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  };
+
+  var revertPop = function revertPop(fromLocation) {
+    var toLocation = history.location;
+
+    // TODO: We could probably make this more reliable by
+    // keeping a list of paths we've seen in sessionStorage.
+    // Instead, we just default to 0 for paths we don't know.
+
+    var toIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(toLocation));
+
+    if (toIndex === -1) toIndex = 0;
+
+    var fromIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(fromLocation));
+
+    if (fromIndex === -1) fromIndex = 0;
+
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  };
+
+  // Ensure the hash is encoded properly before doing anything else.
+  var path = getHashPath();
+  var encodedPath = encodePath(path);
+
+  if (path !== encodedPath) replaceHashPath(encodedPath);
+
+  var initialLocation = getDOMLocation();
+  var allPaths = [(0, _PathUtils.createPath)(initialLocation)];
+
+  // Public interface
+
+  var createHref = function createHref(location) {
+    return '#' + encodePath(basename + (0, _PathUtils.createPath)(location));
+  };
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(state === undefined, 'Hash history cannot push state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, undefined, undefined, history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var path = (0, _PathUtils.createPath)(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a PUSH, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        pushHashPath(encodedPath);
+
+        var prevIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(history.location));
+        var nextPaths = allPaths.slice(0, prevIndex === -1 ? 0 : prevIndex + 1);
+
+        nextPaths.push(path);
+        allPaths = nextPaths;
+
+        setState({ action: action, location: location });
+      } else {
+        (0, _warning2.default)(false, 'Hash history cannot PUSH the same path; a new entry will not be added to the history stack');
+
+        setState();
+      }
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(state === undefined, 'Hash history cannot replace state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, undefined, undefined, history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var path = (0, _PathUtils.createPath)(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        replaceHashPath(encodedPath);
+      }
+
+      var prevIndex = allPaths.indexOf((0, _PathUtils.createPath)(history.location));
+
+      if (prevIndex !== -1) allPaths[prevIndex] = path;
+
+      setState({ action: action, location: location });
+    });
+  };
+
+  var go = function go(n) {
+    (0, _warning2.default)(canGoWithoutReload, 'Hash history go(n) causes a full page reload in this browser');
+
+    globalHistory.go(n);
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var listenerCount = 0;
+
+  var checkDOMListeners = function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1) {
+      (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleHashChange);
+    }
+  };
+
+  var isBlocked = false;
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  };
+
+  var listen = function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  };
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createHashHistory;
+},{"warning":39,"invariant":41,"./LocationUtils":50,"./PathUtils":51,"./createTransitionManager":52,"./DOMUtils":53}],18:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _createHashHistory = require("history/createHashHistory");
+
+var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
+
+var _Router = require("./Router");
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for a <Router> that uses window.location.hash.
+ */
+
+var HashRouter = function (_React$Component) {
+  _inherits(HashRouter, _React$Component);
+
+  function HashRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, HashRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createHashHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  HashRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<HashRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { HashRouter as Router }`.');
+  };
+
+  HashRouter.prototype.render = function render() {
+    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+  };
+
+  return HashRouter;
+}(_react2.default.Component);
+
+HashRouter.propTypes = {
+  basename: _propTypes2.default.string,
+  getUserConfirmation: _propTypes2.default.func,
+  hashType: _propTypes2.default.oneOf(['hashbang', 'noslash', 'slash']),
+  children: _propTypes2.default.node
+};
+
+exports.default = HashRouter;
+},{"warning":39,"react":11,"prop-types":40,"history/createHashHistory":49,"./Router":26}],20:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+var isModifiedEvent = function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+};
+
+/**
+ * The public API for rendering a history-aware <a>.
+ */
+
+var Link = function (_React$Component) {
+  _inherits(Link, _React$Component);
+
+  function Link() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Link);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.handleClick = function (event) {
+      if (_this.props.onClick) _this.props.onClick(event);
+
+      if (!event.defaultPrevented && // onClick prevented default
+      event.button === 0 && // ignore right clicks
+      !_this.props.target && // let browser handle "target=_blank" etc.
+      !isModifiedEvent(event) // ignore clicks with modifier keys
+      ) {
+          event.preventDefault();
+
+          var history = _this.context.router.history;
+          var _this$props = _this.props,
+              replace = _this$props.replace,
+              to = _this$props.to;
+
+          if (replace) {
+            history.replace(to);
+          } else {
+            history.push(to);
+          }
+        }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  Link.prototype.render = function render() {
+    var _props = this.props,
+        replace = _props.replace,
+        to = _props.to,
+        innerRef = _props.innerRef,
+        props = _objectWithoutProperties(_props, ['replace', 'to', 'innerRef']); // eslint-disable-line no-unused-vars
+
+    (0, _invariant2.default)(this.context.router, 'You should not use <Link> outside a <Router>');
+
+    var href = this.context.router.history.createHref(typeof to === 'string' ? { pathname: to } : to);
+
+    return _react2.default.createElement('a', _extends({}, props, { onClick: this.handleClick, href: href, ref: innerRef }));
+  };
+
+  return Link;
+}(_react2.default.Component);
+
+Link.propTypes = {
+  onClick: _propTypes2.default.func,
+  target: _propTypes2.default.string,
+  replace: _propTypes2.default.bool,
+  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired,
+  innerRef: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func])
+};
+Link.defaultProps = {
+  replace: false
+};
+Link.contextTypes = {
+  router: _propTypes2.default.shape({
+    history: _propTypes2.default.shape({
+      push: _propTypes2.default.func.isRequired,
+      replace: _propTypes2.default.func.isRequired,
+      createHref: _propTypes2.default.func.isRequired
+    }).isRequired
+  }).isRequired
+};
+
+exports.default = Link;
+},{"react":11,"prop-types":40,"invariant":41}],94:[function(require,module,exports) {
+'use strict';
+
+exports.__esModule = true;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _PathUtils = require('./PathUtils');
+
+var _LocationUtils = require('./LocationUtils');
+
+var _createTransitionManager = require('./createTransitionManager');
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var clamp = function clamp(n, lowerBound, upperBound) {
+  return Math.min(Math.max(n, lowerBound), upperBound);
+};
+
+/**
+ * Creates a history object that stores locations in memory.
+ */
+var createMemoryHistory = function createMemoryHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var getUserConfirmation = props.getUserConfirmation,
+      _props$initialEntries = props.initialEntries,
+      initialEntries = _props$initialEntries === undefined ? ['/'] : _props$initialEntries,
+      _props$initialIndex = props.initialIndex,
+      initialIndex = _props$initialIndex === undefined ? 0 : _props$initialIndex,
+      _props$keyLength = props.keyLength,
+      keyLength = _props$keyLength === undefined ? 6 : _props$keyLength;
+
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = history.entries.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var createKey = function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  };
+
+  var index = clamp(initialIndex, 0, initialEntries.length - 1);
+  var entries = initialEntries.map(function (entry) {
+    return typeof entry === 'string' ? (0, _LocationUtils.createLocation)(entry, undefined, createKey()) : (0, _LocationUtils.createLocation)(entry, undefined, entry.key || createKey());
+  });
+
+  // Public interface
+
+  var createHref = _PathUtils.createPath;
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var prevIndex = history.index;
+      var nextIndex = prevIndex + 1;
+
+      var nextEntries = history.entries.slice(0);
+      if (nextEntries.length > nextIndex) {
+        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
+      } else {
+        nextEntries.push(location);
+      }
+
+      setState({
+        action: action,
+        location: location,
+        index: nextIndex,
+        entries: nextEntries
+      });
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      history.entries[history.index] = location;
+
+      setState({ action: action, location: location });
+    });
+  };
+
+  var go = function go(n) {
+    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
+
+    var action = 'POP';
+    var location = history.entries[nextIndex];
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (ok) {
+        setState({
+          action: action,
+          location: location,
+          index: nextIndex
+        });
+      } else {
+        // Mimic the behavior of DOM histories by
+        // causing a render after a cancelled POP.
+        setState();
+      }
+    });
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var canGo = function canGo(n) {
+    var nextIndex = history.index + n;
+    return nextIndex >= 0 && nextIndex < history.entries.length;
+  };
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return transitionManager.setPrompt(prompt);
+  };
+
+  var listen = function listen(listener) {
+    return transitionManager.appendListener(listener);
+  };
+
+  var history = {
+    length: entries.length,
+    action: 'POP',
+    location: entries[index],
+    index: index,
+    entries: entries,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    canGo: canGo,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createMemoryHistory;
+},{"warning":39,"./PathUtils":51,"./LocationUtils":50,"./createTransitionManager":52}],67:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _createMemoryHistory = require("history/createMemoryHistory");
+
+var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
+
+var _Router = require("./Router");
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for a <Router> that stores location in memory.
+ */
+
+var MemoryRouter = function (_React$Component) {
+  _inherits(MemoryRouter, _React$Component);
+
+  function MemoryRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, MemoryRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.history = (0, _createMemoryHistory2.default)(_this.props), _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  MemoryRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<MemoryRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { MemoryRouter as Router }`.');
+  };
+
+  MemoryRouter.prototype.render = function render() {
+    return _react2.default.createElement(_Router2.default, { history: this.history, children: this.props.children });
+  };
+
+  return MemoryRouter;
+}(_react2.default.Component);
+
+MemoryRouter.propTypes = {
+  initialEntries: _propTypes2.default.array,
+  initialIndex: _propTypes2.default.number,
+  getUserConfirmation: _propTypes2.default.func,
+  keyLength: _propTypes2.default.number,
+  children: _propTypes2.default.node
+};
+
+exports.default = MemoryRouter;
+},{"warning":39,"react":11,"prop-types":40,"history/createMemoryHistory":94,"./Router":73}],21:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _MemoryRouter = require('react-router/es/MemoryRouter');
+
+var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/MemoryRouter":67}],93:[function(require,module,exports) {
+module.exports = Array.isArray || function (arr) {
+  return Object.prototype.toString.call(arr) == '[object Array]';
+};
+
+},{}],84:[function(require,module,exports) {
+var isarray = require('isarray')
+
+/**
+ * Expose `pathToRegexp`.
+ */
+module.exports = pathToRegexp
+module.exports.parse = parse
+module.exports.compile = compile
+module.exports.tokensToFunction = tokensToFunction
+module.exports.tokensToRegExp = tokensToRegExp
+
+/**
+ * The main path matching regexp utility.
+ *
+ * @type {RegExp}
+ */
+var PATH_REGEXP = new RegExp([
+  // Match escaped characters that would otherwise appear in future matches.
+  // This allows the user to escape special characters that won't transform.
+  '(\\\\.)',
+  // Match Express-style parameters and un-named parameters with a prefix
+  // and optional suffixes. Matches appear as:
+  //
+  // "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?", undefined]
+  // "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined, undefined]
+  // "/*"            => ["/", undefined, undefined, undefined, undefined, "*"]
+  '([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))'
+].join('|'), 'g')
+
+/**
+ * Parse a string for the raw tokens.
+ *
+ * @param  {string}  str
+ * @param  {Object=} options
+ * @return {!Array}
+ */
+function parse (str, options) {
+  var tokens = []
+  var key = 0
+  var index = 0
+  var path = ''
+  var defaultDelimiter = options && options.delimiter || '/'
+  var res
+
+  while ((res = PATH_REGEXP.exec(str)) != null) {
+    var m = res[0]
+    var escaped = res[1]
+    var offset = res.index
+    path += str.slice(index, offset)
+    index = offset + m.length
+
+    // Ignore already escaped sequences.
+    if (escaped) {
+      path += escaped[1]
+      continue
+    }
+
+    var next = str[index]
+    var prefix = res[2]
+    var name = res[3]
+    var capture = res[4]
+    var group = res[5]
+    var modifier = res[6]
+    var asterisk = res[7]
+
+    // Push the current path onto the tokens.
+    if (path) {
+      tokens.push(path)
+      path = ''
+    }
+
+    var partial = prefix != null && next != null && next !== prefix
+    var repeat = modifier === '+' || modifier === '*'
+    var optional = modifier === '?' || modifier === '*'
+    var delimiter = res[2] || defaultDelimiter
+    var pattern = capture || group
+
+    tokens.push({
+      name: name || key++,
+      prefix: prefix || '',
+      delimiter: delimiter,
+      optional: optional,
+      repeat: repeat,
+      partial: partial,
+      asterisk: !!asterisk,
+      pattern: pattern ? escapeGroup(pattern) : (asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?')
+    })
+  }
+
+  // Match any characters still remaining.
+  if (index < str.length) {
+    path += str.substr(index)
+  }
+
+  // If the path exists, push it onto the end.
+  if (path) {
+    tokens.push(path)
+  }
+
+  return tokens
+}
+
+/**
+ * Compile a string to a template function for the path.
+ *
+ * @param  {string}             str
+ * @param  {Object=}            options
+ * @return {!function(Object=, Object=)}
+ */
+function compile (str, options) {
+  return tokensToFunction(parse(str, options))
+}
+
+/**
+ * Prettier encoding of URI path segments.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+function encodeURIComponentPretty (str) {
+  return encodeURI(str).replace(/[\/?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
+  })
+}
+
+/**
+ * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+function encodeAsterisk (str) {
+  return encodeURI(str).replace(/[?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase()
+  })
+}
+
+/**
+ * Expose a method for transforming tokens into the path function.
+ */
+function tokensToFunction (tokens) {
+  // Compile all the tokens into regexps.
+  var matches = new Array(tokens.length)
+
+  // Compile all the patterns before compilation.
+  for (var i = 0; i < tokens.length; i++) {
+    if (typeof tokens[i] === 'object') {
+      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$')
+    }
+  }
+
+  return function (obj, opts) {
+    var path = ''
+    var data = obj || {}
+    var options = opts || {}
+    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent
+
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i]
+
+      if (typeof token === 'string') {
+        path += token
+
+        continue
+      }
+
+      var value = data[token.name]
+      var segment
+
+      if (value == null) {
+        if (token.optional) {
+          // Prepend partial segment prefixes.
+          if (token.partial) {
+            path += token.prefix
+          }
+
+          continue
+        } else {
+          throw new TypeError('Expected "' + token.name + '" to be defined')
+        }
+      }
+
+      if (isarray(value)) {
+        if (!token.repeat) {
+          throw new TypeError('Expected "' + token.name + '" to not repeat, but received `' + JSON.stringify(value) + '`')
+        }
+
+        if (value.length === 0) {
+          if (token.optional) {
+            continue
+          } else {
+            throw new TypeError('Expected "' + token.name + '" to not be empty')
+          }
+        }
+
+        for (var j = 0; j < value.length; j++) {
+          segment = encode(value[j])
+
+          if (!matches[i].test(segment)) {
+            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '", but received `' + JSON.stringify(segment) + '`')
+          }
+
+          path += (j === 0 ? token.prefix : token.delimiter) + segment
+        }
+
+        continue
+      }
+
+      segment = token.asterisk ? encodeAsterisk(value) : encode(value)
+
+      if (!matches[i].test(segment)) {
+        throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but received "' + segment + '"')
+      }
+
+      path += token.prefix + segment
+    }
+
+    return path
+  }
+}
+
+/**
+ * Escape a regular expression string.
+ *
+ * @param  {string} str
+ * @return {string}
+ */
+function escapeString (str) {
+  return str.replace(/([.+*?=^!:${}()[\]|\/\\])/g, '\\$1')
+}
+
+/**
+ * Escape the capturing group by escaping special characters and meaning.
+ *
+ * @param  {string} group
+ * @return {string}
+ */
+function escapeGroup (group) {
+  return group.replace(/([=!:$\/()])/g, '\\$1')
+}
+
+/**
+ * Attach the keys as a property of the regexp.
+ *
+ * @param  {!RegExp} re
+ * @param  {Array}   keys
+ * @return {!RegExp}
+ */
+function attachKeys (re, keys) {
+  re.keys = keys
+  return re
+}
+
+/**
+ * Get the flags for a regexp from the options.
+ *
+ * @param  {Object} options
+ * @return {string}
+ */
+function flags (options) {
+  return options.sensitive ? '' : 'i'
+}
+
+/**
+ * Pull out keys from a regexp.
+ *
+ * @param  {!RegExp} path
+ * @param  {!Array}  keys
+ * @return {!RegExp}
+ */
+function regexpToRegexp (path, keys) {
+  // Use a negative lookahead to match only capturing groups.
+  var groups = path.source.match(/\((?!\?)/g)
+
+  if (groups) {
+    for (var i = 0; i < groups.length; i++) {
+      keys.push({
+        name: i,
+        prefix: null,
+        delimiter: null,
+        optional: false,
+        repeat: false,
+        partial: false,
+        asterisk: false,
+        pattern: null
+      })
+    }
+  }
+
+  return attachKeys(path, keys)
+}
+
+/**
+ * Transform an array into a regexp.
+ *
+ * @param  {!Array}  path
+ * @param  {Array}   keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+function arrayToRegexp (path, keys, options) {
+  var parts = []
+
+  for (var i = 0; i < path.length; i++) {
+    parts.push(pathToRegexp(path[i], keys, options).source)
+  }
+
+  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options))
+
+  return attachKeys(regexp, keys)
+}
+
+/**
+ * Create a path regexp from string input.
+ *
+ * @param  {string}  path
+ * @param  {!Array}  keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+function stringToRegexp (path, keys, options) {
+  return tokensToRegExp(parse(path, options), keys, options)
+}
+
+/**
+ * Expose a function for taking tokens and returning a RegExp.
+ *
+ * @param  {!Array}          tokens
+ * @param  {(Array|Object)=} keys
+ * @param  {Object=}         options
+ * @return {!RegExp}
+ */
+function tokensToRegExp (tokens, keys, options) {
+  if (!isarray(keys)) {
+    options = /** @type {!Object} */ (keys || options)
+    keys = []
+  }
+
+  options = options || {}
+
+  var strict = options.strict
+  var end = options.end !== false
+  var route = ''
+
+  // Iterate over the tokens and create our regexp string.
+  for (var i = 0; i < tokens.length; i++) {
+    var token = tokens[i]
+
+    if (typeof token === 'string') {
+      route += escapeString(token)
+    } else {
+      var prefix = escapeString(token.prefix)
+      var capture = '(?:' + token.pattern + ')'
+
+      keys.push(token)
+
+      if (token.repeat) {
+        capture += '(?:' + prefix + capture + ')*'
+      }
+
+      if (token.optional) {
+        if (!token.partial) {
+          capture = '(?:' + prefix + '(' + capture + '))?'
+        } else {
+          capture = prefix + '(' + capture + ')?'
+        }
+      } else {
+        capture = prefix + '(' + capture + ')'
+      }
+
+      route += capture
+    }
+  }
+
+  var delimiter = escapeString(options.delimiter || '/')
+  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter
+
+  // In non-strict mode we allow a slash at the end of match. If the path to
+  // match already ends with a slash, we remove it for consistency. The slash
+  // is valid at the end of a path match, not in the middle. This is important
+  // in non-ending mode, where "/test/" shouldn't match "/test//route".
+  if (!strict) {
+    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?'
+  }
+
+  if (end) {
+    route += '$'
+  } else {
+    // In non-ending mode, we need the capturing groups to match as much as
+    // possible by using a positive lookahead to the end or next path segment.
+    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)'
+  }
+
+  return attachKeys(new RegExp('^' + route, flags(options)), keys)
+}
+
+/**
+ * Normalize the given path string, returning a regular expression.
+ *
+ * An empty array can be passed in for the keys, which will hold the
+ * placeholder key descriptions. For example, using `/user/:id`, `keys` will
+ * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
+ *
+ * @param  {(string|RegExp|Array)} path
+ * @param  {(Array|Object)=}       keys
+ * @param  {Object=}               options
+ * @return {!RegExp}
+ */
+function pathToRegexp (path, keys, options) {
+  if (!isarray(keys)) {
+    options = /** @type {!Object} */ (keys || options)
+    keys = []
+  }
+
+  options = options || {}
+
+  if (path instanceof RegExp) {
+    return regexpToRegexp(path, /** @type {!Array} */ (keys))
+  }
+
+  if (isarray(path)) {
+    return arrayToRegexp(/** @type {!Array} */ (path), /** @type {!Array} */ (keys), options)
+  }
+
+  return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
+}
+
+},{"isarray":93}],74:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _pathToRegexp = require('path-to-regexp');
+
+var _pathToRegexp2 = _interopRequireDefault(_pathToRegexp);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var patternCache = {};
+var cacheLimit = 10000;
+var cacheCount = 0;
+
+var compilePath = function compilePath(pattern, options) {
+  var cacheKey = '' + options.end + options.strict + options.sensitive;
+  var cache = patternCache[cacheKey] || (patternCache[cacheKey] = {});
+
+  if (cache[pattern]) return cache[pattern];
+
+  var keys = [];
+  var re = (0, _pathToRegexp2.default)(pattern, keys, options);
+  var compiledPattern = { re: re, keys: keys };
+
+  if (cacheCount < cacheLimit) {
+    cache[pattern] = compiledPattern;
+    cacheCount++;
+  }
+
+  return compiledPattern;
+};
+
+/**
+ * Public API for matching a URL pathname to a path pattern.
+ */
+var matchPath = function matchPath(pathname) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  if (typeof options === 'string') options = { path: options };
+
+  var _options = options,
+      _options$path = _options.path,
+      path = _options$path === undefined ? '/' : _options$path,
+      _options$exact = _options.exact,
+      exact = _options$exact === undefined ? false : _options$exact,
+      _options$strict = _options.strict,
+      strict = _options$strict === undefined ? false : _options$strict,
+      _options$sensitive = _options.sensitive,
+      sensitive = _options$sensitive === undefined ? false : _options$sensitive;
+
+  var _compilePath = compilePath(path, { end: exact, strict: strict, sensitive: sensitive }),
+      re = _compilePath.re,
+      keys = _compilePath.keys;
+
+  var match = re.exec(pathname);
+
+  if (!match) return null;
+
+  var url = match[0],
+      values = match.slice(1);
+
+  var isExact = pathname === url;
+
+  if (exact && !isExact) return null;
+
+  return {
+    path: path, // the path pattern used to match
+    url: path === '/' && url === '' ? '/' : url, // the matched portion of the URL
+    isExact: isExact, // whether or not we matched exactly
+    params: keys.reduce(function (memo, key, index) {
+      memo[key.name] = values[index];
+      return memo;
+    }, {})
+  };
+};
+
+exports.default = matchPath;
+},{"path-to-regexp":84}],72:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _matchPath = require("./matchPath");
+
+var _matchPath2 = _interopRequireDefault(_matchPath);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+var isEmptyChildren = function isEmptyChildren(children) {
+  return _react2.default.Children.count(children) === 0;
+};
+
+/**
+ * The public API for matching a single path and rendering.
+ */
+
+var Route = function (_React$Component) {
+  _inherits(Route, _React$Component);
+
+  function Route() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Route);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+      match: _this.computeMatch(_this.props, _this.context.router)
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  Route.prototype.getChildContext = function getChildContext() {
+    return {
+      router: _extends({}, this.context.router, {
+        route: {
+          location: this.props.location || this.context.router.route.location,
+          match: this.state.match
+        }
+      })
+    };
+  };
+
+  Route.prototype.computeMatch = function computeMatch(_ref, router) {
+    var computedMatch = _ref.computedMatch,
+        location = _ref.location,
+        path = _ref.path,
+        strict = _ref.strict,
+        exact = _ref.exact,
+        sensitive = _ref.sensitive;
+
+    if (computedMatch) return computedMatch; // <Switch> already computed the match for us
+
+    (0, _invariant2.default)(router, 'You should not use <Route> or withRouter() outside a <Router>');
+
+    var route = router.route;
+
+    var pathname = (location || route.location).pathname;
+
+    return path ? (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact, sensitive: sensitive }) : route.match;
+  };
+
+  Route.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!(this.props.component && this.props.render), 'You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored');
+
+    (0, _warning2.default)(!(this.props.component && this.props.children && !isEmptyChildren(this.props.children)), 'You should not use <Route component> and <Route children> in the same route; <Route children> will be ignored');
+
+    (0, _warning2.default)(!(this.props.render && this.props.children && !isEmptyChildren(this.props.children)), 'You should not use <Route render> and <Route children> in the same route; <Route children> will be ignored');
+  };
+
+  Route.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps, nextContext) {
+    (0, _warning2.default)(!(nextProps.location && !this.props.location), '<Route> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
+
+    (0, _warning2.default)(!(!nextProps.location && this.props.location), '<Route> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
+
+    this.setState({
+      match: this.computeMatch(nextProps, nextContext.router)
+    });
+  };
+
+  Route.prototype.render = function render() {
+    var match = this.state.match;
+    var _props = this.props,
+        children = _props.children,
+        component = _props.component,
+        render = _props.render;
+    var _context$router = this.context.router,
+        history = _context$router.history,
+        route = _context$router.route,
+        staticContext = _context$router.staticContext;
+
+    var location = this.props.location || route.location;
+    var props = { match: match, location: location, history: history, staticContext: staticContext };
+
+    return component ? // component prop gets first priority, only called if there's a match
+    match ? _react2.default.createElement(component, props) : null : render ? // render prop is next, only called if there's a match
+    match ? render(props) : null : children ? // children come last, always called
+    typeof children === 'function' ? children(props) : !isEmptyChildren(children) ? _react2.default.Children.only(children) : null : null;
+  };
+
+  return Route;
+}(_react2.default.Component);
+
+Route.propTypes = {
+  computedMatch: _propTypes2.default.object, // private, from <Switch>
+  path: _propTypes2.default.string,
+  exact: _propTypes2.default.bool,
+  strict: _propTypes2.default.bool,
+  sensitive: _propTypes2.default.bool,
+  component: _propTypes2.default.func,
+  render: _propTypes2.default.func,
+  children: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.node]),
+  location: _propTypes2.default.object
+};
+Route.contextTypes = {
+  router: _propTypes2.default.shape({
+    history: _propTypes2.default.object.isRequired,
+    route: _propTypes2.default.object.isRequired,
+    staticContext: _propTypes2.default.object
+  })
+};
+Route.childContextTypes = {
+  router: _propTypes2.default.object.isRequired
+};
+
+exports.default = Route;
+},{"warning":39,"invariant":41,"react":11,"prop-types":40,"./matchPath":74}],25:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Route = require('react-router/es/Route');
+
+var _Route2 = _interopRequireDefault(_Route);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/Route":72}],22:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _Route = require("./Route");
+
+var _Route2 = _interopRequireDefault(_Route);
+
+var _Link = require("./Link");
+
+var _Link2 = _interopRequireDefault(_Link);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
+/**
+ * A <Link> wrapper that knows if it's "active" or not.
+ */
+var NavLink = function NavLink(_ref) {
+  var to = _ref.to,
+      exact = _ref.exact,
+      strict = _ref.strict,
+      location = _ref.location,
+      activeClassName = _ref.activeClassName,
+      className = _ref.className,
+      activeStyle = _ref.activeStyle,
+      style = _ref.style,
+      getIsActive = _ref.isActive,
+      ariaCurrent = _ref.ariaCurrent,
+      rest = _objectWithoutProperties(_ref, ['to', 'exact', 'strict', 'location', 'activeClassName', 'className', 'activeStyle', 'style', 'isActive', 'ariaCurrent']);
+
+  return _react2.default.createElement(_Route2.default, {
+    path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+    exact: exact,
+    strict: strict,
+    location: location,
+    children: function children(_ref2) {
+      var location = _ref2.location,
+          match = _ref2.match;
+
+      var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+
+      return _react2.default.createElement(_Link2.default, _extends({
+        to: to,
+        className: isActive ? [className, activeClassName].filter(function (i) {
+          return i;
+        }).join(' ') : className,
+        style: isActive ? _extends({}, style, activeStyle) : style,
+        'aria-current': isActive && ariaCurrent
+      }, rest));
+    }
+  });
+};
+
+NavLink.propTypes = {
+  to: _Link2.default.propTypes.to,
+  exact: _propTypes2.default.bool,
+  strict: _propTypes2.default.bool,
+  location: _propTypes2.default.object,
+  activeClassName: _propTypes2.default.string,
+  className: _propTypes2.default.string,
+  activeStyle: _propTypes2.default.object,
+  style: _propTypes2.default.object,
+  isActive: _propTypes2.default.func,
+  ariaCurrent: _propTypes2.default.oneOf(['page', 'step', 'location', 'true'])
+};
+
+NavLink.defaultProps = {
+  activeClassName: 'active',
+  ariaCurrent: 'true'
+};
+
+exports.default = NavLink;
+},{"react":11,"prop-types":40,"./Route":25,"./Link":20}],68:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for prompting the user before navigating away
+ * from a screen with a component.
+ */
+
+var Prompt = function (_React$Component) {
+  _inherits(Prompt, _React$Component);
+
+  function Prompt() {
+    _classCallCheck(this, Prompt);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+  }
+
+  Prompt.prototype.enable = function enable(message) {
+    if (this.unblock) this.unblock();
+
+    this.unblock = this.context.router.history.block(message);
+  };
+
+  Prompt.prototype.disable = function disable() {
+    if (this.unblock) {
+      this.unblock();
+      this.unblock = null;
+    }
+  };
+
+  Prompt.prototype.componentWillMount = function componentWillMount() {
+    (0, _invariant2.default)(this.context.router, 'You should not use <Prompt> outside a <Router>');
+
+    if (this.props.when) this.enable(this.props.message);
+  };
+
+  Prompt.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+    if (nextProps.when) {
+      if (!this.props.when || this.props.message !== nextProps.message) this.enable(nextProps.message);
+    } else {
+      this.disable();
+    }
+  };
+
+  Prompt.prototype.componentWillUnmount = function componentWillUnmount() {
+    this.disable();
+  };
+
+  Prompt.prototype.render = function render() {
+    return null;
+  };
+
+  return Prompt;
+}(_react2.default.Component);
+
+Prompt.propTypes = {
+  when: _propTypes2.default.bool,
+  message: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired
+};
+Prompt.defaultProps = {
+  when: true
+};
+Prompt.contextTypes = {
+  router: _propTypes2.default.shape({
+    history: _propTypes2.default.shape({
+      block: _propTypes2.default.func.isRequired
+    }).isRequired
+  }).isRequired
+};
+
+exports.default = Prompt;
+},{"react":11,"prop-types":40,"invariant":41}],23:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Prompt = require('react-router/es/Prompt');
+
+var _Prompt2 = _interopRequireDefault(_Prompt);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/Prompt":68}],90:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var addLeadingSlash = exports.addLeadingSlash = function addLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path : '/' + path;
+};
+
+var stripLeadingSlash = exports.stripLeadingSlash = function stripLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path.substr(1) : path;
+};
+
+var hasBasename = exports.hasBasename = function hasBasename(path, prefix) {
+  return new RegExp('^' + prefix + '(\\/|\\?|#|$)', 'i').test(path);
+};
+
+var stripBasename = exports.stripBasename = function stripBasename(path, prefix) {
+  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
+};
+
+var stripTrailingSlash = exports.stripTrailingSlash = function stripTrailingSlash(path) {
+  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
+};
+
+var parsePath = exports.parsePath = function parsePath(path) {
+  var pathname = path || '/';
+  var search = '';
+  var hash = '';
+
+  var hashIndex = pathname.indexOf('#');
+  if (hashIndex !== -1) {
+    hash = pathname.substr(hashIndex);
+    pathname = pathname.substr(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+  if (searchIndex !== -1) {
+    search = pathname.substr(searchIndex);
+    pathname = pathname.substr(0, searchIndex);
+  }
+
+  return {
+    pathname: pathname,
+    search: search === '?' ? '' : search,
+    hash: hash === '#' ? '' : hash
+  };
+};
+
+var createPath = exports.createPath = function createPath(location) {
+  var pathname = location.pathname,
+      search = location.search,
+      hash = location.hash;
+
+  var path = pathname || '/';
+
+  if (search && search !== '?') path += search.charAt(0) === '?' ? search : '?' + search;
+
+  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : '#' + hash;
+
+  return path;
+};
+},{}],89:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.locationsAreEqual = exports.createLocation = undefined;
+
+var _resolvePathname = require('resolve-pathname');
+
+var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
+
+var _valueEqual = require('value-equal');
+
+var _valueEqual2 = _interopRequireDefault(_valueEqual);
+
+var _PathUtils = require('./PathUtils');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+var createLocation = exports.createLocation = function createLocation(path, state, key, currentLocation) {
+  var location = void 0;
+  if (typeof path === 'string') {
+    // Two-arg form: push(path, state)
+    location = (0, _PathUtils.parsePath)(path);
+    location.state = state;
+  } else {
+    // One-arg form: push(location)
+    location = _extends({}, path);
+
+    if (location.pathname === undefined) location.pathname = '';
+
+    if (location.search) {
+      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
+    } else {
+      location.search = '';
+    }
+
+    if (location.hash) {
+      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
+    } else {
+      location.hash = '';
+    }
+
+    if (state !== undefined && location.state === undefined) location.state = state;
+  }
+
+  try {
+    location.pathname = decodeURI(location.pathname);
+  } catch (e) {
+    if (e instanceof URIError) {
+      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
+    } else {
+      throw e;
+    }
+  }
+
+  if (key) location.key = key;
+
+  if (currentLocation) {
+    // Resolve incomplete/relative pathname relative to current location.
+    if (!location.pathname) {
+      location.pathname = currentLocation.pathname;
+    } else if (location.pathname.charAt(0) !== '/') {
+      location.pathname = (0, _resolvePathname2.default)(location.pathname, currentLocation.pathname);
+    }
+  } else {
+    // When there is no prior location and pathname is empty, set it to /
+    if (!location.pathname) {
+      location.pathname = '/';
+    }
+  }
+
+  return location;
+};
+
+var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
+  return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
+};
+},{"resolve-pathname":81,"value-equal":80,"./PathUtils":90}],91:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var createTransitionManager = function createTransitionManager() {
+  var prompt = null;
+
+  var setPrompt = function setPrompt(nextPrompt) {
+    (0, _warning2.default)(prompt == null, 'A history supports only one prompt at a time');
+
+    prompt = nextPrompt;
+
+    return function () {
+      if (prompt === nextPrompt) prompt = null;
+    };
+  };
+
+  var confirmTransitionTo = function confirmTransitionTo(location, action, getUserConfirmation, callback) {
+    // TODO: If another transition starts while we're still confirming
+    // the previous one, we may end up in a weird state. Figure out the
+    // best way to handle this.
+    if (prompt != null) {
+      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
+
+      if (typeof result === 'string') {
+        if (typeof getUserConfirmation === 'function') {
+          getUserConfirmation(result, callback);
+        } else {
+          (0, _warning2.default)(false, 'A history needs a getUserConfirmation function in order to use a prompt message');
+
+          callback(true);
+        }
+      } else {
+        // Return false from a transition hook to cancel the transition.
+        callback(result !== false);
+      }
+    } else {
+      callback(true);
+    }
+  };
+
+  var listeners = [];
+
+  var appendListener = function appendListener(fn) {
+    var isActive = true;
+
+    var listener = function listener() {
+      if (isActive) fn.apply(undefined, arguments);
+    };
+
+    listeners.push(listener);
+
+    return function () {
+      isActive = false;
+      listeners = listeners.filter(function (item) {
+        return item !== listener;
+      });
+    };
+  };
+
+  var notifyListeners = function notifyListeners() {
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    listeners.forEach(function (listener) {
+      return listener.apply(undefined, args);
+    });
+  };
+
+  return {
+    setPrompt: setPrompt,
+    confirmTransitionTo: confirmTransitionTo,
+    appendListener: appendListener,
+    notifyListeners: notifyListeners
+  };
+};
+
+exports.default = createTransitionManager;
+},{"warning":39}],92:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+var addEventListener = exports.addEventListener = function addEventListener(node, event, listener) {
+  return node.addEventListener ? node.addEventListener(event, listener, false) : node.attachEvent('on' + event, listener);
+};
+
+var removeEventListener = exports.removeEventListener = function removeEventListener(node, event, listener) {
+  return node.removeEventListener ? node.removeEventListener(event, listener, false) : node.detachEvent('on' + event, listener);
+};
+
+var getConfirmation = exports.getConfirmation = function getConfirmation(message, callback) {
+  return callback(window.confirm(message));
+}; // eslint-disable-line no-alert
+
+/**
+ * Returns true if the HTML5 history API is supported. Taken from Modernizr.
+ *
+ * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
+ * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+ * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
+ */
+var supportsHistory = exports.supportsHistory = function supportsHistory() {
+  var ua = window.navigator.userAgent;
+
+  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
+
+  return window.history && 'pushState' in window.history;
+};
+
+/**
+ * Returns true if browser fires popstate on hash change.
+ * IE10 and IE11 do not.
+ */
+var supportsPopStateOnHashChange = exports.supportsPopStateOnHashChange = function supportsPopStateOnHashChange() {
+  return window.navigator.userAgent.indexOf('Trident') === -1;
+};
+
+/**
+ * Returns false if using go(n) with hash history causes a full page reload.
+ */
+var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash = function supportsGoWithoutReloadUsingHash() {
+  return window.navigator.userAgent.indexOf('Firefox') === -1;
+};
+
+/**
+ * Returns true if a given popstate event is an extraneous WebKit event.
+ * Accounts for the fact that Chrome on iOS fires real popstate events
+ * containing undefined state when pressing the back button.
+ */
+var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
+  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
+};
+},{}],86:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _LocationUtils = require("./LocationUtils");
+
+var _PathUtils = require("./PathUtils");
+
+var _createTransitionManager = require("./createTransitionManager");
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+var _DOMUtils = require("./DOMUtils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+var PopStateEvent = 'popstate';
+var HashChangeEvent = 'hashchange';
+
+var getHistoryState = function getHistoryState() {
+  try {
+    return window.history.state || {};
+  } catch (e) {
+    // IE 11 sometimes throws when accessing window.history.state
+    // See https://github.com/ReactTraining/history/pull/289
+    return {};
+  }
+};
+
+/**
+ * Creates a history object that uses the HTML5 history API including
+ * pushState, replaceState, and the popstate event.
+ */
+var createBrowserHistory = function createBrowserHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  (0, _invariant2.default)(_DOMUtils.canUseDOM, 'Browser history needs a DOM');
+
+  var globalHistory = window.history;
+  var canUseHistory = (0, _DOMUtils.supportsHistory)();
+  var needsHashChangeListener = !(0, _DOMUtils.supportsPopStateOnHashChange)();
+
+  var _props$forceRefresh = props.forceRefresh,
+      forceRefresh = _props$forceRefresh === undefined ? false : _props$forceRefresh,
+      _props$getUserConfirm = props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === undefined ? _DOMUtils.getConfirmation : _props$getUserConfirm,
+      _props$keyLength = props.keyLength,
+      keyLength = _props$keyLength === undefined ? 6 : _props$keyLength;
+
+  var basename = props.basename ? (0, _PathUtils.stripTrailingSlash)((0, _PathUtils.addLeadingSlash)(props.basename)) : '';
+
+  var getDOMLocation = function getDOMLocation(historyState) {
+    var _ref = historyState || {},
+        key = _ref.key,
+        state = _ref.state;
+
+    var _window$location = window.location,
+        pathname = _window$location.pathname,
+        search = _window$location.search,
+        hash = _window$location.hash;
+
+    var path = pathname + search + hash;
+
+    (0, _warning2.default)(!basename || (0, _PathUtils.hasBasename)(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".');
+
+    if (basename) path = (0, _PathUtils.stripBasename)(path, basename);
+
+    return (0, _LocationUtils.createLocation)(path, state, key);
+  };
+
+  var createKey = function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  };
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = globalHistory.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var handlePopState = function handlePopState(event) {
+    // Ignore extraneous popstate events in WebKit.
+    if ((0, _DOMUtils.isExtraneousPopstateEvent)(event)) return;
+
+    handlePop(getDOMLocation(event.state));
+  };
+
+  var handleHashChange = function handleHashChange() {
+    handlePop(getDOMLocation(getHistoryState()));
+  };
+
+  var forceNextPop = false;
+
+  var handlePop = function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({ action: action, location: location });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  };
+
+  var revertPop = function revertPop(fromLocation) {
+    var toLocation = history.location;
+
+    // TODO: We could probably make this more reliable by
+    // keeping a list of keys we've seen in sessionStorage.
+    // Instead, we just default to 0 for keys we don't know.
+
+    var toIndex = allKeys.indexOf(toLocation.key);
+
+    if (toIndex === -1) toIndex = 0;
+
+    var fromIndex = allKeys.indexOf(fromLocation.key);
+
+    if (fromIndex === -1) fromIndex = 0;
+
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  };
+
+  var initialLocation = getDOMLocation(getHistoryState());
+  var allKeys = [initialLocation.key];
+
+  // Public interface
+
+  var createHref = function createHref(location) {
+    return basename + (0, _PathUtils.createPath)(location);
+  };
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.pushState({ key: key, state: state }, null, href);
+
+        if (forceRefresh) {
+          window.location.href = href;
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          var nextKeys = allKeys.slice(0, prevIndex === -1 ? 0 : prevIndex + 1);
+
+          nextKeys.push(location.key);
+          allKeys = nextKeys;
+
+          setState({ action: action, location: location });
+        }
+      } else {
+        (0, _warning2.default)(state === undefined, 'Browser history cannot push state in browsers that do not support HTML5 history');
+
+        window.location.href = href;
+      }
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.replaceState({ key: key, state: state }, null, href);
+
+        if (forceRefresh) {
+          window.location.replace(href);
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+
+          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
+
+          setState({ action: action, location: location });
+        }
+      } else {
+        (0, _warning2.default)(state === undefined, 'Browser history cannot replace state in browsers that do not support HTML5 history');
+
+        window.location.replace(href);
+      }
+    });
+  };
+
+  var go = function go(n) {
+    globalHistory.go(n);
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var listenerCount = 0;
+
+  var checkDOMListeners = function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1) {
+      (0, _DOMUtils.addEventListener)(window, PopStateEvent, handlePopState);
+
+      if (needsHashChangeListener) (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      (0, _DOMUtils.removeEventListener)(window, PopStateEvent, handlePopState);
+
+      if (needsHashChangeListener) (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleHashChange);
+    }
+  };
+
+  var isBlocked = false;
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  };
+
+  var listen = function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  };
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createBrowserHistory;
+},{"warning":39,"invariant":41,"./LocationUtils":89,"./PathUtils":90,"./createTransitionManager":91,"./DOMUtils":92}],87:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require('warning');
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require('invariant');
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _LocationUtils = require('./LocationUtils');
+
+var _PathUtils = require('./PathUtils');
+
+var _createTransitionManager = require('./createTransitionManager');
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+var _DOMUtils = require('./DOMUtils');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+var HashChangeEvent = 'hashchange';
+
+var HashPathCoders = {
+  hashbang: {
+    encodePath: function encodePath(path) {
+      return path.charAt(0) === '!' ? path : '!/' + (0, _PathUtils.stripLeadingSlash)(path);
+    },
+    decodePath: function decodePath(path) {
+      return path.charAt(0) === '!' ? path.substr(1) : path;
+    }
+  },
+  noslash: {
+    encodePath: _PathUtils.stripLeadingSlash,
+    decodePath: _PathUtils.addLeadingSlash
+  },
+  slash: {
+    encodePath: _PathUtils.addLeadingSlash,
+    decodePath: _PathUtils.addLeadingSlash
+  }
+};
+
+var getHashPath = function getHashPath() {
+  // We can't use window.location.hash here because it's not
+  // consistent across browsers - Firefox will pre-decode it!
+  var href = window.location.href;
+  var hashIndex = href.indexOf('#');
+  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
+};
+
+var pushHashPath = function pushHashPath(path) {
+  return window.location.hash = path;
+};
+
+var replaceHashPath = function replaceHashPath(path) {
+  var hashIndex = window.location.href.indexOf('#');
+
+  window.location.replace(window.location.href.slice(0, hashIndex >= 0 ? hashIndex : 0) + '#' + path);
+};
+
+var createHashHistory = function createHashHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  (0, _invariant2.default)(_DOMUtils.canUseDOM, 'Hash history needs a DOM');
+
+  var globalHistory = window.history;
+  var canGoWithoutReload = (0, _DOMUtils.supportsGoWithoutReloadUsingHash)();
+
+  var _props$getUserConfirm = props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === undefined ? _DOMUtils.getConfirmation : _props$getUserConfirm,
+      _props$hashType = props.hashType,
+      hashType = _props$hashType === undefined ? 'slash' : _props$hashType;
+
+  var basename = props.basename ? (0, _PathUtils.stripTrailingSlash)((0, _PathUtils.addLeadingSlash)(props.basename)) : '';
+
+  var _HashPathCoders$hashT = HashPathCoders[hashType],
+      encodePath = _HashPathCoders$hashT.encodePath,
+      decodePath = _HashPathCoders$hashT.decodePath;
+
+  var getDOMLocation = function getDOMLocation() {
+    var path = decodePath(getHashPath());
+
+    (0, _warning2.default)(!basename || (0, _PathUtils.hasBasename)(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".');
+
+    if (basename) path = (0, _PathUtils.stripBasename)(path, basename);
+
+    return (0, _LocationUtils.createLocation)(path);
+  };
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = globalHistory.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var forceNextPop = false;
+  var ignorePath = null;
+
+  var handleHashChange = function handleHashChange() {
+    var path = getHashPath();
+    var encodedPath = encodePath(path);
+
+    if (path !== encodedPath) {
+      // Ensure we always have a properly-encoded hash.
+      replaceHashPath(encodedPath);
+    } else {
+      var location = getDOMLocation();
+      var prevLocation = history.location;
+
+      if (!forceNextPop && (0, _LocationUtils.locationsAreEqual)(prevLocation, location)) return; // A hashchange doesn't always == location change.
+
+      if (ignorePath === (0, _PathUtils.createPath)(location)) return; // Ignore this change; we already setState in push/replace.
+
+      ignorePath = null;
+
+      handlePop(location);
+    }
+  };
+
+  var handlePop = function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({ action: action, location: location });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  };
+
+  var revertPop = function revertPop(fromLocation) {
+    var toLocation = history.location;
+
+    // TODO: We could probably make this more reliable by
+    // keeping a list of paths we've seen in sessionStorage.
+    // Instead, we just default to 0 for paths we don't know.
+
+    var toIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(toLocation));
+
+    if (toIndex === -1) toIndex = 0;
+
+    var fromIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(fromLocation));
+
+    if (fromIndex === -1) fromIndex = 0;
+
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  };
+
+  // Ensure the hash is encoded properly before doing anything else.
+  var path = getHashPath();
+  var encodedPath = encodePath(path);
+
+  if (path !== encodedPath) replaceHashPath(encodedPath);
+
+  var initialLocation = getDOMLocation();
+  var allPaths = [(0, _PathUtils.createPath)(initialLocation)];
+
+  // Public interface
+
+  var createHref = function createHref(location) {
+    return '#' + encodePath(basename + (0, _PathUtils.createPath)(location));
+  };
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(state === undefined, 'Hash history cannot push state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, undefined, undefined, history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var path = (0, _PathUtils.createPath)(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a PUSH, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        pushHashPath(encodedPath);
+
+        var prevIndex = allPaths.lastIndexOf((0, _PathUtils.createPath)(history.location));
+        var nextPaths = allPaths.slice(0, prevIndex === -1 ? 0 : prevIndex + 1);
+
+        nextPaths.push(path);
+        allPaths = nextPaths;
+
+        setState({ action: action, location: location });
+      } else {
+        (0, _warning2.default)(false, 'Hash history cannot PUSH the same path; a new entry will not be added to the history stack');
+
+        setState();
+      }
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(state === undefined, 'Hash history cannot replace state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, undefined, undefined, history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var path = (0, _PathUtils.createPath)(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        replaceHashPath(encodedPath);
+      }
+
+      var prevIndex = allPaths.indexOf((0, _PathUtils.createPath)(history.location));
+
+      if (prevIndex !== -1) allPaths[prevIndex] = path;
+
+      setState({ action: action, location: location });
+    });
+  };
+
+  var go = function go(n) {
+    (0, _warning2.default)(canGoWithoutReload, 'Hash history go(n) causes a full page reload in this browser');
+
+    globalHistory.go(n);
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var listenerCount = 0;
+
+  var checkDOMListeners = function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1) {
+      (0, _DOMUtils.addEventListener)(window, HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      (0, _DOMUtils.removeEventListener)(window, HashChangeEvent, handleHashChange);
+    }
+  };
+
+  var isBlocked = false;
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  };
+
+  var listen = function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  };
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createHashHistory;
+},{"warning":39,"invariant":41,"./LocationUtils":89,"./PathUtils":90,"./createTransitionManager":91,"./DOMUtils":92}],88:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _PathUtils = require("./PathUtils");
+
+var _LocationUtils = require("./LocationUtils");
+
+var _createTransitionManager = require("./createTransitionManager");
+
+var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+var clamp = function clamp(n, lowerBound, upperBound) {
+  return Math.min(Math.max(n, lowerBound), upperBound);
+};
+
+/**
+ * Creates a history object that stores locations in memory.
+ */
+var createMemoryHistory = function createMemoryHistory() {
+  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var getUserConfirmation = props.getUserConfirmation,
+      _props$initialEntries = props.initialEntries,
+      initialEntries = _props$initialEntries === undefined ? ['/'] : _props$initialEntries,
+      _props$initialIndex = props.initialIndex,
+      initialIndex = _props$initialIndex === undefined ? 0 : _props$initialIndex,
+      _props$keyLength = props.keyLength,
+      keyLength = _props$keyLength === undefined ? 6 : _props$keyLength;
+
+  var transitionManager = (0, _createTransitionManager2.default)();
+
+  var setState = function setState(nextState) {
+    _extends(history, nextState);
+
+    history.length = history.entries.length;
+
+    transitionManager.notifyListeners(history.location, history.action);
+  };
+
+  var createKey = function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  };
+
+  var index = clamp(initialIndex, 0, initialEntries.length - 1);
+  var entries = initialEntries.map(function (entry) {
+    return typeof entry === 'string' ? (0, _LocationUtils.createLocation)(entry, undefined, createKey()) : (0, _LocationUtils.createLocation)(entry, undefined, entry.key || createKey());
+  });
+
+  // Public interface
+
+  var createHref = _PathUtils.createPath;
+
+  var push = function push(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'PUSH';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      var prevIndex = history.index;
+      var nextIndex = prevIndex + 1;
+
+      var nextEntries = history.entries.slice(0);
+      if (nextEntries.length > nextIndex) {
+        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
+      } else {
+        nextEntries.push(location);
+      }
+
+      setState({
+        action: action,
+        location: location,
+        index: nextIndex,
+        entries: nextEntries
+      });
+    });
+  };
+
+  var replace = function replace(path, state) {
+    (0, _warning2.default)(!((typeof path === 'undefined' ? 'undefined' : _typeof(path)) === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored');
+
+    var action = 'REPLACE';
+    var location = (0, _LocationUtils.createLocation)(path, state, createKey(), history.location);
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+
+      history.entries[history.index] = location;
+
+      setState({ action: action, location: location });
+    });
+  };
+
+  var go = function go(n) {
+    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
+
+    var action = 'POP';
+    var location = history.entries[nextIndex];
+
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (ok) {
+        setState({
+          action: action,
+          location: location,
+          index: nextIndex
+        });
+      } else {
+        // Mimic the behavior of DOM histories by
+        // causing a render after a cancelled POP.
+        setState();
+      }
+    });
+  };
+
+  var goBack = function goBack() {
+    return go(-1);
+  };
+
+  var goForward = function goForward() {
+    return go(1);
+  };
+
+  var canGo = function canGo(n) {
+    var nextIndex = history.index + n;
+    return nextIndex >= 0 && nextIndex < history.entries.length;
+  };
+
+  var block = function block() {
+    var prompt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    return transitionManager.setPrompt(prompt);
+  };
+
+  var listen = function listen(listener) {
+    return transitionManager.appendListener(listener);
+  };
+
+  var history = {
+    length: entries.length,
+    action: 'POP',
+    location: entries[index],
+    index: index,
+    entries: entries,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    canGo: canGo,
+    block: block,
+    listen: listen
+  };
+
+  return history;
+};
+
+exports.default = createMemoryHistory;
+},{"warning":39,"./PathUtils":90,"./LocationUtils":89,"./createTransitionManager":91}],83:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createPath = exports.parsePath = exports.locationsAreEqual = exports.createLocation = exports.createMemoryHistory = exports.createHashHistory = exports.createBrowserHistory = undefined;
+
+var _LocationUtils = require('./LocationUtils');
+
+Object.defineProperty(exports, 'createLocation', {
+  enumerable: true,
+  get: function () {
+    return _LocationUtils.createLocation;
+  }
+});
+Object.defineProperty(exports, 'locationsAreEqual', {
+  enumerable: true,
+  get: function () {
+    return _LocationUtils.locationsAreEqual;
+  }
+});
+
+var _PathUtils = require('./PathUtils');
+
+Object.defineProperty(exports, 'parsePath', {
+  enumerable: true,
+  get: function () {
+    return _PathUtils.parsePath;
+  }
+});
+Object.defineProperty(exports, 'createPath', {
+  enumerable: true,
+  get: function () {
+    return _PathUtils.createPath;
+  }
+});
+
+var _createBrowserHistory2 = require('./createBrowserHistory');
+
+var _createBrowserHistory3 = _interopRequireDefault(_createBrowserHistory2);
+
+var _createHashHistory2 = require('./createHashHistory');
+
+var _createHashHistory3 = _interopRequireDefault(_createHashHistory2);
+
+var _createMemoryHistory2 = require('./createMemoryHistory');
+
+var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.createBrowserHistory = _createBrowserHistory3.default;
+exports.createHashHistory = _createHashHistory3.default;
+exports.createMemoryHistory = _createMemoryHistory3.default;
+},{"./createBrowserHistory":86,"./createHashHistory":87,"./createMemoryHistory":88,"./LocationUtils":89,"./PathUtils":90}],69:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _history = require("history");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for updating the location programmatically
+ * with a component.
+ */
+
+var Redirect = function (_React$Component) {
+  _inherits(Redirect, _React$Component);
+
+  function Redirect() {
+    _classCallCheck(this, Redirect);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+  }
+
+  Redirect.prototype.isStatic = function isStatic() {
+    return this.context.router && this.context.router.staticContext;
+  };
+
+  Redirect.prototype.componentWillMount = function componentWillMount() {
+    (0, _invariant2.default)(this.context.router, 'You should not use <Redirect> outside a <Router>');
+
+    if (this.isStatic()) this.perform();
+  };
+
+  Redirect.prototype.componentDidMount = function componentDidMount() {
+    if (!this.isStatic()) this.perform();
+  };
+
+  Redirect.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+    var prevTo = (0, _history.createLocation)(prevProps.to);
+    var nextTo = (0, _history.createLocation)(this.props.to);
+
+    if ((0, _history.locationsAreEqual)(prevTo, nextTo)) {
+      (0, _warning2.default)(false, 'You tried to redirect to the same route you\'re currently on: ' + ('"' + nextTo.pathname + nextTo.search + '"'));
+      return;
+    }
+
+    this.perform();
+  };
+
+  Redirect.prototype.perform = function perform() {
+    var history = this.context.router.history;
+    var _props = this.props,
+        push = _props.push,
+        to = _props.to;
+
+    if (push) {
+      history.push(to);
+    } else {
+      history.replace(to);
+    }
+  };
+
+  Redirect.prototype.render = function render() {
+    return null;
+  };
+
+  return Redirect;
+}(_react2.default.Component);
+
+Redirect.propTypes = {
+  push: _propTypes2.default.bool,
+  from: _propTypes2.default.string,
+  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired
+};
+Redirect.defaultProps = {
+  push: false
+};
+Redirect.contextTypes = {
+  router: _propTypes2.default.shape({
+    history: _propTypes2.default.shape({
+      push: _propTypes2.default.func.isRequired,
+      replace: _propTypes2.default.func.isRequired
+    }).isRequired,
+    staticContext: _propTypes2.default.object
+  }).isRequired
+};
+
+exports.default = Redirect;
+},{"react":11,"prop-types":40,"warning":39,"invariant":41,"history":83}],24:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Redirect = require('react-router/es/Redirect');
+
+var _Redirect2 = _interopRequireDefault(_Redirect);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/Redirect":69}],70:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _PathUtils = require("history/PathUtils");
+
+var _Router = require("./Router");
+
+var _Router2 = _interopRequireDefault(_Router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+var normalizeLocation = function normalizeLocation(object) {
+  var _object$pathname = object.pathname,
+      pathname = _object$pathname === undefined ? '/' : _object$pathname,
+      _object$search = object.search,
+      search = _object$search === undefined ? '' : _object$search,
+      _object$hash = object.hash,
+      hash = _object$hash === undefined ? '' : _object$hash;
+
+  return {
+    pathname: pathname,
+    search: search === '?' ? '' : search,
+    hash: hash === '#' ? '' : hash
+  };
+};
+
+var addBasename = function addBasename(basename, location) {
+  if (!basename) return location;
+
+  return _extends({}, location, {
+    pathname: (0, _PathUtils.addLeadingSlash)(basename) + location.pathname
+  });
+};
+
+var stripBasename = function stripBasename(basename, location) {
+  if (!basename) return location;
+
+  var base = (0, _PathUtils.addLeadingSlash)(basename);
+
+  if (location.pathname.indexOf(base) !== 0) return location;
+
+  return _extends({}, location, {
+    pathname: location.pathname.substr(base.length)
+  });
+};
+
+var createLocation = function createLocation(location) {
+  return typeof location === 'string' ? (0, _PathUtils.parsePath)(location) : normalizeLocation(location);
+};
+
+var createURL = function createURL(location) {
+  return typeof location === 'string' ? location : (0, _PathUtils.createPath)(location);
+};
+
+var staticHandler = function staticHandler(methodName) {
+  return function () {
+    (0, _invariant2.default)(false, 'You cannot %s with <StaticRouter>', methodName);
+  };
+};
+
+var noop = function noop() {};
+
+/**
+ * The public top-level API for a "static" <Router>, so-called because it
+ * can't actually change the current location. Instead, it just records
+ * location changes in a context object. Useful mainly in testing and
+ * server-rendering scenarios.
+ */
+
+var StaticRouter = function (_React$Component) {
+  _inherits(StaticRouter, _React$Component);
+
+  function StaticRouter() {
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, StaticRouter);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.createHref = function (path) {
+      return (0, _PathUtils.addLeadingSlash)(_this.props.basename + createURL(path));
+    }, _this.handlePush = function (location) {
+      var _this$props = _this.props,
+          basename = _this$props.basename,
+          context = _this$props.context;
+
+      context.action = 'PUSH';
+      context.location = addBasename(basename, createLocation(location));
+      context.url = createURL(context.location);
+    }, _this.handleReplace = function (location) {
+      var _this$props2 = _this.props,
+          basename = _this$props2.basename,
+          context = _this$props2.context;
+
+      context.action = 'REPLACE';
+      context.location = addBasename(basename, createLocation(location));
+      context.url = createURL(context.location);
+    }, _this.handleListen = function () {
+      return noop;
+    }, _this.handleBlock = function () {
+      return noop;
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  StaticRouter.prototype.getChildContext = function getChildContext() {
+    return {
+      router: {
+        staticContext: this.props.context
+      }
+    };
+  };
+
+  StaticRouter.prototype.componentWillMount = function componentWillMount() {
+    (0, _warning2.default)(!this.props.history, '<StaticRouter> ignores the history prop. To use a custom history, ' + 'use `import { Router }` instead of `import { StaticRouter as Router }`.');
+  };
+
+  StaticRouter.prototype.render = function render() {
+    var _props = this.props,
+        basename = _props.basename,
+        context = _props.context,
+        location = _props.location,
+        props = _objectWithoutProperties(_props, ['basename', 'context', 'location']);
+
+    var history = {
+      createHref: this.createHref,
+      action: 'POP',
+      location: stripBasename(basename, createLocation(location)),
+      push: this.handlePush,
+      replace: this.handleReplace,
+      go: staticHandler('go'),
+      goBack: staticHandler('goBack'),
+      goForward: staticHandler('goForward'),
+      listen: this.handleListen,
+      block: this.handleBlock
+    };
+
+    return _react2.default.createElement(_Router2.default, _extends({}, props, { history: history }));
+  };
+
+  return StaticRouter;
+}(_react2.default.Component);
+
+StaticRouter.propTypes = {
+  basename: _propTypes2.default.string,
+  context: _propTypes2.default.object.isRequired,
+  location: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object])
+};
+StaticRouter.defaultProps = {
+  basename: '',
+  location: '/'
+};
+StaticRouter.childContextTypes = {
+  router: _propTypes2.default.object.isRequired
+};
+
+exports.default = StaticRouter;
+},{"warning":39,"invariant":41,"react":11,"prop-types":40,"history/PathUtils":51,"./Router":73}],27:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _StaticRouter = require('react-router/es/StaticRouter');
+
+var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/StaticRouter":70}],71:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _warning = require("warning");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _invariant = require("invariant");
+
+var _invariant2 = _interopRequireDefault(_invariant);
+
+var _matchPath = require("./matchPath");
+
+var _matchPath2 = _interopRequireDefault(_matchPath);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+/**
+ * The public API for rendering the first <Route> that matches.
+ */
+
+var Switch = function (_React$Component) {
+  _inherits(Switch, _React$Component);
+
+  function Switch() {
+    _classCallCheck(this, Switch);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+  }
+
+  Switch.prototype.componentWillMount = function componentWillMount() {
+    (0, _invariant2.default)(this.context.router, 'You should not use <Switch> outside a <Router>');
+  };
+
+  Switch.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+    (0, _warning2.default)(!(nextProps.location && !this.props.location), '<Switch> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.');
+
+    (0, _warning2.default)(!(!nextProps.location && this.props.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.');
+  };
+
+  Switch.prototype.render = function render() {
+    var route = this.context.router.route;
+    var children = this.props.children;
+
+    var location = this.props.location || route.location;
+
+    var match = void 0,
+        child = void 0;
+    _react2.default.Children.forEach(children, function (element) {
+      if (!_react2.default.isValidElement(element)) return;
+
+      var _element$props = element.props,
+          pathProp = _element$props.path,
+          exact = _element$props.exact,
+          strict = _element$props.strict,
+          sensitive = _element$props.sensitive,
+          from = _element$props.from;
+
+      var path = pathProp || from;
+
+      if (match == null) {
+        child = element;
+        match = path ? (0, _matchPath2.default)(location.pathname, { path: path, exact: exact, strict: strict, sensitive: sensitive }) : route.match;
+      }
+    });
+
+    return match ? _react2.default.cloneElement(child, { location: location, computedMatch: match }) : null;
+  };
+
+  return Switch;
+}(_react2.default.Component);
+
+Switch.contextTypes = {
+  router: _propTypes2.default.shape({
+    route: _propTypes2.default.object.isRequired
+  }).isRequired
+};
+Switch.propTypes = {
+  children: _propTypes2.default.node,
+  location: _propTypes2.default.object
+};
+
+exports.default = Switch;
+},{"react":11,"prop-types":40,"warning":39,"invariant":41,"./matchPath":74}],28:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Switch = require('react-router/es/Switch');
+
+var _Switch2 = _interopRequireDefault(_Switch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/Switch":71}],29:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _matchPath = require('react-router/es/matchPath');
+
+var _matchPath2 = _interopRequireDefault(_matchPath);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/matchPath":74}],85:[function(require,module,exports) {
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+'use strict';
+
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+  name: true,
+  length: true,
+  prototype: true,
+  caller: true,
+  callee: true,
+  arguments: true,
+  arity: true
+};
+
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = getPrototypeOf && getPrototypeOf(Object);
+
+module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
+
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+
+        var keys = getOwnPropertyNames(sourceComponent);
+
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!REACT_STATICS[key] && !KNOWN_STATICS[key] && (!blacklist || !blacklist[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try { // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+
+        return targetComponent;
+    }
+
+    return targetComponent;
+};
+
+},{}],75:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _hoistNonReactStatics = require('hoist-non-react-statics');
+
+var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
+
+var _Route = require('./Route');
+
+var _Route2 = _interopRequireDefault(_Route);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
+/**
+ * A public higher-order component to access the imperative API
+ */
+var withRouter = function withRouter(Component) {
+  var C = function C(props) {
+    var wrappedComponentRef = props.wrappedComponentRef,
+        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+
+    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
+        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef }));
+      } });
+  };
+
+  C.displayName = 'withRouter(' + (Component.displayName || Component.name) + ')';
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    wrappedComponentRef: _propTypes2.default.func
+  };
+
+  return (0, _hoistNonReactStatics2.default)(C, Component);
+};
+
+exports.default = withRouter;
+},{"react":11,"prop-types":40,"hoist-non-react-statics":85,"./Route":72}],30:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _withRouter = require('react-router/es/withRouter');
+
+var _withRouter2 = _interopRequireDefault(_withRouter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
+},{"react-router/es/withRouter":75}],13:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.withRouter = exports.matchPath = exports.Switch = exports.StaticRouter = exports.Router = exports.Route = exports.Redirect = exports.Prompt = exports.NavLink = exports.MemoryRouter = exports.Link = exports.HashRouter = exports.BrowserRouter = undefined;
+
+var _BrowserRouter2 = require('./BrowserRouter');
+
+var _BrowserRouter3 = _interopRequireDefault(_BrowserRouter2);
+
+var _HashRouter2 = require('./HashRouter');
+
+var _HashRouter3 = _interopRequireDefault(_HashRouter2);
+
+var _Link2 = require('./Link');
+
+var _Link3 = _interopRequireDefault(_Link2);
+
+var _MemoryRouter2 = require('./MemoryRouter');
+
+var _MemoryRouter3 = _interopRequireDefault(_MemoryRouter2);
+
+var _NavLink2 = require('./NavLink');
+
+var _NavLink3 = _interopRequireDefault(_NavLink2);
+
+var _Prompt2 = require('./Prompt');
+
+var _Prompt3 = _interopRequireDefault(_Prompt2);
+
+var _Redirect2 = require('./Redirect');
+
+var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+var _Route2 = require('./Route');
+
+var _Route3 = _interopRequireDefault(_Route2);
+
+var _Router2 = require('./Router');
+
+var _Router3 = _interopRequireDefault(_Router2);
+
+var _StaticRouter2 = require('./StaticRouter');
+
+var _StaticRouter3 = _interopRequireDefault(_StaticRouter2);
+
+var _Switch2 = require('./Switch');
+
+var _Switch3 = _interopRequireDefault(_Switch2);
+
+var _matchPath2 = require('./matchPath');
+
+var _matchPath3 = _interopRequireDefault(_matchPath2);
+
+var _withRouter2 = require('./withRouter');
+
+var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.BrowserRouter = _BrowserRouter3.default;
+exports.HashRouter = _HashRouter3.default;
+exports.Link = _Link3.default;
+exports.MemoryRouter = _MemoryRouter3.default;
+exports.NavLink = _NavLink3.default;
+exports.Prompt = _Prompt3.default;
+exports.Redirect = _Redirect3.default;
+exports.Route = _Route3.default;
+exports.Router = _Router3.default;
+exports.StaticRouter = _StaticRouter3.default;
+exports.Switch = _Switch3.default;
+exports.matchPath = _matchPath3.default;
+exports.withRouter = _withRouter3.default;
+},{"./BrowserRouter":19,"./HashRouter":18,"./Link":20,"./MemoryRouter":21,"./NavLink":22,"./Prompt":23,"./Redirect":24,"./Route":25,"./Router":26,"./StaticRouter":27,"./Switch":28,"./matchPath":29,"./withRouter":30}],36:[function(require,module,exports) {
+var bundleURL = null;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error;
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+
+},{}],34:[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    link.remove();
+  };
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+
+},{"./bundle-url":36}],32:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"_css_loader":34}],43:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// murmurhash2 via https://gist.github.com/raycmorgan/588423
+function hashString(str) {
+  return hash(str, str.length).toString(36);
+}
+
+function hash(str, seed) {
+  var m = 0x5bd1e995;
+  var r = 24;
+  var h = seed ^ str.length;
+  var length = str.length;
+  var currentIndex = 0;
+
+  while (length >= 4) {
+    var k = UInt32(str, currentIndex);
+    k = Umul32(k, m);
+    k ^= k >>> r;
+    k = Umul32(k, m);
+    h = Umul32(h, m);
+    h ^= k;
+    currentIndex += 4;
+    length -= 4;
+  }
+
+  switch (length) {
+    case 3:
+      h ^= UInt16(str, currentIndex);
+      h ^= str.charCodeAt(currentIndex + 2) << 16;
+      h = Umul32(h, m);
+      break;
+
+    case 2:
+      h ^= UInt16(str, currentIndex);
+      h = Umul32(h, m);
+      break;
+
+    case 1:
+      h ^= str.charCodeAt(currentIndex);
+      h = Umul32(h, m);
+      break;
+  }
+
+  h ^= h >>> 13;
+  h = Umul32(h, m);
+  h ^= h >>> 15;
+  return h >>> 0;
+}
+
+function UInt32(str, pos) {
+  return str.charCodeAt(pos++) + (str.charCodeAt(pos++) << 8) + (str.charCodeAt(pos++) << 16) + (str.charCodeAt(pos) << 24);
+}
+
+function UInt16(str, pos) {
+  return str.charCodeAt(pos++) + (str.charCodeAt(pos++) << 8);
+}
+
+function Umul32(n, m) {
+  n = n | 0;
+  m = m | 0;
+  var nlo = n & 0xffff;
+  var nhi = n >>> 16;
+  var res = nlo * m + ((nhi * m & 0xffff) << 16) | 0;
+  return res;
+}
+
+var pa = function fa(ha) {
+  function V(b, c, d, k, l) {
+    for (var a = 0, f = 0, n = 0, e = 0, h, q, m, v = 0, A = 0, B = 0, x = 0, C = 0, p = 0, G = 0, r = 0, N = q = 0, L = 0, t = 0, D = d.length, F = D - 1, g = "", u = "", S = "", M = "", H; r < D;) {
+      m = d.charCodeAt(r);
+      r === F && 0 !== f + e + n + a && (0 !== f && (m = 47 === f ? 10 : 47), e = n = a = 0, D++, F++);
+
+      if (0 === f + e + n + a) {
+        if (r === F && (0 < q && (g = g.replace(P, "")), 0 < g.trim().length)) {
+          switch (m) {
+            case 32:
+            case 9:
+            case 59:
+            case 13:
+            case 10:
+              break;
+
+            default:
+              g += d.charAt(r);
+          }
+
+          m = 59;
+        }
+
+        if (1 === N) switch (m) {
+          case 123:
+          case 125:
+          case 59:
+          case 34:
+          case 39:
+          case 40:
+          case 41:
+          case 44:
+            N = 0;
+
+          case 9:
+          case 13:
+          case 10:
+          case 32:
+            break;
+
+          default:
+            for (N = 0, t = r, h = m, r--, m = 59; t < D;) {
+              switch (d.charCodeAt(++t)) {
+                case 10:
+                case 13:
+                case 59:
+                  r++, m = h;
+
+                case 58:
+                case 123:
+                  t = D;
+              }
+            }
+
+        }
+
+        switch (m) {
+          case 123:
+            g = g.trim();
+            h = g.charCodeAt(0);
+            x = 1;
+
+            for (t = ++r; r < D;) {
+              m = d.charCodeAt(r);
+
+              switch (m) {
+                case 123:
+                  x++;
+                  break;
+
+                case 125:
+                  x--;
+              }
+
+              if (0 === x) break;
+              r++;
+            }
+
+            p = d.substring(t, r);
+            0 === h && (h = (g = g.replace(qa, "").trim()).charCodeAt(0));
+
+            switch (h) {
+              case 64:
+                0 < q && (g = g.replace(P, ""));
+                q = g.charCodeAt(1);
+
+                switch (q) {
+                  case 100:
+                  case 109:
+                  case 115:
+                  case 45:
+                    h = c;
+                    break;
+
+                  default:
+                    h = W;
+                }
+
+                p = V(c, h, p, q, l + 1);
+                t = p.length;
+                0 < X && 0 === t && (t = g.length);
+                0 < E && (h = ia(W, g, L), H = O(3, p, h, c, I, y, t, q, l), g = h.join(""), void 0 !== H && 0 === (t = (p = H.trim()).length) && (q = 0, p = ""));
+                if (0 < t) switch (q) {
+                  case 115:
+                    g = g.replace(ra, sa);
+
+                  case 100:
+                  case 109:
+                  case 45:
+                    p = g + "{" + p + "}";
+                    break;
+
+                  case 107:
+                    g = g.replace(ta, "$1 $2" + (0 < Q ? T : ""));
+                    p = g + "{" + p + "}";
+                    p = 1 === w || 2 === w && U("@" + p, 3) ? "@-webkit-" + p + "@" + p : "@" + p;
+                    break;
+
+                  default:
+                    p = g + p, 112 === k && (p = (u += p, ""));
+                } else p = "";
+                break;
+
+              default:
+                p = V(c, ia(c, g, L), p, k, l + 1);
+            }
+
+            S += p;
+            p = L = q = G = N = C = 0;
+            g = "";
+            m = d.charCodeAt(++r);
+            break;
+
+          case 125:
+          case 59:
+            g = (0 < q ? g.replace(P, "") : g).trim();
+            if (1 < (t = g.length)) switch (0 === G && (h = g.charCodeAt(0), 45 === h || 96 < h && 123 > h) && (t = (g = g.replace(" ", ":")).length), 0 < E && void 0 !== (H = O(1, g, c, b, I, y, u.length, k, l)) && 0 === (t = (g = H.trim()).length) && (g = "\x00\x00"), h = g.charCodeAt(0), q = g.charCodeAt(1), h + q) {
+              case 0:
+                break;
+
+              case 169:
+              case 163:
+                M += g + d.charAt(r);
+                break;
+
+              default:
+                58 !== g.charCodeAt(t - 1) && (u += ja(g, h, q, g.charCodeAt(2)));
+            }
+            L = q = G = N = C = 0;
+            g = "";
+            m = d.charCodeAt(++r);
+        }
+      }
+
+      switch (m) {
+        case 13:
+        case 10:
+          if (0 === f + e + n + a + ka) switch (B) {
+            case 41:
+            case 39:
+            case 34:
+            case 64:
+            case 126:
+            case 62:
+            case 42:
+            case 43:
+            case 47:
+            case 45:
+            case 58:
+            case 44:
+            case 59:
+            case 123:
+            case 125:
+              break;
+
+            default:
+              0 < G && (N = 1);
+          }
+          47 === f ? f = 0 : 0 === z + C && (q = 1, g += "\x00");
+          0 < E * la && O(0, g, c, b, I, y, u.length, k, l);
+          y = 1;
+          I++;
+          break;
+
+        case 59:
+        case 125:
+          if (0 === f + e + n + a) {
+            y++;
+            break;
+          }
+
+        default:
+          y++;
+          h = d.charAt(r);
+
+          switch (m) {
+            case 9:
+            case 32:
+              if (0 === e + a + f) switch (v) {
+                case 44:
+                case 58:
+                case 9:
+                case 32:
+                  h = "";
+                  break;
+
+                default:
+                  32 !== m && (h = " ");
+              }
+              break;
+
+            case 0:
+              h = "\\0";
+              break;
+
+            case 12:
+              h = "\\f";
+              break;
+
+            case 11:
+              h = "\\v";
+              break;
+
+            case 38:
+              0 === e + f + a && 0 < z && (q = L = 1, h = "\f" + h);
+              break;
+
+            case 108:
+              if (0 === e + f + a + J && 0 < G) switch (r - G) {
+                case 2:
+                  112 === v && 58 === d.charCodeAt(r - 3) && (J = v);
+
+                case 8:
+                  111 === A && (J = A);
+              }
+              break;
+
+            case 58:
+              0 === e + f + a && (G = r);
+              break;
+
+            case 44:
+              0 === f + n + e + a && (q = 1, h += "\r");
+              break;
+
+            case 34:
+              0 === f && (e = e === m ? 0 : 0 === e ? m : e);
+              break;
+
+            case 39:
+              0 === f && (e = e === m ? 0 : 0 === e ? m : e);
+              break;
+
+            case 91:
+              0 === e + f + n && a++;
+              break;
+
+            case 93:
+              0 === e + f + n && a--;
+              break;
+
+            case 41:
+              0 === e + f + a && n--;
+              break;
+
+            case 40:
+              if (0 === e + f + a) {
+                if (0 === C) switch (2 * v + 3 * A) {
+                  case 533:
+                    break;
+
+                  default:
+                    x = 0, C = 1;
+                }
+                n++;
+              }
+
+              break;
+
+            case 64:
+              0 === f + n + e + a + G + p && (p = 1);
+              break;
+
+            case 42:
+            case 47:
+              if (!(0 < e + a + n)) switch (f) {
+                case 0:
+                  switch (2 * m + 3 * d.charCodeAt(r + 1)) {
+                    case 235:
+                      f = 47;
+                      break;
+
+                    case 220:
+                      t = r, f = 42;
+                  }
+
+                  break;
+
+                case 42:
+                  47 === m && 42 === v && (33 === d.charCodeAt(t + 2) && (u += d.substring(t, r + 1)), h = "", f = 0);
+              }
+          }
+
+          if (0 === f) {
+            if (0 === z + e + a + p && 107 !== k && 59 !== m) switch (m) {
+              case 44:
+              case 126:
+              case 62:
+              case 43:
+              case 41:
+              case 40:
+                if (0 === C) {
+                  switch (v) {
+                    case 9:
+                    case 32:
+                    case 10:
+                    case 13:
+                      h += "\x00";
+                      break;
+
+                    default:
+                      h = "\x00" + h + (44 === m ? "" : "\x00");
+                  }
+
+                  q = 1;
+                } else switch (m) {
+                  case 40:
+                    C = ++x;
+                    break;
+
+                  case 41:
+                    0 === (C = --x) && (q = 1, h += "\x00");
+                }
+
+                break;
+
+              case 9:
+              case 32:
+                switch (v) {
+                  case 0:
+                  case 123:
+                  case 125:
+                  case 59:
+                  case 44:
+                  case 12:
+                  case 9:
+                  case 32:
+                  case 10:
+                  case 13:
+                    break;
+
+                  default:
+                    0 === C && (q = 1, h += "\x00");
+                }
+
+            }
+            g += h;
+            32 !== m && 9 !== m && (B = m);
+          }
+
+      }
+
+      A = v;
+      v = m;
+      r++;
+    }
+
+    t = u.length;
+    0 < X && 0 === t && 0 === S.length && 0 === c[0].length === !1 && (109 !== k || 1 === c.length && (0 < z ? K : R) === c[0]) && (t = c.join(",").length + 2);
+
+    if (0 < t) {
+      if (0 === z && 107 !== k) {
+        d = 0;
+        a = c.length;
+
+        for (f = Array(a); d < a; ++d) {
+          v = c[d].split(ua);
+          A = "";
+          B = 0;
+
+          for (D = v.length; B < D; ++B) {
+            if (!(0 === (x = (e = v[B]).length) && 1 < D)) {
+              r = A.charCodeAt(A.length - 1);
+              L = e.charCodeAt(0);
+              n = "";
+              if (0 !== B) switch (r) {
+                case 42:
+                case 126:
+                case 62:
+                case 43:
+                case 32:
+                case 40:
+                  break;
+
+                default:
+                  n = " ";
+              }
+
+              switch (L) {
+                case 38:
+                  e = n + K;
+
+                case 126:
+                case 62:
+                case 43:
+                case 32:
+                case 41:
+                case 40:
+                  break;
+
+                case 91:
+                  e = n + e + K;
+                  break;
+
+                case 58:
+                  switch (2 * e.charCodeAt(1) + 3 * e.charCodeAt(2)) {
+                    case 530:
+                      if (0 < Y) {
+                        e = n + e.substring(8, x - 1);
+                        break;
+                      }
+
+                    default:
+                      if (1 > B || 1 > v[B - 1].length) e = n + K + e;
+                  }
+
+                  break;
+
+                case 44:
+                  n = "";
+
+                default:
+                  e = 1 < x && 0 < e.indexOf(":") ? n + e.replace(va, "$1" + K + "$2") : n + e + K;
+              }
+
+              A += e;
+            }
+          }
+
+          f[d] = A.replace(P, "").trim();
+        }
+
+        c = f;
+      }
+
+      h = c;
+      if (0 < E && (H = O(2, u, h, b, I, y, t, k, l), void 0 !== H && 0 === (u = H).length)) return M + u + S;
+      u = h.join(",") + "{" + u + "}";
+
+      if (0 !== w * J) {
+        2 !== w || U(u, 2) || (J = 0);
+
+        switch (J) {
+          case 111:
+            u = u.replace(wa, ":-moz-$1") + u;
+            break;
+
+          case 112:
+            u = u.replace(Z, "::-webkit-input-$1") + u.replace(Z, "::-moz-$1") + u.replace(Z, ":-ms-input-$1") + u;
+        }
+
+        J = 0;
+      }
+    }
+
+    return M + u + S;
+  }
+
+  function ia(b, c, d) {
+    var k = c.trim().split(xa);
+    c = k;
+    var l = k.length,
+        a = b.length;
+
+    switch (a) {
+      case 0:
+      case 1:
+        var f = 0;
+
+        for (b = 0 === a ? "" : b[0] + " "; f < l; ++f) {
+          c[f] = ma(b, c[f], d, a).trim();
+        }
+
+        break;
+
+      default:
+        var n = f = 0;
+
+        for (c = []; f < l; ++f) {
+          for (var e = 0; e < a; ++e) {
+            c[n++] = ma(b[e] + " ", k[f], d, a).trim();
+          }
+        }
+
+    }
+
+    return c;
+  }
+
+  function ma(b, c, d, k) {
+    var l = c.charCodeAt(0);
+    33 > l && (l = (c = c.trim()).charCodeAt(0));
+
+    switch (l) {
+      case 38:
+        switch (z + k) {
+          case 0:
+          case 1:
+            if (0 === b.trim().length) break;
+
+          default:
+            return c.replace(M, "$1" + b.trim());
+        }
+
+        break;
+
+      case 58:
+        switch (c.charCodeAt(1)) {
+          case 103:
+            if (0 < Y && 0 < z) return c.replace(ya, "$1").replace(M, "$1" + R);
+            break;
+
+          default:
+            return b.trim() + c;
+        }
+
+      default:
+        if (0 < d * z && 0 < c.indexOf("\f")) return c.replace(M, (58 === b.charCodeAt(0) ? "" : "$1") + b.trim());
+    }
+
+    return b + c;
+  }
+
+  function ja(b, c, d, k) {
+    var l = 0,
+        a = b + ";";
+    c = 2 * c + 3 * d + 4 * k;
+
+    if (944 === c) {
+      l = a.length;
+      b = a.indexOf(":", 9) + 1;
+      d = a.substring(0, b).trim();
+      k = a.substring(b, l - 1).trim();
+
+      switch (a.charCodeAt(9) * Q) {
+        case 0:
+          break;
+
+        case 45:
+          if (110 !== a.charCodeAt(10)) break;
+
+        default:
+          for (a = k.split((k = "", za)), b = c = 0, l = a.length; c < l; b = 0, ++c) {
+            for (var f = a[c], n = f.split(Aa); f = n[b];) {
+              var e = f.charCodeAt(0);
+              if (1 === Q && (64 < e && 90 > e || 96 < e && 123 > e || 95 === e || 45 === e && 45 !== f.charCodeAt(1))) switch (isNaN(parseFloat(f)) + (-1 !== f.indexOf("("))) {
+                case 1:
+                  switch (f) {
+                    case "infinite":
+                    case "alternate":
+                    case "backwards":
+                    case "running":
+                    case "normal":
+                    case "forwards":
+                    case "both":
+                    case "none":
+                    case "linear":
+                    case "ease":
+                    case "ease-in":
+                    case "ease-out":
+                    case "ease-in-out":
+                    case "paused":
+                    case "reverse":
+                    case "alternate-reverse":
+                    case "inherit":
+                    case "initial":
+                    case "unset":
+                    case "step-start":
+                    case "step-end":
+                      break;
+
+                    default:
+                      f += T;
+                  }
+
+              }
+              n[b++] = f;
+            }
+
+            k += (0 === c ? "" : ",") + n.join(" ");
+          }
+
+      }
+
+      k = d + k + ";";
+      return 1 === w || 2 === w && U(k, 1) ? "-webkit-" + k + k : k;
+    }
+
+    if (0 === w || 2 === w && !U(a, 1)) return a;
+
+    switch (c) {
+      case 1015:
+        return 45 === a.charCodeAt(9) ? "-webkit-" + a + a : a;
+
+      case 951:
+        return 116 === a.charCodeAt(3) ? "-webkit-" + a + a : a;
+
+      case 963:
+        return 110 === a.charCodeAt(5) ? "-webkit-" + a + a : a;
+
+      case 1009:
+        if (100 !== a.charCodeAt(4)) break;
+
+      case 969:
+      case 942:
+        return "-webkit-" + a + a;
+
+      case 978:
+        return "-webkit-" + a + "-moz-" + a + a;
+
+      case 1019:
+      case 983:
+        return "-webkit-" + a + "-moz-" + a + "-ms-" + a + a;
+
+      case 883:
+        return 45 === a.charCodeAt(8) ? "-webkit-" + a + a : a;
+
+      case 932:
+        if (45 === a.charCodeAt(4)) switch (a.charCodeAt(5)) {
+          case 103:
+            return "-webkit-box-" + a.replace("-grow", "") + "-webkit-" + a + "-ms-" + a.replace("grow", "positive") + a;
+
+          case 115:
+            return "-webkit-" + a + "-ms-" + a.replace("shrink", "negative") + a;
+
+          case 98:
+            return "-webkit-" + a + "-ms-" + a.replace("basis", "preferred-size") + a;
+        }
+        return "-webkit-" + a + "-ms-" + a + a;
+
+      case 964:
+        return "-webkit-" + a + "-ms-flex-" + a + a;
+
+      case 1023:
+        if (99 !== a.charCodeAt(8)) break;
+        b = a.substring(a.indexOf(":", 15)).replace("flex-", "").replace("space-between", "justify");
+        return "-webkit-box-pack" + b + "-webkit-" + a + "-ms-flex-pack" + b + a;
+
+      case 1005:
+        return Ba.test(a) ? a.replace(na, ":-webkit-") + a.replace(na, ":-moz-") + a : a;
+
+      case 1E3:
+        b = a.substring(13).trim();
+        l = b.indexOf("-") + 1;
+
+        switch (b.charCodeAt(0) + b.charCodeAt(l)) {
+          case 226:
+            b = a.replace(aa, "tb");
+            break;
+
+          case 232:
+            b = a.replace(aa, "tb-rl");
+            break;
+
+          case 220:
+            b = a.replace(aa, "lr");
+            break;
+
+          default:
+            return a;
+        }
+
+        return "-webkit-" + a + "-ms-" + b + a;
+
+      case 1017:
+        if (-1 === a.indexOf("sticky", 9)) break;
+
+      case 975:
+        l = (a = b).length - 10;
+        b = (33 === a.charCodeAt(l) ? a.substring(0, l) : a).substring(b.indexOf(":", 7) + 1).trim();
+
+        switch (c = b.charCodeAt(0) + (b.charCodeAt(7) | 0)) {
+          case 203:
+            if (111 > b.charCodeAt(8)) break;
+
+          case 115:
+            a = a.replace(b, "-webkit-" + b) + ";" + a;
+            break;
+
+          case 207:
+          case 102:
+            a = a.replace(b, "-webkit-" + (102 < c ? "inline-" : "") + "box") + ";" + a.replace(b, "-webkit-" + b) + ";" + a.replace(b, "-ms-" + b + "box") + ";" + a;
+        }
+
+        return a + ";";
+
+      case 938:
+        if (45 === a.charCodeAt(5)) switch (a.charCodeAt(6)) {
+          case 105:
+            return b = a.replace("-items", ""), "-webkit-" + a + "-webkit-box-" + b + "-ms-flex-" + b + a;
+
+          case 115:
+            return "-webkit-" + a + "-ms-flex-item-" + a.replace(Ca, "") + a;
+
+          default:
+            return "-webkit-" + a + "-ms-flex-line-pack" + a.replace("align-content", "") + a;
+        }
+        break;
+
+      case 953:
+        if (0 < (l = a.indexOf("-content", 9)) && 109 === a.charCodeAt(l - 3) && 45 !== a.charCodeAt(l - 4)) return b = a.substring(l - 3), "width:-webkit-" + b + "width:-moz-" + b + "width:" + b;
+        break;
+
+      case 962:
+        if (a = "-webkit-" + a + (102 === a.charCodeAt(5) ? "-ms-" + a : "") + a, 211 === d + k && 105 === a.charCodeAt(13) && 0 < a.indexOf("transform", 10)) return a.substring(0, a.indexOf(";", 27) + 1).replace(Da, "$1-webkit-$2") + a;
+    }
+
+    return a;
+  }
+
+  function U(b, c) {
+    var d = b.indexOf(1 === c ? ":" : "{"),
+        k = b.substring(0, 3 !== c ? d : 10);
+    d = b.substring(d + 1, b.length - 1);
+    return ba(2 !== c ? k : k.replace(Ea, "$1"), d, c);
+  }
+
+  function sa(b, c) {
+    var d = ja(c, c.charCodeAt(0), c.charCodeAt(1), c.charCodeAt(2));
+    return d !== c + ";" ? d.replace(Fa, " or ($1)").substring(4) : "(" + c + ")";
+  }
+
+  function O(b, c, d, k, l, a, f, n, e) {
+    for (var h = 0, q = c, m; h < E; ++h) {
+      switch (m = ca[h].call(F, b, q, d, k, l, a, f, n, e)) {
+        case void 0:
+        case !1:
+        case !0:
+        case null:
+          break;
+
+        default:
+          q = m;
+      }
+    }
+
+    switch (q) {
+      case void 0:
+      case !1:
+      case !0:
+      case null:
+      case c:
+        break;
+
+      default:
+        return q;
+    }
+  }
+
+  function da(b) {
+    switch (b) {
+      case void 0:
+      case null:
+        E = ca.length = 0;
+        break;
+
+      default:
+        switch (b.constructor) {
+          case Array:
+            for (var c = 0, d = b.length; c < d; ++c) {
+              da(b[c]);
+            }
+
+            break;
+
+          case Function:
+            ca[E++] = b;
+            break;
+
+          case Boolean:
+            la = !!b | 0;
+        }
+
+    }
+
+    return da;
+  }
+
+  function ea(b) {
+    for (var c in b) {
+      var d = b[c];
+
+      switch (c) {
+        case "keyframe":
+          Q = d | 0;
+          break;
+
+        case "global":
+          Y = d | 0;
+          break;
+
+        case "cascade":
+          z = d | 0;
+          break;
+
+        case "compress":
+          oa = d | 0;
+          break;
+
+        case "semicolon":
+          ka = d | 0;
+          break;
+
+        case "preserve":
+          X = d | 0;
+          break;
+
+        case "prefix":
+          ba = null, d ? "function" !== typeof d ? w = 1 : (w = 2, ba = d) : w = 0;
+      }
+    }
+
+    return ea;
+  }
+
+  function F(b, c) {
+    if (void 0 !== this && this.constructor === F) return fa(b);
+    var d = b,
+        k = d.charCodeAt(0);
+    33 > k && (k = (d = d.trim()).charCodeAt(0));
+    0 < Q && (T = d.replace(Ga, 91 === k ? "" : "-"));
+    k = 1;
+    1 === z ? R = d : K = d;
+    d = [R];
+
+    if (0 < E) {
+      var l = O(-1, c, d, d, I, y, 0, 0, 0);
+      void 0 !== l && "string" === typeof l && (c = l);
+    }
+
+    var a = V(W, d, c, 0, 0);
+    0 < E && (l = O(-2, a, d, d, I, y, a.length, 0, 0), void 0 !== l && "string" !== typeof (a = l) && (k = 0));
+    K = R = T = "";
+    J = 0;
+    y = I = 1;
+    return 0 === oa * k ? a : a.replace(P, "").replace(Ha, "").replace(Ia, "$1").replace(Ja, "$1").replace(Ka, " ");
+  }
+
+  var qa = /^\0+/g,
+      P = /[\0\r\f]/g,
+      na = /: */g,
+      Ba = /zoo|gra/,
+      Da = /([,: ])(transform)/g,
+      za = /,+\s*(?![^(]*[)])/g,
+      Aa = / +\s*(?![^(]*[)])/g,
+      ua = / *[\0] */g,
+      xa = /,\r+?/g,
+      M = /([\t\r\n ])*\f?&/g,
+      ya = /:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,
+      Ga = /\W+/g,
+      ta = /@(k\w+)\s*(\S*)\s*/,
+      Z = /::(place)/g,
+      wa = /:(read-only)/g,
+      Ha = /\s+(?=[{\];=:>])/g,
+      Ia = /([[}=:>])\s+/g,
+      Ja = /(\{[^{]+?);(?=\})/g,
+      Ka = /\s{2,}/g,
+      va = /([^\(])(:+) */g,
+      aa = /[svh]\w+-[tblr]{2}/,
+      ra = /\(\s*(.*)\s*\)/g,
+      Fa = /([^]*?);/g,
+      Ca = /-self|flex-/g,
+      Ea = /[^]*?(:[rp][el]a[\w-]+)[^]*/,
+      y = 1,
+      I = 1,
+      J = 0,
+      z = 1,
+      w = 1,
+      Y = 1,
+      oa = 0,
+      ka = 0,
+      X = 0,
+      W = [],
+      ca = [],
+      E = 0,
+      ba = null,
+      la = 0,
+      Q = 1,
+      T = "",
+      K = "",
+      R = "";
+  F.use = da;
+  F.set = ea;
+  void 0 !== ha && ea(ha);
+  return F;
+};
+
+//  weak
+function memoize(fn) {
+  var cache = {};
+  return function (arg) {
+    if (cache[arg] === undefined) cache[arg] = fn(arg);
+    return cache[arg];
+  };
+}
+var STYLES_KEY = '__emotion_styles';
+var TARGET_KEY = '__emotion_target';
+var unitless = {
+  animationIterationCount: 1,
+  borderImageOutset: 1,
+  borderImageSlice: 1,
+  borderImageWidth: 1,
+  boxFlex: 1,
+  boxFlexGroup: 1,
+  boxOrdinalGroup: 1,
+  columnCount: 1,
+  columns: 1,
+  flex: 1,
+  flexGrow: 1,
+  flexPositive: 1,
+  flexShrink: 1,
+  flexNegative: 1,
+  flexOrder: 1,
+  gridRow: 1,
+  gridRowEnd: 1,
+  gridRowSpan: 1,
+  gridRowStart: 1,
+  gridColumn: 1,
+  gridColumnEnd: 1,
+  gridColumnSpan: 1,
+  gridColumnStart: 1,
+  fontWeight: 1,
+  lineClamp: 1,
+  lineHeight: 1,
+  opacity: 1,
+  order: 1,
+  orphans: 1,
+  tabSize: 1,
+  widows: 1,
+  zIndex: 1,
+  zoom: 1,
+  // SVG-related properties
+  fillOpacity: 1,
+  floodOpacity: 1,
+  stopOpacity: 1,
+  strokeDasharray: 1,
+  strokeDashoffset: 1,
+  strokeMiterlimit: 1,
+  strokeOpacity: 1,
+  strokeWidth: 1
+};
+
+exports.memoize = memoize;
+exports.STYLES_KEY = STYLES_KEY;
+exports.TARGET_KEY = TARGET_KEY;
+exports.unitless = unitless;
+exports.hashString = hashString;
+exports.Stylis = pa;
+//# sourceMappingURL=index.es.js.map
+},{}],79:[function(require,module,exports) {
+(function (factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
+		typeof define === 'function' && define['amd'] ? define(factory()) :
+			(window['stylisRuleSheet'] = factory())
+}(function () {
+
+	'use strict'
+
+	return function (insertRule) {
+		var delimiter = '/*|*/'
+		var needle = delimiter+'}'
+
+		function toSheet (block) {
+			if (block)
+				try {
+					insertRule(block + '}')
+				} catch (e) {}
+		}
+
+		return function ruleSheet (context, content, selectors, parents, line, column, length, at, depth) {
+			switch (context) {
+				// property
+				case 1:
+					// @import
+					if (depth === 0 && content.charCodeAt(0) === 64)
+						insertRule(content)
+					break
+				// selector
+				case 2:
+					if (at === 0)
+						return content + delimiter
+					break
+				// at-rule
+				case 3:
+					switch (at) {
+						// @font-face, @page
+						case 102:
+						case 112:
+							return insertRule(selectors[0]+content), ''
+						default:
+							return content + delimiter
+					}
+				case -2:
+					content.split(needle).forEach(toSheet)
+			}
+		}
+	}
+}))
+
+},{}],42:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.flush = exports.hydrate = exports.cx = exports.merge = exports.getRegisteredStyles = exports.fontFace = exports.injectGlobal = exports.keyframes = exports.css = exports.inserted = exports.registered = exports.useStylisPlugin = exports.sheet = undefined;
+
+var _emotionUtils = require('emotion-utils');
+
+var _stylisRuleSheet = require('stylis-rule-sheet');
+
+var _stylisRuleSheet2 = _interopRequireDefault(_stylisRuleSheet);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*
+
+high performance StyleSheet for css-in-js systems
+
+- uses multiple style tags behind the scenes for millions of rules
+- uses `insertRule` for appending in production for *much* faster performance
+- 'polyfills' on server side
+
+// usage
+
+import StyleSheet from 'glamor/lib/sheet'
+let styleSheet = new StyleSheet()
+
+styleSheet.inject()
+- 'injects' the stylesheet into the page (or into memory if on server)
+
+styleSheet.insert('#box { border: 1px solid red; }')
+- appends a css rule into the stylesheet
+
+styleSheet.flush()
+- empties the stylesheet of all its contents
+
+*/
+function sheetForTag(tag) {
+  if (tag.sheet) {
+    return tag.sheet;
+  } // this weirdness brought to you by firefox
+
+
+  for (var i = 0; i < document.styleSheets.length; i++) {
+    if (document.styleSheets[i].ownerNode === tag) {
+      return document.styleSheets[i];
+    }
+  }
+}
+
+function makeStyleTag() {
+  var tag = document.createElement('style');
+  tag.type = 'text/css';
+  tag.setAttribute('data-emotion', '');
+  tag.appendChild(document.createTextNode(''));
+  document.head.appendChild(tag);
+  return tag;
+}
+
+var StyleSheet =
+/*#__PURE__*/
+function () {
+  function StyleSheet() {
+    this.isBrowser = typeof window !== 'undefined';
+    this.isSpeedy = 'development' === 'production'; // the big drawback here is that the css won't be editable in devtools
+
+    this.tags = [];
+    this.ctr = 0;
+  }
+
+  var _proto = StyleSheet.prototype;
+
+  _proto.inject = function inject() {
+    if (this.injected) {
+      throw new Error('already injected!');
+    }
+
+    if (this.isBrowser) {
+      this.tags[0] = makeStyleTag();
+    } else {
+      // server side 'polyfill'. just enough behavior to be useful.
+      this.sheet = [];
+    }
+
+    this.injected = true;
+  };
+
+  _proto.speedy = function speedy(bool) {
+    if (this.ctr !== 0) {
+      // cannot change speedy mode after inserting any rule to sheet. Either call speedy(${bool}) earlier in your app, or call flush() before speedy(${bool})
+      throw new Error("cannot change speedy now");
+    }
+
+    this.isSpeedy = !!bool;
+  };
+
+  _proto.insert = function insert(rule, sourceMap) {
+    if (this.isBrowser) {
+      // this is the ultrafast version, works across browsers
+      if (this.isSpeedy) {
+        var tag = this.tags[this.tags.length - 1];
+        var sheet = sheetForTag(tag);
+
+        try {
+          sheet.insertRule(rule, sheet.cssRules.length);
+        } catch (e) {
+          if ('development' !== 'production') {
+            console.warn('illegal rule', rule); // eslint-disable-line no-console
+          }
+        }
+      } else {
+        var _tag = makeStyleTag();
+
+        this.tags.push(_tag);
+
+        _tag.appendChild(document.createTextNode(rule + (sourceMap || '')));
+      }
+
+      this.ctr++;
+
+      if (this.ctr % 65000 === 0) {
+        this.tags.push(makeStyleTag());
+      }
+    } else {
+      // enough 'spec compliance' to be able to extract the rules later
+      // in other words, just the rule
+      this.sheet.push(rule);
+    }
+  };
+
+  _proto.flush = function flush() {
+    if (this.isBrowser) {
+      this.tags.forEach(function (tag) {
+        return tag.parentNode.removeChild(tag);
+      });
+      this.tags = [];
+      this.ctr = 0; // todo - look for remnants in document.styleSheets
+    } else {
+      // simpler on server
+      this.sheet = [];
+    }
+
+    this.injected = false;
+  };
+
+  return StyleSheet;
+}();
+
+var sheet = new StyleSheet(); // 🚀
+
+sheet.inject();
+var stylisOptions = {
+  keyframe: false
+};
+
+if ('development' !== 'production') {
+  stylisOptions.compress = false;
+}
+
+var stylis = new _emotionUtils.Stylis(stylisOptions);
+var externalStylisPlugins = [];
+var use = stylis.use;
+
+function insertRule(rule) {
+  sheet.insert(rule, currentSourceMap);
+}
+
+var insertionPlugin = (0, _stylisRuleSheet2.default)(insertRule);
+var useStylisPlugin = function useStylisPlugin(plugin) {
+  externalStylisPlugins.push(plugin);
+  use(null)(externalStylisPlugins)(insertionPlugin);
+};
+var registered = {};
+var inserted = {};
+var currentSourceMap = '';
+stylis.use(insertionPlugin);
+
+function handleInterpolation(interpolation, couldBeSelectorInterpolation) {
+  if (interpolation == null) {
+    return '';
+  }
+
+  switch (typeof interpolation) {
+    case 'boolean':
+      return '';
+
+    case 'function':
+      if (interpolation[_emotionUtils.STYLES_KEY] !== undefined) {
+        if ('development' !== 'production' && interpolation[_emotionUtils.TARGET_KEY] === undefined) {
+          throw new Error('Component selectors can only be used in conjunction with babel-plugin-emotion.');
+        }
+
+        return "." + interpolation[_emotionUtils.TARGET_KEY];
+      }
+
+      return handleInterpolation.call(this, this === undefined ? interpolation() : interpolation(this.mergedProps, this.context), couldBeSelectorInterpolation);
+
+    case 'object':
+      return createStringFromObject.call(this, interpolation);
+
+    default:
+      var cached = registered[interpolation];
+      return couldBeSelectorInterpolation === false && cached !== undefined ? cached : interpolation;
+  }
+}
+
+var hyphenateRegex = /[A-Z]|^ms/g;
+var processStyleName = (0, _emotionUtils.memoize)(function (styleName) {
+  return styleName.replace(hyphenateRegex, '-$&').toLowerCase();
+});
+
+var processStyleValue = function processStyleValue(key, value) {
+  if (value === undefined || value === null || typeof value === 'boolean') return '';
+
+  if (_emotionUtils.unitless[key] !== 1 && key.charCodeAt(1) !== 45 && // custom properties
+  !isNaN(value) && value !== 0) {
+    return value + 'px';
+  }
+
+  return value;
+};
+
+var objectToStringCache = new WeakMap();
+
+function createStringFromObject(obj) {
+  if (objectToStringCache.has(obj)) {
+    return objectToStringCache.get(obj);
+  }
+
+  var string = '';
+
+  if (Array.isArray(obj)) {
+    obj.forEach(function (interpolation) {
+      string += handleInterpolation.call(this, interpolation, false);
+    }, this);
+  } else {
+    Object.keys(obj).forEach(function (key) {
+      if (typeof obj[key] !== 'object') {
+        if (registered[obj[key]] !== undefined) {
+          string += key + "{" + registered[obj[key]] + "}";
+        } else {
+          string += processStyleName(key) + ":" + processStyleValue(key, obj[key]) + ";";
+        }
+      } else {
+        string += key + "{" + handleInterpolation.call(this, obj[key], false) + "}";
+      }
+    }, this);
+  }
+
+  objectToStringCache.set(obj, string);
+  return string;
+}
+
+function isLastCharDot(string) {
+  return string.charCodeAt(string.length - 1) === 46; // .
+}
+
+var hash;
+var name;
+var labelPattern = /label:\s*([^\s;\n]+)\s*[;\n]/g;
+
+function createStyles(strings) {
+  var stringMode = true;
+  var styles = '';
+  var identifierName = '';
+
+  if (strings == null || strings.raw === undefined) {
+    stringMode = false;
+    styles = handleInterpolation.call(this, strings, false);
+  } else {
+    styles = strings[0];
+  }
+
+  for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    interpolations[_key - 1] = arguments[_key];
+  }
+
+  interpolations.forEach(function (interpolation, i) {
+    styles += handleInterpolation.call(this, interpolation, isLastCharDot(styles));
+
+    if (stringMode === true && strings[i + 1] !== undefined) {
+      styles += strings[i + 1];
+    }
+  }, this);
+  styles = styles.replace(labelPattern, function (match, p1) {
+    identifierName += "-" + p1;
+    return '';
+  });
+  hash = (0, _emotionUtils.hashString)(styles + identifierName);
+  name = hash + identifierName;
+  return styles;
+}
+
+if ('development' !== 'production') {
+  var sourceMapRegEx = /\/\*#\ssourceMappingURL=data:application\/json;\S+\s+\*\//;
+  var oldStylis = stylis;
+
+  stylis = function stylis(selector, styles) {
+    var result = sourceMapRegEx.exec(styles);
+    currentSourceMap = result ? result[0] : '';
+    oldStylis(selector, styles);
+    currentSourceMap = '';
+  };
+}
+
+function css() {
+  var styles = createStyles.apply(this, arguments);
+  var selector = "css-" + name;
+
+  if (registered[selector] === undefined) {
+    registered[selector] = styles;
+  }
+
+  if (inserted[hash] === undefined) {
+    stylis("." + selector, styles);
+    inserted[hash] = true;
+  }
+
+  return selector;
+}
+function keyframes() {
+  var styles = createStyles.apply(this, arguments);
+  var animation = "animation-" + name;
+
+  if (inserted[hash] === undefined) {
+    stylis('', "@keyframes " + animation + "{" + styles + "}");
+    inserted[hash] = true;
+  }
+
+  return animation;
+}
+function injectGlobal() {
+  var styles = createStyles.apply(this, arguments);
+
+  if (inserted[hash] === undefined) {
+    stylis('', styles);
+    inserted[hash] = true;
+  }
+}
+function fontFace() {
+  var styles = createStyles.apply(void 0, arguments);
+
+  if (inserted[hash] === undefined) {
+    stylis('', "@font-face{" + styles + "}");
+    inserted[hash] = true;
+  }
+}
+function getRegisteredStyles(registeredStyles, classNames) {
+  var rawClassName = '';
+  classNames.split(' ').forEach(function (className) {
+    if (registered[className] !== undefined) {
+      registeredStyles.push(className);
+    } else {
+      rawClassName += className + " ";
+    }
+  });
+  return rawClassName;
+}
+function merge(className, sourceMap) {
+  var registeredStyles = [];
+  var rawClassName = getRegisteredStyles(registeredStyles, className);
+
+  if (registeredStyles.length < 2) {
+    return className;
+  }
+
+  return rawClassName + css(registeredStyles, sourceMap);
+}
+
+function classnames() {
+  var len = arguments.length;
+  var i = 0;
+  var cls = '';
+
+  for (; i < len; i++) {
+    var arg = arguments[i];
+    if (arg == null) continue;
+    var next = cls && cls + ' ' || cls;
+
+    switch (typeof arg) {
+      case 'boolean':
+        break;
+
+      case 'function':
+        cls = next + classnames(arg());
+        break;
+
+      case 'object':
+        {
+          if (Array.isArray(arg)) {
+            cls = next + classnames.apply(null, arg);
+          } else {
+            for (var k in arg) {
+              if (arg[k]) {
+                cls && (cls += ' ');
+                cls += k;
+              }
+            }
+          }
+
+          break;
+        }
+
+      default:
+        {
+          cls = next + arg;
+        }
+    }
+  }
+
+  return cls;
+}
+
+function cx() {
+  return merge(classnames.apply(void 0, arguments));
+}
+function hydrate(ids) {
+  ids.forEach(function (id) {
+    inserted[id] = true;
+  });
+}
+function flush() {
+  sheet.flush();
+  exports.inserted = inserted = {};
+  exports.registered = registered = {};
+  sheet.inject();
+}
+
+exports.sheet = sheet;
+exports.useStylisPlugin = useStylisPlugin;
+exports.registered = registered;
+exports.inserted = inserted;
+exports.css = css;
+exports.keyframes = keyframes;
+exports.injectGlobal = injectGlobal;
+exports.fontFace = fontFace;
+exports.getRegisteredStyles = getRegisteredStyles;
+exports.merge = merge;
+exports.cx = cx;
+exports.hydrate = hydrate;
+exports.flush = flush;
+//# sourceMappingURL=index.es.js.map
+},{"emotion-utils":43,"stylis-rule-sheet":79}],31:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _emotion = require('emotion');
+
+Object.keys(_emotion).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _emotion[key];
+    }
+  });
+});
+
+var _react = require('react');
+
+var _emotionUtils = require('emotion-utils');
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
+
+var _contextTypes;
+
+var channel = '__EMOTION_THEMING__';
+var contextTypes = (_contextTypes = {}, _contextTypes[channel] = _propTypes2.default.object, _contextTypes);
+
+/* global codegen */
+function setTheme(theme) {
+  this.setState({
+    theme: theme
+  });
+}
+
+function componentWillMount() {
+  if (this.context[channel] !== undefined) {
+    this.unsubscribe = this.context[channel].subscribe(setTheme.bind(this));
+  }
+}
+
+function componentWillUnmount() {
+  if (this.unsubscribe !== undefined) {
+    this.context[channel].unsubscribe(this.unsubscribe);
+  }
+}
+
+var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|accept|acceptCharset|accessKey|action|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|default|defer|dir|disabled|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|itemProp|itemScope|itemType|itemID|itemRef|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan)|(on[A-Z].*)|((data|aria)-.*))$/;
+var testOmitPropsOnStringTag = (0, _emotionUtils.memoize)(function (key) {
+  return reactPropsRegex.test(key);
+});
+
+var testOmitPropsOnComponent = function testOmitPropsOnComponent(key) {
+  return key !== 'theme' && key !== 'innerRef';
+};
+
+var testAlwaysTrue = function testAlwaysTrue() {
+  return true;
+};
+
+var omitAssign = function omitAssign(testFn, target) {
+  var i = 2;
+  var length = arguments.length;
+
+  for (; i < length; i++) {
+    var source = arguments[i];
+    var key = void 0;
+
+    for (key in source) {
+      if (testFn(key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var createStyled = function createStyled(tag, options) {
+  if ('development' !== 'production') {
+    if (tag === undefined) {
+      throw new Error('You are trying to create a styled element with an undefined component.\nYou may have forgotten to import it.');
+    }
+  }
+
+  var identifierName;
+  var stableClassName;
+  var staticClassName;
+
+  if (options !== undefined) {
+    identifierName = options.label;
+    stableClassName = options.target;
+    staticClassName = options.e;
+  }
+
+  var isReal = tag.__emotion_real === tag;
+  var baseTag = staticClassName === undefined ? isReal && tag.__emotion_base || tag : tag;
+  var omitFn = typeof baseTag === 'string' && baseTag.charAt(0) === baseTag.charAt(0).toLowerCase() ? testOmitPropsOnStringTag : testOmitPropsOnComponent;
+  return function (strings) {
+    var styles = isReal && tag[_emotionUtils.STYLES_KEY] || [];
+
+    if (identifierName !== undefined) {
+      styles = styles.concat("label:" + identifierName + ";");
+    }
+
+    if (staticClassName === undefined) {
+      for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        interpolations[_key - 1] = arguments[_key];
+      }
+
+      if (strings == null || strings.raw === undefined) {
+        styles = styles.concat(strings, interpolations);
+      } else {
+        styles = interpolations.reduce(function (array, interp, i) {
+          return array.concat(interp, strings[i + 1]);
+        }, styles.concat(strings[0]));
+      }
+    }
+
+    var Styled =
+    /*#__PURE__*/
+    function (_Component) {
+      _inheritsLoose(Styled, _Component);
+
+      function Styled() {
+        return _Component.apply(this, arguments) || this;
+      }
+
+      var _proto = Styled.prototype;
+
+      _proto.render = function render() {
+        var props = this.props,
+            state = this.state;
+        this.mergedProps = omitAssign(testAlwaysTrue, {}, props, {
+          theme: state !== null && state.theme || props.theme || {}
+        });
+        var className = '';
+        var classInterpolations = [];
+
+        if (props.className) {
+          if (staticClassName === undefined) {
+            className += (0, _emotion.getRegisteredStyles)(classInterpolations, props.className);
+          } else {
+            className += props.className + " ";
+          }
+        }
+
+        if (staticClassName === undefined) {
+          className += _emotion.css.apply(this, styles.concat(classInterpolations));
+        } else {
+          className += staticClassName;
+        }
+
+        if (stableClassName !== undefined) {
+          className += " " + stableClassName;
+        }
+
+        return (0, _react.createElement)(baseTag, omitAssign(omitFn, {}, props, {
+          className: className,
+          ref: props.innerRef
+        }));
+      };
+
+      return Styled;
+    }(_react.Component);
+
+    Styled.prototype.componentWillMount = componentWillMount;
+    Styled.prototype.componentWillUnmount = componentWillUnmount;
+    Styled.displayName = identifierName !== undefined ? identifierName : "Styled(" + (typeof baseTag === 'string' ? baseTag : baseTag.displayName || baseTag.name || 'Component') + ")";
+    Styled.contextTypes = contextTypes;
+    Styled[_emotionUtils.STYLES_KEY] = styles;
+    Styled.__emotion_base = baseTag;
+    Styled.__emotion_real = Styled;
+    Styled[_emotionUtils.TARGET_KEY] = stableClassName;
+
+    Styled.withComponent = function (nextTag, nextOptions) {
+      return createStyled(nextTag, nextOptions !== undefined ? omitAssign(testAlwaysTrue, {}, options, nextOptions) : options)(styles);
+    };
+
+    return Styled;
+  };
+};
+
+//# sourceMappingURL=index.es.js.map
+exports.default = createStyled;
+},{"react":11,"emotion-utils":43,"emotion":42,"prop-types":40}],9:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  primary: '#0077cc',
+  primaryLight: '#7db9e5',
+  secondary: '#00cc55',
+  secondaryLight: '#79e4a6',
+  tertiary: '#FFA07A',
+  tertiaryLight: '#ffc6b0',
+  accent: '#00FA9A',
+  white: '#ffffff',
+  base: '#212b2b'
+};
+},{}],4:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  html {\n    font-size: 18px;\n  }\n  * {\n    font-family: -apple-system, BlinkMacSystemFont,\n            \'avenir next\', avenir,\n            \'helvetica neue\', helvetica,\n            ubuntu,\n            roboto, noto,\n            \'segoe ui\', arial,\n            sans-serif;\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n  };\n  a {\n    text-decoration: none;\n    cursor: pointer;\n    color: ', ';\n    &:hover,\n    &:focus,\n    &:active { border-bottom: solid 2px ', '; }\n  };\n  h1, h2, h3, h4, h5, h6 {\n    padding: .5em 0;\n    color: ', '\n  };\n  p {\n    color: ', '\n  }\n  [data-css-video],\n  [data-css-youtube] {\n    width: 100%;\n    padding-bottom: 22%;\n    min-height: 400px;\n  }\n'], ['\n  html {\n    font-size: 18px;\n  }\n  * {\n    font-family: -apple-system, BlinkMacSystemFont,\n            \'avenir next\', avenir,\n            \'helvetica neue\', helvetica,\n            ubuntu,\n            roboto, noto,\n            \'segoe ui\', arial,\n            sans-serif;\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n  };\n  a {\n    text-decoration: none;\n    cursor: pointer;\n    color: ', ';\n    &:hover,\n    &:focus,\n    &:active { border-bottom: solid 2px ', '; }\n  };\n  h1, h2, h3, h4, h5, h6 {\n    padding: .5em 0;\n    color: ', '\n  };\n  p {\n    color: ', '\n  }\n  [data-css-video],\n  [data-css-youtube] {\n    width: 100%;\n    padding-bottom: 22%;\n    min-height: 400px;\n  }\n']);
+
+var _normalize = require('normalize.css');
+
+var _normalize2 = _interopRequireDefault(_normalize);
+
+var _reactEmotion = require('react-emotion');
+
+var _colors = require('./src/utils/colors.js');
+
+var _colors2 = _interopRequireDefault(_colors);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+exports.default = function () {
+  (0, _reactEmotion.injectGlobal)(_templateObject, _colors2.default.primraryLight, _colors2.default.accent, _colors2.default.tertiary, _colors2.default.base);
+};
+},{"normalize.css":32,"react-emotion":31,"./src/utils/colors.js":9}],54:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var getMQValue = function getMQValue(useRems, breakpoint, fontSize) {
+  if (useRems) {
+    return breakpoint / fontSize + "rem";
+  } else {
+    return breakpoint + "px";
+  }
+};
+
+var mediaQueryFactory = function mediaQueryFactory(breakpoint, rootFontSize, useRems) {
+  return function (maybeStrings) {
+    for (var _len = arguments.length, interps = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      interps[_key - 1] = arguments[_key];
+    }
+
+    if (Array.isArray(maybeStrings)) {
+      return "@media screen and (min-width: " + getMQValue(useRems, breakpoint, rootFontSize) + ") { " + interps.reduce(function (acc, interpolation, ndx) {
+        return "" + acc + interpolation + maybeStrings[ndx + 1];
+      }, maybeStrings[0]) + " }";
+    } else {
+      return _defineProperty({}, "@media screen and (min-width: " + getMQValue(useRems, breakpoint, rootFontSize) + ")", maybeStrings);
+    }
+  };
+};
+
+exports.default = function (breakpoints) {
+  var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref2$rootFontSize = _ref2.rootFontSize,
+      rootFontSize = _ref2$rootFontSize === undefined ? 16 : _ref2$rootFontSize,
+      _ref2$useRems = _ref2.useRems,
+      useRems = _ref2$useRems === undefined ? true : _ref2$useRems;
+
+  return Object.keys(breakpoints).reduce(function (acc, breakpointName) {
+    return _extends({}, acc, _defineProperty({}, breakpointName, mediaQueryFactory(breakpoints[breakpointName], rootFontSize, useRems)));
+  }, {});
+};
+},{}],10:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.large = exports.medium = exports.small = undefined;
+
+var _resp2 = require('@matthamlin/resp');
+
+var _resp3 = _interopRequireDefault(_resp2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var sizes = {
+  small: 640,
+  medium: 832,
+  large: 1024
+};
+
+var _resp = (0, _resp3.default)(sizes),
+    small = _resp.small,
+    medium = _resp.medium,
+    large = _resp.large;
+
+exports.small = small;
+exports.medium = medium;
+exports.large = large;
+},{"@matthamlin/resp":54}],5:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  & div:first-child {\n    display: none;\n  }\n  ', ';\n'], ['\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  & div:first-child {\n    display: none;\n  }\n  ', ';\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    text-align: left;\n    justify-content: initial;\n    & div:first-child {\n      display: initial;\n    }\n  '], ['\n    text-align: left;\n    justify-content: initial;\n    & div:first-child {\n      display: initial;\n    }\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  display: inline-block;\n  ', ';\n'], ['\n  display: inline-block;\n  ', ';\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    margin-left: 2rem;\n  '], ['\n    margin-left: 2rem;\n  ']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  &,\n  & > a {\n    color: ', ';\n  }\n  display: inline-block;\n  & + & {\n    margin-left: 1rem;\n  }\n  &:last-of-type {\n    margin-right: 1rem;\n  }\n'], ['\n  &,\n  & > a {\n    color: ', ';\n  }\n  display: inline-block;\n  & + & {\n    margin-left: 1rem;\n  }\n  &:last-of-type {\n    margin-right: 1rem;\n  }\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  & a {\n    font-size: 2rem;\n  }\n'], ['\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  & a {\n    font-size: 2rem;\n  }\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n  text-decoration: none;\n  &:hover,\n  &:focus {\n    border: none;\n  }\n'], ['\n  text-decoration: none;\n  &:hover,\n  &:focus {\n    border: none;\n  }\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  ', ';\n'], ['\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  ', ';\n']),
+    _templateObject9 = _taggedTemplateLiteral(['\n    text-align: left;\n    justify-content: space-between;\n    align-items: center;\n  '], ['\n    text-align: left;\n    justify-content: space-between;\n    align-items: center;\n  ']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _reactEmotion = require('react-emotion');
+
+var _colors = require('../utils/colors');
+
+var _colors2 = _interopRequireDefault(_colors);
+
+var _media = require('../utils/media');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+// import Avatar from '@atlaskit/avatar';
+
+
+var df = (0, _reactEmotion.css)(_templateObject, (0, _media.large)(_templateObject2));
+
+var title = (0, _reactEmotion.css)(_templateObject3, (0, _media.large)(_templateObject4));
+
+var subtitle = (0, _reactEmotion.css)(_templateObject5, _colors2.default.accent);
+
+var subnav = (0, _reactEmotion.css)(_templateObject6);
+
+var headerlink = (0, _reactEmotion.css)(_templateObject7);
+
+var nav = (0, _reactEmotion.css)(_templateObject8, (0, _media.large)(_templateObject9));
+
+exports.default = function () {
+  return _react2.default.createElement(
+    'nav',
+    { className: nav },
+    _react2.default.createElement(
+      'div',
+      { className: df },
+      _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: '/', className: headerlink },
+        _react2.default.createElement(
+          'h1',
+          { className: title },
+          'Matt Hamlin'
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: subnav },
+      _react2.default.createElement(
+        'h4',
+        { className: subtitle },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/blog' },
+          'Blog'
+        )
+      ),
+      _react2.default.createElement(
+        'h4',
+        { className: subtitle },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/projects' },
+          'Projects'
+        )
+      )
+    )
+  );
+};
+},{"react":11,"react-router-dom":13,"react-emotion":31,"../utils/colors":9,"../utils/media":10}],8:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  width: 60rem;\n  max-width: 90vw;\n  margin: 0 auto;\n'], ['\n  width: 60rem;\n  max-width: 90vw;\n  margin: 0 auto;\n']);
+
+var _reactEmotion = require('react-emotion');
+
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = (0, _reactEmotion2.default)('div')(_templateObject);
+
+exports.default = Container;
+},{"react-emotion":31}],6:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  list-style: none;\n'], ['\n  list-style: none;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  color: ', ';\n'], ['\n  color: ', ';\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  color: ', ';\n  & span {\n    text-decoration: underline;\n  }\n  &:hover,\n  &:focus {\n    text-decoration: none;\n    color: ', ';\n  }\n  & p {\n    color: ', ';\n    text-decoration: none;\n    border-bottom: 0;\n    padding: 0.5rem;\n  }\n'], ['\n  color: ', ';\n  & span {\n    text-decoration: underline;\n  }\n  &:hover,\n  &:focus {\n    text-decoration: none;\n    color: ', ';\n  }\n  & p {\n    color: ', ';\n    text-decoration: none;\n    border-bottom: 0;\n    padding: 0.5rem;\n  }\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  & + & {\n    margin-top: 2rem;\n  }\n'], ['\n  & + & {\n    margin-top: 2rem;\n  }\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n  margin-top: 2rem;\n'], ['\n  margin-top: 2rem;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  margin: 0.5rem 0;\n'], ['\n  margin: 0.5rem 0;\n']);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _container = require('../components/container.js');
+
+var _container2 = _interopRequireDefault(_container);
+
+var _reactEmotion = require('react-emotion');
+
+var _colors = require('../utils/colors.js');
+
+var _colors2 = _interopRequireDefault(_colors);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var list = (0, _reactEmotion.css)(_templateObject);
+var link = (0, _reactEmotion.css)(_templateObject2, _colors2.default.primary);
+
+var fadedLink = (0, _reactEmotion.css)(_templateObject3, _colors2.default.base, _colors2.default.secondaryLight, _colors2.default.base);
+
+var listItem = (0, _reactEmotion.css)(_templateObject4);
+
+var spaced = (0, _reactEmotion.css)(_templateObject5);
+
+var p = (0, _reactEmotion.css)(_templateObject6);
+
+exports.default = function () {
+  return _react2.default.createElement(
+    'main',
+    null,
+    _react2.default.createElement(
+      _container2.default,
+      null,
+      _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(
+          'h2',
+          { className: 'mv4' },
+          'Hello \uD83D\uDC4B\uD83C\uDFFC.',
+          _react2.default.createElement('br', null),
+          'I am Matt Hamlin, a web developer.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: p },
+          'I make small ',
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/projects' },
+            'side projects'
+          ),
+          ' of all kinds in my free time, and work with some pretty smart people at Wayfair currently.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: p },
+          '\u26A0\uFE0F This site is still an extreme work in progress, you have been warned. \u26A0\uFE0F'
+        )
+      ),
+      _react2.default.createElement(
+        'ul',
+        { className: list },
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { className: link, href: 'https://twitter.com/immatthamlin' },
+            'Follow me on Twitter'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            'a',
+            { className: link, href: 'https://github.com/hamlim' },
+            'Check out my work on Github'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'h2',
+        null,
+        'Recent blog posts:'
+      )
+    )
+  );
+};
+},{"react":11,"react-router-dom":13,"../components/container.js":8,"react-emotion":31,"../utils/colors.js":9}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -26029,32 +25330,41 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
 
-var _test = require('./src/test.re');
+var _reactRouterDom = require('react-router-dom');
 
-var _example = require('./src/example.bs');
+var _setup = require('./setup');
 
-var _todo = require('./src/todo.bs');
+var _setup2 = _interopRequireDefault(_setup);
+
+var _navigation = require('./src/components/navigation.js');
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+var _landing = require('./src/pages/landing.js');
+
+var _landing2 = _interopRequireDefault(_landing);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return _react2.default.createElement(
-    _react.Fragment,
+    _reactRouterDom.BrowserRouter,
     null,
     _react2.default.createElement(
-      'h1',
+      _react.Fragment,
       null,
-      _react2.default.createElement(_test.greeting, { name: 'world' })
-    ),
-    _react2.default.createElement(_example.example, null),
-    _react2.default.createElement(_todo.todo, null)
+      _react2.default.createElement(_navigation2.default, null),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: _landing2.default })
+    )
   );
 };
 
 var elem = document.querySelector('#root');
 
+(0, _setup2.default)();
+
 (0, _reactDom.render)(_react2.default.createElement(App, null), elem);
-},{"react":6,"react-dom":5,"./src/test.re":3,"./src/example.bs":4,"./src/todo.bs":74}],73:[function(require,module,exports) {
+},{"react":11,"react-dom":12,"react-router-dom":13,"./setup":4,"./src/components/navigation.js":5,"./src/pages/landing.js":6}],95:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -26074,7 +25384,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '58416' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '51483' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -26175,5 +25485,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[73,2])
+},{}]},{},[95,2])
 //# sourceMappingURL=/dist/b2688e9ba6aa6f7cf23ac34e04ca0ccb.map
