@@ -1,4 +1,6 @@
 {
+  "name": "mhme-parcel",
+  "version": "0.0.0",
   "scripts": {
     "dev": "parcel index.html",
     "dev-reason": "yarn watch & parcel index.html",
