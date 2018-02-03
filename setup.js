@@ -22,13 +22,14 @@ export default () => {
     text-decoration: none;
     cursor: pointer;
     color: ${colors.primraryLight};
+    border-bottom: solid 2px transparent;
     &:hover,
     &:focus,
     &:active { border-bottom: solid 2px ${colors.accent}; }
   };
   h1, h2, h3, h4, h5, h6 {
     padding: .5em 0;
-    color: ${colors.tertiary}
+    color: ${colors.base}
   };
   p {
     color: ${colors.base}

@@ -1,29 +1,28 @@
-/* eslint-disable */
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import styled, { css } from 'react-emotion'
-import { Container } from '../components/container.js'
+import Container from '../components/container.js'
 import { colors } from '../styles/index.js'
 
-const Title = styled.h3`
+const Title = styled('h3')`
   font-size: 3rem;
   text-align: center;
 `
-const StyledLink = styled.a`
-  color: ${colors.tertiary};
+const StyledLink = styled('a')`
+  color: ${colors.base};
   text-decoration: none;
   &:hover,
   &:focus {
-    color: ${colors.tertiaryLight};
+    color: ${colors.base};
   }
 `
-const Description = styled.p`
+const Description = styled('p')`
   font-size: 1.2rem;
 `
 
-const Project = styled.li`
+const Project = styled('li')`
   margin: 1em;
-  border: solid 4px ${colors.tertiary};
+  border: solid 4px ${colors.base};
   border-radius: 1em;
   padding: 1rem;
   & h4 {

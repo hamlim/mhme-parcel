@@ -1,54 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import Avatar from '@atlaskit/avatar';
+import Avatar from '@atlaskit/avatar'
+import { MatchMedia } from '../utils/media.js'
 import { css } from 'react-emotion'
 import { colors } from '../styles/index.js'
-import { large } from '../utils/media'
-
-const df = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  & div:first-child {
-    display: none;
-  }
-  ${large`
-    text-align: left;
-    justify-content: initial;
-    & div:first-child {
-      display: initial;
-    }
-  `};
-`
-
-const title = css`
-  display: inline-block;
-  ${large`
-    margin-left: 2rem;
-  `};
-`
-
-const subtitle = css`
-  &,
-  & > a {
-    color: ${colors.accent};
-  }
-  display: inline-block;
-  & + & {
-    margin-left: 1rem;
-  }
-  &:last-of-type {
-    margin-right: 1rem;
-  }
-`
+import me from '../../static/me.jpg'
 
 const subnav = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   & a {
+    color: ${colors.accent};
     font-size: 2rem;
+  }
+  & a + a {
+    margin-left: 1rem;
   }
 `
 
@@ -61,30 +26,22 @@ const headerlink = css`
 `
 
 const nav = css`
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  ${large`
-    text-align: left;
-    justify-content: space-between;
-    align-items: center;
-  `};
+  margin: 1rem 0;
 `
 
 export default () => (
   <nav className={nav}>
-    <div className={df}>
-      <Link to="/" className={headerlink}>
-        <h1 className={title}>Matt Hamlin</h1>
-      </Link>
-    </div>
+    <Link to="/" className={headerlink}>
+      <MatchMedia
+        render={matches => (
+          <Avatar src={me} size={matches ? 'xlarge' : 'xxlarge'} presence={matches ? 'online' : null} />
+        )}
+      />
+    </Link>
     <div className={subnav}>
-      <h4 className={subtitle}>
-        <Link to="/blog">Blog</Link>
-      </h4>
-      <h4 className={subtitle}>
-        <Link to="/projects">Projects</Link>
-      </h4>
+      <Link to="/blog">Blog</Link>
+      <Link to="/projects">Projects</Link>
     </div>
   </nav>
 )

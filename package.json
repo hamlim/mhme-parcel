@@ -13,6 +13,7 @@
     "parcel-plugin-markdown": "0.2.1"
   },
   "dependencies": {
+    "@atlaskit/avatar": "9.0.0",
     "@matthamlin/resp": "^2.0.0",
     "babel-plugin-macros": "2.1.0",
     "babel-plugin-transform-class-properties": "6.24.1",
