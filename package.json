@@ -26,6 +26,7 @@
     "marked": "0.3.12",
     "normalize.css": "7.0.0",
     "preval.macro": "1.0.2",
+    "prop-types": "15.6.0",
     "react-emotion": "^8.0.12",
     "react-router-dom": "^4.2.2",
     "reason-react": "^0.3.1"

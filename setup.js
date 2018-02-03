@@ -1,6 +1,6 @@
 import normalize from 'normalize.css'
 import { injectGlobal } from 'react-emotion'
-import colors from './src/utils/colors.js'
+import { colors } from './src/styles/index.js'
 export default () => {
   injectGlobal`
   html {

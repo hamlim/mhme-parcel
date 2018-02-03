@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 // import Avatar from '@atlaskit/avatar';
 import { css } from 'react-emotion'
-import colors from '../utils/colors'
+import { colors } from '../styles/index.js'
 import { large } from '../utils/media'
 
 const df = css`

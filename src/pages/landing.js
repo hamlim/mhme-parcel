@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from '../components/container.js'
 import { css } from 'react-emotion'
-import colors from '../utils/colors.js'
+import { colors } from '../styles/index.js'
 
 const list = css`
   list-style: none;
