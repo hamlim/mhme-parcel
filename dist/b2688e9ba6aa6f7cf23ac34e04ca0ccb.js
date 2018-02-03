@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({34:[function(require,module,exports) {
+})({36:[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -161,7 +161,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],51:[function(require,module,exports) {
+},{}],53:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -179,7 +179,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = emptyObject;
-},{}],52:[function(require,module,exports) {
+},{}],54:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -216,7 +216,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],13:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.production.min.js
  *
@@ -239,7 +239,7 @@ var U={Children:{map:function(a,b,e){if(null==a)return a;var c=[];T(a,c,null,b,e
 d=a.key,g=a.ref,k=a._owner;if(null!=b){void 0!==b.ref&&(g=b.ref,k=G.current);void 0!==b.key&&(d=""+b.key);if(a.type&&a.type.defaultProps)var f=a.type.defaultProps;for(h in b)H.call(b,h)&&!I.hasOwnProperty(h)&&(c[h]=void 0===b[h]&&void 0!==f?f[h]:b[h])}var h=arguments.length-2;if(1===h)c.children=e;else if(1<h){f=Array(h);for(var l=0;l<h;l++)f[l]=arguments[l+2];c.children=f}return{$$typeof:r,type:a.type,key:d,ref:g,props:c,_owner:k}},createFactory:function(a){var b=J.bind(null,a);b.type=a;return b},
 isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:G,assign:m}},V=Object.freeze({default:U}),W=V&&U||V;module.exports=W["default"]?W["default"]:W;
 
-},{"object-assign":34,"fbjs/lib/emptyObject":51,"fbjs/lib/emptyFunction":52}],59:[function(require,module,exports) {
+},{"object-assign":36,"fbjs/lib/emptyObject":53,"fbjs/lib/emptyFunction":54}],55:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -293,7 +293,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],60:[function(require,module,exports) {
+},{}],56:[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -356,7 +356,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":52}],43:[function(require,module,exports) {
+},{"./emptyFunction":54}],45:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -370,7 +370,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],42:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -430,7 +430,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":59,"fbjs/lib/warning":60,"./lib/ReactPropTypesSecret":43}],14:[function(require,module,exports) {
+},{"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"./lib/ReactPropTypesSecret":45}],15:[function(require,module,exports) {
 /** @license React v16.2.0
  * react.development.js
  *
@@ -1782,7 +1782,7 @@ if ('development' !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":34,"fbjs/lib/emptyObject":51,"fbjs/lib/invariant":59,"fbjs/lib/warning":60,"fbjs/lib/emptyFunction":52,"prop-types/checkPropTypes":42}],10:[function(require,module,exports) {
+},{"object-assign":36,"fbjs/lib/emptyObject":53,"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"fbjs/lib/emptyFunction":54,"prop-types/checkPropTypes":44}],10:[function(require,module,exports) {
 'use strict';
 
 if ('development' === 'production') {
@@ -1790,7 +1790,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.production.min.js":13,"./cjs/react.development.js":14}],53:[function(require,module,exports) {
+},{"./cjs/react.production.min.js":14,"./cjs/react.development.js":15}],57:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1824,7 +1824,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],54:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1899,7 +1899,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-},{"./emptyFunction":52}],55:[function(require,module,exports) {
+},{"./emptyFunction":54}],59:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -1936,7 +1936,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],56:[function(require,module,exports) {
+},{}],62:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2002,7 +2002,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],78:[function(require,module,exports) {
+},{}],80:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2025,7 +2025,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],73:[function(require,module,exports) {
+},{}],75:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2048,7 +2048,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":78}],58:[function(require,module,exports) {
+},{"./isNode":80}],61:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2086,7 +2086,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":73}],57:[function(require,module,exports) {
+},{"./isTextNode":75}],60:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2111,7 +2111,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],15:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.production.min.js
  *
@@ -2342,7 +2342,7 @@ var Sg={createPortal:Qg,findDOMNode:function(a){if(null==a)return null;if(1===a.
 E("40");return a._reactRootContainer?(Z.unbatchedUpdates(function(){Pg(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:Qg,unstable_batchedUpdates:tc,unstable_deferredUpdates:Z.deferredUpdates,flushSync:Z.flushSync,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:mb,EventPluginRegistry:Va,EventPropagators:Cb,ReactControlledComponent:qc,ReactDOMComponentTree:sb,ReactDOMEventListener:xd}};
 Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",rendererPackageName:"react-dom"});var Tg=Object.freeze({default:Sg}),Ug=Tg&&Sg||Tg;module.exports=Ug["default"]?Ug["default"]:Ug;
 
-},{"react":10,"fbjs/lib/ExecutionEnvironment":53,"object-assign":34,"fbjs/lib/emptyFunction":52,"fbjs/lib/EventListener":54,"fbjs/lib/getActiveElement":55,"fbjs/lib/shallowEqual":56,"fbjs/lib/containsNode":58,"fbjs/lib/focusNode":57,"fbjs/lib/emptyObject":51}],74:[function(require,module,exports) {
+},{"react":10,"fbjs/lib/ExecutionEnvironment":57,"object-assign":36,"fbjs/lib/emptyFunction":54,"fbjs/lib/EventListener":58,"fbjs/lib/getActiveElement":59,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":61,"fbjs/lib/focusNode":60,"fbjs/lib/emptyObject":53}],76:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2373,7 +2373,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],61:[function(require,module,exports) {
+},{}],63:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2410,7 +2410,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":74}],75:[function(require,module,exports) {
+},{"./hyphenate":76}],77:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2440,7 +2440,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],62:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -2478,7 +2478,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":75}],16:[function(require,module,exports) {
+},{"./camelize":77}],16:[function(require,module,exports) {
 /** @license React v16.2.0
  * react-dom.development.js
  *
@@ -17836,7 +17836,7 @@ if ('development' !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":10,"fbjs/lib/invariant":59,"fbjs/lib/warning":60,"fbjs/lib/ExecutionEnvironment":53,"object-assign":34,"fbjs/lib/emptyFunction":52,"fbjs/lib/EventListener":54,"fbjs/lib/getActiveElement":55,"fbjs/lib/shallowEqual":56,"fbjs/lib/containsNode":58,"fbjs/lib/focusNode":57,"fbjs/lib/emptyObject":51,"prop-types/checkPropTypes":42,"fbjs/lib/hyphenateStyleName":61,"fbjs/lib/camelizeStyleName":62}],11:[function(require,module,exports) {
+},{"react":10,"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"fbjs/lib/ExecutionEnvironment":57,"object-assign":36,"fbjs/lib/emptyFunction":54,"fbjs/lib/EventListener":58,"fbjs/lib/getActiveElement":59,"fbjs/lib/shallowEqual":62,"fbjs/lib/containsNode":61,"fbjs/lib/focusNode":60,"fbjs/lib/emptyObject":53,"prop-types/checkPropTypes":44,"fbjs/lib/hyphenateStyleName":63,"fbjs/lib/camelizeStyleName":64}],11:[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -17872,7 +17872,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":15,"./cjs/react-dom.development.js":16}],38:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":17,"./cjs/react-dom.development.js":16}],40:[function(require,module,exports) {
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -17926,7 +17926,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{}],40:[function(require,module,exports) {
+},{}],42:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18443,7 +18443,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-},{"fbjs/lib/emptyFunction":52,"fbjs/lib/invariant":59,"fbjs/lib/warning":60,"object-assign":34,"./lib/ReactPropTypesSecret":43,"./checkPropTypes":42}],41:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":54,"fbjs/lib/invariant":55,"fbjs/lib/warning":56,"object-assign":36,"./lib/ReactPropTypesSecret":45,"./checkPropTypes":44}],43:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18503,7 +18503,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"fbjs/lib/emptyFunction":52,"fbjs/lib/invariant":59,"./lib/ReactPropTypesSecret":43}],37:[function(require,module,exports) {
+},{"fbjs/lib/emptyFunction":54,"fbjs/lib/invariant":55,"./lib/ReactPropTypesSecret":45}],38:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -18527,7 +18527,7 @@ if ('development' !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"./factoryWithTypeCheckers":40,"./factoryWithThrowingShims":41}],39:[function(require,module,exports) {
+},{"./factoryWithTypeCheckers":42,"./factoryWithThrowingShims":43}],41:[function(require,module,exports) {
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18576,7 +18576,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 };
 
 module.exports = invariant;
-},{}],76:[function(require,module,exports) {
+},{}],78:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18652,7 +18652,7 @@ function resolvePathname(to) {
 }
 
 exports.default = resolvePathname;
-},{}],77:[function(require,module,exports) {
+},{}],79:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18700,7 +18700,7 @@ function valueEqual(a, b) {
 }
 
 exports.default = valueEqual;
-},{}],47:[function(require,module,exports) {
+},{}],49:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -18762,7 +18762,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],46:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -18841,7 +18841,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":76,"value-equal":77,"./PathUtils":47}],48:[function(require,module,exports) {
+},{"resolve-pathname":78,"value-equal":79,"./PathUtils":49}],50:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -18927,7 +18927,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":38}],49:[function(require,module,exports) {
+},{"warning":40}],51:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -18983,7 +18983,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],44:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -19291,7 +19291,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":38,"invariant":39,"./LocationUtils":46,"./PathUtils":47,"./createTransitionManager":48,"./DOMUtils":49}],67:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"./LocationUtils":48,"./PathUtils":49,"./createTransitionManager":50,"./DOMUtils":51}],70:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19434,7 +19434,7 @@ Router.childContextTypes = {
 };
 
 exports.default = Router;
-},{"warning":38,"invariant":39,"react":10,"prop-types":37}],27:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"react":10,"prop-types":38}],28:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19448,7 +19448,7 @@ var _Router2 = _interopRequireDefault(_Router);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Router2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Router":67}],19:[function(require,module,exports) {
+},{"react-router/es/Router":70}],20:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19534,7 +19534,7 @@ BrowserRouter.propTypes = {
 };
 
 exports.default = BrowserRouter;
-},{"warning":38,"react":10,"prop-types":37,"history/createBrowserHistory":44,"./Router":27}],45:[function(require,module,exports) {
+},{"warning":40,"react":10,"prop-types":38,"history/createBrowserHistory":47,"./Router":28}],46:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -19859,7 +19859,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":38,"invariant":39,"./LocationUtils":46,"./PathUtils":47,"./createTransitionManager":48,"./DOMUtils":49}],20:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"./LocationUtils":48,"./PathUtils":49,"./createTransitionManager":50,"./DOMUtils":51}],21:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19944,7 +19944,7 @@ HashRouter.propTypes = {
 };
 
 exports.default = HashRouter;
-},{"warning":38,"react":10,"prop-types":37,"history/createHashHistory":45,"./Router":27}],21:[function(require,module,exports) {
+},{"warning":40,"react":10,"prop-types":38,"history/createHashHistory":46,"./Router":28}],22:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20081,7 +20081,7 @@ Link.contextTypes = {
 };
 
 exports.default = Link;
-},{"react":10,"prop-types":37,"invariant":39}],90:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"invariant":41}],94:[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -20252,7 +20252,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":38,"./PathUtils":47,"./LocationUtils":46,"./createTransitionManager":48}],63:[function(require,module,exports) {
+},{"warning":40,"./PathUtils":49,"./LocationUtils":48,"./createTransitionManager":50}],68:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -20338,7 +20338,7 @@ MemoryRouter.propTypes = {
 };
 
 exports.default = MemoryRouter;
-},{"warning":38,"react":10,"prop-types":37,"history/createMemoryHistory":90,"./Router":67}],22:[function(require,module,exports) {
+},{"warning":40,"react":10,"prop-types":38,"history/createMemoryHistory":94,"./Router":70}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20352,12 +20352,12 @@ var _MemoryRouter2 = _interopRequireDefault(_MemoryRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _MemoryRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/MemoryRouter":63}],89:[function(require,module,exports) {
+},{"react-router/es/MemoryRouter":68}],93:[function(require,module,exports) {
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],80:[function(require,module,exports) {
+},{}],85:[function(require,module,exports) {
 var isarray = require('isarray')
 
 /**
@@ -20785,7 +20785,7 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
 
-},{"isarray":89}],71:[function(require,module,exports) {
+},{"isarray":93}],73:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -20865,7 +20865,7 @@ var matchPath = function matchPath(pathname) {
 };
 
 exports.default = matchPath;
-},{"path-to-regexp":80}],65:[function(require,module,exports) {
+},{"path-to-regexp":85}],66:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21041,7 +21041,7 @@ Route.childContextTypes = {
 };
 
 exports.default = Route;
-},{"warning":38,"invariant":39,"react":10,"prop-types":37,"./matchPath":71}],26:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"react":10,"prop-types":38,"./matchPath":73}],27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21055,7 +21055,7 @@ var _Route2 = _interopRequireDefault(_Route);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Route2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Route":65}],23:[function(require,module,exports) {
+},{"react-router/es/Route":66}],24:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21160,7 +21160,7 @@ NavLink.defaultProps = {
 };
 
 exports.default = NavLink;
-},{"react":10,"prop-types":37,"./Route":26,"./Link":21}],64:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"./Route":27,"./Link":22}],65:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21267,7 +21267,7 @@ Prompt.contextTypes = {
 };
 
 exports.default = Prompt;
-},{"react":10,"prop-types":37,"invariant":39}],24:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"invariant":41}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21281,7 +21281,7 @@ var _Prompt2 = _interopRequireDefault(_Prompt);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Prompt2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Prompt":64}],86:[function(require,module,exports) {
+},{"react-router/es/Prompt":65}],90:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21344,7 +21344,7 @@ var createPath = exports.createPath = function createPath(location) {
 
   return path;
 };
-},{}],85:[function(require,module,exports) {
+},{}],89:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21433,7 +21433,7 @@ var createLocation = exports.createLocation = function createLocation(path, stat
 var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && (0, _valueEqual2.default)(a.state, b.state);
 };
-},{"resolve-pathname":76,"value-equal":77,"./PathUtils":86}],87:[function(require,module,exports) {
+},{"resolve-pathname":78,"value-equal":79,"./PathUtils":90}],91:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21521,7 +21521,7 @@ var createTransitionManager = function createTransitionManager() {
 };
 
 exports.default = createTransitionManager;
-},{"warning":38}],88:[function(require,module,exports) {
+},{"warning":40}],92:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -21579,7 +21579,7 @@ var supportsGoWithoutReloadUsingHash = exports.supportsGoWithoutReloadUsingHash 
 var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
 };
-},{}],82:[function(require,module,exports) {
+},{}],86:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21898,7 +21898,7 @@ var createBrowserHistory = function createBrowserHistory() {
 };
 
 exports.default = createBrowserHistory;
-},{"warning":38,"invariant":39,"./LocationUtils":85,"./PathUtils":86,"./createTransitionManager":87,"./DOMUtils":88}],84:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"./LocationUtils":89,"./PathUtils":90,"./createTransitionManager":91,"./DOMUtils":92}],87:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22232,7 +22232,7 @@ var createHashHistory = function createHashHistory() {
 };
 
 exports.default = createHashHistory;
-},{"warning":38,"invariant":39,"./LocationUtils":85,"./PathUtils":86,"./createTransitionManager":87,"./DOMUtils":88}],83:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"./LocationUtils":89,"./PathUtils":90,"./createTransitionManager":91,"./DOMUtils":92}],88:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22416,7 +22416,7 @@ var createMemoryHistory = function createMemoryHistory() {
 };
 
 exports.default = createMemoryHistory;
-},{"warning":38,"./PathUtils":86,"./LocationUtils":85,"./createTransitionManager":87}],79:[function(require,module,exports) {
+},{"warning":40,"./PathUtils":90,"./LocationUtils":89,"./createTransitionManager":91}],83:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22471,7 +22471,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.createBrowserHistory = _createBrowserHistory3.default;
 exports.createHashHistory = _createHashHistory3.default;
 exports.createMemoryHistory = _createMemoryHistory3.default;
-},{"./createBrowserHistory":82,"./createHashHistory":84,"./createMemoryHistory":83,"./LocationUtils":85,"./PathUtils":86}],66:[function(require,module,exports) {
+},{"./createBrowserHistory":86,"./createHashHistory":87,"./createMemoryHistory":88,"./LocationUtils":89,"./PathUtils":90}],67:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22595,7 +22595,7 @@ Redirect.contextTypes = {
 };
 
 exports.default = Redirect;
-},{"react":10,"prop-types":37,"warning":38,"invariant":39,"history":79}],25:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"warning":40,"invariant":41,"history":83}],26:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22609,7 +22609,7 @@ var _Redirect2 = _interopRequireDefault(_Redirect);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Redirect2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Redirect":66}],68:[function(require,module,exports) {
+},{"react-router/es/Redirect":67}],69:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22821,7 +22821,7 @@ StaticRouter.childContextTypes = {
 };
 
 exports.default = StaticRouter;
-},{"warning":38,"invariant":39,"react":10,"prop-types":37,"history/PathUtils":47,"./Router":67}],28:[function(require,module,exports) {
+},{"warning":40,"invariant":41,"react":10,"prop-types":38,"history/PathUtils":49,"./Router":70}],29:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22835,7 +22835,7 @@ var _StaticRouter2 = _interopRequireDefault(_StaticRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _StaticRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/StaticRouter":68}],69:[function(require,module,exports) {
+},{"react-router/es/StaticRouter":69}],72:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22948,7 +22948,7 @@ Switch.propTypes = {
 };
 
 exports.default = Switch;
-},{"react":10,"prop-types":37,"warning":38,"invariant":39,"./matchPath":71}],29:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"warning":40,"invariant":41,"./matchPath":73}],30:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22962,7 +22962,7 @@ var _Switch2 = _interopRequireDefault(_Switch);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _Switch2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/Switch":69}],31:[function(require,module,exports) {
+},{"react-router/es/Switch":72}],31:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22976,7 +22976,7 @@ var _matchPath2 = _interopRequireDefault(_matchPath);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _matchPath2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/matchPath":71}],81:[function(require,module,exports) {
+},{"react-router/es/matchPath":73}],84:[function(require,module,exports) {
 /**
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
@@ -23043,7 +23043,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
     return targetComponent;
 };
 
-},{}],70:[function(require,module,exports) {
+},{}],71:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23107,7 +23107,7 @@ var withRouter = function withRouter(Component) {
 };
 
 exports.default = withRouter;
-},{"react":10,"prop-types":37,"hoist-non-react-statics":81,"./Route":65}],30:[function(require,module,exports) {
+},{"react":10,"prop-types":38,"hoist-non-react-statics":84,"./Route":66}],32:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23121,7 +23121,7 @@ var _withRouter2 = _interopRequireDefault(_withRouter);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _withRouter2.default; // Written in this round about way for babel-transform-imports
-},{"react-router/es/withRouter":70}],12:[function(require,module,exports) {
+},{"react-router/es/withRouter":71}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -23196,7 +23196,7 @@ exports.StaticRouter = _StaticRouter3.default;
 exports.Switch = _Switch3.default;
 exports.matchPath = _matchPath3.default;
 exports.withRouter = _withRouter3.default;
-},{"./BrowserRouter":19,"./HashRouter":20,"./Link":21,"./MemoryRouter":22,"./NavLink":23,"./Prompt":24,"./Redirect":25,"./Route":26,"./Router":27,"./StaticRouter":28,"./Switch":29,"./matchPath":31,"./withRouter":30}],33:[function(require,module,exports) {
+},{"./BrowserRouter":20,"./HashRouter":21,"./Link":22,"./MemoryRouter":23,"./NavLink":24,"./Prompt":25,"./Redirect":26,"./Route":27,"./Router":28,"./StaticRouter":29,"./Switch":30,"./matchPath":31,"./withRouter":32}],35:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -23227,7 +23227,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],32:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -23259,13 +23259,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":33}],17:[function(require,module,exports) {
+},{"./bundle-url":35}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":32}],35:[function(require,module,exports) {
+},{"_css_loader":34}],39:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24294,7 +24294,7 @@ exports.unitless = unitless;
 exports.hashString = hashString;
 exports.Stylis = pa;
 //# sourceMappingURL=index.es.js.map
-},{}],72:[function(require,module,exports) {
+},{}],74:[function(require,module,exports) {
 (function (factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
 		typeof define === 'function' && define['amd'] ? define(factory()) :
@@ -24344,7 +24344,7 @@ exports.Stylis = pa;
 	}
 }))
 
-},{}],36:[function(require,module,exports) {
+},{}],37:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24788,7 +24788,7 @@ exports.cx = cx;
 exports.hydrate = hydrate;
 exports.flush = flush;
 //# sourceMappingURL=index.es.js.map
-},{"emotion-utils":35,"stylis-rule-sheet":72}],18:[function(require,module,exports) {
+},{"emotion-utils":39,"stylis-rule-sheet":74}],19:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -24985,7 +24985,7 @@ var createStyled = function createStyled(tag, options) {
 
 //# sourceMappingURL=index.es.js.map
 exports.default = createStyled;
-},{"react":10,"emotion-utils":35,"emotion":36,"prop-types":37}],7:[function(require,module,exports) {
+},{"react":10,"emotion-utils":39,"emotion":37,"prop-types":38}],7:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25002,7 +25002,7 @@ exports.default = {
   white: '#ffffff',
   base: '#212b2b'
 };
-},{}],4:[function(require,module,exports) {
+},{}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25028,12 +25028,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 exports.default = function () {
   (0, _reactEmotion.injectGlobal)(_templateObject, _colors2.default.primraryLight, _colors2.default.accent, _colors2.default.tertiary, _colors2.default.base);
 };
-},{"normalize.css":17,"react-emotion":18,"./src/utils/colors.js":7}],3:[function(require,module,exports) {
-module.exports=`# mhme-parcel
-
-This is just an example markdown file.
-`
-},{}],50:[function(require,module,exports) {
+},{"normalize.css":18,"react-emotion":19,"./src/utils/colors.js":7}],52:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25107,7 +25102,7 @@ var _resp = (0, _resp3.default)(sizes),
 exports.small = small;
 exports.medium = medium;
 exports.large = large;
-},{"@matthamlin/resp":50}],5:[function(require,module,exports) {
+},{"@matthamlin/resp":52}],5:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25197,7 +25192,7 @@ exports.default = function () {
     )
   );
 };
-},{"react":10,"react-router-dom":12,"react-emotion":18,"../utils/colors":7,"../utils/media":9}],8:[function(require,module,exports) {
+},{"react":10,"react-router-dom":12,"react-emotion":19,"../utils/colors":7,"../utils/media":9}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25217,7 +25212,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var Container = (0, _reactEmotion2.default)('div')(_templateObject);
 
 exports.default = Container;
-},{"react-emotion":18}],6:[function(require,module,exports) {
+},{"react-emotion":19}],4:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25326,7 +25321,1402 @@ exports.default = function () {
     )
   );
 };
-},{"react":10,"react-router-dom":12,"../components/container.js":8,"react-emotion":18,"../utils/colors.js":7}],2:[function(require,module,exports) {
+},{"react":10,"react-router-dom":12,"../components/container.js":8,"react-emotion":19,"../utils/colors.js":7}],82:[function(require,module,exports) {
+var reg = /[\'\"]/
+
+module.exports = function unquote(str) {
+  if (!str) {
+    return ''
+  }
+  if (reg.test(str.charAt(0))) {
+    str = str.substr(1)
+  }
+  if (reg.test(str.charAt(str.length - 1))) {
+    str = str.substr(0, str.length - 1)
+  }
+  return str
+}
+
+},{}],81:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.compiler = compiler;
+exports.default = Markdown;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _unquote = require('unquote');
+
+var _unquote2 = _interopRequireDefault(_unquote);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+            }
+        }
+    }return target;
+};
+
+/* @jsx h */
+/**
+ * markdown-to-jsx@6 is a fork of [simple-markdown v0.2.2](https://github.com/Khan/simple-markdown)
+ * from Khan Academy. Thank you Khan devs for making such an awesome and extensible
+ * parsing infra... without it, half of the optimizations here wouldn't be feasible. 🙏🏼
+ */
+
+
+/** TODO: Drop for React 16? */
+var ATTRIBUTE_TO_JSX_PROP_MAP = {
+    'accesskey': 'accessKey',
+    'allowfullscreen': 'allowFullScreen',
+    'allowtransparency': 'allowTransparency',
+    'autocomplete': 'autoComplete',
+    'autofocus': 'autoFocus',
+    'autoplay': 'autoPlay',
+    'cellpadding': 'cellPadding',
+    'cellspacing': 'cellSpacing',
+    'charset': 'charSet',
+    'class': 'className',
+    'classid': 'classId',
+    'colspan': 'colSpan',
+    'contenteditable': 'contentEditable',
+    'contextmenu': 'contextMenu',
+    'crossorigin': 'crossOrigin',
+    'enctype': 'encType',
+    'for': 'htmlFor',
+    'formaction': 'formAction',
+    'formenctype': 'formEncType',
+    'formmethod': 'formMethod',
+    'formnovalidate': 'formNoValidate',
+    'formtarget': 'formTarget',
+    'frameborder': 'frameBorder',
+    'hreflang': 'hrefLang',
+    'inputmode': 'inputMode',
+    'keyparams': 'keyParams',
+    'keytype': 'keyType',
+    'marginheight': 'marginHeight',
+    'marginwidth': 'marginWidth',
+    'maxlength': 'maxLength',
+    'mediagroup': 'mediaGroup',
+    'minlength': 'minLength',
+    'novalidate': 'noValidate',
+    'radiogroup': 'radioGroup',
+    'readonly': 'readOnly',
+    'rowspan': 'rowSpan',
+    'spellcheck': 'spellCheck',
+    'srcdoc': 'srcDoc',
+    'srclang': 'srcLang',
+    'srcset': 'srcSet',
+    'tabindex': 'tabIndex',
+    'usemap': 'useMap'
+};
+
+/**
+ * the attribute extractor regex looks for a valid attribute name,
+ * followed by an equal sign (whitespace around the equal sign is allowed), followed
+ * by one of the following:
+ *
+ * 1. a single quote-bounded string, e.g. 'foo'
+ * 2. a double quote-bounded string, e.g. "bar"
+ * 3. an interpolation, e.g. {something}
+ *
+ * JSX can be be interpolated into itself and is passed through the compiler using
+ * the same options and setup as the current run.
+ *
+ * <Something children={<SomeOtherThing />} />
+ *                      ==================
+ *                              ↳ children: [<SomeOtherThing />]
+ *
+ * Otherwise, interpolations are handled as strings or simple booleans
+ * unless HTML syntax is detected.
+ *
+ * <Something color={green} disabled={true} />
+ *                   =====            ====
+ *                     ↓                ↳ disabled: true
+ *                     ↳ color: "green"
+ *
+ * Numbers are not parsed at this time due to complexities around int, float,
+ * and the upcoming bigint functionality that would make handling it unwieldy.
+ * Parse the string in your component as desired.
+ *
+ * <Something someBigNumber={123456789123456789} />
+ *                           ==================
+ *                                   ↳ someBigNumber: "123456789123456789"
+ */
+var ATTR_EXTRACTOR_R = /([-A-Z0-9_:]+)(?:\s*=\s*(?:(?:"((?:\\.|[^"])*)")|(?:'((?:\\.|[^'])*)')|(?:\{((?:\\.|{[^}]*?}|[^}])*)\})))?/gi;
+
+/** TODO: Write explainers for each of these */
+
+var AUTOLINK_MAILTO_CHECK_R = /mailto:/i;
+var BLOCK_END_R = /\n{2,}$/;
+var BLOCKQUOTE_R = /^( *>[^\n]+(\n[^\n]+)*\n*)+\n{2,}/;
+var BLOCKQUOTE_TRIM_LEFT_MULTILINE_R = /^ *> ?/gm;
+var BREAK_LINE_R = /^ {2,}\n/;
+var BREAK_THEMATIC_R = /^(?:( *[-*_]) *){3,}(?:\n *)+\n/;
+var CODE_BLOCK_FENCED_R = /^\s*(`{3,}|~{3,}) *(\S+)? *\n([\s\S]+?)\s*\1 *(?:\n *)+\n/;
+var CODE_BLOCK_R = /^(?: {4}[^\n]+\n*)+(?:\n *)+\n/;
+var CODE_INLINE_R = /^(`+)\s*([\s\S]*?[^`])\s*\1(?!`)/;
+var CONSECUTIVE_NEWLINE_R = /^(?:\n *)*\n/;
+var CR_NEWLINE_R = /\r\n?/g;
+var FOOTNOTE_R = /^\[\^(.*)\](:.*)\n/;
+var FOOTNOTE_REFERENCE_R = /^\[\^(.*)\]/;
+var FORMFEED_R = /\f/g;
+var GFM_TASK_R = /^\s*?\[(x|\s)\]/;
+var HEADING_R = /^ *(#{1,6}) *([^\n]+?) *#* *\n+/;
+var HEADING_SETEXT_R = /^([^\n]+)\n *(=|-){3,} *(?:\n *)+\n/;
+
+/**
+ * Explanation:
+ *
+ * 1. Look for a starting tag, preceeded by any amount of spaces
+ *    ^ *<
+ *
+ * 2. Capture the tag name (capture 1)
+ *    ([^ >/]+)
+ *
+ * 3. Ignore a space after the starting tag and capture the attribute portion of the tag (capture 2)
+ *     ?([^>]*)\/{0}>
+ *
+ * 4. Ensure a matching closing tag is present in the rest of the input string
+ *    (?=[\s\S]*<\/\1>)
+ *
+ * 5. Capture everything until the matching closing tag -- this might include additional pairs
+ *    of the same tag type found in step 2 (capture 3)
+ *    ((?:[\s\S]*?(?:<\1[^>]*>[\s\S]*?<\/\1>)*[\s\S]*?)*?)<\/\1>
+ *
+ * 6. Capture excess newlines afterward
+ *    \n*
+ */
+var HTML_BLOCK_ELEMENT_R = /^ *<([^ >/]+) ?([^>]*)\/{0}>(?=[\s\S]*<\/\1>)((?:[\s\S]*?(?:<\1[^>]*>[\s\S]*?<\/\1>)*[\s\S]*?)*?)<\/\1>\n*/;
+
+var HTML_COMMENT_R = /^<!--.*?-->/;
+
+/**
+ * borrowed from React 15(https://github.com/facebook/react/blob/894d20744cba99383ffd847dbd5b6e0800355a5c/src/renderers/dom/shared/HTMLDOMPropertyConfig.js)
+ */
+var HTML_CUSTOM_ATTR_R = /^(data|aria)-[a-z_][a-z\d_.-]*$/;
+
+var HTML_SELF_CLOSING_ELEMENT_R = /^ *<([\w:]+)\s*((?:<.*?>|[^>])*)>(?!<\/\1>)\s*/;
+var INTERPOLATION_R = /^\{.*\}$/;
+var LINK_AUTOLINK_BARE_URL_R = /^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/;
+var LINK_AUTOLINK_MAILTO_R = /^<([^ >]+@[^ >]+)>/;
+var LINK_AUTOLINK_R = /^<([^ >]+:\/[^ >]+)>/;
+var LIST_ITEM_END_R = / *\n+$/;
+var LIST_LOOKBEHIND_R = /^$|\n *$/;
+var CAPTURE_LETTER_AFTER_HYPHEN = /-([a-z])?/gi;
+var NP_TABLE_R = /^(.*\|?.*)\n *(\|? *[-:]+ *\|[-| :]*)\n((?:.*\|.*\n)*)\n?/;
+var PARAGRAPH_R = /^((?:[^\n]|\n(?! *\n))+)(?:\n *)+\n/;
+var REFERENCE_IMAGE_OR_LINK = /^\[([^\]]*)\]:\s*(\S+)\s*("([^"]*)")?/;
+var REFERENCE_IMAGE_R = /^!\[([^\]]*)\] ?\[([^\]]*)\]/;
+var REFERENCE_LINK_R = /^\[([^\]]*)\] ?\[([^\]]*)\]/;
+var TAB_R = /\t/g;
+var TABLE_TRIM_PIPES = /(^ *\||\| *$)/g;
+var TABLE_CENTER_ALIGN = /^ *:-+: *$/;
+var TABLE_LEFT_ALIGN = /^ *:-+ *$/;
+var TABLE_RIGHT_ALIGN = /^ *-+: *$/;
+var TABLE_ROW_SPLIT = / *\| */;
+var TEXT_BOLD_R = /^[*_]{2}([\s\S]+?)[*_]{2}(?!\*|_)/;
+var TEXT_EMPHASIZED_R = /^[*_]{1}([\s\S]+?)[*_]{1}(?!\*|_)/;
+var TEXT_ESCAPED_R = /^\\([^0-9A-Za-z\s])/;
+var TEXT_PLAIN_R = /^[\s\S]+?(?=[^0-9A-Z\s\u00c0-\uffff]|\d+\.|\n\n| {2,}\n|\w+:\S|$)/i;
+var TEXT_STRIKETHROUGHED_R = /^~~(?=\S)([\s\S]*?\S)~~/;
+var TRIM_NEWLINES_AND_TRAILING_WHITESPACE_R = /(^\n+|(\n|\s)+$)/g;
+var UNESCAPE_URL_R = /\\([^0-9A-Z\s])/gi;
+
+// recognize a `*` `-`, `+`, `1.`, `2.`... list bullet
+var LIST_BULLET = '(?:[*+-]|\\d+\\.)';
+
+// recognize the start of a list item:
+// leading space plus a bullet plus a space (`   * `)
+var LIST_ITEM_PREFIX = '( *)(' + LIST_BULLET + ') +';
+var LIST_ITEM_PREFIX_R = new RegExp('^' + LIST_ITEM_PREFIX);
+
+// recognize an individual list item:
+//  * hi
+//    this is part of the same item
+//
+//    as is this, which is a new paragraph in the same item
+//
+//  * but this is not part of the same item
+var LIST_ITEM_R = new RegExp(LIST_ITEM_PREFIX + '[^\\n]*(?:\\n' + '(?!\\1' + LIST_BULLET + ' )[^\\n]*)*(\\n|$)', 'gm');
+
+// check whether a list item has paragraphs: if it does,
+// we leave the newlines at the end
+var LIST_R = new RegExp('^( *)(' + LIST_BULLET + ') ' + '[\\s\\S]+?(?:\\n{2,}(?! )' + '(?!\\1' + LIST_BULLET + ' )\\n*' +
+// the \\s*$ here is so that we can parse the inside of nested
+// lists, where our content might end before we receive two `\n`s
+'|\\s*\\n*$)');
+
+var LINK_INSIDE = '(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*';
+var LINK_HREF_AND_TITLE = '\\s*<?((?:[^\\s\\\\]|\\\\.)*?)>?(?:\\s+[\'"]([\\s\\S]*?)[\'"])?\\s*';
+
+var LINK_R = new RegExp('^\\[(' + LINK_INSIDE + ')\\]\\(' + LINK_HREF_AND_TITLE + '\\)');
+
+var IMAGE_R = new RegExp('^!\\[(' + LINK_INSIDE + ')\\]\\(' + LINK_HREF_AND_TITLE + '\\)');
+
+function parseTableAlignCapture(alignCapture) {
+    if (TABLE_RIGHT_ALIGN.test(alignCapture)) {
+        return 'right';
+    } else if (TABLE_CENTER_ALIGN.test(alignCapture)) {
+        return 'center';
+    } else if (TABLE_LEFT_ALIGN.test(alignCapture)) {
+        return 'left';
+    }
+
+    return null;
+}
+
+function parseTableHeader(capture, parse, state) {
+    var headerText = capture[1].replace(TABLE_TRIM_PIPES, '').trim().split(TABLE_ROW_SPLIT);
+
+    return headerText.map(function (text) {
+        return parse(text, state);
+    });
+}
+
+function parseTableAlign(capture /*, parse, state*/) {
+    var alignText = capture[2].replace(TABLE_TRIM_PIPES, '').trim().split(TABLE_ROW_SPLIT);
+
+    return alignText.map(parseTableAlignCapture);
+}
+
+function parseTableCells(capture, parse, state) {
+    var rowsText = capture[3].replace(TABLE_TRIM_PIPES, '').trim().split('\n');
+
+    return rowsText.map(function (rowText) {
+        return rowText.replace(TABLE_TRIM_PIPES, '').split(TABLE_ROW_SPLIT).map(function (text) {
+            return parse(text.trim(), state);
+        });
+    });
+}
+
+function parseTable(capture, parse, state) {
+    state.inline = true;
+    var header = parseTableHeader(capture, parse, state);
+    var align = parseTableAlign(capture, parse, state);
+    var cells = parseTableCells(capture, parse, state);
+    state.inline = false;
+
+    return {
+        align: align,
+        cells: cells,
+        header: header,
+        type: 'table'
+    };
+}
+
+function getTableStyle(node, colIndex) {
+    return node.align[colIndex] == null ? {} : {
+        textAlign: node.align[colIndex]
+    };
+}
+
+/** TODO: remove for react 16 */
+function normalizeAttributeKey(key) {
+    var hyphenIndex = key.indexOf('-');
+
+    if (hyphenIndex !== -1 && key.match(HTML_CUSTOM_ATTR_R) === null) {
+        key = key.replace(CAPTURE_LETTER_AFTER_HYPHEN, function (_, letter) {
+            return letter.toUpperCase();
+        });
+    }
+
+    return key;
+}
+
+function isInterpolation(value) {
+    return INTERPOLATION_R.test(value);
+}
+
+function attributeValueToJSXPropValue(key, value) {
+    if (key === 'style') {
+        return value.split(/;\s?/).reduce(function (styles, kvPair) {
+
+            var key = kvPair.slice(0, kvPair.indexOf(':'));
+
+            // snake-case to camelCase
+            // also handles PascalCasing vendor prefixes
+            var camelCasedKey = key.replace(/(-[a-z])/g, function toUpper(substr) {
+                return substr[1].toUpperCase();
+            });
+
+            // key.length + 1 to skip over the colon
+            styles[camelCasedKey] = kvPair.slice(key.length + 1).trim();
+
+            return styles;
+        }, {});
+    } else if (isInterpolation(value)) {
+        // return as a string and let the consumer decide what to do with it
+        value = value.slice(1, value.length - 1);
+    }
+
+    if (value === 'true') {
+        return true;
+    } else if (value === 'false') {
+        return false;
+    }
+
+    return value;
+}
+
+function normalizeWhitespace(source) {
+    return source.replace(CR_NEWLINE_R, '\n').replace(FORMFEED_R, '').replace(TAB_R, '    ');
+}
+
+/**
+ * Creates a parser for a given set of rules, with the precedence
+ * specified as a list of rules.
+ *
+ * @rules: an object containing
+ * rule type -> {match, order, parse} objects
+ * (lower order is higher precedence)
+ * (Note: `order` is added to defaultRules after creation so that
+ *  the `order` of defaultRules in the source matches the `order`
+ *  of defaultRules in terms of `order` fields.)
+ *
+ * @returns The resulting parse function, with the following parameters:
+ *   @source: the input source string to be parsed
+ *   @state: an optional object to be threaded through parse
+ *     calls. Allows clients to add stateful operations to
+ *     parsing, such as keeping track of how many levels deep
+ *     some nesting is. For an example use-case, see passage-ref
+ *     parsing in src/widgets/passage/passage-markdown.jsx
+ */
+function parserFor(rules) {
+    // Sorts rules in order of increasing order, then
+    // ascending rule name in case of ties.
+    var ruleList = Object.keys(rules);
+
+    /* istanbul ignore next */
+    if ('development' !== 'production') {
+        ruleList.forEach(function (type) {
+            var order = rules[type].order;
+            if ('development' !== 'production' && (typeof order !== 'number' || !isFinite(order)) && typeof console !== 'undefined') {
+                console.warn('markdown-to-jsx: Invalid order for rule `' + type + '`: ' + order);
+            }
+        });
+    }
+
+    ruleList.sort(function (typeA, typeB) {
+        var orderA = rules[typeA].order;
+        var orderB = rules[typeB].order;
+
+        // First sort based on increasing order
+        if (orderA !== orderB) {
+            return orderA - orderB;
+
+            // Then based on increasing unicode lexicographic ordering
+        } else if (typeA < typeB) {
+            return -1;
+        }
+
+        return 1;
+    });
+
+    function nestedParse(source, state) {
+        var result = [];
+
+        // We store the previous capture so that match functions can
+        // use some limited amount of lookbehind. Lists use this to
+        // ensure they don't match arbitrary '- ' or '* ' in inline
+        // text (see the list rule for more information).
+        var prevCapture = '';
+        while (source) {
+            var i = 0;
+            while (i < ruleList.length) {
+                var ruleType = ruleList[i];
+                var rule = rules[ruleType];
+                var capture = rule.match(source, state, prevCapture);
+
+                if (capture) {
+                    var currCaptureString = capture[0];
+                    source = source.substring(currCaptureString.length);
+                    var parsed = rule.parse(capture, nestedParse, state);
+
+                    // We also let rules override the default type of
+                    // their parsed node if they would like to, so that
+                    // there can be a single output function for all links,
+                    // even if there are several rules to parse them.
+                    if (parsed.type == null) {
+                        parsed.type = ruleType;
+                    }
+
+                    result.push(parsed);
+
+                    prevCapture = currCaptureString;
+                    break;
+                }
+
+                i++;
+            }
+        }
+
+        return result;
+    }
+
+    return function outerParse(source, state) {
+        return nestedParse(normalizeWhitespace(source), state);
+    };
+}
+
+// Creates a match function for an inline scoped element from a regex
+function inlineRegex(regex) {
+    return function match(source, state) {
+        if (state.inline) {
+            return regex.exec(source);
+        } else {
+            return null;
+        }
+    };
+}
+
+// Creates a match function for a block scoped element from a regex
+function blockRegex(regex) {
+    return function match(source, state) {
+        if (state.inline) {
+            return null;
+        } else {
+            return regex.exec(source);
+        }
+    };
+}
+
+// Creates a match function from a regex, ignoring block/inline scope
+function anyScopeRegex(regex) {
+    return function match(source /*, state*/) {
+        return regex.exec(source);
+    };
+}
+
+function reactFor(outputFunc) {
+    return function nestedReactOutput(ast, state) {
+        state = state || {};
+        if (Array.isArray(ast)) {
+            var oldKey = state.key;
+            var result = [];
+
+            // map nestedOutput over the ast, except group any text
+            // nodes together into a single string output.
+            var lastWasString = false;
+
+            for (var i = 0; i < ast.length; i++) {
+                state.key = i;
+
+                var nodeOut = nestedReactOutput(ast[i], state);
+                var isString = typeof nodeOut === 'string';
+
+                if (isString && lastWasString) {
+                    result[result.length - 1] += nodeOut;
+                } else {
+                    result.push(nodeOut);
+                }
+
+                lastWasString = isString;
+            }
+
+            state.key = oldKey;
+
+            return result;
+        }
+
+        return outputFunc(ast, nestedReactOutput, state);
+    };
+}
+
+function sanitizeUrl(url) {
+    try {
+        var prot = decodeURIComponent(url).replace(/[^A-Z0-9/:]/gi, '').toLowerCase();
+
+        if (prot.indexOf('javascript:') === 0) {
+            return null;
+        }
+    } catch (e) {
+        // decodeURIComponent sometimes throws a URIError
+        // See `decodeURIComponent('a%AFc');`
+        // http://stackoverflow.com/questions/9064536/javascript-decodeuricomponent-malformed-uri-exception
+        return null;
+    }
+
+    return url;
+}
+
+function unescapeUrl(rawUrlString) {
+    return rawUrlString.replace(UNESCAPE_URL_R, '$1');
+}
+
+// Parse some content with the parser `parse`, with state.inline
+// set to true. Useful for block elements; not generally necessary
+// to be used by inline elements (where state.inline is already true.
+function parseInline(parse, content, state) {
+    var isCurrentlyInline = state.inline || false;
+    state.inline = true;
+    var result = parse(content, state);
+    state.inline = isCurrentlyInline;
+    return result;
+}
+
+function parseBlock(parse, content, state) {
+    state.inline = false;
+    return parse(content + '\n\n', state);
+}
+
+function parseCaptureInline(capture, parse, state) {
+    return {
+        content: parseInline(parse, capture[1], state)
+    };
+}
+
+function captureNothing() {
+    return {};
+}
+function renderNothing() {
+    return null;
+}
+
+function ruleOutput(rules) {
+    return function nestedRuleOutput(ast, outputFunc, state) {
+        return rules[ast.type].react(ast, outputFunc, state);
+    };
+}
+
+function cx() {
+    return Array.prototype.slice.call(arguments).filter(Boolean).join(' ');
+}
+
+function get(src, path, fb) {
+    var ptr = src;
+    var frags = path.split('.');
+
+    while (frags.length) {
+        ptr = ptr[frags[0]];
+
+        if (ptr === undefined) break;else frags.shift();
+    }
+
+    return ptr || fb;
+}
+
+function getTag(tag, overrides) {
+    var override = get(overrides, tag);
+    return typeof override === 'function' ? override : get(overrides, tag + '.component', tag);
+}
+
+/**
+ * anything that must scan the tree before everything else
+ */
+var PARSE_PRIORITY_MAX = 1;
+
+/**
+ * scans for block-level constructs
+ */
+var PARSE_PRIORITY_HIGH = 2;
+
+/**
+ * inline w/ more priority than other inline
+ */
+var PARSE_PRIORITY_MED = 3;
+
+/**
+ * inline elements
+ */
+var PARSE_PRIORITY_LOW = 4;
+
+/**
+ * bare text and stuff that is considered leftovers
+ */
+var PARSE_PRIORITY_MIN = 5;
+
+function compiler(markdown, options) {
+    options = options || {};
+    options.overrides = options.overrides || {};
+
+    // eslint-disable-next-line no-unused-vars
+    function h(tag, props) {
+        var overrideProps = get(options.overrides, tag + '.props', {});
+
+        for (var _len = arguments.length, children = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+            children[_key - 2] = arguments[_key];
+        }
+
+        return _react2.default.createElement.apply(_react2.default, [getTag(tag, options.overrides), _extends({}, overrideProps, props, {
+            className: cx(props && props.className, overrideProps.className) || undefined
+        })].concat(children));
+    }
+
+    function compile(input) {
+        var inline = false;
+
+        if (options.forceInline) {
+            inline = true;
+        } else if (!options.forceBlock) {
+            /**
+            * should not contain any block-level markdown like newlines, lists, headings,
+            * thematic breaks, blockquotes, tables, etc
+            */
+            inline = /(\n|^[-*]\s|^#|^ {2,}|^-{2,}|^>\s)/g.test(input) === false;
+        }
+
+        var arr = emitter(parser(inline ? input : input.replace(TRIM_NEWLINES_AND_TRAILING_WHITESPACE_R, '') + '\n\n', { inline: inline }));
+
+        var jsx = void 0;
+        if (arr.length > 1) {
+            jsx = inline ? h('span', null, arr) : h('div', null, arr);
+        } else if (arr.length === 1) {
+            jsx = arr[0];
+
+            // TODO: remove this for React 16
+            if (typeof jsx === 'string') {
+                jsx = h('span', null, jsx);
+            }
+        } else {
+            // TODO: return null for React 16
+            jsx = h('span', null);
+        }
+
+        return jsx;
+    }
+
+    function attrStringToMap(str) {
+        var attributes = str.match(ATTR_EXTRACTOR_R);
+
+        return attributes ? attributes.reduce(function (map, raw, index) {
+            var delimiterIdx = raw.indexOf('=');
+
+            if (delimiterIdx !== -1) {
+                var key = normalizeAttributeKey(raw.slice(0, delimiterIdx));
+                var value = (0, _unquote2.default)(raw.slice(delimiterIdx + 1));
+
+                var mappedKey = ATTRIBUTE_TO_JSX_PROP_MAP[key] || key;
+                var normalizedValue = map[mappedKey] = attributeValueToJSXPropValue(key, value);
+
+                if (HTML_BLOCK_ELEMENT_R.test(normalizedValue) || HTML_SELF_CLOSING_ELEMENT_R.test(normalizedValue)) {
+                    map[mappedKey] = _react2.default.cloneElement(compile(normalizedValue.trim()), { key: index });
+                }
+            } else {
+                map[ATTRIBUTE_TO_JSX_PROP_MAP[raw] || raw] = true;
+            }
+
+            return map;
+        }, {}) : undefined;
+    }
+
+    /* istanbul ignore next */
+    if ('development' !== 'production') {
+        if (typeof markdown !== 'string') {
+            throw new Error('markdown-to-jsx: the first argument must be\n                             a string');
+        }
+
+        if (Object.prototype.toString.call(options.overrides) !== '[object Object]') {
+            throw new Error('markdown-to-jsx: options.overrides (second argument property) must be\n                             undefined or an object literal with shape:\n                             {\n                                htmltagname: {\n                                    component: string|ReactComponent(optional),\n                                    props: object(optional)\n                                }\n                             }');
+        }
+    }
+
+    var footnotes = [];
+    var refs = {};
+
+    /**
+     * each rule's react() output function goes through our custom h() JSX pragma;
+     * this allows the override functionality to be automatically applied
+     */
+    var rules = {
+        blockQuote: {
+            match: blockRegex(BLOCKQUOTE_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture, _parse, state) {
+                return {
+                    content: _parse(capture[0].replace(BLOCKQUOTE_TRIM_LEFT_MULTILINE_R, ''), state)
+                };
+            },
+            react: function react(node, output, state) {
+                return h('blockquote', { key: state.key }, output(node.content, state));
+            }
+        },
+
+        breakLine: {
+            match: anyScopeRegex(BREAK_LINE_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: captureNothing,
+            react: function react(_, __, state) {
+                return h('br', { key: state.key });
+            }
+        },
+
+        breakThematic: {
+            match: blockRegex(BREAK_THEMATIC_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: captureNothing,
+            react: function react(_, __, state) {
+                return h('hr', { key: state.key });
+            }
+        },
+
+        codeBlock: {
+            match: blockRegex(CODE_BLOCK_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                var content = capture[0].replace(/^ {4}/gm, '').replace(/\n+$/, '');
+                return {
+                    content: content,
+                    lang: undefined
+                };
+            },
+            react: function react(node, output, state) {
+                return h('pre', { key: state.key }, h('code', { className: node.lang ? 'lang-' + node.lang : '' }, node.content));
+            }
+        },
+
+        codeFenced: {
+            match: blockRegex(CODE_BLOCK_FENCED_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: capture[3],
+                    lang: capture[2] || undefined,
+                    type: 'codeBlock'
+                };
+            }
+        },
+
+        codeInline: {
+            match: inlineRegex(CODE_INLINE_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: capture[2]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('code', { key: state.key }, node.content);
+            }
+        },
+
+        /**
+         * footnotes are emitted at the end of compilation in a special <footer> block
+         */
+        footnote: {
+            match: blockRegex(FOOTNOTE_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                footnotes.push({
+                    footnote: capture[2],
+                    identifier: capture[1]
+                });
+
+                return {};
+            },
+
+            react: renderNothing
+        },
+
+        footnoteReference: {
+            match: inlineRegex(FOOTNOTE_REFERENCE_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture /*, parse*/) {
+                return {
+                    content: capture[1],
+                    target: '#' + capture[1]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('a', { key: state.key, href: sanitizeUrl(node.target) }, h('sup', { key: state.key }, node.content));
+            }
+        },
+
+        gfmTask: {
+            match: inlineRegex(GFM_TASK_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    completed: capture[1].toLowerCase() === 'x'
+                };
+            },
+            react: function react(node, output, state) {
+                return h('input', {
+                    checked: node.completed,
+                    key: state.key,
+                    readOnly: true,
+                    type: 'checkbox'
+                });
+            }
+        },
+
+        heading: {
+            match: blockRegex(HEADING_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture, _parse2, state) {
+                return {
+                    content: parseInline(_parse2, capture[2], state),
+                    level: capture[1].length
+                };
+            },
+            react: function react(node, output, state) {
+                var Tag = 'h' + node.level;
+                return h(Tag, { key: state.key }, output(node.content, state));
+            }
+        },
+
+        headingSetext: {
+            match: blockRegex(HEADING_SETEXT_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture, _parse3, state) {
+                return {
+                    content: parseInline(_parse3, capture[1], state),
+                    level: capture[2] === '=' ? 1 : 2,
+                    type: 'heading'
+                };
+            }
+        },
+
+        htmlBlock: {
+            /**
+             * find the first matching end tag and process the interior
+             */
+            match: anyScopeRegex(HTML_BLOCK_ELEMENT_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture, _parse4, state) {
+                var parseFunc = capture[3].match(HTML_BLOCK_ELEMENT_R) ? parseBlock : parseInline;
+
+                return {
+                    attrs: attrStringToMap(capture[2]),
+                    /**
+                     * if another html block is detected within, parse as block,
+                     * otherwise parse as inline to pick up any further markdown
+                     */
+                    content: parseFunc(_parse4, capture[3].trim(), state),
+
+                    tag: capture[1]
+                };
+            },
+            react: function react(node, output, state) {
+                return h(node.tag, _extends({ key: state.key }, node.attrs), output(node.content, state));
+            }
+        },
+
+        htmlComment: {
+            match: anyScopeRegex(HTML_COMMENT_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse() {
+                return {};
+            },
+
+            react: renderNothing
+        },
+
+        htmlSelfClosing: {
+            /**
+             * find the first matching end tag and process the interior
+             */
+            match: anyScopeRegex(HTML_SELF_CLOSING_ELEMENT_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    attrs: attrStringToMap(capture[2]),
+                    tag: capture[1]
+                };
+            },
+            react: function react(node, output, state) {
+                return h(node.tag, _extends({}, node.attrs, {
+                    key: state.key
+                }));
+            }
+        },
+
+        image: {
+            match: inlineRegex(IMAGE_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    alt: capture[1],
+                    target: unescapeUrl(capture[2]),
+                    title: capture[3]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('img', {
+                    key: state.key,
+                    alt: node.alt || undefined,
+                    title: node.title || undefined,
+                    src: sanitizeUrl(node.target)
+                });
+            }
+        },
+
+        link: {
+            match: inlineRegex(LINK_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: function parse(capture, _parse5, state) {
+                return {
+                    content: _parse5(capture[1], state),
+                    target: unescapeUrl(capture[2]),
+                    title: capture[3]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('a', {
+                    key: state.key,
+                    href: sanitizeUrl(node.target),
+                    title: node.title
+                }, output(node.content, state));
+            }
+        },
+
+        // https://daringfireball.net/projects/markdown/syntax#autolink
+        linkAngleBraceStyleDetector: {
+            match: inlineRegex(LINK_AUTOLINK_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: [{
+                        content: capture[1],
+                        type: 'text'
+                    }],
+                    target: capture[1],
+                    type: 'link'
+                };
+            }
+        },
+
+        linkBareUrlDetector: {
+            match: inlineRegex(LINK_AUTOLINK_BARE_URL_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: [{
+                        content: capture[1],
+                        type: 'text'
+                    }],
+                    target: capture[1],
+                    title: undefined,
+                    type: 'link'
+                };
+            }
+        },
+
+        linkMailtoDetector: {
+            match: inlineRegex(LINK_AUTOLINK_MAILTO_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse, state*/) {
+                var address = capture[1];
+                var target = capture[1];
+
+                // Check for a `mailto:` already existing in the link:
+                if (!AUTOLINK_MAILTO_CHECK_R.test(target)) {
+                    target = 'mailto:' + target;
+                }
+
+                return {
+                    content: [{
+                        content: address.replace('mailto:', ''),
+                        type: 'text'
+                    }],
+                    target: target,
+                    type: 'link'
+                };
+            }
+        },
+
+        list: {
+            match: function match(source, state, prevCapture) {
+                // We only want to break into a list if we are at the start of a
+                // line. This is to avoid parsing "hi * there" with "* there"
+                // becoming a part of a list.
+                // You might wonder, "but that's inline, so of course it wouldn't
+                // start a list?". You would be correct! Except that some of our
+                // lists can be inline, because they might be inside another list,
+                // in which case we can parse with inline scope, but need to allow
+                // nested lists inside this inline scope.
+                var isStartOfLine = LIST_LOOKBEHIND_R.test(prevCapture);
+                var isListBlock = state._list || !state.inline;
+
+                if (isStartOfLine && isListBlock) {
+                    return LIST_R.exec(source);
+                } else {
+                    return null;
+                }
+            },
+
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture, _parse6, state) {
+                var bullet = capture[2];
+                var ordered = bullet.length > 1;
+                var start = ordered ? +bullet : undefined;
+                var items = capture[0]
+                // recognize the end of a paragraph block inside a list item:
+                // two or more newlines at end end of the item
+                .replace(BLOCK_END_R, '\n').match(LIST_ITEM_R);
+
+                var lastItemWasAParagraph = false;
+                var itemContent = items.map(function (item, i) {
+                    // We need to see how far indented this item is:
+                    var space = LIST_ITEM_PREFIX_R.exec(item)[0].length;
+
+                    // And then we construct a regex to "unindent" the subsequent
+                    // lines of the items by that amount:
+                    var spaceRegex = new RegExp('^ {1,' + space + '}', 'gm');
+
+                    // Before processing the item, we need a couple things
+                    var content = item
+                    // remove indents on trailing lines:
+                    .replace(spaceRegex, '')
+                    // remove the bullet:
+                    .replace(LIST_ITEM_PREFIX_R, '');
+
+                    // Handling "loose" lists, like:
+                    //
+                    //  * this is wrapped in a paragraph
+                    //
+                    //  * as is this
+                    //
+                    //  * as is this
+                    var isLastItem = i === items.length - 1;
+                    var containsBlocks = content.indexOf('\n\n') !== -1;
+
+                    // Any element in a list is a block if it contains multiple
+                    // newlines. The last element in the list can also be a block
+                    // if the previous item in the list was a block (this is
+                    // because non-last items in the list can end with \n\n, but
+                    // the last item can't, so we just "inherit" this property
+                    // from our previous element).
+                    var thisItemIsAParagraph = containsBlocks || isLastItem && lastItemWasAParagraph;
+                    lastItemWasAParagraph = thisItemIsAParagraph;
+
+                    // backup our state for restoration afterwards. We're going to
+                    // want to set state._list to true, and state.inline depending
+                    // on our list's looseness.
+                    var oldStateInline = state.inline;
+                    var oldStateList = state._list;
+                    state._list = true;
+
+                    // Parse inline if we're in a tight list, or block if we're in
+                    // a loose list.
+                    var adjustedContent = void 0;
+                    if (thisItemIsAParagraph) {
+                        state.inline = false;
+                        adjustedContent = content.replace(LIST_ITEM_END_R, '\n\n');
+                    } else {
+                        state.inline = true;
+                        adjustedContent = content.replace(LIST_ITEM_END_R, '');
+                    }
+
+                    var result = _parse6(adjustedContent, state);
+
+                    // Restore our state before returning
+                    state.inline = oldStateInline;
+                    state._list = oldStateList;
+
+                    return result;
+                });
+
+                return {
+                    items: itemContent,
+                    ordered: ordered,
+                    start: start
+                };
+            },
+            react: function react(node, output, state) {
+                var Tag = node.ordered ? 'ol' : 'ul';
+
+                return h(Tag, { key: state.key, start: node.start }, node.items.map(function generateListItem(item, i) {
+                    return h('li', { key: i }, output(item, state));
+                }));
+            }
+        },
+
+        newlineCoalescer: {
+            match: blockRegex(CONSECUTIVE_NEWLINE_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: captureNothing,
+            react: function react() /*node, output, state*/{
+                return '\n';
+            }
+        },
+
+        paragraph: {
+            match: blockRegex(PARAGRAPH_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: parseCaptureInline,
+            react: function react(node, output, state) {
+                return h('p', { key: state.key }, output(node.content, state));
+            }
+        },
+
+        ref: {
+            match: inlineRegex(REFERENCE_IMAGE_OR_LINK),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture /*, parse*/) {
+                refs[capture[1]] = {
+                    target: capture[2],
+                    title: capture[4]
+                };
+
+                return {};
+            },
+
+            react: renderNothing
+        },
+
+        refImage: {
+            match: inlineRegex(REFERENCE_IMAGE_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture) {
+                return {
+                    alt: capture[1] || undefined,
+                    ref: capture[2]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('img', {
+                    key: state.key,
+                    alt: node.alt,
+                    src: sanitizeUrl(refs[node.ref].target),
+                    title: refs[node.ref].title
+                });
+            }
+        },
+
+        refLink: {
+            match: inlineRegex(REFERENCE_LINK_R),
+            order: PARSE_PRIORITY_MAX,
+            parse: function parse(capture, _parse7, state) {
+                return {
+                    content: _parse7(capture[1], state),
+                    ref: capture[2]
+                };
+            },
+            react: function react(node, output, state) {
+                return h('a', {
+                    key: state.key,
+                    href: sanitizeUrl(refs[node.ref].target),
+                    title: refs[node.ref].title
+                }, output(node.content, state));
+            }
+        },
+
+        table: {
+            match: blockRegex(NP_TABLE_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: parseTable,
+            react: function react(node, output, state) {
+                return h('table', { key: state.key }, h('thead', null, h('tr', null, node.header.map(function generateHeaderCell(content, i) {
+                    return h('th', {
+                        key: i,
+                        style: getTableStyle(node, i),
+                        scope: 'col'
+                    }, output(content, state));
+                }))), h('tbody', null, node.cells.map(function generateTableRow(row, i) {
+                    return h('tr', { key: i }, row.map(function generateTableCell(content, c) {
+                        return h('td', { key: c, style: getTableStyle(node, c) }, output(content, state));
+                    }));
+                })));
+            }
+        },
+
+        text: {
+            // Here we look for anything followed by non-symbols,
+            // double newlines, or double-space-newlines
+            // We break on any symbol characters so that this grammar
+            // is easy to extend without needing to modify this regex
+            match: inlineRegex(TEXT_PLAIN_R),
+            order: PARSE_PRIORITY_MIN,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: capture[0]
+                };
+            },
+            react: function react(node /*, output, state*/) {
+                return node.content;
+            }
+        },
+
+        textBolded: {
+            match: inlineRegex(TEXT_BOLD_R),
+            order: PARSE_PRIORITY_MED,
+            parse: parseCaptureInline,
+            react: function react(node, output, state) {
+                return h('strong', { key: state.key }, output(node.content, state));
+            }
+        },
+
+        textEmphasized: {
+            match: inlineRegex(TEXT_EMPHASIZED_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: function parse(capture, _parse8, state) {
+                return {
+                    content: _parse8(capture[2] || capture[1], state)
+                };
+            },
+            react: function react(node, output, state) {
+                return h('em', { key: state.key }, output(node.content, state));
+            }
+        },
+
+        textEscaped: {
+            // We don't allow escaping numbers, letters, or spaces here so that
+            // backslashes used in plain text still get rendered. But allowing
+            // escaping anything else provides a very flexible escape mechanism,
+            // regardless of how this grammar is extended.
+            match: inlineRegex(TEXT_ESCAPED_R),
+            order: PARSE_PRIORITY_HIGH,
+            parse: function parse(capture /*, parse, state*/) {
+                return {
+                    content: capture[1],
+                    type: 'text'
+                };
+            }
+        },
+
+        textStrikethroughed: {
+            match: inlineRegex(TEXT_STRIKETHROUGHED_R),
+            order: PARSE_PRIORITY_LOW,
+            parse: parseCaptureInline,
+            react: function react(node, output, state) {
+                return h('del', { key: state.key }, output(node.content, state));
+            }
+        }
+    };
+
+    // Object.keys(rules).forEach(key => {
+    //     let parse = rules[key].parse;
+
+    //     rules[key].parse = (...args) => {
+    //         console.log(key, args[0]);
+    //         return parse(...args);
+    //     };
+    // });
+
+    var parser = parserFor(rules);
+    var emitter = reactFor(ruleOutput(rules));
+
+    var jsx = compile(markdown);
+
+    if (footnotes.length) {
+        jsx.props.children.push(h('footer', null, footnotes.map(function createFootnote(def) {
+            return h('div', { id: def.identifier, key: def.identifier }, def.identifier, emitter(parser(def.footnote, { inline: true })));
+        })));
+    }
+
+    return jsx;
+}
+
+/**
+ * A simple HOC for easy React use. Feed the markdown content as a direct child
+ * and the rest is taken care of automatically.
+ *
+ * @param  {String}   options.children   must be a string
+ * @param  {Object}   options.options    markdown-to-jsx options (arg 2 of the compiler)
+ *
+ * @return {ReactElement} the compiled JSX
+ */
+
+function Markdown(props) {
+    return compiler(props.children, props.options);
+}
+
+if ('development' !== 'production') {
+    var PropTypes = require('prop-types');
+
+    Markdown.propTypes = {
+        children: PropTypes.string.isRequired,
+        options: PropTypes.object
+    };
+}
+
+//# sourceMappingURL=index.esm.js.map
+},{"react":10,"unquote":82,"prop-types":38}],33:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  overrides: {
+    Link: {
+      component: _reactRouterDom.Link
+    }
+  }
+};
+},{"react":10,"react-router-dom":12}],13:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _markdownToJsx = require('markdown-to-jsx');
+
+var _markdownToJsx2 = _interopRequireDefault(_markdownToJsx);
+
+var _markedConfig = require('../../../../utils/markedConfig.js');
+
+var _markedConfig2 = _interopRequireDefault(_markedConfig);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var md = "---\ntitle: '2018'\nauthor: Matthew Hamlin\ndate: 2018-01-16\ntags: ['development', 'recap']\n---\n\n## 2018 Updates\n\nIt has been several months, almost a full year, since I have even touched my blog. In fact I only found out in December that my hosting provider decided to no longer host my website.\n\nA lot of things have happened since I last blogged. I wasn't able to keep up with doing open\nsource work last year. However I have started 2018 strong with at least one commit to an open\nsource project every day.\n\n### 1. New website that is still a work in progress\n\nI have a new website, its still super terrible (still working on the design of it, also links are all broken everywhere sorry).\n\nIts built using Gatsby, which offers a better markdown to blog post story than Next js, as well as allows me to pull in some interesting data during build rather than during run time.\n\nI still need to fix all the links as well as figure out how to even host it, but at least it is a start.\n\n### 2. A ton of new projects on GitHub\n\nI have started quite a few small projects on GitHub, here is a short list:\n\n1. Resp: [Resp](https://github.com/hamlim/resp)\n2. DS: [DS](https://github.com/hamlim/ds)\n3. app-config [app-config](https://github.com/hamlim/app-config)\n4. React-Lightbox [React-Lightbox](https://github.com/hamlim/React-Lightbox)\n\nI am definitely going to be working on far more of these small projects, I am mostly using them to fill in personal needs on other side projects.\n\n### 3. Dollar\n\nI started Dollar in 2015 as one of my first, and largest, web apps I have worked on outside of work. I want to spend a ton of time in 2018, rebuilding the application using React, and a flux style architecture without redux.\n\nI don't want to force myself to blog a ton in 2018, but I also don't want to turn this website into yet another stale website. So expect a few more learning blog posts and other random things to be built on to this.\n";
+
+var TwentyEighteen = function TwentyEighteen() {
+  return _react2.default.createElement(
+    'article',
+    null,
+    _react2.default.createElement(_markdownToJsx2.default, { options: _markedConfig2.default, children: md })
+  );
+};
+exports.default = TwentyEighteen;
+},{"react":10,"markdown-to-jsx":81,"../../../../utils/markedConfig.js":33}],6:[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = require('react-router-dom');
+
+var _ = require('./2018/January/2018.js');
+
+var _2 = _interopRequireDefault(_);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Blog = function Blog() {
+  return _react2.default.createElement(
+    _react.Fragment,
+    null,
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/blog/2018/january/2018', component: _2.default }),
+    _react2.default.createElement(
+      _reactRouterDom.Link,
+      { to: '/blog/2018/january/2018' },
+      '2018'
+    )
+  );
+};
+exports.default = Blog;
+},{"react":10,"react-router-dom":12,"./2018/January/2018.js":13}],2:[function(require,module,exports) {
 'use strict';
 
 var _react = require('react');
@@ -25341,10 +26731,6 @@ var _setup = require('./setup');
 
 var _setup2 = _interopRequireDefault(_setup);
 
-var _README = require('./README.md');
-
-var _README2 = _interopRequireDefault(_README);
-
 var _navigation = require('./src/components/navigation.js');
 
 var _navigation2 = _interopRequireDefault(_navigation);
@@ -25352,6 +26738,10 @@ var _navigation2 = _interopRequireDefault(_navigation);
 var _landing = require('./src/pages/landing.js');
 
 var _landing2 = _interopRequireDefault(_landing);
+
+var _index = require('./src/pages/blog/index.js');
+
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25363,7 +26753,8 @@ var App = function App() {
       _react.Fragment,
       null,
       _react2.default.createElement(_navigation2.default, null),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: _landing2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', exact: true, component: _landing2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/blog', component: _index2.default })
     )
   );
 };
@@ -25372,11 +26763,8 @@ var elem = document.querySelector('#root');
 
 (0, _setup2.default)();
 
-// @TODO need to build a system to transform this to jsx (preval)
-console.log(_README2.default);
-
 (0, _reactDom.render)(_react2.default.createElement(App, null), elem);
-},{"react":10,"react-dom":11,"react-router-dom":12,"./setup":4,"./README.md":3,"./src/components/navigation.js":5,"./src/pages/landing.js":6}],91:[function(require,module,exports) {
+},{"react":10,"react-dom":11,"react-router-dom":12,"./setup":3,"./src/components/navigation.js":5,"./src/pages/landing.js":4,"./src/pages/blog/index.js":6}],95:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -25396,7 +26784,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '55054' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '61785' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -25497,5 +26885,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[91,2])
+},{}]},{},[95,2])
 //# sourceMappingURL=/dist/b2688e9ba6aa6f7cf23ac34e04ca0ccb.map
