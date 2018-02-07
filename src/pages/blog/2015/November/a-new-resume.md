@@ -1,6 +1,12 @@
+<Yaml
+title="A New Resume"
+date="01-11-29"
+tags={["blogging"]}
+/>
+
 This weekend I set out to work on Bundles and to also work on my own website. I successfully launched Bundles v1, setup a blog on my website, redesigned my portfolio, and now I have finished redesigning my resume website also
 
-The new cleaner <del><a class="link link--out link--article" href="https://matthamlin.me/resume.html">Resume</a></del> focuses on just the key areas of my technical resume, allowing potential employers to find what they need to know about me without needing to sort through tons of unrelated content.
+The new cleaner resume focuses on just the key areas of my technical resume, allowing potential employers to find what they need to know about me without needing to sort through tons of unrelated content.
 
 This weekend over all served as a great experiment in learning new technologies (Jekyll) and also in learning a new framework to build sites on.
 

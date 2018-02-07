@@ -11,27 +11,37 @@ const local = '/blog/2015/November/'
 
 const November = () => (
   <Fragment>
-    <h3>November - 2015</h3>
-    <ul>
-      <li>
-        <Link to={`${local}Thanksgiving`}>Thanksgiving</Link>
-      </li>
-      <li>
-        <Link to={`${local}a-new-look`}>A New Look</Link>
-      </li>
-      <li>
-        <Link to={`${local}weekend-projects`}>Weekend Projects</Link>
-      </li>
-      <li>
-        <Link to={`${local}a-new-resume`}>A New Resume</Link>
-      </li>
-      <li>
-        <Link to={`${local}family-time`}>Family Time</Link>
-      </li>
-      <li>
-        <Link to={`${local}message`}>Message</Link>
-      </li>
-    </ul>
+    <Route
+      path="/blog/2015/November"
+      exact
+      render={r =>
+        r.match && (
+          <Fragment>
+            <h3>November - 2015</h3>
+            <ul>
+              <li>
+                <Link to={`${local}Thanksgiving`}>Thanksgiving</Link>
+              </li>
+              <li>
+                <Link to={`${local}a-new-look`}>A New Look</Link>
+              </li>
+              <li>
+                <Link to={`${local}weekend-projects`}>Weekend Projects</Link>
+              </li>
+              <li>
+                <Link to={`${local}a-new-resume`}>A New Resume</Link>
+              </li>
+              <li>
+                <Link to={`${local}family-time`}>Family Time</Link>
+              </li>
+              <li>
+                <Link to={`${local}message`}>Message</Link>
+              </li>
+            </ul>
+          </Fragment>
+        )
+      }
+    />
     <Route path={`${local}Thanksgiving`} component={Thanksgiving} />
     <Route path={`${local}a-new-look`} component={ANewLook} />
     <Route path={`${local}weekend-projects`} component={WeekendProjects} />
