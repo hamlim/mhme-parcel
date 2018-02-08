@@ -51629,23 +51629,7 @@ var Post = function (_Component) {
               )
             )
           ),
-          _react2.default.createElement(_markdownToJsx2.default, { children: this.props.source, options: _markedConfig2.default }),
-          this.state.tags.length > 0 && _react2.default.createElement(
-            'h4',
-            null,
-            'Tags'
-          ),
-          _react2.default.createElement(
-            'ul',
-            null,
-            this.state.tags.map(function (tag) {
-              return _react2.default.createElement(
-                'li',
-                { key: tag },
-                tag
-              );
-            })
-          )
+          _react2.default.createElement(_markdownToJsx2.default, { children: this.props.source, options: _markedConfig2.default })
         )
       );
     }

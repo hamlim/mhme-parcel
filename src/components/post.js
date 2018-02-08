@@ -74,8 +74,6 @@ class Post extends Component {
             )}
           </Div>
           <Markdown children={this.props.source} options={markdownConfig} />
-          {this.state.tags.length > 0 && <h4>Tags</h4>}
-          <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
         </Article>
       </Provider>
     )
