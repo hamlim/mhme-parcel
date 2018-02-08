@@ -1,17 +1,16 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
+import { Consumer } from '../utils/post-context.js'
+
+const enhance = Comp => props => <Consumer children={ctx => <Comp {...props} {...ctx} />} />
 
 class Yaml extends React.Component {
-  static contextTypes = {
-    registerYaml: PropTypes.func.isRequired,
-  }
-  constructor(props, context) {
-    super(props, context)
+  constructor(props) {
+    super(props)
 
     const { title, date, tags } = props
 
-    context.registerYaml({
+    props.setData({
       title,
       date,
       tags,
@@ -23,4 +22,4 @@ class Yaml extends React.Component {
   }
 }
 
-export default Yaml
+export default enhance(Yaml)
