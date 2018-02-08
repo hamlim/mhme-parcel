@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
 import Markdown from 'markdown-to-jsx'
@@ -30,17 +30,14 @@ const Article = styled('article')`
   }
 `
 
+const Div = styled('div')`
+  margin: 1rem 0;
+`
+
 const dateFormat = 'dddd MMMM YYYY'
 
-const transform = ({ date, title, tags }) => {
-  let parsedTags = []
-  try {
-    parsedTags = JSON.parse(tags)
-  } catch (e) {
-    // ignore error
-  }
+const transform = ({ date, title }) => {
   return {
-    tags: parsedTags,
     date: format(new Date(date) || new Date(), dateFormat),
     title,
   }
@@ -48,7 +45,6 @@ const transform = ({ date, title, tags }) => {
 
 class Post extends Component {
   state = {
-    tags: [],
     title: null,
     date: format(new Date(), dateFormat),
   }
@@ -70,9 +66,16 @@ class Post extends Component {
       >
         <Article>
           {this.state.title && <h2>{this.state.title}</h2>}
-          <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
-          {this.state.date && <time>{this.state.date + ''}</time>}
+          <Div>
+            {this.state.date && (
+              <Fragment>
+                Published: <time>{this.state.date + ''}</time>
+              </Fragment>
+            )}
+          </Div>
           <Markdown children={this.props.source} options={markdownConfig} />
+          {this.state.tags.length > 0 && <h4>Tags</h4>}
+          <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
         </Article>
       </Provider>
     )

@@ -8,12 +8,11 @@ class Yaml extends React.Component {
   constructor(props) {
     super(props)
 
-    const { title, date, tags } = props
+    const { title, date } = props
 
     props.setData({
       title,
       date,
-      tags,
     })
   }
 
