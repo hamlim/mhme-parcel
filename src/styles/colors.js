@@ -8,4 +8,12 @@ export default {
   accent: '#00FA9A',
   white: '#ffffff',
   base: '#212b2b',
+
+  grey: '#f9f9f9',
+  darkGrey: '#dfe0e2',
+
+  code: {
+    background: '#ebedee',
+    color: '#252727',
+  },
 }

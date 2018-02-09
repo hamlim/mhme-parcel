@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@atlaskit/avatar": "9.0.0",
+    "@matthamlin/react-error-boundary": "^1.0.0",
     "@matthamlin/resp": "^2.0.0",
     "babel-plugin-macros": "2.1.0",
     "babel-plugin-transform-class-properties": "6.24.1",
@@ -33,6 +34,8 @@
     "react-dom": "^16.3.0-alpha.0",
     "react-emotion": "^8.0.12",
     "react-router-dom": "^4.2.2",
-    "reason-react": "^0.3.1"
+    "reason-react": "^0.3.1",
+    "remark": "^9.0.0",
+    "remark-react": "^4.0.1"
   }
 }
