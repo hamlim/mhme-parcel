@@ -1,8 +1,10 @@
+```!jsx
 <Yaml
 title="Family Time"
 date="01-11-28"
 tags={["blogging"]}
 />
+```
 
 This week(end) for me has been an amazing whirlwind of fun times with family members. Coming home this weekend has been in the works since mid September and up until the time I arrived only a total of 8 people and only 2 family members knew I was coming home.
 

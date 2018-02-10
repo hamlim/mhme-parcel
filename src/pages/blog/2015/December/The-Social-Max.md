@@ -1,8 +1,10 @@
+```!jsx
 <Yaml
 title="The Social Max"
 date="2015-12-01"
 tags={["blogging", "social"]}
 />
+```
 
 A few days ago I tweeted about an idea I had on social networking. I tweeted saying that there is a a maximum limit on the number of social networks someone is willing to keep up to date. I feel like this number is independent from person to person, so there will be people who can manage 5, 10 or even 15 social networks and others who can only manage one or two.
 

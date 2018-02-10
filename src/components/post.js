@@ -1,29 +1,13 @@
 import React, { Component, Fragment } from 'react'
-import PropTypes from 'prop-types'
-import styled, { injectGlobal, keyframes } from 'react-emotion'
-import Markdown from 'markdown-to-jsx'
-import markdownConfig from '../utils/markedConfig.js'
+import styled, { injectGlobal } from 'react-emotion'
+import {Link} from 'react-router-dom'
+import { Markdown } from '@compositor/markdown'
+import Yaml from './yaml.js'
 import format from 'date-fns/format'
 import { medium, large } from '../utils/media.js'
 import { colors } from '../styles/index.js'
-
-import Boundary from '@matthamlin/react-error-boundary'
-
-import remark from 'remark'
-import remarkReact from 'remark-react'
-
 import { widths } from '../styles/index.js'
-
 import { Provider, Consumer } from '../utils/post-context.js'
-
-const shimmer = keyframes`
-  from {
-    background-position: 100% 100%;
-  }
-  to {
-    background-position: 0% 100%;
-  }
-`
 
 const Article = styled('article')`
   max-width: 95vw;
@@ -103,29 +87,17 @@ class Post extends Component {
           getData: () => this.state.data,
         }}
       >
-        <Boundary>
-          {maybeError =>
-            maybeError ? (
-              <h1>Oh No</h1>
-            ) : (
-              <Article>
-                {this.state.title && <h2>{this.state.title}</h2>}
-                <Div>
-                  {this.state.date && (
-                    <Fragment>
-                      Published: <time>{this.state.date + ''}</time>
-                    </Fragment>
-                  )}
-                </Div>
-                {
-                  remark()
-                    .use(remarkReact)
-                    .processSync(this.props.source).content
-                }
-              </Article>
-            )
-          }
-        </Boundary>
+        <Article>
+          {this.state.title && <h2>{this.state.title}</h2>}
+          <Div>
+            {this.state.date && (
+              <Fragment>
+                Published: <time>{this.state.date + ''}</time>
+              </Fragment>
+            )}
+          </Div>
+          <Markdown text={this.props.source} scope={{ Yaml, Link }} />
+        </Article>
       </Provider>
     )
   }

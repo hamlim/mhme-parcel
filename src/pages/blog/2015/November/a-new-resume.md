@@ -1,8 +1,10 @@
+```!jsx
 <Yaml
 title="A New Resume"
 date="01-11-29"
 tags={["blogging"]}
 />
+```
 
 This weekend I set out to work on Bundles and to also work on my own website. I successfully launched Bundles v1, setup a blog on my website, redesigned my portfolio, and now I have finished redesigning my resume website also
 

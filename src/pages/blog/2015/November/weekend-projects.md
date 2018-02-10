@@ -1,8 +1,10 @@
+```!jsx
 <Yaml
 title="Weekend Projects"
 date="01-11-27"
 tags={["development", "blogging"]}
 />
+```
 
 Since I came home for Thanksgiving I figured I would have enough time to get away from pesky homework assignments and projects and spend some time not only with my family but also working on some of my own projects. The first was building and launching Bundles version 1, the second was launching this blog, and the third is reworking my portfolio website.
 
