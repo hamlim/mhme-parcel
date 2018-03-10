@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react'
-import { Link, Route } from 'react-router-dom'
+import React from 'react'
 import BlogListing from '../../../components/blog-listing'
 
 import April from './April/index.js'
@@ -7,6 +6,7 @@ import August from './August/index.js'
 import January from './January/index.js'
 import November from './November/index.js'
 import October from './October/index'
+import September from './September/index'
 
 const local = '/blog/2016/'
 
@@ -39,6 +39,11 @@ const TwentySixteen = () => (
         name: 'October',
         route: `${local}October`,
         component: October,
+      },
+      {
+        name: 'September',
+        route: `${local}September`,
+        component: September,
       },
     ]}
   />
