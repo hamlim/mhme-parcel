@@ -5,7 +5,7 @@ import preval from 'preval.macro'
 const md = preval`
   module.exports = require('fs').readFileSync(require.resolve('./2018.md'), {encoding: 'utf-8'});
 `
-// kjf
+// cache busting comment
 
 const TwentyEighteen = () => <Post source={md} />
 export default TwentyEighteen
