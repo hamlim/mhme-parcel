@@ -20,12 +20,12 @@ import Youtube from './youtube-is-for-advertisers'
 
 const local = '/blog/2016/September/'
 
-const withLocal = r => `${local}r`
+const withLocal = r => `${local}${r}`
 
 const September2016 = () => (
   <BlogListing
     title={<h3>September 2016</h3>}
-    route="/blog/2016/September"
+    path="/blog/2016/September"
     routes={[
       {
         name: 'Aspect Ratio',
@@ -115,3 +115,5 @@ const September2016 = () => (
     ]}
   />
 )
+
+export default September2016

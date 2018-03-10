@@ -21,6 +21,6 @@ export default ({ routes, path, title }) => (
         )
       }
     />
-    {routes.map(({ link, component }) => <Route key={link} path={link} component={component} />)}
+    {routes.map(({ route, component }) => <Route key={route} path={route} component={component} />)}
   </Fragment>
 )
