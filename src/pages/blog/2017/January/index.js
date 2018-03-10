@@ -15,13 +15,13 @@ import TwentyFour from './twenty-four'
 import TwentyThree from './twenty-three'
 import TwentyEight from './twenty-eight'
 
-const local = '/blog/2017/Janurary'
+const local = '/blog/2017/January'
 
 const withLocal = r => `${local}/${r}`
 
 const Janurary2017 = () => (
   <BlogListing
-    title={<h3>Janurary - 2017</h3>}
+    title={<h3>January - 2017</h3>}
     path={local}
     routes={[
       {

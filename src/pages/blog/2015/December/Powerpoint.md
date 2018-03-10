@@ -8,7 +8,7 @@ tags={["blogging"]}
 
 If you happen to be following the startup world (which is a fairly large catchall term) you may have noticed a trend of new companies building new software that simplifies older software and adds a new UI to it. This has been happening with text editors, first came Google docs, making a web version of tools like Microsoft Word. Then others showed up such as Evernote, Dropbox Paper, Notorious and plenty of other text editing solutions. This has been happening with software like Excel, where Google yet again made google sheets, then companies like Fieldbook and Airtable have been re-inventing the excel spreadsheet.
 
-> All web apps are just derivative versions of Excel</p>
+> All web apps are just derivative versions of Excel
 
 The one thing that I haven't seen is a remake of Powerpoint or presentation software. I am sure some people might point out to solutions like Prezi, however there really hasn't been a breakout powerpoint alternative.
 

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import styled, { injectGlobal } from 'react-emotion'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Markdown } from '@compositor/markdown'
 import Yaml from './yaml.js'
 import format from 'date-fns/format'
@@ -17,6 +17,10 @@ const Article = styled('article')`
     max-width: ${widths.maxWidth};
     margin: 0 auto 2rem;
   `};
+
+  img {
+    max-width: 100%;
+  }
 
   ol,
   ul {
