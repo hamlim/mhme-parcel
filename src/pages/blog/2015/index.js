@@ -1,27 +1,29 @@
-import React, { Fragment } from 'react'
-import { Link, Route } from 'react-router-dom'
+import React from 'react'
+import BlogListing from '../../../components/blog-listing'
 
 import December from './December/index.js'
 import November from './November/index.js'
 
-const local = '/blog/2015/'
+const local = '/blog/2015'
+
+const withLocal = r => `${local}/${r}`
 
 const TwentyFifteen = () => (
-  <Fragment>
-    <Route path={`${local}December`} component={December} />
-    <Route path={`${local}November`} component={November} />
-    <Route
-      path="/blog/2015"
-      exact
-      render={r =>
-        r.match && (
-          <Fragment>
-            <Link to={`${local}December`}>December</Link>
-            <Link to={`${local}November`}>November</Link>
-          </Fragment>
-        )
-      }
-    />
-  </Fragment>
+  <BlogListing
+    title={<h3>2015</h3>}
+    path={local}
+    routes={[
+      {
+        name: 'November',
+        route: withLocal(`November`),
+        component: November,
+      },
+      {
+        name: 'December',
+        route: withLocal(`December`),
+        component: December,
+      },
+    ]}
+  />
 )
 export default TwentyFifteen

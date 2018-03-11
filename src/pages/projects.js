@@ -50,7 +50,9 @@ const Projects = () => (
         <h4>
           <StyledLink href="https://github.com/hamlim/postcss-plugin-initial">postcss-plugin-initial</StyledLink> - 2018
         </h4>
-        <Description>A universal config file format for web applications.</Description>
+        <Description>
+          A postcss plugin to polyfill the <code>initial</code> declaration value.
+        </Description>
       </Project>
       <Project>
         <h4>
