@@ -2,9 +2,10 @@
   "name": "mhme-parcel",
   "version": "0.0.0",
   "scripts": {
-    "dev": "parcel index.html",
-    "dev-reason": "yarn watch & parcel index.html",
-    "watch": "bsb -make-world -w"
+    "dev": "parcel ./src/index.html",
+    "dev-reason": "yarn watch & parcel ./src/index.html",
+    "watch": "bsb -make-world -w",
+    "start": "cp dist/index.html ./index.html && serve"
   },
   "devDependencies": {
     "bs-platform": "^2.1.0",
@@ -38,6 +39,7 @@
     "react-transition-group": "2.2.1",
     "reason-react": "^0.3.1",
     "remark": "^9.0.0",
-    "remark-react": "^4.0.1"
+    "remark-react": "^4.0.1",
+    "serve": "6.5.3"
   }
 }
