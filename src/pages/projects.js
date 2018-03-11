@@ -40,6 +40,14 @@ const Projects = () => (
     >
       <Project>
         <h4>
+          <StyledLink href="https://github.com/hamlim/react-state-reducer">react-state-reducer</StyledLink> - 2018
+        </h4>
+        <Description>
+          A redux-like state management library using <code>setState</code> and <code>createContext</code>.
+        </Description>
+      </Project>
+      <Project>
+        <h4>
           <StyledLink href="https://github.com/hamlim/postcss-plugin-initial">postcss-plugin-initial</StyledLink> - 2018
         </h4>
         <Description>A universal config file format for web applications.</Description>
