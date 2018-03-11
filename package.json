@@ -5,7 +5,9 @@
     "dev": "parcel ./src/index.html",
     "dev-reason": "yarn watch & parcel ./src/index.html",
     "watch": "bsb -make-world -w",
-    "start": "cp dist/index.html ./index.html && serve"
+    "build": "parcel build ./src/index.html --out-dir build",
+    "deploy": "now",
+    "start": "serve"
   },
   "devDependencies": {
     "bs-platform": "^2.1.0",

@@ -3,8 +3,10 @@ import Post from '../../../../components/post.js'
 import preval from 'preval.macro'
 
 const md = preval`
-  module.exports = require('fs').readFileSync(require.resolve('./family-time.md'), {encoding: 'utf-8'});
+  module.exports = require('fs').readFileSync(require.resolve('./Family-time.md'), {encoding: 'utf-8'});
 `
+
+//cache buster
 
 const FamilyTime = () => <Post source={md} />
 export default FamilyTime
