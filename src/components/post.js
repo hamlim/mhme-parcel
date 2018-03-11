@@ -39,7 +39,11 @@ const Article = styled('article')`
     font-size: 1rem;
   }
   pre > code {
-    margin: 0.5rem;
+    overflow: scroll;
+    margin: 2rem 0.5rem;
+    ${medium`
+      margin: 2rem -2rem;
+    `};
     padding: 0.5rem;
     display: block;
   }

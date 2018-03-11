@@ -18,6 +18,9 @@ export default () => {
     margin: 0;
     padding: 0;
   };
+  code {
+    font-family: 'Fira Code', monospace;
+  }
   a {
     text-decoration: none;
     cursor: pointer;
@@ -39,6 +42,18 @@ export default () => {
     width: 100%;
     padding-bottom: 22%;
     min-height: 400px;
+  }
+  .fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+  .fade-exit {
+    opacity: 0;
   }
 `
 }
