@@ -5,7 +5,7 @@
     "dev": "parcel ./src/index.html",
     "dev-reason": "yarn watch & parcel ./src/index.html",
     "watch": "bsb -make-world -w",
-    "build": "parcel build ./src/index.html --out-dir build",
+    "make": "parcel build ./src/index.html --out-dir build && cp ./build/index.html ./index.html",
     "deploy": "now",
     "start": "serve"
   },
