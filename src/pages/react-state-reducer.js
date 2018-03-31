@@ -102,10 +102,18 @@ const ADD_TODO = 'ADD_TODO'
 const UPDATE_INPUT = 'UPDATE_INPUT'
 const UPDATE_TODO = 'UPDATE_TODO'
 
+const SET = 'SET'
+
 const reducer = ({ type, payload }) => (
   state = INITIAL_STATE,
 ) => {
   switch (type) {
+    case SET: {
+      return {
+        ...state,
+        ...payload,
+      }
+    }
     case INC: {
       return {
         ...state,
@@ -160,9 +168,46 @@ const reducer = ({ type, payload }) => (
 
 const { Provider, Consumer } = createStore(reducer)
 
+class ComponentDidMount extends React.Component {
+  componentDidMount() {
+    this.props.children()
+  }
+  render() {
+    return null
+  }
+}
+
+const LOCAL = 'MH-RSR'
+
+const UpdateState = () => (
+  <Consumer>
+    {({ dispatch }) => (
+      <ComponentDidMount>
+        {() => {
+          let synced = window.localStorage.getItem(LOCAL)
+          if (synced) {
+            dispatch({
+              type: SET,
+              payload: JSON.parse(synced),
+            })
+          }
+        }}
+      </ComponentDidMount>
+    )}
+  </Consumer>
+)
+
 export default () => (
-  <Provider>
+  <Provider
+    onUpdate={state => {
+      window.localStorage.setItem(
+        LOCAL,
+        JSON.stringify(state),
+      )
+    }}
+  >
     <Container>
+      <UpdateState />
       <Main>
         <header>
           <h2>
