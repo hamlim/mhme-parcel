@@ -2,7 +2,7 @@ import React from 'react'
 import Post from '../../../../components/post.js'
 
 const md = require('fs').readFileSync(
-  __dirname + './rfpdatabaseapi.md',
+  __dirname + '/rfpdatabaseapi.md',
   { encoding: 'utf-8' },
 )
 

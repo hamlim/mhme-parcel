@@ -2,7 +2,7 @@ import React from 'react'
 import Post from '../../../../components/post.js'
 
 const md = require('fs').readFileSync(
-  __dirname + './twentyfour.md',
+  __dirname + '/twentyfour.md',
   { encoding: 'utf-8' },
 )
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Post from '../../../../components/post.js'
 
 const md = require('fs').readFileSync(
-  __dirname + './01-15-17-AI.md.md',
+  __dirname + '/01-15-17-AI.md.md',
   { encoding: 'utf-8' },
 )
 
