@@ -339,6 +339,19 @@ export default () => (
               using the same top level Provider, and two
               different Consumers!
             </P>
+            <Button
+              appearance="primary"
+              onClick={_ => {
+                let synced = window.localStorage.getItem(
+                  LOCAL,
+                )
+                if (synced) {
+                  window.localStorage.setItem(LOCAL, '')
+                }
+              }}
+            >
+              Clear out local storage
+            </Button>
             <details>
               <summary>
                 Here is the code for this entire webpage:
