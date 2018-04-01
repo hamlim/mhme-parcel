@@ -7,25 +7,25 @@ I wanted to start this off with a brief timeline of all the visual changes I hav
 The current version of the site, shown below in case it changes in the future, is broken down into basically 4 page types as it is now. The first is the <a href="#image1" class="link">home page</a> the second is <a href="#image2" class="link">my resume</a>, the third is my <a href="#image3" class="link">blog archive</a>, and the fourth is the layout of a <a href="#image4" class="link">blog post</a>.
 
 <figure class="figure" id="image1">
-<img src="/static/images/posts/landing.png" alt="Landing Page" class="img">
+<img src="../../../../../static/images/posts/landing.png" alt="Landing Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Landing Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image2">
-<img src="/static/images/posts/resume.png" alt="Resume Page" class="img">
+<img src="../../../../../static/images/posts/resume.png" alt="Resume Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Resume Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image3">
-<img src="/static/images/posts/archive.png" alt="Archive Page" class="img">
+<img src="../../../../../static/images/posts/archive.png" alt="Archive Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Archive Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image4">
-<img src="/static/images/posts/post.png" alt="Blog post page" class="img">
+<img src="../../../../../static/images/posts/post.png" alt="Blog post page" class="img">
 <figcaption class="horizontal--center">
     Blog post Page
 </figcaption>

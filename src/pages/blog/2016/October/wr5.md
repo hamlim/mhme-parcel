@@ -6,4 +6,4 @@ This next week I will spending most of my time anxiously waiting for my new phon
 
 I was able to set up a React version of this site, on the same domain just at /React. I haven't done that much with React yet mostly just setting up my build system with Webpack and Babel.
 
-I also adjusted the font scaling of my website, I now use `font-size: calc(1vmin + 1rem);` as my default font-size for all pages.
+I also adjusted the font scaling of my website, I now use <code>font-size: calc(1vmin + 1rem);</code> as my default font-size for all pages.

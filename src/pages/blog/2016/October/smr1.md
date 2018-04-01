@@ -11,7 +11,7 @@ displays your current age and actively counts up. Below is a quick capture of wh
 every time you open a new tab then this extension is for you!
 
 <div class="has-video">
-  <video data-css-video title="My current age" src="/static/assets/videos/motivate.mp4" autoplay loop></video>
+  <video data-css-video title="My current age" src="../../../../../static/videos/motivate.mp4" autoplay loop></video>
 </div>
 ### 2.
 

@@ -5,7 +5,7 @@ However recently I have been wanting to both (1) develop and showcase some desig
 The website that I have been talking about is known as LMS on campus, because it is a Blackboard Learning Management System that RPI licenses from <a href="http://www.blackboard.com/learning-management-system/blackboard-learn.aspx">blackboard</a>. The version of LMS that we are using here at RPI is fairly different from the mockups that are shown in that blackboard website above, in face here is a screen grab of what the website looks like for me for this semester:
 
 <figure class="figure">
-  <img class="img" src="/static/assets/images/posts/lms.png" alt="The current LMS landing page after logging in." title="RPI&#39;s Blackboard LMS"/>
+  <img class="img" src="../../../../../static/images/posts/lms.png" alt="The current LMS landing page after logging in." title="RPI&#39;s Blackboard LMS"/>
   <figcaption class="horizontal--center">
     The current LMS landing page after logging in.
   </figcaption>
@@ -22,7 +22,13 @@ So far I haven’t done much else besides a few small interactions built into th
 I expect to do the login and signup pages tomorrow (as well as some homework) and then I will writeup some of the design decisions I made for those pages.
 
 ---
-#### Footnotes:
-[^1]: Redesigning this website was actually the topic of several courses I took here at  RPI, many students wanted to redesign this site and also another school site both of which are fairly difficult to navigate and look atrocious.
 
-[^2]: However currently many professors don’t use these capabilities to their fullest extents.
+#### Footnotes:
+
+[^1]:
+
+  Redesigning this website was actually the topic of several courses I took here at RPI, many students wanted to redesign this site and also another school site both of which are fairly difficult to navigate and look atrocious.
+
+[^2]:
+
+  However currently many professors don’t use these capabilities to their fullest extents.

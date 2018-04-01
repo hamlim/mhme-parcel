@@ -5,7 +5,7 @@ To start off the weekend I started work on designing and building a cleaner webs
 My next project was fairly small and involved fixing up my projects listing page <a href="https://goexploring.today">goexploring.today</a>. My previous design for the site was really messy, and although I don't like how dramatic the site looks right now (see image below), I feel like I can live with that look for a while longer.
 
 <figure class="figure">
-<img src="/static/assets/images/posts/goexploring.png" alt="Goexploring.today landing page" class="img">
+<img src="../../../../../static/images/posts/goexploring.png" alt="Goexploring.today landing page" class="img">
 <figcaption class="horizontal--center">
     <h5>Goexploring.today landing page</h5>
 </figcaption>
@@ -14,7 +14,7 @@ My next project was fairly small and involved fixing up my projects listing page
 My next project involved adding a landing page for my project called Colors. I decided to change the project up a bit and make a simple API that will project a feed of the color codes that I have selected, and then use those to populate the website in a clean manner. This project also started by cloning the boilerplate project mentioned above, then I looked into the service called <a href="https://zeit.co/now">now</a> which allows you to deploy simple nodejs apps to a server. I used this to make a simple API with a list of color hex codes I have hand picked out. I then used the new <code>fetch</code> API to get the color hex codes and rendered them all with react. You can see this project <a href="https://goexploring.today/colors">here</a>.
 
 <figure class="figure">
-<img src="/static/assets/images/posts/colors.png" alt="Colors" class="img">
+<img src="../../../../../static/images/posts/colors.png" alt="Colors" class="img">
 <figcaption class="horizontal--center">
     <h5>Colors</h5>
 </figcaption>

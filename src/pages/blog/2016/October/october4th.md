@@ -21,15 +21,15 @@ As a side-note, I want to say that although this article is meant to be comprehe
 
 This is the baseline phone, if you are familiar with the past Nexus phones this is basically the Nexus 5 but with a great build quality. The price is rumored to start at $649 for the 32GB baseline variant. It comes with a 1080p (1920x1080) 5 inch display, Qualcomm Snapdragon 821, 3 or 4 GB of ram, 12MP rear and 8MP front-facing cameras, 2,770mAh battery. It also will come with USB-C, a fingerprint sensor and the regular 3.5mm headphone jack.
 
-<img src="/static/assets/images/posts/october4th/pixel.jpg" alt="A high res render of the Google Pixel" data-css-image>
+<img src="../../../../../static/images/posts/october4th/pixel.jpg" alt="A high res render of the Google Pixel" data-css-image>
 
 Both the Pixel and the Pixel XL have been leaked in photos as shown below:
 
 <div class="has-image">
-<img src="/static/assets/images/posts/october4th/pixels.jpg" alt="A high res render of the Google Pixel" data-css-image>
+<img src="../../../../../static/images/posts/october4th/pixels.jpg" alt="A high res render of the Google Pixel" data-css-image>
 </div>
 <div class="has-image">
-<img src="/static/assets/images/posts/october4th/pixels_front.jpg" alt="A high res render of the Google Pixel" data-css-image>
+<img src="../../../../../static/images/posts/october4th/pixels_front.jpg" alt="A high res render of the Google Pixel" data-css-image>
 </div>
 
 A lot of the initial feedback from leaked photos of the Pixel and Pixel XL was negative because of the size of the top and bottom bezels. I have since come to accept the bezels, I think they will be bearable, what I will miss is the smaller screen size compared to my Nexus 6.
@@ -41,7 +41,7 @@ The Pixel XL is basically an exact copy of the Pixel, except for a larger screen
 This is the interesting one, first off I am still sure that Google will release a new 4k Chromcast, some are calling this the Chromecast Ultra, however I feel like Google has been shifting away from the Chromecast name towards just Cast. So we might see a change in the name of the chromecast device. Other than 4k support not that much as been leaked about this, they might not even spend that much time on it during the event.
 
 <div class="has-image">
-<img src="/static/assets/images/posts/october4th/chromecast.jpg" alt="A high res render of the Google Pixel" data-css-image>
+<img src="../../../../../static/images/posts/october4th/chromecast.jpg" alt="A high res render of the Google Pixel" data-css-image>
 </div>
 
 The price is expected to be $69 dollars, so double that of the baseline Chromecast, and the current generation of Chromecast's will still also be available.

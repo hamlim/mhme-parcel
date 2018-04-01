@@ -13,38 +13,36 @@ Componentization was the ultimate step towards keeping code DRY, meaning that de
 The Great Debate really kicked off when an engineer at Facebook named Christopher Chedeau, gave a talk where he exposed some of the issues he and his team had seen with CSS while developing web applications and components at Facebook. The entire presentation can be summarized by the slide below but the entire slide deck is <a href="https://speakerdeck.com/vjeux/react-css-in-js" data-css-link-article>available here</a> to read through.
 
 <div class="has-image">
-  <img data-css-image src="/static/assets/images/posts/TheGreatDebate/The_Slide.jpg" alt="The slide that started the great debate." />
+  <img data-css-image src="../../../../../static/images/posts/TheGreatDebate/The_Slide.jpg" alt="The slide that started the great debate." />
 </div>
 
 In the slide Christopher describes 7 issues with the way that CSS is currently spec'd out.
 
-1. Global Namespace
-2. Dependencies
-3. Dead Code Elimination
-4. Minification
-5. Sharing Constants
-6. Non-Deterministic Resolution
-7. Isolation
+1.  Global Namespace
+2.  Dependencies
+3.  Dead Code Elimination
+4.  Minification
+5.  Sharing Constants
+6.  Non-Deterministic Resolution
+7.  Isolation
 
 Now most of these issues only arise from having thousands of developers touching hundreds of thousands of lines of code all in a day, so for the most part the only issues that arise from CSS when adopting a React-like Javascript paradigm is the Cascade.
 
 <h3 id="issues">Core Issues:</h3>
 Many of the points brought up by Christopher are indeed valid, but only valid from a javascript developer's mindset, and he even notes that in the following slides. So I will narrow down the core issues with CSS that almost everyone on the side arguing to eliminate the need for CSS can agree with.
 
-1. [Global Namespace](#global)
-2. [Inheritance, Source Order and Specificity](#inheritance)
-3. [Codebase Growth](#codebase)
-4. [Static](#static)
-
+1.  [Global Namespace](#global)
+2.  [Inheritance, Source Order and Specificity](#inheritance)
+3.  [Codebase Growth](#codebase)
+4.  [Static](#static)
 
 <h4 id="global">Global Namespace:</h4>
 
 CSS is, by nature, globally name-spaced. Every time a developer writes out the following they have declared a CSS "Global variable".
 
-
 ```css
 .myClass {
-...
+  ...;
 }
 ```
 
@@ -52,7 +50,7 @@ Anytime this CSS is linked to a document with an element that has the class `.my
 
 <h4 id="inheritance">Inheritance, Source Order and Specificity:</h4>
 
-This is a pretty tricky concept of CSS even for those who are used to programming in different languages. Inheritance means that a sibling element will inherit *(some)* styles from their parent node. If you want to inherit all styles from the parent you can simply style the child node and set every style you want inherited to be like the following: `color: inherit;`
+This is a pretty tricky concept of CSS even for those who are used to programming in different languages. Inheritance means that a sibling element will inherit _(some)_ styles from their parent node. If you want to inherit all styles from the parent you can simply style the child node and set every style you want inherited to be like the following: `color: inherit;`
 
 Source order and Specificity are coupled together when considering CSS. Both are really tricky to understand as well, CSS, or rather CSS parsers, assign weights to selectors when parsing the CSS into an <a href="#ast" data-css-link-article data-footnote="Abstract Syntax Tree" id="ast">AST</a>. The breakdown is as follows:
 
@@ -89,5 +87,9 @@ I love web standards, and I love being able to use them but sometimes it feels l
 So thats my take on the great CSS debate, feel free to reach out to me by <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmatthamlin.me%2FPosts%2F2016%2FSeptember%2FSeptemberUpdate&via=immatthamlin&text=%20%20-&" class="link link--article">tweeting to me</a>, <a href="mailto:matthewjameshamlin@gmail.com" class="link link--article">emailing me</a> or <a data-footnote="+1 425 210 0980" href="sms:+14252100980" class="link link--article">texting me</a> with your thoughts on whether CSS is good. I would also love to learn how you use CSS either at work or on your own projects!
 
 ---
+
 #### Footnotes:
-[^1]: Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😄
+
+[^1]:
+
+  Heck, even I did this when I was first getting interviewed for my current position at Wayfair because I didn't completely understand the concept yet 😄
