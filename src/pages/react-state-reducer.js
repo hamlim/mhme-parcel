@@ -14,8 +14,8 @@ const Main = styled('main')`
 `
 
 const Code = styled('pre')`
-  font-size: 0.8rem;
-  .hljs {
+  .hljs code {
+    font-size: 0.8rem;
     display: block;
     overflow-x: auto;
     padding: 0.5em;
@@ -30,7 +30,7 @@ const Code = styled('pre')`
   .hljs-number {
     color: #ffcd22;
   }
-  .hljs {
+  .hljs code {
     color: #e0e2e4;
   }
   .hljs-attribute {
@@ -356,18 +356,18 @@ export default () => (
               <summary>
                 Here is the code for this entire webpage:
               </summary>
-              <Code
-                style={{
-                  maxWidth: '100%',
-                  overflow: 'scroll',
-                }}
-              >
-                <code
-                  className="hljs"
-                  dangerouslySetInnerHTML={{
-                    __html: hljs.highlight(
-                      'jsx',
-                      `import React, { Fragment } from 'react'
+              <div className="hljs">
+                <Code
+                  style={{
+                    maxWidth: '100%',
+                    overflow: 'scroll',
+                  }}
+                >
+                  <code
+                    dangerouslySetInnerHTML={{
+                      __html: hljs.highlight(
+                        'jsx',
+                        `import React, { Fragment } from 'react'
 import createStore from 'react-state-reducer'
 
 const INITIAL_STATE = {
@@ -543,10 +543,11 @@ export default () => (
   </Provider>
 )
 `,
-                    ).value,
-                  }}
-                />
-              </Code>
+                      ).value,
+                    }}
+                  />
+                </Code>
+              </div>
             </details>
           </div>
           <P>

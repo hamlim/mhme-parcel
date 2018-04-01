@@ -12,6 +12,88 @@ import {
   Consumer,
 } from '../utils/post-context.js'
 
+import hljs from 'highlight.js'
+
+import marked from 'marked'
+
+injectGlobal`
+  .hljs pre code {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #282b2e;
+    & > * {
+      font-family: 'Fira Code';
+    }
+  }
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-selector-id {
+    color: #93c763;
+  }
+  .hljs-number {
+    color: #ffcd22;
+  }
+  .hljs code {
+    color: #e0e2e4;
+  }
+  .hljs-attribute {
+    color: #668bb0;
+  }
+  .hljs-code,
+  .hljs-class .hljs-title,
+  .hljs-section {
+    color: white;
+  }
+  .hljs-regexp,
+  .hljs-link {
+    color: #d39745;
+  }
+  .hljs-meta {
+    color: #557182;
+  }
+  .hljs-tag,
+  .hljs-name,
+  .hljs-bullet,
+  .hljs-subst,
+  .hljs-emphasis,
+  .hljs-type,
+  .hljs-built_in,
+  .hljs-selector-attr,
+  .hljs-selector-pseudo,
+  .hljs-addition,
+  .hljs-variable,
+  .hljs-template-tag,
+  .hljs-template-variable {
+    color: #8cbbad;
+  }
+  .hljs-string,
+  .hljs-symbol {
+    color: #ec7600;
+  }
+  .hljs-comment,
+  .hljs-quote,
+  .hljs-deletion {
+    color: #818e96;
+  }
+  .hljs-selector-class {
+    color: #a082bd;
+  }
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-doctag,
+  .hljs-title,
+  .hljs-section,
+  .hljs-type,
+  .hljs-name,
+  .hljs-strong {
+    font-weight: bold;
+  }
+`
+
 const Article = styled('article')`
   max-width: 95vw;
   margin: 0 2.5vw 2rem;
@@ -33,22 +115,6 @@ const Article = styled('article')`
 
   p + p {
     margin-top: 1rem;
-  }
-
-  code {
-    background-color: ${colors.code.background};
-    color: ${colors.code.color};
-    font-family: 'Fira Code';
-    font-size: 1rem;
-  }
-  pre > code {
-    overflow: scroll;
-    margin: 2rem 0.5rem;
-    ${medium`
-      margin: 2rem -2rem;
-    `};
-    padding: 0.5rem;
-    display: block;
   }
 `
 
@@ -80,15 +146,18 @@ class Post extends Component {
     link.rel = 'stylesheet'
     document.head.appendChild(link)
 
-    injectGlobal`
-      .hljs{display:block;overflow-x:auto;padding:0.5em;color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-keyword,.hljs-formula{color:#c678dd}.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,.hljs-meta-string{color:#98c379}.hljs-built_in,.hljs-class .hljs-title{color:#e6c07b}.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-type,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-number{color:#d19a66}.hljs-symbol,.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-title{color:#61aeee}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}
-    `
-
     if (this.props.source) {
       fetch(this.props.source)
         .then(resp => resp.text())
         .then(md => {
-          this.setState({ source: md })
+          this.setState({
+            source: marked(md, {
+              highlight(code) {
+                return hljs.highlight('javascript', code)
+                  .value
+              },
+            }),
+          })
         })
     }
   }
@@ -118,9 +187,11 @@ class Post extends Component {
               </Fragment>
             )}
           </Div>
-          <Markdown
-            text={this.state.source}
-            scope={{ Yaml, Link }}
+          <div
+            className="hljs"
+            dangerouslySetInnerHTML={{
+              __html: this.state.source,
+            }}
           />
         </Article>
       </Provider>
