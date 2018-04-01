@@ -1,16 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import styled, { injectGlobal } from 'react-emotion'
-import { Link } from 'react-router-dom'
-import { Markdown } from '@compositor/markdown'
-import Yaml from './yaml.js'
 import format from 'date-fns/format'
 import { medium, large } from '../utils/media.js'
 import { colors } from '../styles/index.js'
 import { widths } from '../styles/index.js'
-import {
-  Provider,
-  Consumer,
-} from '../utils/post-context.js'
 
 import hljs from 'highlight.js'
 
@@ -163,39 +156,24 @@ class Post extends Component {
     }
   }
 
-  updateData = data => {
-    this.setState({
-      ...transform(data),
-    })
-  }
-
   render() {
     return (
-      <Provider
-        value={{
-          data: this.state.data,
-          setData: this.updateData,
-          getData: () => this.state.data,
-        }}
-      >
-        <Article>
-          {this.state.title && <h2>{this.state.title}</h2>}
-          <Div>
-            {this.state.date && (
-              <Fragment>
-                Published:{' '}
-                <time>{this.state.date + ''}</time>
-              </Fragment>
-            )}
-          </Div>
-          <div
-            className="hljs"
-            dangerouslySetInnerHTML={{
-              __html: this.state.source,
-            }}
-          />
-        </Article>
-      </Provider>
+      <Article>
+        {this.state.title && <h2>{this.state.title}</h2>}
+        <Div>
+          {this.state.date && (
+            <Fragment>
+              Published: <time>{this.state.date + ''}</time>
+            </Fragment>
+          )}
+        </Div>
+        <div
+          className="hljs"
+          dangerouslySetInnerHTML={{
+            __html: this.state.source,
+          }}
+        />
+      </Article>
     )
   }
 }
