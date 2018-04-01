@@ -5,8 +5,7 @@
     "dev": "parcel ./src/index.html",
     "dev-reason": "yarn watch & parcel ./src/index.html",
     "watch": "bsb -make-world -w",
-    "make":
-      "parcel build ./src/index.html --out-dir build && cp ./build/index.html ./index.html",
+    "make": "parcel build ./src/index.html --out-dir build && cp ./build/index.html ./index.html",
     "deploy": "now",
     "start": "serve -s"
   },
@@ -14,8 +13,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "bs-platform": "^2.1.0",
     "bsb-js": "^1.0.2",
-    "parcel-bundler": "^1.5.1",
-    "parcel-plugin-markdown": "0.2.1"
+    "parcel-bundler": "1.7.0"
   },
   "dependencies": {
     "@atlaskit/avatar": "9.0.0",
