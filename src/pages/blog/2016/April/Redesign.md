@@ -1,10 +1,3 @@
-```!jsx
-<Yaml
-  title="Redesign"
-
-/>
-```
-
 I recently redesigned my entire website for two reasons. The first was that I wanted to try and use a CSS library I have started work on, and the second was because I felt like my current site was a bit chaotic.
 
 I have written several posts about redesigning certain websites whether they are mine or some other sites, and for most of those writeups I went into the specific design principles or explained the different reasons as to why I used specific things. This writeup will not be like those as I am currently fairly short on time. instead I wanted to talk about a few things that I am using and a few things that I am cutting entirely from the website.

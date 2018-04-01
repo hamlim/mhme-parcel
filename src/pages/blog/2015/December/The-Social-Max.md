@@ -1,11 +1,3 @@
-```!jsx
-<Yaml
-title="The Social Max"
-date="2015-12-01"
-tags={["blogging", "social"]}
-/>
-```
-
 A few days ago I tweeted about an idea I had on social networking. I tweeted saying that there is a a maximum limit on the number of social networks someone is willing to keep up to date. I feel like this number is independent from person to person, so there will be people who can manage 5, 10 or even 15 social networks and others who can only manage one or two.
 
 The question arrises, is the social network startup market oversaturated? There are hundreds of social networks out there and more seem to always be entering the app stores, however have people already met their social max with the apps they have already? There is always a possibility that these new social apps will sometimes replace another but most social apps try to aim at a new killer feature/focus.

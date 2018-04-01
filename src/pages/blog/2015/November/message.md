@@ -1,11 +1,3 @@
-```!jsx
-<Yaml
-title="The Message is in the Medium"
-date="01-11-30"
-tags={["blogging"]}
-/>
-```
-
 The above title is something that was taught to me in one of my introductory courses at RPI. It's meant to convey that sometimes the way a piece of content is delivered will change the meaning of the content entirely. This, our class and I, have found to be true. From sending a message through Snapchat versus email one conveys a certain light-hearted demeanor, something possibly meant to be deleted upon being seen, or even something that is too intimate for an email. All this and more is conveyed to the consumer when they get the message, yet these deeper meanings will vary from individual to individual.
 
 The reason I wanted to write this post is because of some revelations I had while my flight was taxiing to take off to Albany. I had a great many thoughts while waiting for takeoff (some I might write about later) but the key thought I wanted to convey today was that the web, or all software in general, has always sat behind big media formats simply as a distribution network, and I think that this idea is flawed.

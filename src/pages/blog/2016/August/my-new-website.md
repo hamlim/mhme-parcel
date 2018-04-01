@@ -7,25 +7,25 @@ I wanted to start this off with a brief timeline of all the visual changes I hav
 The current version of the site, shown below in case it changes in the future, is broken down into basically 4 page types as it is now. The first is the <a href="#image1" class="link">home page</a> the second is <a href="#image2" class="link">my resume</a>, the third is my <a href="#image3" class="link">blog archive</a>, and the fourth is the layout of a <a href="#image4" class="link">blog post</a>.
 
 <figure class="figure" id="image1">
-<img src="/static/assets/images/posts/landing.png" alt="Landing Page" class="img">
+<img src="/static/images/posts/landing.png" alt="Landing Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Landing Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image2">
-<img src="/static/assets/images/posts/resume.png" alt="Resume Page" class="img">
+<img src="/static/images/posts/resume.png" alt="Resume Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Resume Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image3">
-<img src="/static/assets/images/posts/archive.png" alt="Archive Page" class="img">
+<img src="/static/images/posts/archive.png" alt="Archive Page" class="img">
 <figcaption class="horizontal--center">
     <h5>Archive Page</h5>
 </figcaption>
 </figure>
 <figure class="figure" id="image4">
-<img src="/static/assets/images/posts/post.png" alt="Blog post page" class="img">
+<img src="/static/images/posts/post.png" alt="Blog post page" class="img">
 <figcaption class="horizontal--center">
     Blog post Page
 </figcaption>
@@ -37,7 +37,6 @@ I originally came up with the current basic design in June of this year, having 
 
 Any good design article wouldn't be good without showing off the various design assets used across the site, so below is a quick demonstration of the various assets I used when designing and developing this version of the website.
 
-
 ### Code:
 
 I was going to try and add an interactive file structure map here on this article but figured it would be easier to discuss it. My entire site is built off of HTML and CSS. I don't use any JS simply because I don't need any javascript for functionality. All my HTML is hand written and I use emmet to help in writing it efficiently. All my css is compiled from SCSS files. I do the compiling myself on my machine before pushing to Github because Github doesn't handle compiling when pushing new commits.
@@ -47,5 +46,9 @@ For compiling my SCSS I use Grunt, and I know its now considered an out of date 
 For the most part that is the site. Everything is wired up is done by hand, I do this because I really enjoy touching code. So whenever I make a new post I copy my template html, edit in the title's and other data and then add a link back to it from the archive page when I am ready to publish it.
 
 ---
+
 #### Footnotes:
-[^1]: To combat this in the future I plan on making a snapshot branch on Github and forking those out into their separate repos (maybe).
+
+[^1]:
+
+  To combat this in the future I plan on making a snapshot branch on Github and forking those out into their separate repos (maybe).

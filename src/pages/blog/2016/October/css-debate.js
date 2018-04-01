@@ -1,10 +1,6 @@
 import React from 'react'
 import Post from '../../../../components/post.js'
-
-const md = require('fs').readFileSync(
-  __dirname + '/cssdebate.md',
-  { encoding: 'utf-8' },
-)
+import md from './cssdebate.md'
 
 const CSSDebate = () => <Post source={md} />
 export default CSSDebate

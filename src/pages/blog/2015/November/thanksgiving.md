@@ -1,11 +1,3 @@
-```!jsx
-<Yaml
-title="Thanksgiving"
-date="01-11-24"
-tags={["blogging"]}
-/>
-```
-
 Today is Thanksgiving day 2015 and right before I jump in the kitchen to help my family bake delicious food I wanted to write quickly about what I am thankful for.
 
 Most days out of the year I don't really recognize how thankful I am for everyone around me. In general one can't always be aware of just how much someone who loves you does for you day in and out.

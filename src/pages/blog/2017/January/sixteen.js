@@ -1,10 +1,6 @@
 import React from 'react'
 import Post from '../../../../components/post.js'
-
-const md = require('fs').readFileSync(
-  __dirname + '/sixteen.md',
-  { encoding: 'utf-8' },
-)
+import md from './sixteen.md'
 
 const Sixteen = () => <Post source={md} />
 export default Sixteen
