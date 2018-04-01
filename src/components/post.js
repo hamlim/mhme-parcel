@@ -38,6 +38,7 @@ injectGlobal`
   }
   .hljs code {
     color: #e0e2e4;
+    background: #282b2e;
   }
   .hljs-attribute {
     color: #668bb0;
