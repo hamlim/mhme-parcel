@@ -50,10 +50,8 @@ const Projects = () => (
     >
       <Project>
         <h4>
-          <StyledLink href="https://github.com/hamlim/recycles">
-            Recycles ♻️
-          </StyledLink>{' '}
-          - 2018
+          <NavLink to="/recycles">Recycles ♻️</NavLink> -
+          2018
         </h4>
         <Description>
           A collection of React component lifecycle
@@ -62,7 +60,7 @@ const Projects = () => (
       </Project>
       <Project>
         <h4>
-          <NavLink to="./react-state-reducer">
+          <NavLink to="/react-state-reducer">
             react-state-reducer
           </NavLink>{' '}
           - 2018

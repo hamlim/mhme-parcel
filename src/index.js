@@ -17,6 +17,8 @@ import Landing from './pages/landing.js'
 import Blog from './pages/blog/index.js'
 import Projects from './pages/projects.js'
 import ReactStateReducer from './pages/react-state-reducer'
+import Recycles from './pages/recycles.js'
+import FourOhFour from './pages/404.js'
 
 const App = () => (
   <Router>
@@ -37,10 +39,7 @@ const App = () => (
                     exact
                     component={Landing}
                   />
-                  <Route
-                    path="/blog"
-                    component={Blog}
-                  />
+                  <Route path="/blog" component={Blog} />
                   <Route
                     path="/projects"
                     component={Projects}
@@ -50,13 +49,10 @@ const App = () => (
                     component={ReactStateReducer}
                   />
                   <Route
-                    render={() => (
-                      <div>
-                        404 - 😱 Oh No you found a
-                        page that doesn't exist!
-                      </div>
-                    )}
+                    path="/recycles"
+                    component={Recycles}
                   />
+                  <Route component={FourOhFour} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

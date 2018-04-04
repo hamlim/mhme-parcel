@@ -2,8 +2,11 @@ import React, { Fragment } from 'react'
 import Container from '../components/container.js'
 import createStore from 'react-state-reducer'
 import styled from 'react-emotion'
-import { Flex, Box } from 'grid-styled'
+import { Flex, Box } from 'grid-emotion'
 import hljs from 'highlight.js'
+import Code from '../components/code.js'
+import Button from '@atlaskit/button'
+import { ComponentDidMount } from 'recycles'
 
 const P = styled('p')`
   margin: 1rem 0;
@@ -12,83 +15,6 @@ const Main = styled('main')`
   font-size: 1.3rem;
   margin-bottom: 3rem;
 `
-
-const Code = styled('pre')`
-  .hljs code {
-    font-size: 0.8rem;
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    background: #282b2e;
-  }
-  .hljs-keyword,
-  .hljs-selector-tag,
-  .hljs-literal,
-  .hljs-selector-id {
-    color: #93c763;
-  }
-  .hljs-number {
-    color: #ffcd22;
-  }
-  .hljs code {
-    color: #e0e2e4;
-  }
-  .hljs-attribute {
-    color: #668bb0;
-  }
-  .hljs-code,
-  .hljs-class .hljs-title,
-  .hljs-section {
-    color: white;
-  }
-  .hljs-regexp,
-  .hljs-link {
-    color: #d39745;
-  }
-  .hljs-meta {
-    color: #557182;
-  }
-  .hljs-tag,
-  .hljs-name,
-  .hljs-bullet,
-  .hljs-subst,
-  .hljs-emphasis,
-  .hljs-type,
-  .hljs-built_in,
-  .hljs-selector-attr,
-  .hljs-selector-pseudo,
-  .hljs-addition,
-  .hljs-variable,
-  .hljs-template-tag,
-  .hljs-template-variable {
-    color: #8cbbad;
-  }
-  .hljs-string,
-  .hljs-symbol {
-    color: #ec7600;
-  }
-  .hljs-comment,
-  .hljs-quote,
-  .hljs-deletion {
-    color: #818e96;
-  }
-  .hljs-selector-class {
-    color: #a082bd;
-  }
-  .hljs-keyword,
-  .hljs-selector-tag,
-  .hljs-literal,
-  .hljs-doctag,
-  .hljs-title,
-  .hljs-section,
-  .hljs-type,
-  .hljs-name,
-  .hljs-strong {
-    font-weight: bold;
-  }
-`
-
-import Button from '@atlaskit/button'
 
 const INITIAL_STATE = {
   todos: [],
@@ -167,15 +93,6 @@ const reducer = ({ type, payload }) => (
 }
 
 const { Provider, Consumer } = createStore(reducer)
-
-class ComponentDidMount extends React.Component {
-  componentDidMount() {
-    this.props.children()
-  }
-  render() {
-    return null
-  }
-}
 
 const LOCAL = 'MH-RSR'
 
