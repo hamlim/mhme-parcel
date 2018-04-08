@@ -29,7 +29,7 @@ injectGlobal`
   .hljs-number {
     color: #ffcd22;
   }
-  .hljs code {
+  .hljs pre code {
     color: #e0e2e4;
     background: #282b2e;
   }
@@ -107,8 +107,9 @@ const Article = styled('article')`
     margin: 0.5rem 0;
   }
 
-  p + p {
-    margin-top: 1rem;
+  p,
+  pre {
+    margin-bottom: 2rem;
   }
 `
 

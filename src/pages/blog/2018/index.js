@@ -2,6 +2,7 @@ import React from 'react'
 import BlogListing from '../../../components/blog-listing'
 
 import January from './January/index.js'
+import April from './April/index.js'
 
 const local = '/blog/2018'
 
@@ -16,6 +17,11 @@ const TwentyEighteen = () => (
         name: 'January',
         route: withLocal(`January`),
         component: January,
+      },
+      {
+        name: 'April',
+        route: withLocal('April'),
+        component: April,
       },
     ]}
   />
