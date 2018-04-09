@@ -109,7 +109,7 @@ class App extends React.Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     if (nextProps.value !== prevState.value) {
       return {
-        vale: nextProps.value,
+        value: nextProps.value,
       }
     }
     // ⚠️⚠️⚠️⚠️
@@ -128,7 +128,7 @@ class App extends React.Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     if (nextProps.value !== prevState.value) {
       return {
-        vale: nextProps.value,
+        value: nextProps.value,
       }
     }
     // Start by adding this, then modify the logic above
