@@ -86,6 +86,10 @@ injectGlobal`
   .hljs-strong {
     font-weight: bold;
   }
+
+  li > p {
+    display: inline-block;
+  }
 `
 
 const Article = styled('article')`
