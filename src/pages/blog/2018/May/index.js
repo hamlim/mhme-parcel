@@ -2,7 +2,13 @@ import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
 
-import ComplexUIComponentsAndState from './complex-ui-components'
+import ComplexUIComponentsAndState from './complex-ui-components.mdx'
+
+const AppliedComplexUIComponentsAndState = () => (
+  <ComplexUIComponentsAndState
+    components={{ pre: p => <pre className="hljs" {...p} /> }}
+  />
+)
 
 const local = '/blog/2018/May'
 
@@ -16,7 +22,7 @@ const May2018 = () => (
       {
         name: 'Managing Complex UI Component State',
         route: withLocal(`complex-ui-components`),
-        component: ComplexUIComponentsAndState,
+        component: AppliedComplexUIComponentsAndState,
       },
     ]}
   />

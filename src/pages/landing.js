@@ -48,9 +48,7 @@ const toPost = l => `/blog/${l}`
 const posts = [
   {
     name: 'Understanding React 16.3 Updates',
-    route: toPost(
-      `2018/April/understanding-react-16-3-updates`,
-    ),
+    route: toPost(`2018/April/understanding-react-16-3-updates`),
   },
   {
     name: '2018',
@@ -81,14 +79,13 @@ export default () => (
           I am Matt Hamlin, a web developer.
         </h2>
         <p className={[p, spacing].join(' ')}>
-          I make small{' '}
-          <Link to="/projects">side projects</Link> of all
-          kinds in my free time, and work with some really
-          smart people at Wayfair currently.
+          I make small <Link to="/projects">side projects</Link> of all kinds in
+          my free time, and work with some really smart people at Wayfair
+          currently.
         </p>
         <p className={[p, spacing].join(' ')}>
-          ⚠️ A word of caution, this site is still an
-          extreme work in progress, you have been warned. ⚠️
+          ⚠️ A word of caution, this site is still an extreme work in progress,
+          you have been warned. ⚠️
         </p>
       </section>
       <h2>Recent and Popular blog posts:</h2>
@@ -113,18 +110,12 @@ export default () => (
         <h2>Follow me on some social sites:</h2>
         <ul className={list}>
           <li>
-            <a
-              className={link}
-              href="https://twitter.com/immatthamlin"
-            >
+            <a className={link} href="https://twitter.com/immatthamlin">
               Follow me on Twitter
             </a>
           </li>
           <li>
-            <a
-              className={link}
-              href="https://github.com/hamlim"
-            >
+            <a className={link} href="https://github.com/hamlim">
               Check out my work on Github
             </a>
           </li>
