@@ -9,6 +9,7 @@
     "dev-reason": "yarn watch & parcel ./src/index.html",
     "watch": "bsb -make-world -w",
     "make": "parcel build ./src/index.html --out-dir build",
+    "predeploy": "yarn make",
     "deploy": "now",
     "start": "serve ./build/ -s"
   },
