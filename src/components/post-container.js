@@ -106,12 +106,17 @@ const Article = styled('article')`
   ol,
   ul {
     list-style-position: inside;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 2rem;
   }
 
   p,
   pre {
     margin-bottom: 2rem;
+  }
+
+  blockquote {
+    border-left: solid 5px ${colors.secondary};
+    padding-left: 0.5rem;
   }
 `
 

@@ -2,10 +2,10 @@ import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
 
-import TeamsAndLeadership from './teams-and-leadership.mdx'
+import TakingABreak from './taking-a-break.mdx'
 
-const AppliedTeamsAndLeadership = () => (
-  <TeamsAndLeadership
+const AppliedTakingABreak = () => (
+  <TakingABreak
     components={{ pre: p => <pre className="hljs" {...p} /> }}
   />
 )
@@ -20,9 +20,9 @@ const July2018 = () => (
     path={local}
     routes={[
       {
-        name: 'On Teams and Leadership',
-        route: withLocal(`teams-and-leadership`),
-        component: AppliedTeamsAndLeadership,
+        name: 'Taking a Break',
+        route: withLocal(`taking-a-break`),
+        component: AppliedTakingABreak,
       },
     ]}
   />
