@@ -124,7 +124,7 @@ const Div = styled('div')`
   margin: 1rem 0;
 `
 
-const dateFormat = 'dddd MMMM YYYY'
+const dateFormat = 'dddd Do MMMM YYYY'
 
 const transform = ({ date, title }) => {
   return {
