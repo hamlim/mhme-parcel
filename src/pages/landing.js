@@ -124,6 +124,14 @@ export default () => (
             </a>
           </li>
         </ul>
+        <video
+          style={{
+            width: '100%',
+            marginTop: '2rem',
+          }}
+          src="./drone-footage-from-carpenter-point.mp4"
+          controls
+        />
       </div>
     </Container>
   </Main>
