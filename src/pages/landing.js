@@ -47,6 +47,10 @@ const toPost = l => `/blog/${l}`
 
 const posts = [
   {
+    name: '☀️ Summer 2018 Trip ☀️',
+    route: toPost(`2018/July/☀️`),
+  },
+  {
     name: 'Taking a Break',
     route: toPost(`2018/July/taking-a-break`),
   },
