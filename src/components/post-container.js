@@ -2,8 +2,7 @@ import React, { Component, Fragment } from 'react'
 import styled, { injectGlobal } from 'react-emotion'
 import format from 'date-fns/format'
 import { medium, large } from '../utils/media.js'
-import { colors } from '../styles/index.js'
-import { widths } from '../styles/index.js'
+import { colors, widths } from '../styles/index.js'
 
 import hljs from 'highlight.js'
 
@@ -110,7 +109,8 @@ const Article = styled('article')`
   }
 
   p,
-  pre {
+  pre,
+  img {
     margin-bottom: 2rem;
   }
 

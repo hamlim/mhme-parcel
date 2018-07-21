@@ -4,7 +4,7 @@ import Avatar from '@atlaskit/avatar'
 import { MatchMedia } from '../utils/media.js'
 import { css } from 'react-emotion'
 import { colors } from '../styles/index.js'
-import me from '../../static/me.jpg'
+import me from './me.jpg'
 
 const subnav = css`
   text-align: center;
@@ -35,7 +35,11 @@ export default () => (
     <Link to="/" className={headerlink}>
       <MatchMedia
         render={matches => (
-          <Avatar src={me} size={matches ? 'xlarge' : 'xxlarge'} presence={matches ? 'online' : null} />
+          <Avatar
+            src={me}
+            size={matches ? 'xlarge' : 'xxlarge'}
+            presence={matches ? 'online' : null}
+          />
         )}
       />
     </Link>

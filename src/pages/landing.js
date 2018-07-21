@@ -47,6 +47,10 @@ const toPost = l => `/blog/${l}`
 
 const posts = [
   {
+    name: '☀️ Summer 2018 Trip ☀️',
+    route: toPost(`2018/July/☀️`),
+  },
+  {
     name: 'Taking a Break',
     route: toPost(`2018/July/taking-a-break`),
   },
@@ -124,6 +128,14 @@ export default () => (
             </a>
           </li>
         </ul>
+        <video
+          style={{
+            width: '100%',
+            marginTop: '2rem',
+          }}
+          src="./drone-footage-from-carpenter-point.mp4"
+          controls
+        />
       </div>
     </Container>
   </Main>
