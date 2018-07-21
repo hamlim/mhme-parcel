@@ -25,7 +25,9 @@
     "babel-preset-stage-2": "6.24.1",
     "bs-platform": "^2.1.0",
     "bsb-js": "^1.0.2",
-    "parcel-bundler": "1.9.0"
+    "parcel-bundler": "1.9.0",
+    "parcel-plugin-imagemin": "1.1.2",
+    "serve": "9.3.0"
   },
   "dependencies": {
     "@atlaskit/avatar": "9.0.0",
@@ -47,7 +49,6 @@
     "react-transition-group": "2.2.1",
     "reason-react": "^0.3.1",
     "recycles": "^1.1.0",
-    "remark-highlight.js": "5.0.0",
-    "serve": "6.5.3"
+    "remark-highlight.js": "5.0.0"
   }
 }
