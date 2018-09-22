@@ -83,17 +83,12 @@ export default () => (
       <section>
         <h2 className={`mv4 ${spacing}`}>
           Hello 👋🏼
-          <br />
-          I am Matt Hamlin, a web developer.
+          <br />I am Matt Hamlin, a web developer.
         </h2>
         <p className={[p, spacing].join(' ')}>
           I make small <Link to="/projects">side projects</Link> of all kinds in
           my free time, and work with some really smart people at Wayfair
           currently.
-        </p>
-        <p className={[p, spacing].join(' ')}>
-          ⚠️ A word of caution, this site is still an extreme work in progress,
-          you have been warned. ⚠️
         </p>
       </section>
       <h2>Recent and Popular blog posts:</h2>
@@ -128,15 +123,16 @@ export default () => (
             </a>
           </li>
         </ul>
-        <video
-          style={{
-            width: '100%',
-            marginTop: '2rem',
-          }}
-          src="./drone-footage-from-carpenter-point.mp4"
-          controls
-        />
       </div>
     </Container>
   </Main>
 )
+
+/* <video
+    style={{
+      width: '100%',
+      marginTop: '2rem',
+    }}
+    src="./drone-footage-from-carpenter-point.mp4"
+    controls
+  /> */
