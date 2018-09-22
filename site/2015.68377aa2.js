@@ -1,52 +1,52 @@
-parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRequire,o="function"==typeof require&&require;function u(n,t){if(!r[n]){if(!e[n]){var f="function"==typeof parcelRequire&&parcelRequire;if(!t&&f)return f(n,!0);if(i)return i(n,!0);if(o&&"string"==typeof n)return o(n);var c=new Error("Cannot find module '"+n+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[n][1][r]||r};var l=r[n]=new u.Module(n);e[n][0].call(l.exports,p,l,l.exports,this)}return r[n].exports;function p(e){return u(p.resolve(e))}}u.isParcelRequire=!0,u.Module=function(e){this.id=e,this.bundle=u,this.exports={}},u.modules=e,u.cache=r,u.parent=i,u.register=function(r,n){e[r]=[function(e,r){r.exports=n},{}]};for(var f=0;f<n.length;f++)u(n[f]);if(n.length){var c=u(n[n.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=c:"function"==typeof define&&define.amd?define(function(){return c}):t&&(this[t]=c)}return u}({444:[function(require,module,exports) {
+parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRequire,o="function"==typeof require&&require;function u(n,t){if(!r[n]){if(!e[n]){var f="function"==typeof parcelRequire&&parcelRequire;if(!t&&f)return f(n,!0);if(i)return i(n,!0);if(o&&"string"==typeof n)return o(n);var c=new Error("Cannot find module '"+n+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[n][1][r]||r};var l=r[n]=new u.Module(n);e[n][0].call(l.exports,p,l,l.exports,this)}return r[n].exports;function p(e){return u(p.resolve(e))}}u.isParcelRequire=!0,u.Module=function(e){this.id=e,this.bundle=u,this.exports={}},u.modules=e,u.cache=r,u.parent=i,u.register=function(r,n){e[r]=[function(e,r){r.exports=n},{}]};for(var f=0;f<n.length;f++)u(n[f]);if(n.length){var c=u(n[n.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=c:"function"==typeof define&&define.amd?define(function(){return c}):t&&(this[t]=c)}return u}({435:[function(require,module,exports) {
 module.exports="/Powerpoint.193b28fe.md";
-},{}],355:[function(require,module,exports) {
+},{}],338:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=a(e),t=require("../../../../components/post.js"),u=a(t),o=require("./Powerpoint.md"),n=a(o);function a(e){return e&&e.__esModule?e:{default:e}}var s=function(){return r.default.createElement(u.default,{source:n.default})};exports.default=s;
-},{"react":16,"../../../../components/post.js":443,"./Powerpoint.md":444}],459:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./Powerpoint.md":435}],487:[function(require,module,exports) {
 module.exports="/BloggingvsWorking.b69bc44d.md";
-},{}],356:[function(require,module,exports) {
+},{}],339:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=s(e),t=require("../../../../components/post.js"),u=s(t),o=require("./BloggingvsWorking.md"),n=s(o);function s(e){return e&&e.__esModule?e:{default:e}}var a=function(){return r.default.createElement(u.default,{source:n.default})};exports.default=a;
-},{"react":16,"../../../../components/post.js":443,"./BloggingvsWorking.md":459}],484:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./BloggingvsWorking.md":487}],434:[function(require,module,exports) {
 module.exports="/The-Social-Max.a1f2ed8b.md";
-},{}],357:[function(require,module,exports) {
+},{}],340:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=l(e),t=require("../../../../components/post.js"),u=l(t),a=require("./The-Social-Max.md"),o=l(a);function l(e){return e&&e.__esModule?e:{default:e}}var n=function(){return r.default.createElement(u.default,{source:o.default})};exports.default=n;
-},{"react":16,"../../../../components/post.js":443,"./The-Social-Max.md":484}],485:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./The-Social-Max.md":434}],488:[function(require,module,exports) {
 module.exports="/2016.9926e4b1.md";
-},{}],358:[function(require,module,exports) {
+},{}],341:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=n(e),t=require("../../../../components/post.js"),u=n(t),o=require("./2016.md"),a=n(o);function n(e){return e&&e.__esModule?e:{default:e}}var s=function(){return r.default.createElement(u.default,{source:a.default})};exports.default=s;
-},{"react":16,"../../../../components/post.js":443,"./2016.md":485}],479:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./2016.md":488}],436:[function(require,module,exports) {
 module.exports="/2015.259bc2e5.md";
-},{}],359:[function(require,module,exports) {
+},{}],342:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=n(e),t=require("../../../../components/post.js"),u=n(t),o=require("./2015.md"),a=n(o);function n(e){return e&&e.__esModule?e:{default:e}}var s=function(){return r.default.createElement(u.default,{source:a.default})};exports.default=s;
-},{"react":16,"../../../../components/post.js":443,"./2015.md":479}],309:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./2015.md":436}],309:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),t=p(e),l=require("react-router-dom"),a=require("./powerpoint"),n=p(a),r=require("./blogging-vs-working"),u=p(r),o=require("./the-social-max"),c=p(o),i=require("./2016"),m=p(i),d=require("./2015"),f=p(d);function p(e){return e&&e.__esModule?e:{default:e}}var g="/blog/2015/December/",E=function(){return t.default.createElement(e.Fragment,null,t.default.createElement(l.Route,{path:"/blog/2015/December",exact:!0,render:function(a){return a.match&&t.default.createElement(e.Fragment,null,t.default.createElement("h3",null,"December - 2015"),t.default.createElement("ul",null,t.default.createElement("li",null,t.default.createElement(l.Link,{to:g+"2015"},"2015")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:g+"2016"},"2016")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:g+"powerpoint"},"Powerpoint")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:g+"blogging-vs-working"},"Blogging vs Working")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:g+"the-social-max"},"The Social Max"))))}}),t.default.createElement(l.Route,{path:g+"2015",component:f.default}),t.default.createElement(l.Route,{path:g+"2016",component:m.default}),t.default.createElement(l.Route,{path:g+"powerpoint",component:n.default}),t.default.createElement(l.Route,{path:g+"blogging-vs-working",component:u.default}),t.default.createElement(l.Route,{path:g+"the-social-max",component:c.default}))};exports.default=E;
-},{"react":16,"react-router-dom":17,"./powerpoint":355,"./blogging-vs-working":356,"./the-social-max":357,"./2016":358,"./2015":359}],482:[function(require,module,exports) {
+},{"react":15,"react-router-dom":18,"./powerpoint":338,"./blogging-vs-working":339,"./the-social-max":340,"./2016":341,"./2015":342}],493:[function(require,module,exports) {
 module.exports="/thanksgiving.5f03c701.md";
-},{}],362:[function(require,module,exports) {
+},{}],348:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),t=o(e),r=require("../../../../components/post.js"),u=o(r),n=require("./thanksgiving.md"),a=o(n);function o(e){return e&&e.__esModule?e:{default:e}}var s=function(){return t.default.createElement(u.default,{source:a.default})};exports.default=s;
-},{"react":16,"../../../../components/post.js":443,"./thanksgiving.md":482}],488:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./thanksgiving.md":493}],414:[function(require,module,exports) {
 module.exports="/a-new-look.c7990a97.md";
-},{}],363:[function(require,module,exports) {
+},{}],349:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=n(e),t=require("../../../../components/post.js"),u=n(t),o=require("./a-new-look.md"),a=n(o);function n(e){return e&&e.__esModule?e:{default:e}}var l=function(){return r.default.createElement(u.default,{source:a.default})};exports.default=l;
-},{"react":16,"../../../../components/post.js":443,"./a-new-look.md":488}],489:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./a-new-look.md":414}],512:[function(require,module,exports) {
 module.exports="/weekend-projects.2c8c222d.md";
-},{}],364:[function(require,module,exports) {
+},{}],350:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=s(e),t=require("../../../../components/post.js"),u=s(t),o=require("./weekend-projects.md"),n=s(o);function s(e){return e&&e.__esModule?e:{default:e}}var a=function(){return r.default.createElement(u.default,{source:n.default})};exports.default=a;
-},{"react":16,"../../../../components/post.js":443,"./weekend-projects.md":489}],470:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./weekend-projects.md":512}],438:[function(require,module,exports) {
 module.exports="/a-new-resume.e6dfee81.md";
-},{}],365:[function(require,module,exports) {
+},{}],351:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=o(e),t=require("../../../../components/post.js"),u=o(t),a=require("./a-new-resume.md"),n=o(a);function o(e){return e&&e.__esModule?e:{default:e}}var s=function(){return r.default.createElement(u.default,{source:n.default})};exports.default=s;
-},{"react":16,"../../../../components/post.js":443,"./a-new-resume.md":470}],471:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./a-new-resume.md":438}],464:[function(require,module,exports) {
 module.exports="/Family-Time.542f6582.md";
-},{}],366:[function(require,module,exports) {
+},{}],352:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=l(e),t=require("../../../../components/post.js"),u=l(t),a=require("./Family-Time.md"),o=l(a);function l(e){return e&&e.__esModule?e:{default:e}}var n=function(){return r.default.createElement(u.default,{source:o.default})};exports.default=n;
-},{"react":16,"../../../../components/post.js":443,"./Family-Time.md":471}],474:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./Family-Time.md":464}],510:[function(require,module,exports) {
 module.exports="/message.17067a16.md";
-},{}],367:[function(require,module,exports) {
+},{}],353:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),r=o(e),t=require("../../../../components/post.js"),u=o(t),s=require("./message.md"),a=o(s);function o(e){return e&&e.__esModule?e:{default:e}}var n=function(){return r.default.createElement(u.default,{source:a.default})};exports.default=n;
-},{"react":16,"../../../../components/post.js":443,"./message.md":474}],310:[function(require,module,exports) {
+},{"react":15,"../../../../components/post.js":413,"./message.md":510}],310:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),t=p(e),l=require("react-router-dom"),a=require("./thanksgiving"),n=p(a),u=require("./a-new-look"),r=p(u),o=require("./weekend-projects"),m=p(o),c=require("./a-new-resume"),i=p(c),d=require("./family-time"),f=p(d),s=require("./message"),E=p(s);function p(e){return e&&e.__esModule?e:{default:e}}var k="/blog/2015/November/",g=function(){return t.default.createElement(e.Fragment,null,t.default.createElement(l.Route,{path:"/blog/2015/November",exact:!0,render:function(a){return a.match&&t.default.createElement(e.Fragment,null,t.default.createElement("h3",null,"November - 2015"),t.default.createElement("ul",null,t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"Thanksgiving"},"Thanksgiving")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"a-new-look"},"A New Look")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"weekend-projects"},"Weekend Projects")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"a-new-resume"},"A New Resume")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"family-time"},"Family Time")),t.default.createElement("li",null,t.default.createElement(l.Link,{to:k+"message"},"Message"))))}}),t.default.createElement(l.Route,{path:k+"Thanksgiving",component:n.default}),t.default.createElement(l.Route,{path:k+"a-new-look",component:r.default}),t.default.createElement(l.Route,{path:k+"weekend-projects",component:m.default}),t.default.createElement(l.Route,{path:k+"a-new-resume",component:i.default}),t.default.createElement(l.Route,{path:k+"family-time",component:f.default}),t.default.createElement(l.Route,{path:k+"message",component:E.default}))};exports.default=g;
-},{"react":16,"react-router-dom":17,"./thanksgiving":362,"./a-new-look":363,"./weekend-projects":364,"./a-new-resume":365,"./family-time":366,"./message":367}],88:[function(require,module,exports) {
+},{"react":15,"react-router-dom":18,"./thanksgiving":348,"./a-new-look":349,"./weekend-projects":350,"./a-new-resume":351,"./family-time":352,"./message":353}],89:[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),t=c(e),r=require("../../../components/blog-listing"),u=c(r),n=require("./December/index.js"),o=c(n),l=require("./November/index.js"),a=c(l);function c(e){return e&&e.__esModule?e:{default:e}}var i="/blog/2015",m=function(e){return i+"/"+e},d=function(){return t.default.createElement(u.default,{title:t.default.createElement("h3",null,"2015"),path:i,routes:[{name:"November",route:m("November"),component:a.default},{name:"December",route:m("December"),component:o.default}]})};exports.default=d;
-},{"react":16,"../../../components/blog-listing":308,"./December/index.js":309,"./November/index.js":310}]},{},[88], null)
+},{"react":15,"../../../components/blog-listing":308,"./December/index.js":309,"./November/index.js":310}]},{},[89], null)
 //# sourceMappingURL=/2015.2bee0f8e.map
