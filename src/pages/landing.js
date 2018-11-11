@@ -47,6 +47,10 @@ const toPost = l => `/blog/${l}`
 
 const posts = [
   {
+    name: 'Composition Patterns of Components and Colocated Data',
+    route: toPost(`2018/November/suspense-plus-graphql`),
+  },
+  {
     name: "You've Launched, Now What?",
     route: toPost(`2018/September/youve-launched-now-what`),
   },

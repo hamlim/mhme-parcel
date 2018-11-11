@@ -30,22 +30,24 @@ const nav = css`
   margin: 1rem 0;
 `
 
-export default () => (
-  <nav className={nav}>
-    <Link to="/" className={headerlink}>
-      <MatchMedia
-        render={matches => (
-          <Avatar
-            src={me}
-            size={matches ? 'xlarge' : 'xxlarge'}
-            presence={matches ? 'online' : null}
-          />
-        )}
-      />
-    </Link>
-    <div className={subnav}>
-      <Link to="/blog">Blog</Link>
-      <Link to="/projects">Projects</Link>
-    </div>
-  </nav>
-)
+export default function Navigation() {
+  return (
+    <nav className={nav}>
+      <Link to="/" className={headerlink}>
+        <MatchMedia
+          render={matches => (
+            <Avatar
+              src={me}
+              size={matches ? 'xlarge' : 'xxlarge'}
+              presence={matches ? 'online' : null}
+            />
+          )}
+        />
+      </Link>
+      <div className={subnav}>
+        <Link to="/blog">Blog</Link>
+        <Link to="/projects">Projects</Link>
+      </div>
+    </nav>
+  )
+}
