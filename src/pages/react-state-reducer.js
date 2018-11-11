@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react'
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
+import styled from '@emotion/styled'
+import { Fragment } from 'react'
 import Container from '../components/container.js'
 import createStore from 'react-state-reducer'
-import styled from 'react-emotion'
 import { Flex, Box } from 'grid-emotion'
 import hljs from 'highlight.js'
 import Code from '../components/code.js'
-import Button from '@atlaskit/button'
 import { ComponentDidMount } from 'recycles'
 
 const P = styled('p')`
@@ -14,6 +15,33 @@ const P = styled('p')`
 const Main = styled('main')`
   font-size: 1.3rem;
   margin-bottom: 3rem;
+`
+
+const Button = styled('button')`
+  align-items: baseline;
+  background: #0052cc;
+  border-radius: 3px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: default;
+  display: inline-flex;
+  font-size: inherit;
+  font-style: normal;
+  height: 2.2857142857142856em;
+  line-height: 2.2857142857142856em;
+  margin: 0;
+  max-width: 100%;
+  outline: none;
+  padding: 0 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
+  transition-duration: 0.1s, 0.15s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
 `
 
 const INITIAL_STATE = {
@@ -30,9 +58,7 @@ const UPDATE_TODO = 'UPDATE_TODO'
 
 const SET = 'SET'
 
-const reducer = ({ type, payload }) => (
-  state = INITIAL_STATE,
-) => {
+const reducer = ({ type, payload }) => (state = INITIAL_STATE) => {
   switch (type) {
     case SET: {
       return {
@@ -117,10 +143,7 @@ const UpdateState = () => (
 export default () => (
   <Provider
     onUpdate={state => {
-      window.localStorage.setItem(
-        LOCAL,
-        JSON.stringify(state),
-      )
+      window.localStorage.setItem(LOCAL, JSON.stringify(state))
     }}
   >
     <Container>
@@ -137,23 +160,14 @@ export default () => (
             <a href="https://github.com/hamlim/react-state-reducer">
               React-State-Reducer
             </a>
-            , a simple React library for state management,
-            built on the same patterns that Redux and other
-            Flux libraries pioneered.
+            , a simple React library for state management, built on the same
+            patterns that Redux and other Flux libraries pioneered.
           </P>
           <div>
             <Consumer>
               {({ dispatch, counter }) => (
-                <Flex
-                  justifyContent="center"
-                  alignItems="center"
-                  mt="2rem"
-                >
-                  <Flex
-                    w={1 / 3}
-                    alignItems="center"
-                    justifyContent="center"
-                  >
+                <Flex justifyContent="center" alignItems="center" mt="2rem">
+                  <Flex w={1 / 3} alignItems="center" justifyContent="center">
                     <Button
                       appearance="primary"
                       onClick={_ => dispatch({ type: INC })}
@@ -161,18 +175,10 @@ export default () => (
                       Increment
                     </Button>
                   </Flex>
-                  <Flex
-                    w={1 / 3}
-                    alignItems="center"
-                    justifyContent="center"
-                  >
+                  <Flex w={1 / 3} alignItems="center" justifyContent="center">
                     {counter}
                   </Flex>
-                  <Flex
-                    w={1 / 3}
-                    alignItems="center"
-                    justifyContent="center"
-                  >
+                  <Flex w={1 / 3} alignItems="center" justifyContent="center">
                     <Button
                       appearance="primary"
                       onClick={_ => dispatch({ type: DEC })}
@@ -186,14 +192,11 @@ export default () => (
           </div>
           <div>
             <P>
-              It allows you to manage how you both update
-              and reconcile state changes by providing{' '}
-              <code>{`<Provider>`}</code> and{' '}
-              <code>{`<Consumer>`}</code> components. The
-              consumer component provides a{' '}
-              <code>dispatch</code> function, along with all
-              of the state spread down to the argument for
-              the children function.
+              It allows you to manage how you both update and reconcile state
+              changes by providing <code>{`<Provider>`}</code> and{' '}
+              <code>{`<Consumer>`}</code> components. The consumer component
+              provides a <code>dispatch</code> function, along with all of the
+              state spread down to the argument for the children function.
             </P>
           </div>
           <div>
@@ -221,11 +224,7 @@ export default () => (
                   <ul>
                     {todos.map(todo => (
                       <li key={todo.id}>
-                        {todo.done ? (
-                          <s>{todo.text}</s>
-                        ) : (
-                          todo.text
-                        )}
+                        {todo.done ? <s>{todo.text}</s> : todo.text}
                         <Button
                           appearance="link"
                           onClick={_ =>
@@ -235,10 +234,7 @@ export default () => (
                             })
                           }
                         >
-                          Mark as{' '}
-                          {todo.done
-                            ? 'incomplete'
-                            : 'complete'}
+                          Mark as {todo.done ? 'incomplete' : 'complete'}
                         </Button>
                       </li>
                     ))}
@@ -247,21 +243,17 @@ export default () => (
               )}
             </Consumer>
             <P>
-              In fact this page is using the library to
-              power not only the counter but also the todo
-              application above!
+              In fact this page is using the library to power not only the
+              counter but also the todo application above!
             </P>
             <P>
-              And the best part of this is that they are
-              using the same top level Provider, and two
-              different Consumers!
+              And the best part of this is that they are using the same top
+              level Provider, and two different Consumers!
             </P>
             <Button
               appearance="primary"
               onClick={_ => {
-                let synced = window.localStorage.getItem(
-                  LOCAL,
-                )
+                let synced = window.localStorage.getItem(LOCAL)
                 if (synced) {
                   window.localStorage.setItem(LOCAL, '')
                 }
@@ -270,9 +262,7 @@ export default () => (
               Clear out local storage
             </Button>
             <details>
-              <summary>
-                Here is the code for this entire webpage:
-              </summary>
+              <summary>Here is the code for this entire webpage:</summary>
               <div className="hljs">
                 <Code
                   style={{
@@ -468,11 +458,8 @@ export default () => (
             </details>
           </div>
           <P>
-            If you made it this far down, check out the
-            project on{' '}
-            <a href="https://github.com/hamlim/react-state-reducer">
-              Github
-            </a>.
+            If you made it this far down, check out the project on{' '}
+            <a href="https://github.com/hamlim/react-state-reducer">Github</a>.
           </P>
         </section>
       </Main>

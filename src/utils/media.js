@@ -17,7 +17,9 @@ export class MatchMedia extends React.Component {
   }
   mql = null
   componentDidMount() {
-    this.mql = window.matchMedia(this.props.mediaQuery || 'screen and (min-width: 640px)')
+    this.mql = window.matchMedia(
+      this.props.mediaQuery || 'screen and (min-width: 640px)',
+    )
     this.mql.addListener(this.onMatch)
     this.onMatch(this.mql)
   }
@@ -28,6 +30,6 @@ export class MatchMedia extends React.Component {
   }
 
   render() {
-    return this.props.render(this.state.matches)
+    return this.props.children(this.state.matches)
   }
 }

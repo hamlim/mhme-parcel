@@ -1,50 +1,50 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
 import { Link } from 'react-router-dom'
-import Avatar from '@atlaskit/avatar'
 import { MatchMedia } from '../utils/media.js'
-import { css } from 'react-emotion'
+import styled from '@emotion/styled'
 import { colors } from '../styles/index.js'
 import me from './me.jpg'
 
-const subnav = css`
-  text-align: center;
-  & a {
-    color: ${colors.accent};
-    font-size: 2rem;
-  }
-  & a + a {
-    margin-left: 1rem;
-  }
-`
-
-const headerlink = css`
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    border: none;
-  }
-`
-
-const nav = css`
-  text-align: center;
-  margin: 1rem 0;
+const Avatar = styled('img')`
+  border-radius: 50%;
+  overflow: hidden;
+  height: 96px;
+  width: 96px;
 `
 
 export default function Navigation() {
   return (
-    <nav className={nav}>
-      <Link to="/" className={headerlink}>
-        <MatchMedia
-          render={matches => (
-            <Avatar
-              src={me}
-              size={matches ? 'xlarge' : 'xxlarge'}
-              presence={matches ? 'online' : null}
-            />
-          )}
-        />
+    <nav
+      css={css`
+        text-align: center;
+        margin: 1rem 0;
+      `}
+    >
+      <Link
+        to="/"
+        css={css`
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            border: none;
+          }
+        `}
+      >
+        <MatchMedia>{matches => <Avatar src={me} />}</MatchMedia>
       </Link>
-      <div className={subnav}>
+      <div
+        css={css`
+          text-align: center;
+          & a {
+            color: ${colors.accent};
+            font-size: 2rem;
+          }
+          & a + a {
+            margin-left: 1rem;
+          }
+        `}
+      >
         <Link to="/blog">Blog</Link>
         <Link to="/projects">Projects</Link>
       </div>

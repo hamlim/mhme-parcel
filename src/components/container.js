@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { medium } from '../utils/media.js'
 import { widths } from '../styles/index.js'
 

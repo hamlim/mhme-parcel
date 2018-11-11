@@ -7,7 +7,7 @@ const Null = () => <span />
 
 class Blog extends Component {
   state = {
-    Route: Null,
+    Match: Null,
     Link: Null,
     Breadcrumbs: Null,
     TwentyFifteen: Null,
@@ -17,7 +17,7 @@ class Blog extends Component {
   }
   componentDidMount() {
     Promise.all([
-      import('react-router-dom'),
+      import('@reach/router'),
       import('../../components/breadcrumbs.js'),
       import('./2015/index.js'),
       import('./2016/index.js'),
@@ -25,7 +25,7 @@ class Blog extends Component {
       import('./2018/index.js'),
     ]).then(
       ([
-        { Route, Link },
+        { Link, Match },
         { default: Breadcrumbs },
         { default: TwentyFifteen },
         { default: TwentySixteen },
@@ -33,7 +33,7 @@ class Blog extends Component {
         { default: TwentyEighteen },
       ]) => {
         this.setState({
-          Route,
+          Match,
           Link,
           Breadcrumbs,
           TwentyFifteen,
@@ -46,7 +46,6 @@ class Blog extends Component {
   }
   render() {
     const {
-      Route,
       Link,
       Breadcrumbs,
       TwentyFifteen,
@@ -57,14 +56,12 @@ class Blog extends Component {
     return (
       <Container>
         <Breadcrumbs />
-        <Route path="/blog/2015" component={TwentyFifteen} />
-        <Route path="/blog/2016" component={TwentySixteen} />
-        <Route path="/blog/2017" component={TwentySeventeen} />
-        <Route path="/blog/2018" component={TwentyEighteen} />
-        <Route
-          path="/blog"
-          exact
-          render={r =>
+        <TwentyFifteen path="/blog/2015" />
+        <TwentySixteen path="/blog/2016" />
+        <TwentySeventeen path="/blog/2017" />
+        <TwentyEighteen path="/blog/2018" />
+        <Match path="/blog">
+          {r =>
             r.match && (
               <Fragment>
                 <h3>Years:</h3>
@@ -85,7 +82,7 @@ class Blog extends Component {
               </Fragment>
             )
           }
-        />
+        </Match>
       </Container>
     )
   }

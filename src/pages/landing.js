@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
+import { Link } from '@reach/router'
 import Container from '../components/container.js'
-import styled, { css } from 'react-emotion'
+import styled from '@emotion/styled'
 import { colors } from '../styles/index.js'
 
 const list = css`
@@ -89,7 +90,7 @@ export default () => (
   <Main>
     <Container>
       <section>
-        <h2 className={`mv4 ${spacing}`}>
+        <h2 className={spacing}>
           Hello 👋🏼
           <br />I am Matt Hamlin, a web developer.
         </h2>
@@ -135,12 +136,3 @@ export default () => (
     </Container>
   </Main>
 )
-
-/* <video
-    style={{
-      width: '100%',
-      marginTop: '2rem',
-    }}
-    src="./drone-footage-from-carpenter-point.mp4"
-    controls
-  /> */

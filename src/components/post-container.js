@@ -1,93 +1,13 @@
-import React, { Component, Fragment } from 'react'
-import styled, { injectGlobal } from 'react-emotion'
+/** @jsx jsx */
+import { Component, Fragment } from 'react'
+import styled from '@emotion/styled'
+import { css, jsx } from '@emotion/core'
+import { Global } from '@emotion/core'
 import format from 'date-fns/format'
 import { medium, large } from '../utils/media.js'
 import { colors, widths } from '../styles/index.js'
 
 import hljs from 'highlight.js'
-
-injectGlobal`
-  pre.hljs code {
-    font-size: 0.8rem;
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    background: #282b2e;
-    & > * {
-      font-family: 'Fira Code';
-    }
-  }
-  .hljs-keyword,
-  .hljs-selector-tag,
-  .hljs-literal,
-  .hljs-selector-id {
-    color: #93c763;
-  }
-  .hljs-number {
-    color: #ffcd22;
-  }
-  pre.hljs code {
-    color: #e0e2e4;
-    background: #282b2e;
-  }
-  .hljs-attribute {
-    color: #668bb0;
-  }
-  .hljs-code,
-  .hljs-class .hljs-title,
-  .hljs-section {
-    color: white;
-  }
-  .hljs-regexp,
-  .hljs-link {
-    color: #d39745;
-  }
-  .hljs-meta {
-    color: #557182;
-  }
-  .hljs-tag,
-  .hljs-name,
-  .hljs-bullet,
-  .hljs-subst,
-  .hljs-emphasis,
-  .hljs-type,
-  .hljs-built_in,
-  .hljs-selector-attr,
-  .hljs-selector-pseudo,
-  .hljs-addition,
-  .hljs-variable,
-  .hljs-template-tag,
-  .hljs-template-variable {
-    color: #8cbbad;
-  }
-  .hljs-string,
-  .hljs-symbol {
-    color: #ec7600;
-  }
-  .hljs-comment,
-  .hljs-quote,
-  .hljs-deletion {
-    color: #818e96;
-  }
-  .hljs-selector-class {
-    color: #a082bd;
-  }
-  .hljs-keyword,
-  .hljs-selector-tag,
-  .hljs-literal,
-  .hljs-doctag,
-  .hljs-title,
-  .hljs-section,
-  .hljs-type,
-  .hljs-name,
-  .hljs-strong {
-    font-weight: bold;
-  }
-
-  li > p {
-    display: inline-block;
-  }
-`
 
 const Article = styled('article')`
   max-width: 95vw;
@@ -144,16 +64,102 @@ class Post extends Component {
 
   render() {
     return (
-      <Article className="hljs">
-        <Div>
-          {this.props.date && (
-            <Fragment>
-              Published: <time>{format(this.props.date, dateFormat)}</time>
-            </Fragment>
-          )}
-        </Div>
-        {this.props.children}
-      </Article>
+      <Fragment>
+        <Global
+          css={css`
+            pre.hljs code {
+              font-size: 0.8rem;
+              display: block;
+              overflow-x: auto;
+              padding: 0.5em;
+              background: #282b2e;
+              & > * {
+                font-family: 'Fira Code';
+              }
+            }
+            .hljs-keyword,
+            .hljs-selector-tag,
+            .hljs-literal,
+            .hljs-selector-id {
+              color: #93c763;
+            }
+            .hljs-number {
+              color: #ffcd22;
+            }
+            pre.hljs code {
+              color: #e0e2e4;
+              background: #282b2e;
+            }
+            .hljs-attribute {
+              color: #668bb0;
+            }
+            .hljs-code,
+            .hljs-class .hljs-title,
+            .hljs-section {
+              color: white;
+            }
+            .hljs-regexp,
+            .hljs-link {
+              color: #d39745;
+            }
+            .hljs-meta {
+              color: #557182;
+            }
+            .hljs-tag,
+            .hljs-name,
+            .hljs-bullet,
+            .hljs-subst,
+            .hljs-emphasis,
+            .hljs-type,
+            .hljs-built_in,
+            .hljs-selector-attr,
+            .hljs-selector-pseudo,
+            .hljs-addition,
+            .hljs-variable,
+            .hljs-template-tag,
+            .hljs-template-variable {
+              color: #8cbbad;
+            }
+            .hljs-string,
+            .hljs-symbol {
+              color: #ec7600;
+            }
+            .hljs-comment,
+            .hljs-quote,
+            .hljs-deletion {
+              color: #818e96;
+            }
+            .hljs-selector-class {
+              color: #a082bd;
+            }
+            .hljs-keyword,
+            .hljs-selector-tag,
+            .hljs-literal,
+            .hljs-doctag,
+            .hljs-title,
+            .hljs-section,
+            .hljs-type,
+            .hljs-name,
+            .hljs-strong {
+              font-weight: bold;
+            }
+
+            li > p {
+              display: inline-block;
+            }
+          `}
+        />
+        <Article className="hljs">
+          <Div>
+            {this.props.date && (
+              <Fragment>
+                Published: <time>{format(this.props.date, dateFormat)}</time>
+              </Fragment>
+            )}
+          </Div>
+          {this.props.children}
+        </Article>
+      </Fragment>
     )
   }
 }
