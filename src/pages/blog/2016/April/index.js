@@ -1,15 +1,14 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Match, Link } from '@reach/router'
 import Redesign from './redesign'
 
 const local = '/blog/2016/April/'
 
 const TwentySixteenApril = () => (
   <Fragment>
-    <Route
+    <Match
       path="/blog/2016/April"
-      exact
-      render={r =>
+      children={r =>
         r.match && (
           <Fragment>
             <h3>April - 2016</h3>
@@ -22,7 +21,7 @@ const TwentySixteenApril = () => (
         )
       }
     />
-    <Route path={`${local}redesign`} component={Redesign} />
+    <Redesign path={`${local}redesign`} />
   </Fragment>
 )
 

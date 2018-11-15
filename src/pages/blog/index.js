@@ -32,6 +32,7 @@ class Blog extends Component {
         { default: TwentySeventeen },
         { default: TwentyEighteen },
       ]) => {
+        console.log(Match)
         this.setState({
           Match,
           Link,
@@ -46,6 +47,7 @@ class Blog extends Component {
   }
   render() {
     const {
+      Match,
       Link,
       Breadcrumbs,
       TwentyFifteen,

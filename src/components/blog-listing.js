@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Match, Link } from '@reach/router'
 
 export default function BlogListing({ routes, path, title }) {
   return (
     <Fragment>
-      <Route
-        exact
+      <Match
         path={path}
-        render={r =>
+        children={r =>
           r.match && (
             <Fragment>
               {title}
@@ -22,8 +21,8 @@ export default function BlogListing({ routes, path, title }) {
           )
         }
       />
-      {routes.map(({ route, component }) => (
-        <Route key={route} path={route} component={component} />
+      {routes.map(({ route, component: Comp }) => (
+        <Comp key={route} path={route} />
       ))}
     </Fragment>
   )

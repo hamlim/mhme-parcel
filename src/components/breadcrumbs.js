@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from '@reach/router'
+import { Location, Link } from '@reach/router'
 import styled from '@emotion/styled'
 
 const Div = styled('div')`

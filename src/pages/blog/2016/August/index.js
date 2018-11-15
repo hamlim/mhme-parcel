@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Match, Link } from '@reach/router'
 import AttributeSelectors from './attribute-selectors'
 import August from './august'
 import RedesignV5 from './redesign-v5'
@@ -10,16 +10,17 @@ const local = '/blog/2016/August/'
 
 const TwentySixteenApril = () => (
   <Fragment>
-    <Route
+    <Match
       path="/blog/2016/August"
-      exact
-      render={r =>
+      children={r =>
         r.match && (
           <Fragment>
             <h3>August - 2016</h3>
             <ul>
               <li>
-                <Link to={`${local}attribute-selectors`}>Attribute Selectors</Link>
+                <Link to={`${local}attribute-selectors`}>
+                  Attribute Selectors
+                </Link>
               </li>
               <li>
                 <Link to={`${local}august`}>August</Link>
@@ -38,11 +39,11 @@ const TwentySixteenApril = () => (
         )
       }
     />
-    <Route path={`${local}attribute-selectors`} component={AttributeSelectors} />
-    <Route path={`${local}august`} component={August} />
-    <Route path={`${local}my-new-website`} component={MyNewWebsite} />
-    <Route path={`${local}pull-quotes`} component={PullQuotes} />
-    <Route path={`${local}redesign-v5`} component={RedesignV5} />
+    <AttributeSelectors path={`${local}attribute-selectors`} />
+    <August path={`${local}august`} />
+    <MyNewWebsite path={`${local}my-new-website`} />
+    <PullQuotes path={`${local}pull-quotes`} />
+    <RedesignV5 path={`${local}redesign-v5`} />
   </Fragment>
 )
 

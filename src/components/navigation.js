@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
-import { Link } from 'react-router-dom'
+import { Link } from '@reach/router'
 import { MatchMedia } from '../utils/media.js'
 import styled from '@emotion/styled'
 import { colors } from '../styles/index.js'

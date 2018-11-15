@@ -4,7 +4,7 @@ import BlogListing from '../../../../components/blog-listing'
 
 import YouveLaunchedNowWhat from './youve-launched-now-what.mdx'
 
-const local = '/blog/2018/September'
+const local = '/2018/September'
 
 const withLocal = r => `${local}/${r}`
 
