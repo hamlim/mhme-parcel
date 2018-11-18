@@ -32,7 +32,6 @@ class Blog extends Component {
         { default: TwentySeventeen },
         { default: TwentyEighteen },
       ]) => {
-        console.log(Match)
         this.setState({
           Match,
           Link,

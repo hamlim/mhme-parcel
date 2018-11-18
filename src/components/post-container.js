@@ -66,7 +66,7 @@ class Post extends Component {
     return (
       <Fragment>
         <Global
-          css={css`
+          styles={css`
             pre.hljs code {
               font-size: 0.8rem;
               display: block;
