@@ -1,7 +1,7 @@
 import React, { Fragment, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import setup from './setup'
+import GlobalStyles from './setup'
 import { Router, Location } from '@reach/router'
 
 import Navigation from './components/navigation.js'
@@ -20,6 +20,7 @@ const Wrapper = ({ children }) => children
 
 const App = () => (
   <>
+    <GlobalStyles />
     <Router>
       <Navigation default />
     </Router>
@@ -48,5 +49,4 @@ const App = () => (
 
 const elem = document.querySelector('#root')
 
-setup()
 createRoot(elem).render(<App />)
