@@ -14,34 +14,28 @@ const ReactStateReducer = lazy(() => import('./pages/react-state-reducer.js'))
 const Recycles = lazy(() => import('./pages/recycles.js'))
 const FourOhFour = lazy(() => import('./pages/404.js'))
 
-const Route = ({ children, ...props }) => children(props)
-
-const Wrapper = ({ children }) => children
-
 const App = () => (
   <>
     <GlobalStyles />
-    <Router>
-      <Navigation default />
-    </Router>
     <Location>
       {({ location }) => (
-        <TransitionGroup>
-          <CSSTransition key={location.key} classNames="fade" timeout={300}>
-            <Router location={location}>
-              <Wrapper default>
-                <Suspense fallback="..." default>
+        <>
+          <Navigation />
+          <TransitionGroup>
+            <CSSTransition key={location.key} classNames="fade" timeout={300}>
+              <Suspense fallback="...">
+                <Router location={location}>
                   <Landing path="/" />
-                  <Blog path="/blog" />
+                  <Blog path="/blog/*" />
                   <Projects path="/projects" />
                   <ReactStateReducer path="/react-state-reducer" />
                   <Recycles path="/recycles" />
-                  <Recycles default />
-                </Suspense>
-              </Wrapper>
-            </Router>
-          </CSSTransition>
-        </TransitionGroup>
+                  <FourOhFour default />
+                </Router>
+              </Suspense>
+            </CSSTransition>
+          </TransitionGroup>
+        </>
       )}
     </Location>
   </>

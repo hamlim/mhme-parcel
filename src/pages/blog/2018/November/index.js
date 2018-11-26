@@ -13,7 +13,7 @@ const AppliedSuspensePlusGraphQL = () => (
 
 const local = '/blog/2018/November'
 
-const withLocal = r => `${local}/${r}`
+const localPath = path => `${path}/*`
 
 const November2018 = () => (
   <BlogListing
@@ -22,16 +22,17 @@ const November2018 = () => (
     routes={[
       {
         name: 'Missing Detail',
-        route: withLocal(`missing-detail`),
-        component: MissingDetail,
+        route: `missing-detail`,
       },
       {
         name: 'Composition Patterns of Components and Colocated Data',
-        route: withLocal(`suspense-plus-graphql`),
-        component: AppliedSuspensePlusGraphQL,
+        route: `suspense-plus-graphql`,
       },
     ]}
-  />
+  >
+    <MissingDetail path={localPath('missing-detail')} />
+    <AppliedSuspensePlusGraphQL path={localPath('suspense-plus-graphql')} />
+  </BlogListing>
 )
 
 export default November2018

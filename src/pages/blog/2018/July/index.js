@@ -3,7 +3,9 @@ import React from 'react'
 import BlogListing from '../../../../components/blog-listing'
 
 import TakingABreak from './taking-a-break.mdx'
-import Summer2018Trip from './summer-2018-trip.mdx'
+import Summer2018Trip from './summer-trip.mdx'
+
+console.log(Summer2018Trip)
 
 const AppliedTakingABreak = () => (
   <TakingABreak components={{ pre: p => <pre className="hljs" {...p} /> }} />
@@ -11,7 +13,7 @@ const AppliedTakingABreak = () => (
 
 const local = '/blog/2018/July'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}/*`
 
 const July2018 = () => (
   <BlogListing
@@ -20,16 +22,17 @@ const July2018 = () => (
     routes={[
       {
         name: 'Taking a Break',
-        route: withLocal(`taking-a-break`),
-        component: AppliedTakingABreak,
+        route: `taking-a-break`,
       },
       {
         name: 'Summer 2018 Trip',
-        route: withLocal(`☀️`),
-        component: Summer2018Trip,
+        route: `summer`,
       },
     ]}
-  />
+  >
+    <AppliedTakingABreak path={withLocal(`taking-a-break`)} />
+    <Summer2018Trip path={withLocal(`summer`)} />
+  </BlogListing>
 )
 
 export default July2018

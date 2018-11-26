@@ -6,7 +6,7 @@ import MattsLogOctober from './matts-log-october.mdx'
 
 const local = '/blog/2018/October'
 
-const withLocal = r => `${local}/${r}`
+const localPath = r => `${r}/*`
 
 const October2018 = () => (
   <BlogListing
@@ -14,12 +14,13 @@ const October2018 = () => (
     path={local}
     routes={[
       {
-        name: "Matts Log - October",
-        route: withLocal(`matts-log-october`),
-        component: MattsLogOctober,
+        name: 'Matts Log - October',
+        route: `matts-log-october`,
       },
     ]}
-  />
+  >
+    <MattsLogOctober path={localPath(`matts-log-october`)} />
+  </BlogListing>
 )
 
 export default October2018

@@ -1,5 +1,5 @@
 import React, { Fragment, Component, lazy } from 'react'
-import { Link, Match } from '@reach/router'
+import { Link, Match, Router } from '@reach/router'
 import Container from '../../components/container.js'
 
 const Breadcrumbs = lazy(() => import('../../components/breadcrumbs.js'))
@@ -12,30 +12,34 @@ export default function Blog() {
   return (
     <Container>
       <Breadcrumbs />
-      <TwentyFifteen path="/blog/2015" />
-      <TwentySixteen path="/blog/2016" />
-      <TwentySeventeen path="/blog/2017" />
-      <TwentyEighteen path="/blog/2018" />
+      <Router primary={false}>
+        <TwentyFifteen path="/2015/*" />
+        <TwentySixteen path="/2016/*" />
+        <TwentySeventeen path="/2017/*" />
+        <TwentyEighteen path="/2018/*" />
+      </Router>
       <Match path="/blog">
         {r =>
           r.match && (
-            <Fragment>
+            <>
               <h3>Years:</h3>
-              <ul>
-                <li>
-                  <Link to="/blog/2015">2015</Link>
-                </li>
-                <li>
-                  <Link to="/blog/2016">2016</Link>
-                </li>
-                <li>
-                  <Link to="/blog/2017">2017</Link>
-                </li>
-                <li>
-                  <Link to="/blog/2018">2018</Link>
-                </li>
-              </ul>
-            </Fragment>
+              <nav>
+                <ul>
+                  <li>
+                    <Link to="/blog/2015">2015</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/2016">2016</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/2017">2017</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog/2018">2018</Link>
+                  </li>
+                </ul>
+              </nav>
+            </>
           )
         }
       </Match>

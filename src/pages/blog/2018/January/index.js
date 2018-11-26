@@ -2,11 +2,11 @@ import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
 
-import TwentyEighteen from './2018.js'
+import TwentyEighteen from './2018.mdx'
 
 const local = '/blog/2018/January'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}/*`
 
 const January2018 = () => (
   <BlogListing
@@ -15,11 +15,12 @@ const January2018 = () => (
     routes={[
       {
         name: '2018',
-        route: withLocal(`2018`),
-        component: TwentyEighteen,
+        route: `2018`,
       },
     ]}
-  />
+  >
+    <TwentyEighteen path={withLocal('2018')} />
+  </BlogListing>
 )
 
 export default January2018
