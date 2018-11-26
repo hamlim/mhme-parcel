@@ -25,8 +25,8 @@
   },
   "dependencies": {
     "@compositor/markdown": "^0.0.21",
-    "@emotion/core": "10.0.0-beta.8",
-    "@emotion/styled": "10.0.0-beta.8",
+    "@emotion/core": "10.0.0-beta.13",
+    "@emotion/styled": "10.0.0-beta.13",
     "@matthamlin/react-error-boundary": "^1.0.0",
     "@matthamlin/resp": "^3.0.0",
     "@mdx-js/tag": "0.15.6",
@@ -39,7 +39,6 @@
     "normalize.css": "8.0.0",
     "react": "16.7.0-alpha.0",
     "react-dom": "16.7.0-alpha.0",
-    "react-emotion": "^9.2.12",
     "react-router-dom": "^4.4.0-beta.6",
     "react-state-reducer": "1.4.0",
     "react-transition-group": "2.5.0",

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Container from '../components/container.js'
-import styled, { keyframes } from 'react-emotion'
+import styled from '@emotion/styled'
+import { keyframes } from '@emotion/core'
 import { Flex, Box } from 'grid-emotion'
 import hljs from 'highlight.js'
 import Code from '../components/code.js'
