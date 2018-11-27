@@ -2,12 +2,8 @@ import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
 
-import TakingABreak from './taking-a-break.mdx'
+import TakingABreak from './break.mdx'
 import Summer2018Trip from './summer-trip.mdx'
-
-const AppliedTakingABreak = () => (
-  <TakingABreak components={{ pre: p => <pre className="hljs" {...p} /> }} />
-)
 
 const local = '/blog/2018/July'
 
@@ -28,7 +24,7 @@ const July2018 = () => (
       },
     ]}
   >
-    <AppliedTakingABreak path={withLocal(`taking-a-break`)} />
+    <TakingABreak path={withLocal(`taking-a-break`)} />
     <Summer2018Trip path={withLocal(`summer`)} />
   </BlogListing>
 )

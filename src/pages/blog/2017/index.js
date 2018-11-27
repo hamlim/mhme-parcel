@@ -12,7 +12,7 @@ const localPath = path => `${path}/*`
 const TwentySeventeen = () => (
   <BlogListing
     title={<h3>2017</h3>}
-    path={localPath(local)}
+    path={local}
     routes={[
       {
         name: 'January',

@@ -6,8 +6,13 @@ import { Global } from '@emotion/core'
 import format from 'date-fns/format'
 import { medium, large } from '../utils/media.js'
 import { colors, widths } from '../styles/index.js'
+import { MDXProvider } from '@mdx-js/tag'
 
 import hljs from 'highlight.js'
+
+const components = {
+  pre: p => <pre className="hljs" {...p} />,
+}
 
 const Article = styled('article')`
   max-width: 95vw;
@@ -157,7 +162,9 @@ class Post extends Component {
               </Fragment>
             )}
           </Div>
-          {this.props.children}
+          <MDXProvider components={components}>
+            {this.props.children}
+          </MDXProvider>
         </Article>
       </Fragment>
     )
