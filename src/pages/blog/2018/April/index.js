@@ -2,7 +2,7 @@ import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
 
-import UnderstandingReact163Updates from './understanding-react-16-3-updates.js'
+import UnderstandingReact163Updates from './understanding-react-16-3-updates.mdx'
 
 const local = '/blog/2018/April'
 

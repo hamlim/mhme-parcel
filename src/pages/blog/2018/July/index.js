@@ -5,8 +5,6 @@ import BlogListing from '../../../../components/blog-listing'
 import TakingABreak from './taking-a-break.mdx'
 import Summer2018Trip from './summer-trip.mdx'
 
-console.log(Summer2018Trip)
-
 const AppliedTakingABreak = () => (
   <TakingABreak components={{ pre: p => <pre className="hljs" {...p} /> }} />
 )

@@ -1,11 +1,11 @@
 import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
-import Calendar from './calendar'
-import WackyJavascript from './javascript-wierdness'
-import RebuildingMustache from './rebuilding-mustache'
-import RedesignV6 from './redesign-v6'
-import SomeQuickNotes from './some-quick-notes'
+import Calendar from './Calendar.mdx'
+import WackyJavascript from './javascript-wierdness.mdx'
+import RebuildingMustache from './rebuilding-mustache.mdx'
+import RedesignV6 from './redesign-v6.mdx'
+import SomeQuickNotes from './some-quick-notes.mdx'
 
 const local = '/blog/2017/March'
 

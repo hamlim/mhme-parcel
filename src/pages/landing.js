@@ -57,7 +57,7 @@ const posts = [
   },
   {
     name: '☀️ Summer 2018 Trip ☀️',
-    route: toPost(`2018/July/☀️`),
+    route: toPost(`2018/July/summer`),
   },
   {
     name: 'Taking a Break',

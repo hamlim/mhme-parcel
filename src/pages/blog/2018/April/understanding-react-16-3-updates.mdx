@@ -87,11 +87,7 @@ export default class ContextProvider extends Component {
     },
   }
   render() {
-    return (
-      <Provider value={this.state.context}>
-        {this.props.children}
-      </Provider>
-    )
+    return <Provider value={this.state.context}>{this.props.children}</Provider>
   }
 }
 ```
@@ -194,3 +190,7 @@ class App extends Component {
 ## getSnapshotBeforeUpdate
 
 Coming soon, I haven't written too many components that need this just yet. But I have a feeling I will be using this a decent amount!
+
+import Post from '../../../../components/post-container.js'
+
+export default props => <Post date="04/01/2018" {...props} />

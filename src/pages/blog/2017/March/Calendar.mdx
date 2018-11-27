@@ -7,17 +7,15 @@ This time I will try to keep it short and to the point.
 
 First lets start with the goal of the project:
 
-* **Reminders**
+- **Reminders**
 
 I have about 6 things that I have to keep in mind to pay off every month, some of these are loans, others include
 utilities and rent. However one of the problems I have encountered has been visiting the site to pay off a bill
 only to find out that I payed it off earlier in the month.
 
-<aside>
-  I have no idea why my memory is so bad, but it just is.
-</aside>
+<aside>I have no idea why my memory is so bad, but it just is.</aside>
 
-* **Events**
+- **Events**
 
 I use a random mixture of pen and paper, todo lists, and some reminders on my phone to keep up on events and
 other things happening in my life but I haven't settled on a good calendar app that satisfies all my needs.
@@ -40,7 +38,7 @@ going for.
 After my initial mock up on code pen I am finally ready to boot up a new directory with Nextjs, React, ReactDOM, and styled-jsx-postcss. This is my new go to install
 command:
 
-```Javascript
+```bash
 yarn add next@2.0.0 react react-dom styled-jsx-postcss
 ```
 
@@ -52,9 +50,9 @@ Ok so I have the rough draft up and working locally, there are however some chan
 
 Lets document them down here in this post:
 
-* Performance is terrible even on a mildly specd macbook pro (what happens when you render out 365(6) elements)
-* I want a scroll indicator somewhere saying what month you are scrolled on
-* I want the sidebar to represent the current selected day (reminders + event info there)
+- Performance is terrible even on a mildly specd macbook pro (what happens when you render out 365(6) elements)
+- I want a scroll indicator somewhere saying what month you are scrolled on
+- I want the sidebar to represent the current selected day (reminders + event info there)
 
 ### Yet another day later:
 
@@ -65,3 +63,7 @@ I also added some logic to scroll to the element, highlight it if it is the curr
 Still have no idea how to implement the proper rendering of items to be more efficient and improve performance.
 
 Going to stop updates on this project until I get back from my trip. The next week will be spent working on getting a really basic website set up for tracking photos, memories, videos etc from my trip to New Zealand.
+
+import Post from '../../../../components/post-container.js'
+
+export default props => <Post date="03/01/2018" {...props} />

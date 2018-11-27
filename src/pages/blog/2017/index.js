@@ -7,8 +7,6 @@ import March from './March/index.js'
 
 const local = '/blog/2017'
 
-const withLocal = r => r
-
 const localPath = path => `${path}/*`
 
 const TwentySeventeen = () => (
@@ -18,15 +16,15 @@ const TwentySeventeen = () => (
     routes={[
       {
         name: 'January',
-        route: withLocal(`January`),
+        route: `January`,
       },
       {
         name: 'March',
-        route: withLocal(`March`),
+        route: `March`,
       },
       {
         name: 'April',
-        route: withLocal(`April`),
+        route: `April`,
       },
     ]}
   >

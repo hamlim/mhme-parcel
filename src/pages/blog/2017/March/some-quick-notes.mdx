@@ -7,9 +7,9 @@ const store = ( () => {
     if (todos) {
       state = todos;
       render("todo-list");
-    }   
+    }
     return state;
-  };  
+  };
 })();
 
 const render = (component, parent = document.body) =>
@@ -61,9 +61,14 @@ customElements.define("todo-list", class extends HTMLElement {
 A quick little snippet to make a todo list within your browser.
 
 All you do is call:
+
 ```Javascript
 store([array of tasks]);
 ```
 
-I recently have been trying to follow more people on twitter who tweet screenshots of interesting code. So far I am saving them to a special 
+I recently have been trying to follow more people on twitter who tweet screenshots of interesting code. So far I am saving them to a special
 screenshot folder.
+
+import Post from '../../../../components/post-container.js'
+
+export default props => <Post date="04/01/2018" {...props} />
