@@ -1,28 +1,24 @@
-import React, { Fragment } from 'react'
-import { Match, Link } from '@reach/router'
-import Redesign from './redesign'
+import React from 'react'
+import BlogListing from '../../../../components/blog-listing.js'
+import Redesign from './redesign.mdx'
 
 const local = '/blog/2016/April/'
 
+const withLocal = r => `${r}/*`
+
 const TwentySixteenApril = () => (
-  <Fragment>
-    <Match
-      path="/blog/2016/April"
-      children={r =>
-        r.match && (
-          <Fragment>
-            <h3>April - 2016</h3>
-            <ul>
-              <li>
-                <Link to={`${local}redesign`}>Redesign</Link>
-              </li>
-            </ul>
-          </Fragment>
-        )
-      }
-    />
-    <Redesign path={`${local}redesign`} />
-  </Fragment>
+  <BlogListing
+    title={<h3>April - 2016</h3>}
+    path={local}
+    routes={[
+      {
+        name: 'Redesign',
+        route: 'redesign',
+      },
+    ]}
+  >
+    <Redesign path={withLocal('redesign')} />
+  </BlogListing>
 )
 
 export default TwentySixteenApril
