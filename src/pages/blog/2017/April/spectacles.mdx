@@ -7,12 +7,7 @@ give you over just using your phone to share videos to Snapchat is their circula
 Here is a quick sample of what the video looks like outside of Snapchat:
 
 <div class="has-video">
-  <video
-    src="../../../../../static/vids/specs.mp4"
-    controls
-    loop
-    autoplay
-  ></video>
+  <video src="../../../../../static/vids/specs.mp4" controls loop autoplay />
 </div>
 
 Inside the app when watching some of this video you can tilt your phone to see more of the video
@@ -20,3 +15,7 @@ outside of classical landscape or portrait field of view.
 
 Spectacles were one of the most hyped announcments of Snapchat's parent company Snap Inc, as with
 everything that the company does a large audience always seem to get really excited for it.
+
+import Post from '../../../../components/post-container.js'
+
+export default props => <Post date="04/05/2017" {...props} />
