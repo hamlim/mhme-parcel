@@ -1,30 +1,36 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Match, Link, Router } from '@reach/router'
 
-export default function BlogListing({ routes, path, title }) {
+export default function BlogListing(props) {
+  const { routes, path, basePath, title, children } = props
   return (
-    <Fragment>
-      <Route
-        exact
-        path={path}
-        render={r =>
+    <>
+      <Match
+        path={basePath || path}
+        children={r =>
           r.match && (
-            <Fragment>
+            <>
               {title}
-              <ul>
-                {routes.map(({ route, name }) => (
-                  <li key={name}>
-                    <Link to={route}>{name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </Fragment>
+              <nav>
+                <ul>
+                  {routes.map(({ route, name }) => (
+                    <li key={name}>
+                      <Link to={route}>{name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </>
           )
         }
       />
-      {routes.map(({ route, component }) => (
-        <Route key={route} path={route} component={component} />
-      ))}
-    </Fragment>
+      {children ? (
+        <Router primary={false}>{children}</Router>
+      ) : (
+        routes.map(({ route, name, component: Comp }) => (
+          <Comp key={name} path={route} />
+        ))
+      )}
+    </>
   )
 }

@@ -1,23 +1,23 @@
 import React from 'react'
 
 import BlogListing from '../../../../components/blog-listing'
-import Ai from './ai'
-import Sixteen from './sixteen'
-import Seventeen from './seventeen'
-import Eighteen from './eighteen'
-import Nineteen from './nineteen'
-import Twenty from './twenty'
-import TwentyOne from './twenty-one'
-import TwentyTwo from './twenty-two'
-import TwentySeven from './twenty-seven'
-import TwentyFive from './twenty-five'
-import TwentyFour from './twenty-four'
-import TwentyThree from './twenty-three'
-import TwentyEight from './twenty-eight'
+import Ai from './ai.mdx'
+import Sixteen from './sixteen.mdx'
+import Seventeen from './seventeen.mdx'
+// import Eighteen from './eighteen.mdx'
+import Nineteen from './nineteen.mdx'
+import Twenty from './twenty.mdx'
+import TwentyOne from './twenty-one.mdx'
+import TwentyTwo from './twenty-two.mdx'
+import TwentyThree from './twenty-three.mdx'
+import TwentyFour from './twenty-four.mdx'
+import TwentyFive from './twenty-five.mdx'
+import TwentyEight from './twenty-eight.mdx'
+import TwentySeven from './twenty-seven.mdx'
 
 const local = '/blog/2017/January'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}/*`
 
 const Janurary2017 = () => (
   <BlogListing
@@ -26,71 +26,72 @@ const Janurary2017 = () => (
     routes={[
       {
         name: 'AI',
-        route: withLocal('ai'),
-        component: Ai,
+        route: 'ai',
       },
       {
         name: 'Sixteen',
-        route: withLocal(`sixteen`),
-        component: Sixteen,
+        route: `sixteen`,
       },
       {
         name: 'Seventeen',
-        route: withLocal(`seventeen`),
-        component: Seventeen,
+        route: `seventeen`,
       },
       {
         name: 'Eighteen',
-        route: withLocal(`eighteen`),
-        component: Eighteen,
+        route: `eighteen`,
       },
       {
         name: 'Nineteen',
-        route: withLocal(`nineteen`),
-        component: Nineteen,
+        route: `nineteen`,
       },
       {
         name: 'Twenty',
-        route: withLocal('twenty'),
-        component: Twenty,
+        route: 'twenty',
       },
       {
         name: 'Twenty One',
-        route: withLocal(`twenty-one`),
-        component: TwentyOne,
+        route: `twenty-one`,
       },
       {
         name: 'Twenty Two',
-        route: withLocal(`twenty-two`),
-        component: TwentyTwo,
+        route: `twenty-two`,
       },
       {
         name: 'Twenty Three',
-        route: withLocal(`twenty-three`),
-        component: TwentyThree,
+        route: `twenty-three`,
       },
       {
         name: 'Twenty Four',
-        route: withLocal(`twenty-four`),
-        component: TwentyFour,
+        route: `twenty-four`,
       },
       {
         name: 'Twenty Five',
-        route: withLocal(`twenty-five`),
-        component: TwentyFive,
+        route: `twenty-five`,
       },
       {
         name: 'Twenty Seven',
-        route: withLocal(`twenty-seven`),
-        component: TwentySeven,
+        route: `twenty-seven`,
       },
       {
         name: 'Twenty Eight',
-        route: withLocal(`twenty-eight`),
-        component: TwentyEight,
+        route: `twenty-eight`,
       },
     ]}
-  />
+  >
+    <Ai path={withLocal('ai')} />
+    <Sixteen path={withLocal(`sixteen`)} />
+    <Seventeen path={withLocal(`seventeen`)} />
+    <Eighteen path={withLocal(`eighteen`)} />
+    <Nineteen path={withLocal(`nineteen`)} />
+    <Twenty path={withLocal('twenty')} />
+    <TwentyOne path={withLocal(`twenty-one`)} />
+    <TwentyTwo path={withLocal(`twenty-two`)} />
+    <TwentyThree path={withLocal(`twenty-three`)} />
+    <TwentyFour path={withLocal(`twenty-four`)} />
+    <TwentyFive path={withLocal(`twenty-five`)} />
+    <TwentySeven path={withLocal(`twenty-seven`)} />
+    <TwentyEight path={withLocal(`twenty-eight`)} />
+  </BlogListing>
 )
 
 export default Janurary2017

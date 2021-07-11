@@ -11,49 +11,53 @@ import November from './November/index.js'
 
 const local = '/blog/2018'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}`
+
+const localPath = path => `${path}/*`
 
 const TwentyEighteen = () => (
   <BlogListing
     title={<h3>2018</h3>}
-    path={local}
+    path={`${local}/*`}
+    basePath={local}
     routes={[
       {
         name: 'January',
         route: withLocal(`January`),
-        component: January,
       },
       {
         name: 'April',
         route: withLocal('April'),
-        component: April,
       },
       {
         name: 'May',
         route: withLocal('May'),
-        component: May,
       },
       {
         name: 'July',
         route: withLocal('July'),
-        component: July,
       },
       {
         name: 'September',
         route: withLocal('September'),
-        component: September,
       },
       {
         name: 'October',
         route: withLocal('October'),
-        component: October,
       },
       {
         name: 'November',
         route: withLocal('November'),
-        component: November,
       },
     ]}
-  />
+  >
+    <January path={localPath('January')} />
+    <April path={localPath('April')} />
+    <May path={localPath('May')} />
+    <July path={localPath('July')} />
+    <September path={localPath('September')} />
+    <October path={localPath('October')} />
+    <November path={localPath('November')} />
+  </BlogListing>
 )
 export default TwentyEighteen

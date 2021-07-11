@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Match, Link } from '@reach/router'
 import Thanksgiving from './thanksgiving'
 import ANewLook from './a-new-look'
 import WeekendProjects from './weekend-projects'
@@ -11,10 +11,9 @@ const local = '/blog/2015/November/'
 
 const November = () => (
   <Fragment>
-    <Route
+    <Match
       path="/blog/2015/November"
-      exact
-      render={r =>
+      children={r =>
         r.match && (
           <Fragment>
             <h3>November - 2015</h3>
@@ -42,12 +41,12 @@ const November = () => (
         )
       }
     />
-    <Route path={`${local}Thanksgiving`} component={Thanksgiving} />
-    <Route path={`${local}a-new-look`} component={ANewLook} />
-    <Route path={`${local}weekend-projects`} component={WeekendProjects} />
-    <Route path={`${local}a-new-resume`} component={ANewResume} />
-    <Route path={`${local}family-time`} component={FamilyTime} />
-    <Route path={`${local}message`} component={Message} />
+    <Thanksgiving path={`${local}Thanksgiving`} />
+    <ANewLook path={`${local}a-new-look`} />
+    <WeekendProjects path={`${local}weekend-projects`} />
+    <ANewResume path={`${local}a-new-resume`} />
+    <FamilyTime path={`${local}family-time`} />
+    <Message path={`${local}message`} />
   </Fragment>
 )
 

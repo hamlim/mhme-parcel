@@ -10,42 +10,45 @@ import September from './September/index'
 
 const local = '/blog/2016/'
 
+const localPath = path => `${path}/*`
+
 const TwentySixteen = () => (
   <BlogListing
     title={<h3>2016</h3>}
-    path={'/blog/2016'}
+    path={local}
     routes={[
       {
         name: 'January',
-        route: `${local}January`,
-        component: January,
+        route: `January`,
       },
       {
         name: 'April',
-        route: `${local}April`,
-        component: April,
+        route: `April`,
       },
       {
         name: 'August',
-        route: `${local}August`,
-        component: August,
+        route: `August`,
       },
       {
         name: 'November',
-        route: `${local}November`,
-        component: November,
+        route: `November`,
       },
       {
         name: 'October',
-        route: `${local}October`,
-        component: October,
+        route: `October`,
       },
       {
         name: 'September',
-        route: `${local}September`,
-        component: September,
+        route: `September`,
       },
     ]}
-  />
+  >
+    <January route={localPath('January')} />
+    <April route={localPath('April')} />
+    <August route={localPath('August')} />
+    <November route={localPath('November')} />
+    <October route={localPath('October')} />
+    <September route={localPath('September')} />
+  </BlogListing>
 )
 export default TwentySixteen

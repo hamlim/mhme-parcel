@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
-import styled from 'react-emotion'
+import { Location, Link } from '@reach/router'
+import styled from '@emotion/styled'
 
 const Div = styled('div')`
   margin-bottom: 2rem;
@@ -10,14 +10,17 @@ const toUppercase = string => string.charAt(0).toUpperCase() + string.slice(1)
 
 const buildPath = (currentIndex, arr) => arr.slice(0, currentIndex)
 
-const Breadcrumbs = ({ routeProps }) =>
-  routeProps.location.pathname
+const Breadcrumbs = ({ location }) =>
+  location.pathname
     .split('/')
     .filter(Boolean)
     .reduce(
       (acc, item, ndx, arr) => [
         ...acc,
-        <Link key={buildPath(ndx + 1, arr).join('/')} to={`/${buildPath(ndx + 1, arr).join('/')}`}>
+        <Link
+          key={buildPath(ndx + 1, arr).join('/')}
+          to={`/${buildPath(ndx + 1, arr).join('/')}`}
+        >
           {toUppercase(item)}
         </Link>,
       ],
@@ -35,7 +38,7 @@ const Breadcrumbs = ({ routeProps }) =>
 
 const WrappedBreadcrumbs = () => (
   <Div>
-    <Route path="" render={r => <Breadcrumbs routeProps={r} />} />
+    <Location>{({ location }) => <Breadcrumbs location={location} />}</Location>
   </Div>
 )
 

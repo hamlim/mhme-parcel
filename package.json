@@ -1,41 +1,36 @@
 {
   "name": "mhme-parcel",
+  "private": true,
   "version": "0.0.0",
   "now": {
     "alias": "matthamlin.me"
   },
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "dev-reason": "yarn watch & parcel ./src/index.html",
-    "watch": "bsb -make-world -w",
     "make": "parcel build ./src/index.html --out-dir build",
     "postmake": "cp -a ./build/. ./site/",
     "deploy": "now",
     "start": "serve ./site/ -s"
   },
   "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/preset-env": "7.1.5",
+    "@babel/preset-react": "7.0.0",
     "@matthamlin/parcel-plugin-mdx": "1.2.0",
-    "babel-core": "6.26.3",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-react": "6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-preset-stage-2": "6.24.1",
-    "bs-platform": "^2.1.0",
-    "bsb-js": "^1.0.2",
     "parcel-bundler": "1.10.3",
     "serve": "10.0.2"
   },
   "dependencies": {
-    "@atlaskit/avatar": "14.1.3",
-    "@atlaskit/button": "9.0.16",
     "@compositor/markdown": "^0.0.21",
+    "@emotion/core": "10.0.0-beta.13",
+    "@emotion/styled": "10.0.0-beta.13",
     "@matthamlin/react-error-boundary": "^1.0.0",
     "@matthamlin/resp": "^3.0.0",
     "@mdx-js/tag": "0.15.6",
+    "@reach/router": "1.2.1",
     "date-fns": "^1.29.0",
     "emotion": "^9.2.12",
     "grid-emotion": "^3.2.0",
@@ -44,13 +39,20 @@
     "normalize.css": "8.0.0",
     "react": "16.7.0-alpha.0",
     "react-dom": "16.7.0-alpha.0",
-    "react-emotion": "^9.2.12",
-    "react-router-dom": "^4.2.2",
+    "react-emotion": "9.2.12",
     "react-state-reducer": "1.4.0",
     "react-transition-group": "2.5.0",
     "reason-react": "^0.3.1",
     "recycles": "^1.1.0",
-    "remark-highlight.js": "5.0.0",
-    "styled-components": "4.0.3"
+    "remark-highlight.js": "5.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }

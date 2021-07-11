@@ -4,9 +4,9 @@ import BlogListing from '../../../../components/blog-listing'
 
 import YouveLaunchedNowWhat from './youve-launched-now-what.mdx'
 
-const local = '/blog/2018/September'
+const local = '/2018/September'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}/*`
 
 const September2018 = () => (
   <BlogListing
@@ -15,11 +15,12 @@ const September2018 = () => (
     routes={[
       {
         name: "You've Launched, Now What?",
-        route: withLocal(`youve-launched-now-what`),
-        component: YouveLaunchedNowWhat,
+        route: `youve-launched-now-what`,
       },
     ]}
-  />
+  >
+    <YouveLaunchedNowWhat path={withLocal(`youve-launched-now-what`)} />
+  </BlogListing>
 )
 
 export default September2018

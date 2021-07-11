@@ -1,49 +1,48 @@
 import React, { Fragment } from 'react'
-import { Route, Link } from 'react-router-dom'
-import AttributeSelectors from './attribute-selectors'
-import August from './august'
-import RedesignV5 from './redesign-v5'
-import PullQuotes from './pull-quotes'
-import MyNewWebsite from './my-new-website'
+import BlogListing from '../../../../components/blog-listing.js'
+import AttributeSelectors from './attribute-selectors.mdx'
+import August from './august.mdx'
+import RedesignV5 from './redesign-v5.mdx'
+import PullQuotes from './pull-quotes.mdx'
+import MyNewWebsite from './my-new-website.mdx'
 
-const local = '/blog/2016/August/'
+const local = '/blog/2016/August'
+
+const withLocal = path => `${path}/*`
 
 const TwentySixteenApril = () => (
-  <Fragment>
-    <Route
-      path="/blog/2016/August"
-      exact
-      render={r =>
-        r.match && (
-          <Fragment>
-            <h3>August - 2016</h3>
-            <ul>
-              <li>
-                <Link to={`${local}attribute-selectors`}>Attribute Selectors</Link>
-              </li>
-              <li>
-                <Link to={`${local}august`}>August</Link>
-              </li>
-              <li>
-                <Link to={`${local}my-new-website`}>My New Website</Link>
-              </li>
-              <li>
-                <Link to={`${local}pull-quotes`}>Pull Quotes</Link>
-              </li>
-              <li>
-                <Link to={`${local}redesign-v5`}>Redesign v5</Link>
-              </li>
-            </ul>
-          </Fragment>
-        )
-      }
-    />
-    <Route path={`${local}attribute-selectors`} component={AttributeSelectors} />
-    <Route path={`${local}august`} component={August} />
-    <Route path={`${local}my-new-website`} component={MyNewWebsite} />
-    <Route path={`${local}pull-quotes`} component={PullQuotes} />
-    <Route path={`${local}redesign-v5`} component={RedesignV5} />
-  </Fragment>
+  <BlogListing
+    title={<h3>August - 2016</h3>}
+    path={local}
+    routes={[
+      {
+        name: 'August',
+        route: 'august',
+      },
+      {
+        name: 'Attribute Selectors',
+        route: 'attributes-selectors',
+      },
+      {
+        name: 'Redesign V5',
+        route: 'redesign-v5',
+      },
+      {
+        name: 'Pull Quotes',
+        route: 'pull-quotes',
+      },
+      {
+        name: 'My New Website',
+        route: 'my-new-website',
+      },
+    ]}
+  >
+    <AttributeSelectors path={withLocal('attribute-selectors')} />
+    <August path={withLocal('august')} />
+    <MyNewWebsite path={withLocal('my-new-website')} />
+    <PullQuotes path={withLocal('pull-quotes')} />
+    <RedesignV5 path={withLocal('redesign-v5')} />
+  </BlogListing>
 )
 
 export default TwentySixteenApril

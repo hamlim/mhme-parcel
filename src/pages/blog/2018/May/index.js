@@ -12,7 +12,7 @@ const AppliedComplexUIComponentsAndState = () => (
 
 const local = '/blog/2018/May'
 
-const withLocal = r => `${local}/${r}`
+const withLocal = r => `${r}/*`
 
 export default function May2018() {
   return (
@@ -22,10 +22,13 @@ export default function May2018() {
       routes={[
         {
           name: 'Managing Complex UI Component State',
-          route: withLocal(`complex-ui-components`),
-          component: AppliedComplexUIComponentsAndState,
+          route: `complex-ui-components`,
         },
       ]}
-    />
+    >
+      <AppliedComplexUIComponentsAndState
+        path={withLocal(`complex-ui-components`)}
+      />
+    </BlogListing>
   )
 }
