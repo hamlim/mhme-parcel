@@ -2702,8 +2702,8 @@ dom-helpers@^3.3.1:
     "@babel/runtime" "^7.1.2"
 
 dom-iterator@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/dom-iterator/-/dom-iterator-1.0.0.tgz#9c09899846ec41c2d257adc4d6015e4759ef05ad"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dom-iterator/-/dom-iterator-1.0.2.tgz#6b239349ccadbd595055da5e0a7386cce9f0aa7b"
   dependencies:
     component-props "1.1.1"
     component-xor "0.0.4"
